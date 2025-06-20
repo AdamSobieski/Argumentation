@@ -1,6 +1,3 @@
-# Argumentation
-This project is an [argumentation framework](https://en.wikipedia.org/wiki/Argumentation_framework) in Python.
-
 ## Introduction
 
 ### Abstract Templating
