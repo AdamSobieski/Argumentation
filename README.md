@@ -42,7 +42,7 @@ class TemplateGenerated(Generic[TGENERATOR, TBINDING]):
         self._template = template
         self._bindings = bindings
 
-    _template: TGENERATOR
+    _template: (TGENERATOR | None)
     _bindings: Sequence[TBINDING]
 
     @property
