@@ -46,7 +46,7 @@ class TemplateGenerated(Generic[TGENERATOR, TBINDING]):
     _bindings: Sequence[TBINDING]
 
     @property
-    def template(self) -> TGENERATOR:
+    def template(self) -> (TGENERATOR | None):
         return self._template
 
     @property
