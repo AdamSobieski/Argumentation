@@ -74,7 +74,11 @@ class Argument(TemplateGenerator['Argument', Parameter, Binding], TemplateGenera
         TemplateGenerator['Argument', Parameter, Binding].__init__(self)
         TemplateGenerated['Argument', Binding].__init__(self, template, bindings)
         Categorized['Argument'].__init__(self, categories)
-        self.claim = claim
+        self._claim = claim
 
-    claim: TextContent
+    _claim: TextContent
+
+    @property
+    def claim(self) -> TextContent:
+        return self._claim
 ```
