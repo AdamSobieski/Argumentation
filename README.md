@@ -28,7 +28,7 @@ class TemplateGenerator(Generic[TGENERATED, TPARAMETER, TBINDING], ABC):
         pass
 
     @abstractmethod
-    def bind(self, bindings: Iterable[TBINDING]) -> TGENERATED:
+    def apply(self, bindings: Iterable[TBINDING]) -> TGENERATED:
         pass
 
     @abstractmethod
