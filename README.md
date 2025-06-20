@@ -60,7 +60,7 @@ class TemplateGenerated(Generic[TGENERATOR, TBINDING]):
 ### Text Content
 `TextContent`, sketched below, harnesses new XML-based approaches to deliver templating-based features for natural-language text strings.
 
-This data structure is based on [clipboarding](https://www.w3.org/TR/clipboard-apis/) and [data transfers](https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface) to allow text content to be obtained for multiple formats, e.g., `text\plain`, multiple languages, e.g., `en`, and multiple styles, e.g., `MLA`.
+This data structure is based on [clipboarding](https://www.w3.org/TR/clipboard-apis/) and [data transfers](https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface) to allow text content to be obtained for multiple formats, e.g., `text/plain`, multiple languages, e.g., `en`, and multiple styles, e.g., `MLA`.
 
 This data structure is a `KernelBasedObject`, meaning it receives a [Semantic Kernel](https://github.com/microsoft/semantic-kernel) `Kernel` in its `__init__()` function with which to access a number of artificial-intelligence services, e.g., a chat completion service.
 
