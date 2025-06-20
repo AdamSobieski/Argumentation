@@ -3,7 +3,7 @@ This project is an [argumentation framework](https://en.wikipedia.org/wiki/Argum
 
 ## Introduction
 
-### Templating
+### Abstract Templating
 
 This argumentation framework utilizes abstract templating, detailed below.
 
