@@ -6,7 +6,7 @@ This argumentation framework utilizes abstract templating, detailed below.
 
 A `TemplateGenerator` provides a set of `Parameters` which can be bound to values to produce a `TemplateGenerated`.
 
-Below, both `TextContent` and `Argument` are closed under this operation. They are both `TemplateGenerators` and `TemplateGenerated`.
+Below, both `TextContent` and `Argument` are closed under this operation. They are each both `TemplateGenerators` and `TemplateGenerated`.
 
 ```python
 TPARAMETER = TypeVar("TPARAMETER", bound=Parameter, default=Parameter)
