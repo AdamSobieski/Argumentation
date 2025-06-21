@@ -2,9 +2,11 @@
 
 This project is an argumentation framework designed for interoperability with a large number of artificial-intelligence models and services. This project will explore agentic approaches to creating, analyzing, validating, and evaluating argumentation and debate.
 
+This project utilizes [Semantic Kernel](https://github.com/microsoft/semantic-kernel) to enable developers to more readily explore argumentation-related scenarios using their choice of models and services, e.g.: [OpenAI](https://platform.openai.com/docs/introduction), [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service), [HuggingFace](https://huggingface.co/), [NVidia](https://www.nvidia.com/en-us/ai-data-science/products/nim-microservices/), or [Ollama](https://ollama.com/).
+
 ### Abstract Templates
 
-This argumentation framework makes use of abstract templates. In abstract templating, a `Template` provides a sequence of parameters, each of which can be bound to a value, and these bound parameters altogether can be utilized to produce a `TemplateGenerated`.
+This framework makes use of abstract templates. In abstract templating, a `Template` provides a sequence of parameters, each of which can be bound to a value, and these bound parameters altogether can be utilized to produce a `TemplateGenerated`.
 
 ```python
 TPARAMETER = TypeVar("TPARAMETER", bound=Parameter, default=Parameter)
@@ -60,7 +62,7 @@ class TemplateGenerated(Generic[TGENERATOR, TBINDING], ABC):
 ```
 
 ### Kernel-based Objects
-A `KernelBasedObject` receives a [Semantic Kernel](https://github.com/microsoft/semantic-kernel) `Kernel` in its `__init__()` function with which to access and utilize a number of artificial-intelligence services, e.g., chat-completion services.
+A `KernelBasedObject` receives a Semantic Kernel `Kernel` in its constructor method with which to access and utilize a number of artificial-intelligence services, e.g., chat-completion services.
 
 ```python
 class KernelBasedObject:
