@@ -35,7 +35,7 @@ class TemplateGenerator(Generic[TGENERATED, TPARAMETER, TBINDING], ABC):
 
 TGENERATOR = TypeVar("TGENERATOR", bound=TemplateGenerator, default=TemplateGenerator)
 TBINDING = TypeVar("TBINDING", bound=Binding, default=Binding)
-class TemplateGenerated(Generic[TGENERATOR, TBINDING]):
+class TemplateGenerated(Generic[TGENERATOR, TBINDING], ABC):
     def __init__(self, template: TGENERATOR, bindings: Sequence[TBINDING]):
         self._template = template
         self._bindings = bindings
