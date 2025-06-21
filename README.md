@@ -51,7 +51,7 @@ class TemplateGenerated(Generic[TGENERATOR, TBINDING], ABC):
 ```
 
 ### Kernel-based Objects
-A `KernelBasedObject` receives a [Semantic Kernel](https://github.com/microsoft/semantic-kernel) `Kernel` in its `__init__()` function with which to access and utilize a number of artificial-intelligence services, e.g., chat completion services.
+A `KernelBasedObject` receives a [Semantic Kernel](https://github.com/microsoft/semantic-kernel) `Kernel` in its `__init__()` function with which to access and utilize a number of artificial-intelligence services, e.g., chat-completion services.
 
 ```python
 class KernelBasedObject:
