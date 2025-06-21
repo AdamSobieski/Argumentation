@@ -4,7 +4,7 @@ This project is an argumentation framework designed for interoperability with a 
 
 ### Abstract Templates
 
-This argumentation framework makes use of abstract templates. In abstract templating, a `TemplateGenerator` provides a sequence of its parameters, each of which can be bound to a value, these bound parameters altogether utilized when producing a `TemplateGenerated`.
+This argumentation framework makes use of abstract templates. In abstract templating, a `Template` provides a sequence of parameters, each of which can be bound to a value, and these bound parameters altogether can be utilized to produce a `TemplateGenerated`.
 
 ```python
 TPARAMETER = TypeVar("TPARAMETER", bound=Parameter, default=Parameter)
@@ -22,7 +22,7 @@ class Binding(Generic[TPARAMETER], ABC):
 TGENERATED = TypeVar("TGENERATED", bound='TemplateGenerated', default='TemplateGenerated')
 TPARAMETER = TypeVar("TPARAMETER", bound=Parameter, default=Parameter)
 TBINDING = TypeVar("TBINDING", bound=Binding, default=Binding)
-class TemplateGenerator(Generic[TGENERATED, TPARAMETER, TBINDING], ABC):
+class Template(Generic[TGENERATED, TPARAMETER, TBINDING], ABC):
     @property
     @abstractmethod
     def parameters(self) -> Sequence[TPARAMETER]:
@@ -40,7 +40,7 @@ class TemplateGenerator(Generic[TGENERATED, TPARAMETER, TBINDING], ABC):
     def substitute(self, mapping: Mapping[TPARAMETER, TPARAMETER]) -> Self:
         pass
 
-TGENERATOR = TypeVar("TGENERATOR", bound=TemplateGenerator, default=TemplateGenerator)
+TGENERATOR = TypeVar("TGENERATOR", bound=Template, default=Template)
 TBINDING = TypeVar("TBINDING", bound=Binding, default=Binding)
 class TemplateGenerated(Generic[TGENERATOR, TBINDING], ABC):
     def __init__(self, template: TGENERATOR, bindings: Sequence[TBINDING]):
@@ -78,16 +78,16 @@ class KernelBasedObject:
 `TextContent`, sketched below, makes use of markup-based techniques to deliver abstract templating and other features for natural-language text. This data structure is inspired by [clipboarding](https://www.w3.org/TR/clipboard-apis/) and [data-transfer](https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface) concepts to allow text content to be made available in multiple formats, e.g., `text/plain`, in multiple languages, e.g., `en`, and in multiple styles, e.g., `MLA`.
 
 ```python
-class TextContent(KernelBasedObject, TemplateGenerator['TextContent', Parameter, Binding], TemplateGenerated['TextContent', Binding]):
+class TextContent(KernelBasedObject, Template['TextContent', Parameter, Binding], TemplateGenerated['TextContent', Binding]):
     pass
 ```
 
 ### Arguments
 `Argument` is a base class for a number of other argumentation-related classes in this framework. It is closed under its abstract templating operation and presents a `TextContent` claim (where `TextContent` is similarly closed under its abstract templating operation).
 ```python
-class Argument(TemplateGenerator['Argument', Parameter, Binding], TemplateGenerated['Argument', Binding], Categorized['Argument'], ABC):
+class Argument(Template['Argument', Parameter, Binding], TemplateGenerated['Argument', Binding], Categorized['Argument'], ABC):
     def __init__(self, claim: TextContent, template: 'Argument' = None, bindings: Sequence[Binding] = None, categories: Iterable['Category'['Argument']] = None):
-        TemplateGenerator['Argument', Parameter, Binding].__init__(self)
+        Template['Argument', Parameter, Binding].__init__(self)
         TemplateGenerated['Argument', Binding].__init__(self, template, bindings)
         Categorized['Argument'].__init__(self, categories)
         self._claim = claim
