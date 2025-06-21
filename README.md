@@ -81,7 +81,7 @@ class Argument(TemplateGenerator['Argument', Parameter, Binding], TemplateGenera
         return self._claim
 ```
 
-A `BridgingArgument`, meanwhile, is a type of argument which represents and argues a relationship between a number of premises and a conclusion. This abstract base class starts to resemble some [philosophical definitions of arguments](https://plato.stanford.edu/entries/argument/): "a complex symbolic structure where some parts, known as the premises, offer support to another part, the conclusion."
+A `BridgingArgument` is a type of argument which represents and argues a relationship between a number of premises and a conclusion. This abstract base class starts to resemble some [philosophical definitions of arguments](https://plato.stanford.edu/entries/argument/): "a complex symbolic structure where some parts, known as the premises, offer support to another part, the conclusion."
 
 ```python
 TARGUMENT = TypeVar("TARGUMENT", bound=Argument, default=Argument)
