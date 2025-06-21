@@ -64,10 +64,10 @@ class TextContent(KernelBasedObject, TemplateGenerator['TextContent', Parameter,
     pass
 ```
 
-### Argument
+### Arguments
 `Argument` is a base class for a number of other argumentation-related classes in this framework. It is closed under its abstract templating operation and presents a `TextContent` claim, where `TextContent` is similarly closed under its abstract templating operation.
 ```python
-class Argument(TemplateGenerator['Argument', Parameter, Binding], TemplateGenerated['Argument', Binding], Categorized['Argument']):
+class Argument(TemplateGenerator['Argument', Parameter, Binding], TemplateGenerated['Argument', Binding], Categorized['Argument'], ABC):
     def __init__(self, claim: TextContent = None, template: 'Argument' = None, bindings: Sequence[Binding] = None, categories: Iterable['Category'['Argument']] = None):
         TemplateGenerator['Argument', Parameter, Binding].__init__(self)
         TemplateGenerated['Argument', Binding].__init__(self, template, bindings)
@@ -79,4 +79,23 @@ class Argument(TemplateGenerator['Argument', Parameter, Binding], TemplateGenera
     @property
     def claim(self) -> TextContent:
         return self._claim
+```
+
+A `BridgingArgument`, meanwhile, is a type of argument which represents and argues a relationship between a number of premises and a conclusion. This abstract base class starts to resemble some [philosophical definitions of arguments](https://plato.stanford.edu/entries/argument/): "a complex symbolic structure where some parts, known as the premises, offer support to another part, the conclusion."
+
+```python
+TARGUMENT = TypeVar("TARGUMENT", bound=Argument, default=Argument)
+class BridgingArgument(Generic[TARGUMENT], Argument, ABC):
+    def __init__(self, claim: TextContent = None, template: 'Argument' = None, bindings: Sequence['Binding'] = None, categories: Iterable['Category'['Argument']] = None):
+        Argument.__init__(self, claim, template, bindings, categories)
+
+    @property
+    @abstractmethod
+    def premises(self) -> Sequence[TARGUMENT]:
+        pass
+
+    @property
+    @abstractmethod
+    def conclusion(self) -> TARGUMENT:
+        pass
 ```
