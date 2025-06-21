@@ -8,9 +8,16 @@ This argumentation framework utilizes abstract templates. In abstract templating
 
 ```python
 TPARAMETER = TypeVar("TPARAMETER", bound=Parameter, default=Parameter)
-class Binding(Generic[TPARAMETER]):
-    parameter: TPARAMETER
-    value: Any
+class Binding(Generic[TPARAMETER], ABC):
+    @property
+    @abstractmethod
+    def parameter(self) -> TPARAMETER:
+        pass
+
+    @property
+    @abstractmethod
+    def value(self) -> Any:
+        pass
 
 TGENERATED = TypeVar("TGENERATED", bound='TemplateGenerated', default='TemplateGenerated')
 TPARAMETER = TypeVar("TPARAMETER", bound=Parameter, default=Parameter)
