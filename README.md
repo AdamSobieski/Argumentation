@@ -4,7 +4,7 @@ This project is an argumentation framework designed for interoperability with a 
 
 ### Abstract Templates
 
-This argumentation framework utilizes abstract templates. In abstract templating, a `TemplateGenerator` provides a sequence of its parameters, each of which can be bound to a value, these bound parameters altogether utilized when producing a `TemplateGenerated`.
+This argumentation framework makes use of abstract templates. In abstract templating, a `TemplateGenerator` provides a sequence of its parameters, each of which can be bound to a value, these bound parameters altogether utilized when producing a `TemplateGenerated`.
 
 ```python
 TPARAMETER = TypeVar("TPARAMETER", bound=Parameter, default=Parameter)
