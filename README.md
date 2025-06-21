@@ -2,9 +2,7 @@
 
 ### Abstract Templating
 
-This argumentation framework utilizes abstract templating, detailed below.
-
-In abstract templating, a `TemplateGenerator` provides a sequence of `Parameters`, each of which can be bound to a value, these altogether utilized when producing a `TemplateGenerated`.
+This argumentation framework utilizes abstract templating. In abstract templating, a `TemplateGenerator` provides a sequence of `Parameters`, each of which can be bound to a value, these altogether utilized when producing a `TemplateGenerated`.
 
 ```python
 TPARAMETER = TypeVar("TPARAMETER", bound=Parameter, default=Parameter)
