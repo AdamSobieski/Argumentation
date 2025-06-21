@@ -84,7 +84,7 @@ A `BridgingArgument` is a type of argument which represents and argues a relatio
 ```python
 TARGUMENT = TypeVar("TARGUMENT", bound=Argument, default=Argument)
 class BridgingArgument(Generic[TARGUMENT], Argument, ABC):
-    def __init__(self, claim: TextContent = None, template: 'Argument' = None, bindings: Sequence[Binding] = None, categories: Iterable['Category'['Argument']] = None):
+    def __init__(self, claim: TextContent = None, template: Argument = None, bindings: Sequence[Binding] = None, categories: Iterable['Category'[Argument]] = None):
         Argument.__init__(self, claim, template, bindings, categories)
 
     @property
