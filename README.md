@@ -19,7 +19,7 @@ class Binding(Generic[TPARAMETER], ABC):
     def value(self) -> Any:
         pass
 
-TGENERATED = TypeVar("TGENERATED", bound='TemplateGenerated', default='TemplateGenerated')
+TGENERATE = TypeVar("TGENERATE", bound='TemplateGenerated', default='TemplateGenerated')
 TPARAMETER = TypeVar("TPARAMETER", bound=Parameter, default=Parameter)
 TBINDING = TypeVar("TBINDING", bound=Binding, default=Binding)
 class Template(Generic[TGENERATED, TPARAMETER, TBINDING], ABC):
@@ -33,7 +33,7 @@ class Template(Generic[TGENERATED, TPARAMETER, TBINDING], ABC):
         pass
 
     @abstractmethod
-    def apply(self, bindings: Iterable[TBINDING]) -> TGENERATED:
+    def apply(self, bindings: Iterable[TBINDING]) -> TGENERATE:
         pass
 
     @abstractmethod
