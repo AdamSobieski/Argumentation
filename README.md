@@ -1,6 +1,6 @@
 ### Introduction
 
-This project is an argumentation framework designed for interoperability with a large number of client-side local and server-side remote artificial-intelligence models and services. This project will explore agentic approaches to creating, analyzing, validating, and evaluating argument and debate.
+This project is an argumentation framework designed for interoperability with a large number of artificial-intelligence models and services. This project will explore agentic approaches to creating, analyzing, validating, and evaluating argument and debate.
 
 ### Abstract Templates
 
