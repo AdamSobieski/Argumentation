@@ -36,7 +36,7 @@ TBINDING = TypeVar("TBINDING", bound=Binding, default=Binding)
 class TemplateGenerated(Generic[TGENERATOR, TBINDING], ABC):
     def __init__(self, template: TGENERATOR, bindings: Sequence[TBINDING]):
         self._template = template
-        self._bindings = bindings
+        self._bindings = bindings or []
 
     _template: (TGENERATOR | None)
     _bindings: Sequence[TBINDING]
