@@ -87,7 +87,8 @@ class TextContent(KernelBasedObject, Template['TextContent', Parameter, Binding]
 ```
 
 ### Arguments
-`Argument` is a base class for a number of other argumentation-related classes in this framework. It is closed under its abstract templating operation and presents a `TextContent` claim (where `TextContent` is similarly closed under its abstract templating operation).
+`Argument` is a base class for a number of other argumentation-related classes in this framework. This type is closed under its abstract templating operation and presents a `TextContent` claim (where the `TextContent` type similarly closed under its abstract templating operation).
+
 ```python
 class Argument(Template['Argument', Parameter, Binding], TemplateGenerated['Argument', Binding], Categorized['Argument'], ABC):
     def __init__(self, claim: TextContent, template: 'Argument' = None, bindings: Sequence[Binding] = None, categories: Iterable['Category'['Argument']] = None):
