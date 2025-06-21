@@ -22,7 +22,7 @@ class Binding(Generic[TPARAMETER], ABC):
 TGENERATE = TypeVar("TGENERATE", bound='TemplateGenerated', default='TemplateGenerated')
 TPARAMETER = TypeVar("TPARAMETER", bound=Parameter, default=Parameter)
 TBINDING = TypeVar("TBINDING", bound=Binding, default=Binding)
-class Template(Generic[TGENERATED, TPARAMETER, TBINDING], ABC):
+class Template(Generic[TGENERATE, TPARAMETER, TBINDING], ABC):
     @property
     @abstractmethod
     def parameters(self) -> Sequence[TPARAMETER]:
