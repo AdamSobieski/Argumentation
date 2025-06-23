@@ -147,45 +147,45 @@ Bob Smith is a British citizen. Bob Smith was born in Bermuda. People born in Be
 Content-Type: application/argument+xml
 Content-Language: en
 
-<argument template="cid:foo1">
-  <conclusion><object href="cid:foo2">Bob Smith</object> is a British citizen.</conclusion>
+<argument template="cid:item1">
+  <conclusion><object href="cid:item2">Bob Smith</object> is a British citizen.</conclusion>
   <premises>
     <argument>
-      <conclusion><object href="cid:foo2">Bob Smith</object> was born in Bermuda.</conclusion>
+      <conclusion><object href="cid:item2">Bob Smith</object> was born in Bermuda.</conclusion>
     </argument>
     <argument>
       <conclusion>People born in Bermuda are British citizens.</conclusion>
     </argument>
     <argument>
-      <conclusion><evidence href="cid:foo3">Attached is a copy of the birth certificate.<evidence></conclusion>
+      <conclusion><evidence href="cid:item3">Attached is a copy of the birth certificate.<evidence></conclusion>
     </argument>        
   </premises>
 </argument>
 
 --boundary-example-1
 
-Content-ID: <foo1>
+Content-ID: <item1>
 Content-Type: application/argument+xml
 Content-Language: en
 
 <argument>
-  <conclusion><parameter href="cid:foo4">The seller</parameter> is a British citizen.</conclusion>
+  <conclusion><parameter href="cid:item4">The seller</parameter> is a British citizen.</conclusion>
   <premises>
     <argument>
-      <conclusion><parameter href="cid:foo4">The seller</parameter> was born in Bermuda.</conclusion>
+      <conclusion><parameter href="cid:item4">The seller</parameter> was born in Bermuda.</conclusion>
     </argument>
     <argument>
       <conclusion>People born in Bermuda are British citizens.</conclusion>
     </argument>
     <argument>
-      <conclusion><evidence-parameter href="cid:foo5">Attached is a copy of the birth certificate.</evidence-parameter></conclusion>
+      <conclusion><evidence-parameter href="cid:item5">Attached is a copy of the birth certificate.</evidence-parameter></conclusion>
     </argument>        
   </premises>
 </argument>
 
 --boundary-example-1
 
-Content-ID: <foo2>
+Content-ID: <item2>
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 
@@ -193,7 +193,7 @@ R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhv
 
 --boundary-example-1
 
-Content-ID: <foo3>
+Content-ID: <item3>
 Content-Type: application/pdf
 Content-Language: en
 Content-Disposition: attachment; filename="birth_certificate.pdf"
@@ -203,7 +203,7 @@ R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhv
 
 --boundary-example-1
 
-Content-ID: <foo4>
+Content-ID: <item4>
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 
@@ -211,7 +211,7 @@ R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhv
 
 --boundary-example-1
 
-Content-ID: <foo5>
+Content-ID: <item5>
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 
