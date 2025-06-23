@@ -169,7 +169,7 @@ Content-Transfer-Encoding: base64
 
 R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhvcml6ZWQgZHVwbGljYXRpb24gcHJvaGliaXRlZC4A...
 
---boundary-example-1--
+--boundary-example-1
 
 Content-ID: <foo3>
 Content-Type: application/pdf
