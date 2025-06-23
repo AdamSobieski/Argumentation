@@ -218,4 +218,6 @@ R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhv
 
 ## Other Templating Systems
 
-Interesting possiblities include exploring support for Handlebars templates ([JS](https://handlebarsjs.com/), [Python](https://github.com/wbond/pybars3)) instead of, in addition to, or in combination with the above templating approach. Handlebars templates could also be referenced by URL in, stored in, and transmitted in MIME messages. These templates have a content type of `text/x-handlebars-template`.
+Semantic Kernel is interoperable with a number of templating systems and interesting possiblities include exploring support for these, e.g., Handlebars ([JS](https://handlebarsjs.com/), [Python](https://github.com/wbond/pybars3)) or [Jinja2](https://jinja.palletsprojects.com/en/stable/), instead of, in addition to, or in combination with the above templating approaches. These templates could also be referenced by URL in, stored in, and transmitted in MIME messages.
+
+Handlebars templates have a content type of `text/x-handlebars-template` and Jinja templates `text/jinja`.
