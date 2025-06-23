@@ -186,7 +186,7 @@ Content-Language: en
       <conclusion>People born in Bermuda are British citizens.</conclusion>
     </argument>
     <argument>
-      <conclusion><evidence-parameter>Attached is a copy of the birth certificate.</evidence-parameter></conclusion>
+      <conclusion><evidence-parameter href="cid:foo5">Attached is a copy of the birth certificate.</evidence-parameter></conclusion>
     </argument>        
   </premises>
 </argument>
@@ -212,6 +212,14 @@ R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhv
 --boundary-example-1
 
 Content-ID: <foo4>
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+
+R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhvcml6ZWQgZHVwbGljYXRpb24gcHJvaGliaXRlZC4A...
+
+--boundary-example-1
+
+Content-ID: <foo5>
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 
