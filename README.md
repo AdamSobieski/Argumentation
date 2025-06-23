@@ -216,6 +216,6 @@ R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhv
 --boundary-example-1--
 ```
 
-## Handlebars Templates
+## Other Templating Systems
 
 Interesting possiblities include exploring support for Handlebars templates ([JS](https://handlebarsjs.com/), [Python](https://github.com/wbond/pybars3)) instead of, in addition to, or in combination with the above templating approach. Handlebars templates could also be referenced by URL in, stored in, and transmitted in MIME messages. These templates have a content type of `text/x-handlebars-template`.
