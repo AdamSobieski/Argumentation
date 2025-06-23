@@ -219,7 +219,7 @@ Content-ID: <item6>
 Content-Type: text/x-bibtex
 
 @article{Brown2023,
-author = {John Brown},
+author = {Albert Brown},
 title = {An Interesting Article},
 journal = {Journal of Interesting Articles},
 year = {2023},
