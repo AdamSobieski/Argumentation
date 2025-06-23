@@ -218,4 +218,4 @@ R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhv
 
 ## Handlebars Templates
 
-Interesting possiblities include exploring support for Handlebars templates ([JS](https://handlebarsjs.com/), [Python](https://github.com/wbond/pybars3)) instead of, additionally to, or in combination with the above templating approach. Handlebars templates could also be of use for generating [AIF](https://en.wikipedia.org/wiki/Argument_Interchange_Format) and/or a new markup format for arguments. These templates could also be referenced by URL in, stored in, and transmitted in MIME messages. Handlebars templates have a content type of `text/x-handlebars-template`.
+Interesting possiblities include exploring support for Handlebars templates ([JS](https://handlebarsjs.com/), [Python](https://github.com/wbond/pybars3)) instead of, additionally to, or in combination with the above templating approach. Handlebars templates could also be referenced by URL in, stored in, and transmitted in MIME messages. These templates have a content type of `text/x-handlebars-template`.
