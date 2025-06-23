@@ -140,6 +140,7 @@ Content-Type: multipart/related; boundary="boundary-example-1"
 Bob Smith is a British citizen. Bob Smith was born in Bermuda. People born in Bermuda are British citizens. Attached is a copy of the birth certificate.
 
 --boundary-example-1
+
 Content-Type: text/argument+xml
 
 <text template="cid:foo1">
