@@ -167,10 +167,10 @@ Content-Type: application/argument+xml
 Content-Language: en
 
 <argument>
-  <conclusion><parameter href="cid:item4">The seller</parameter> is a British citizen.</conclusion>
+  <conclusion><parameter href="cid:item4">The person</parameter> is a British citizen.</conclusion>
   <premises>
     <argument>
-      <conclusion><parameter href="cid:item4">The seller</parameter> was born in Bermuda.</conclusion>
+      <conclusion><parameter href="cid:item4">The person</parameter> was born in Bermuda.</conclusion>
       <evidence-parameter href="cid:item5">Attached is a copy of the birth certificate.</evidence-parameter>
     </argument>
     <argument>
