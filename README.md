@@ -139,7 +139,7 @@ Content-Type: multipart/related; boundary="boundary-example-1"
 
 Bob Smith is a British citizen. Bob Smith was born in Bermuda. People born in Bermuda are British citizens. Attached is a copy of the birth certificate.
 
---boundary-example-1--
+--boundary-example-1
 Content-Type: text/argument+xml
 
 <text template="cid:foo1">
@@ -149,7 +149,7 @@ Content-Type: text/argument+xml
   <sentence class="premise"><evidence href="cid:foo3">Attached is a copy of the birth certificate.<evidence></sentence>
 </text>
 
---boundary-example-1--
+--boundary-example-1
 
 Content-ID: <foo1>
 Content-Type: text/argument+xml
@@ -161,7 +161,7 @@ Content-Type: text/argument+xml
   <sentence class="premise"><evidence-parameter>Attached is a copy of the birth certificate.</evidence-parameter></sentence>
 </text>
 
---boundary-example-1--
+--boundary-example-1
 
 Content-ID: <foo2>
 Content-Type: application/octet-stream
@@ -178,11 +178,13 @@ Content-Transfer-Encoding: BASE64
 
 R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhvcml6ZWQgZHVwbGljYXRpb24gcHJvaGliaXRlZC4A...
 
---boundary-example-1--
+--boundary-example-1
 
 Content-ID: <foo4>
 Content-Type: application/octet-stream
 Content-Transfer-Encoding: BASE64
 
 R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhvcml6ZWQgZHVwbGljYXRpb24gcHJvaGliaXRlZC4A...
+
+--boundary-example-1--
 ```
