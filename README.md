@@ -79,7 +79,7 @@ class KernelBasedObject:
 ```
 
 ### Text Content
-`TextContent`, sketched below, makes use of markup-based techniques to deliver abstract templating and other features for natural-language text. This data structure is inspired by [clipboarding](https://www.w3.org/TR/clipboard-apis/) and [data-transfer](https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface) concepts to allow text content to be made available in multiple formats, e.g., `text/plain`, in multiple languages, e.g., `en`, and in multiple styles, e.g., `MLA`.
+`TextContent`, sketched below, is inspired by [clipboarding](https://www.w3.org/TR/clipboard-apis/) and [data-transfer](https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface) concepts to allow text content to be made available in multiple formats, e.g., `text/plain`, in multiple languages, e.g., `en`, and in multiple styles, e.g., `MLA`.
 
 ```python
 class TextContent(KernelBasedObject, Template['TextContent', Parameter, Binding], TemplateGenerated['TextContent', Binding]):
