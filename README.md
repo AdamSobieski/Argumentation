@@ -136,7 +136,7 @@ Content-Type: multipart/related; boundary="boundary-example-1"
 Bob Smith is a British citizen. Bob Smith was born in Bermuda. People born in Bermuda are British citizens. Attached is a copy of the birth certificate.
 
 --boundary-example-1--
-Content-Type: text/argument+xml; charset=UTF-8
+Content-Type: text/argument+xml
 
 <text template-href="cid:foo1">
   <sentence class="conclusion"><object href="cid:foo2">Bob Smith</object> is a British citizen.</sentence>
