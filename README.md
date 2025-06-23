@@ -131,7 +131,7 @@ A new markup language could be of use for expressing and representing both argum
 
 [Multipurpose Internet Mail Extensions (MIME)](https://en.wikipedia.org/wiki/MIME) could be used as a format to serialize arguments to, to deserialize arguments from, to store arguments in filesystems, and to transmit arguments between machines or between artificial-intelligence agents.
 
-In the sketch below, one can observe that argumentation-related markup languages could use the Content-ID (`cid:`) URL scheme [[RDF 2392](https://datatracker.ietf.org/doc/rfc2392/)] to refer to other serialized objects (e.g., JSON, markup, or binary) elsewhere in the multipart data.
+In the sketch below, one can observe that argumentation-related markup languages could use the Content-ID (`cid:`) URL scheme [[RFC 2392](https://datatracker.ietf.org/doc/rfc2392/)] to refer to other serialized objects (e.g., JSON, markup, or binary) elsewhere in the multipart data.
 
 ```
 Mime-Version: 1.0
