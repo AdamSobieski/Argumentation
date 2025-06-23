@@ -223,6 +223,7 @@ author = {Albert Brown},
 title = {An Interesting Article},
 journal = {Journal of Interesting Articles},
 year = {2023},
+pages = "1--2"
 }
 
 --boundary-example-1--
