@@ -218,8 +218,8 @@ R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhv
 Content-ID: <item6>
 Content-Type: text/x-bibtex
 
-@article{Smith2023,
-author = {John Smith},
+@article{Brown2023,
+author = {John Brown},
 title = {An Interesting Article},
 journal = {Journal of Interesting Articles},
 year = {2023},
