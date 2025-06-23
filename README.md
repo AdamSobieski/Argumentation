@@ -123,13 +123,11 @@ class BridgingArgument(Generic[TARGUMENT], Argument, ABC):
         pass
 ```
 
-## Argument Markup Language
-
-A new markup language could be of use for expressing and representing both arguments and argument templates.
-
 ## Multipurpose Internet Mail Extensions (MIME)
 
 [Multipurpose Internet Mail Extensions (MIME)](https://en.wikipedia.org/wiki/MIME) could be used as a format to serialize arguments to, to deserialize arguments from, to store arguments in filesystems, and to transmit arguments between machines or between artificial-intelligence agents.
+
+In addition to the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format), a new markup language could be of use for expressing and representing both arguments and argument templates.
 
 In the sketch below, one can observe that argumentation-related markup languages could use the Content-ID (`cid:`) URL scheme [[RFC 2392](https://datatracker.ietf.org/doc/rfc2392/)] to refer to other serialized objects (e.g., JSON, markup, or binary) elsewhere in the multipart data.
 
