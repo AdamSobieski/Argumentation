@@ -125,7 +125,7 @@ class BridgingArgument(Generic[TARGUMENT], Argument, ABC):
 
 ## Argument Markup Language
 
-A new markup language could be of use for both arguments and argument templates.
+A new markup language could be of use for expressing and representing both arguments and argument templates.
 
 ## Multipurpose Internet Mail Extensions (MIME)
 
