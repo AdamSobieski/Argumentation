@@ -155,7 +155,7 @@ Content-Language: en
       <evidence href="cid:item3">Attached is a copy of the birth certificate.</evidence>
     </argument>
     <argument>
-      <conclusion>People born in Bermuda are British citizens.</conclusion>
+      <conclusion><cite href="cid:item6">People born in Bermuda are British citizens.</cite></conclusion>
     </argument>
   </premises>
 </argument>
@@ -174,7 +174,7 @@ Content-Language: en
       <evidence-parameter href="cid:item5">Attached is a copy of the birth certificate.</evidence-parameter>
     </argument>
     <argument>
-      <conclusion>People born in Bermuda are British citizens.</conclusion>
+      <conclusion><cite href="cid:item6">People born in Bermuda are British citizens.</cite></conclusion>
     </argument>
   </premises>
 </argument>
@@ -212,6 +212,18 @@ Content-Type: application/octet-stream
 Content-Transfer-Encoding: base64
 
 R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhvcml6ZWQgZHVwbGljYXRpb24gcHJvaGliaXRlZC4A...
+
+--boundary-example-1
+
+Content-ID: <item6>
+Content-Type: text/x-bibtex
+
+@article{Smith2023,
+author = {John Smith},
+title = {An Interesting Article},
+journal = {Journal of Interesting Articles},
+year = {2023},
+}
 
 --boundary-example-1--
 ```
