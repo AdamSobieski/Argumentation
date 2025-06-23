@@ -165,7 +165,7 @@ Content-Type: text/argument+xml
 
 Content-ID: <foo2>
 Content-Type: application/octet-stream
-Content-Transfer-Encoding: BASE64
+Content-Transfer-Encoding: base64
 
 R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhvcml6ZWQgZHVwbGljYXRpb24gcHJvaGliaXRlZC4A...
 
@@ -174,7 +174,7 @@ R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhv
 Content-ID: <foo3>
 Content-Type: application/pdf
 Content-Disposition: attachment; filename="birth_certificate.pdf"
-Content-Transfer-Encoding: BASE64
+Content-Transfer-Encoding: base64
 
 R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhvcml6ZWQgZHVwbGljYXRpb24gcHJvaGliaXRlZC4A...
 
@@ -182,7 +182,7 @@ R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhv
 
 Content-ID: <foo4>
 Content-Type: application/octet-stream
-Content-Transfer-Encoding: BASE64
+Content-Transfer-Encoding: base64
 
 R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhvcml6ZWQgZHVwbGljYXRpb24gcHJvaGliaXRlZC4A...
 
