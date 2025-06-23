@@ -4,7 +4,7 @@ This project is an argumentation framework designed for interoperability with a 
 
 This project utilizes [Semantic Kernel](https://github.com/microsoft/semantic-kernel) to enable developers to more readily explore argumentation-related scenarios using their choice of models and services, e.g.: [OpenAI](https://platform.openai.com/docs/introduction), [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service), [HuggingFace](https://huggingface.co/), [NVidia](https://www.nvidia.com/en-us/ai-data-science/products/nim-microservices/), or [Ollama](https://ollama.com/).
 
-## Discussion
+## Models and Data Structures
 
 ### Abstract Templates
 
@@ -121,4 +121,64 @@ class BridgingArgument(Generic[TARGUMENT], Argument, ABC):
     @abstractmethod
     def conclusion(self) -> TARGUMENT:
         pass
+```
+
+## Using Multipurpose Internet Mail Extensions (MIME)
+
+[Multipurpose Internet Mail Extensions (MIME)](https://en.wikipedia.org/wiki/MIME) could be used as a format to serialize arguments to, to deserialize arguments from, to store arguments in filesystems, and to transmit arguments between machines.
+
+In the sketch below, one can observe that argumentation-related markup languages could use the Content-ID (`cid:`) URL scheme [[RDF 2392](https://datatracker.ietf.org/doc/rfc2392/)] to refer to other serialized objects (e.g., JSON, markup, or binary) elsewhere in the multipart data.
+
+```
+Mime-Version: 1.0
+Content-Type: multipart/related; boundary="boundary-example-1"
+
+Bob Smith is a British citizen. Bob Smith was born in Bermuda. People born in Bermuda are British citizens. Attached is a copy of the birth certificate.
+
+--boundary-example-1--
+Content-Type: text/argument+xml; charset=UTF-8
+
+<text template-href="cid:foo1">
+  <sentence class="conclusion"><object href="cid:foo2">Bob Smith</object> is a British citizen.</sentence>
+  <sentence class="premise"><object href="cid:foo2">Bob Smith</object> was born in Bermuda.</sentence>
+  <sentence class="premise">People born in Bermuda are British citizens.</sentence>
+  <sentence class="premise"><evidence href="cid:foo3">Attached is a copy of the birth certificate.<evidence></sentence>
+</text>
+
+--boundary-example-1--
+
+Content-ID: <foo1>
+Content-Type: text/argument+xml
+
+<text>
+  <sentence class="conclusion"><parameter href="cid:foo4">The seller</parameter> is a British citizen.</sentence>
+  <sentence class="premise"><parameter" href="cid:foo4">The seller</parameter> was born in Bermuda.</sentence>
+  <sentence class="premise">People born in Bermuda are British citizens.</sentence>
+  <sentence class="premise"><evidence-parameter>Attached is a copy of the birth certificate.</evidence-parameter></sentence>
+</text>
+
+--boundary-example-1--
+
+Content-ID: <foo2>
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: BASE64
+
+R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhvcml6ZWQgZHVwbGljYXRpb24gcHJvaGliaXRlZC4A...
+
+--boundary-example-1--
+
+Content-ID: <foo3>
+Content-Type: application/pdf
+Content-Disposition: attachment; filename="birth_certificate.pdf"
+Content-Transfer-Encoding: BASE64
+
+R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhvcml6ZWQgZHVwbGljYXRpb24gcHJvaGliaXRlZC4A...
+
+--boundary-example-1--
+
+Content-ID: <foo4>
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: BASE64
+
+R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhvcml6ZWQgZHVwbGljYXRpb24gcHJvaGliaXRlZC4A...
 ```
