@@ -148,11 +148,7 @@ Content-Type: application/argument+xml
 Content-Language: en
 
 <argument template="cid:foo1">
-  <conclusion>
-    <argument>
-      <conclusion><object href="cid:foo2">Bob Smith</object> is a British citizen.</conclusion>
-    </argument>
-  </conclusion>
+  <conclusion><object href="cid:foo2">Bob Smith</object> is a British citizen.</conclusion>
   <premises>
     <argument>
       <conclusion><object href="cid:foo2">Bob Smith</object> was born in Bermuda.</conclusion>
@@ -173,11 +169,7 @@ Content-Type: application/argument+xml
 Content-Language: en
 
 <argument>
-  <conclusion>
-    <argument>
-      <conclusion><parameter href="cid:foo4">The seller</parameter> is a British citizen.</conclusion>
-    </argument>
-  </conclusion>
+  <conclusion><parameter href="cid:foo4">The seller</parameter> is a British citizen.</conclusion>
   <premises>
     <argument>
       <conclusion><parameter href="cid:foo4">The seller</parameter> was born in Bermuda.</conclusion>
