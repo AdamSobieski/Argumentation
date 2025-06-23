@@ -125,7 +125,7 @@ class BridgingArgument(Generic[TARGUMENT], Argument, ABC):
 
 ## Multipurpose Internet Mail Extensions (MIME)
 
-[Multipurpose Internet Mail Extensions (MIME)](https://en.wikipedia.org/wiki/MIME) could be used as a format to serialize arguments to, to deserialize arguments from, to store arguments in filesystems, and to transmit arguments between machines or between artificial-intelligence agents.
+[Multipurpose Internet Mail Extensions (MIME)](https://en.wikipedia.org/wiki/MIME) could be used as a format to serialize arguments to, to deserialize arguments from, to store arguments in filesystems, and to transmit arguments between machines or between artificial-intelligence agents. In Python, working with MIME messages can be done using the [`email.mime`](https://docs.python.org/3/library/email.mime.html) standard library.
 
 In addition to the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format), a new markup language could be of use for expressing and representing both arguments and argument templates.
 
@@ -215,3 +215,5 @@ R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhv
 
 --boundary-example-1--
 ```
+
+Interesting possiblities also include exploring support for Handlebars templates ([JS](https://handlebarsjs.com/), [Python](https://github.com/wbond/pybars3)) which have a content type of `text/x-handlebars-template`. Handlebars templates could, similarly, be of use for generating [AIF](https://en.wikipedia.org/wiki/Argument_Interchange_Format) and/or a new markup format for arguments. These templates could, similarly, be stored and transmitted in MIME messages.
