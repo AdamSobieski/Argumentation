@@ -135,6 +135,10 @@ In the sketch below, one can observe that argument representation formats can us
 Mime-Version: 1.0
 Content-Type: multipart/related; boundary="boundary-example-1"
 
+--boundary-example-1
+
+Content-Type: text/plain
+
 Bob Smith is a British citizen. Bob Smith was born in Bermuda. People born in Bermuda are British citizens. Attached is a copy of the birth certificate.
 
 --boundary-example-1
