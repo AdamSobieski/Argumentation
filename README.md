@@ -175,12 +175,12 @@ Content-Language: en
 <argument>
   <conclusion>
     <argument>
-      <conclusion><parameter href="cid:foo4">The seller</object> is a British citizen.</conclusion>
+      <conclusion><parameter href="cid:foo4">The seller</parameter> is a British citizen.</conclusion>
     </argument>
   </conclusion>
   <premises>
     <argument>
-      <conclusion><parameter href="cid:foo4">The seller</object> was born in Bermuda.</conclusion>
+      <conclusion><parameter href="cid:foo4">The seller</parameter> was born in Bermuda.</conclusion>
     </argument>
     <argument>
       <conclusion>People born in Bermuda are British citizens.</conclusion>
