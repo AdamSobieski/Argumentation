@@ -145,24 +145,24 @@ Bob Smith is a British citizen. Bob Smith was born in Bermuda. People born in Be
 
 Content-Type: application/argument+xml
 
-<text template="cid:foo1">
+<argument template="cid:foo1">
   <sentence class="conclusion"><object href="cid:foo2">Bob Smith</object> is a British citizen.</sentence>
   <sentence class="premise"><object href="cid:foo2">Bob Smith</object> was born in Bermuda.</sentence>
   <sentence class="premise">People born in Bermuda are British citizens.</sentence>
   <sentence class="premise"><evidence href="cid:foo3">Attached is a copy of the birth certificate.<evidence></sentence>
-</text>
+</argument>
 
 --boundary-example-1
 
 Content-ID: <foo1>
 Content-Type: application/argument+xml
 
-<text>
+<argument>
   <sentence class="conclusion"><parameter href="cid:foo4">The seller</parameter> is a British citizen.</sentence>
   <sentence class="premise"><parameter" href="cid:foo4">The seller</parameter> was born in Bermuda.</sentence>
   <sentence class="premise">People born in Bermuda are British citizens.</sentence>
   <sentence class="premise"><evidence-parameter>Attached is a copy of the birth certificate.</evidence-parameter></sentence>
-</text>
+</argument>
 
 --boundary-example-1
 
