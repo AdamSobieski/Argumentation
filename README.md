@@ -152,13 +152,11 @@ Content-Language: en
   <premises>
     <argument>
       <conclusion><object href="cid:item2">Bob Smith</object> was born in Bermuda.</conclusion>
+      <evidence href="cid:item3">Attached is a copy of the birth certificate.</evidence>
     </argument>
     <argument>
       <conclusion>People born in Bermuda are British citizens.</conclusion>
     </argument>
-    <argument>
-      <conclusion><evidence href="cid:item3">Attached is a copy of the birth certificate.<evidence></conclusion>
-    </argument>        
   </premises>
 </argument>
 
@@ -173,13 +171,11 @@ Content-Language: en
   <premises>
     <argument>
       <conclusion><parameter href="cid:item4">The seller</parameter> was born in Bermuda.</conclusion>
+      <evidence-parameter href="cid:item5">Attached is a copy of the birth certificate.</evidence-parameter>
     </argument>
     <argument>
       <conclusion>People born in Bermuda are British citizens.</conclusion>
     </argument>
-    <argument>
-      <conclusion><evidence-parameter href="cid:item5">Attached is a copy of the birth certificate.</evidence-parameter></conclusion>
-    </argument>        
   </premises>
 </argument>
 
