@@ -138,12 +138,14 @@ Content-Type: multipart/related; boundary="boundary-example-1"
 --boundary-example-1
 
 Content-Type: text/plain
+Content-Language: en
 
 Bob Smith is a British citizen. Bob Smith was born in Bermuda. People born in Bermuda are British citizens. Attached is a copy of the birth certificate.
 
 --boundary-example-1
 
 Content-Type: application/argument+xml
+Content-Language: en
 
 <argument template="cid:foo1">
   <sentence class="conclusion"><object href="cid:foo2">Bob Smith</object> is a British citizen.</sentence>
@@ -156,6 +158,7 @@ Content-Type: application/argument+xml
 
 Content-ID: <foo1>
 Content-Type: application/argument+xml
+Content-Language: en
 
 <argument>
   <sentence class="conclusion"><parameter href="cid:foo4">The seller</parameter> is a British citizen.</sentence>
@@ -176,6 +179,7 @@ R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhv
 
 Content-ID: <foo3>
 Content-Type: application/pdf
+Content-Language: en
 Content-Disposition: attachment; filename="birth_certificate.pdf"
 Content-Transfer-Encoding: base64
 
