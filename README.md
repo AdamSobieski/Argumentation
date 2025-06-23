@@ -90,11 +90,11 @@ class TextContent(KernelBasedObject, Template['TextContent', Parameter, Binding]
 `Argument` is a base class for a number of other argumentation-related classes in this framework. This type is closed under its abstract templating operation and presents a `TextContent` claim (where the `TextContent` type similarly closed under its abstract templating operation).
 
 ```python
-class Argument(Template['Argument', Parameter, Binding], TemplateGenerated['Argument', Binding], Categorized['Argument'], ABC):
-    def __init__(self, claim: TextContent, template: 'Argument' = None, bindings: Sequence[Binding] = None, categories: Iterable['Category'['Argument']] = None):
+class Argument(Template['Argument', Parameter, Binding], TemplateGenerated['Argument', Binding], Categorized, ABC):
+    def __init__(self, claim: TextContent, template: 'Argument' = None, bindings: Sequence[Binding] = None, categories: Iterable[Category] = None):
         Template['Argument', Parameter, Binding].__init__(self)
         TemplateGenerated['Argument', Binding].__init__(self, template, bindings)
-        Categorized['Argument'].__init__(self, categories)
+        Categorized.__init__(self, categories)
         self._claim = claim
 
     _claim: TextContent
@@ -109,7 +109,7 @@ A `BridgingArgument` is a type of argument which represents and argues a relatio
 ```python
 TARGUMENT = TypeVar("TARGUMENT", bound=Argument, default=Argument)
 class BridgingArgument(Generic[TARGUMENT], Argument, ABC):
-    def __init__(self, claim: TextContent, template: Argument = None, bindings: Sequence[Binding] = None, categories: Iterable['Category'[Argument]] = None):
+    def __init__(self, claim: TextContent, template: Argument = None, bindings: Sequence[Binding] = None, categories: Iterable[Category] = None):
         Argument.__init__(self, claim, template, bindings, categories)
 
     @property
