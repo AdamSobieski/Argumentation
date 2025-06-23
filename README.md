@@ -148,10 +148,22 @@ Content-Type: application/argument+xml
 Content-Language: en
 
 <argument template="cid:foo1">
-  <sentence class="conclusion"><object href="cid:foo2">Bob Smith</object> is a British citizen.</sentence>
-  <sentence class="premise"><object href="cid:foo2">Bob Smith</object> was born in Bermuda.</sentence>
-  <sentence class="premise">People born in Bermuda are British citizens.</sentence>
-  <sentence class="premise"><evidence href="cid:foo3">Attached is a copy of the birth certificate.<evidence></sentence>
+  <conclusion>
+    <argument>
+      <conclusion><object href="cid:foo2">Bob Smith</object> is a British citizen.</conclusion>
+    </argument>
+  </conclusion>
+  <premises>
+    <argument>
+      <conclusion><object href="cid:foo2">Bob Smith</object> was born in Bermuda.</conclusion>
+    </argument>
+    <argument>
+      <conclusion>People born in Bermuda are British citizens.</conclusion>
+    </argument>
+    <argument>
+      <conclusion><evidence href="cid:foo3">Attached is a copy of the birth certificate.<evidence></conclusion>
+    </argument>        
+  </premises>
 </argument>
 
 --boundary-example-1
@@ -161,10 +173,22 @@ Content-Type: application/argument+xml
 Content-Language: en
 
 <argument>
-  <sentence class="conclusion"><parameter href="cid:foo4">The seller</parameter> is a British citizen.</sentence>
-  <sentence class="premise"><parameter" href="cid:foo4">The seller</parameter> was born in Bermuda.</sentence>
-  <sentence class="premise">People born in Bermuda are British citizens.</sentence>
-  <sentence class="premise"><evidence-parameter>Attached is a copy of the birth certificate.</evidence-parameter></sentence>
+  <conclusion>
+    <argument>
+      <conclusion><parameter href="cid:foo4">The seller</object> is a British citizen.</conclusion>
+    </argument>
+  </conclusion>
+  <premises>
+    <argument>
+      <conclusion><parameter href="cid:foo4">The seller</object> was born in Bermuda.</conclusion>
+    </argument>
+    <argument>
+      <conclusion>People born in Bermuda are British citizens.</conclusion>
+    </argument>
+    <argument>
+      <conclusion><evidence-parameter>Attached is a copy of the birth certificate.</evidence-parameter></conclusion>
+    </argument>        
+  </premises>
 </argument>
 
 --boundary-example-1
