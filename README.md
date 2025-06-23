@@ -123,7 +123,11 @@ class BridgingArgument(Generic[TARGUMENT], Argument, ABC):
         pass
 ```
 
-## Using Multipurpose Internet Mail Extensions (MIME)
+## Argument Markup Language
+
+A new markup language could be of use for both arguments and argument templates.
+
+## Multipurpose Internet Mail Extensions (MIME)
 
 [Multipurpose Internet Mail Extensions (MIME)](https://en.wikipedia.org/wiki/MIME) could be used as a format to serialize arguments to, to deserialize arguments from, to store arguments in filesystems, and to transmit arguments between machines.
 
