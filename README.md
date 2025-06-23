@@ -142,7 +142,7 @@ Bob Smith is a British citizen. Bob Smith was born in Bermuda. People born in Be
 --boundary-example-1--
 Content-Type: text/argument+xml
 
-<text template-href="cid:foo1">
+<text template="cid:foo1">
   <sentence class="conclusion"><object href="cid:foo2">Bob Smith</object> is a British citizen.</sentence>
   <sentence class="premise"><object href="cid:foo2">Bob Smith</object> was born in Bermuda.</sentence>
   <sentence class="premise">People born in Bermuda are British citizens.</sentence>
