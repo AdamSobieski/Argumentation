@@ -216,4 +216,6 @@ R0lGODlhGAGgAPEAAP/////ZRaCgoAAAACH+PUNvcHlyaWdodCAoQykgMTk5NSBJRVRGLiBVbmF1dGhv
 --boundary-example-1--
 ```
 
-Interesting possiblities also include exploring support for Handlebars templates ([JS](https://handlebarsjs.com/), [Python](https://github.com/wbond/pybars3)) which have a content type of `text/x-handlebars-template`. Handlebars templates could, similarly, be of use for generating [AIF](https://en.wikipedia.org/wiki/Argument_Interchange_Format) and/or a new markup format for arguments. These templates could, similarly, be stored and transmitted in MIME messages.
+## Handlebars Templates
+
+Interesting possiblities include exploring support for Handlebars templates ([JS](https://handlebarsjs.com/), [Python](https://github.com/wbond/pybars3)) which have a content type of `text/x-handlebars-template`. Handlebars templates could also be of use for generating [AIF](https://en.wikipedia.org/wiki/Argument_Interchange_Format) and/or a new markup format for arguments. These templates could also be stored and transmitted in MIME messages.
