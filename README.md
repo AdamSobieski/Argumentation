@@ -232,7 +232,6 @@ Content-Type: application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"
 
 {
   "@context": "http://www.w3.org/ns/anno.jsonld",
-  "id": "http://example.org/anno20",
   "type": "Annotation",
   "target": {
     "source": "cid:item6",
