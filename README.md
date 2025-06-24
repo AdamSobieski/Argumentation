@@ -8,7 +8,7 @@ This project will utilize [Semantic Kernel](https://github.com/microsoft/semanti
 
 ### Abstract Templates
 
-This framework makes use of abstract templates. In abstract templating, a `Template` provides a sequence of parameters, each of which can be bound to a value, and these bound parameters altogether can be utilized to produce a `TemplateGenerated`.
+This framework will make use of abstract templates. In abstract templating, a `Template` provides a sequence of parameters, each of which can be bound to a value, and these bound parameters altogether are utilized to produce a `TemplateGenerated`.
 
 ```python
 TPARAMETER = TypeVar("TPARAMETER", bound=Parameter, default=Parameter)
