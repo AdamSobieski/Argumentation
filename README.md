@@ -135,4 +135,4 @@ Handlebars templates have a content type of `text/x-handlebars-template` and Jin
 
 ## Knowledge Graphs
 
-In addition to the markup-based solution for representing arguments and their templates, [knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) could be of use. Knowledge graphs could utilize [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to reference other parts of those MIME messages containing them.
+In addition to the markup-based solution for representing arguments and argument templates, [knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) could be of use. Knowledge graphs could utilize [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to reference other parts of those MIME messages containing them.
