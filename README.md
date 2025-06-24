@@ -228,7 +228,7 @@ year = {2023}
 --boundary-example-1
 
 Content-ID: <item7>
-Content-Type: application/ld+json
+Content-Type: application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"
 
 {
   "@context": "http://www.w3.org/ns/anno.jsonld",
