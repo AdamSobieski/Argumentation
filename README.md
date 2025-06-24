@@ -231,18 +231,14 @@ Content-ID: <item7>
 Content-Type: application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"
 
 {
-  "@context": "http://www.w3.org/ns/anno.jsonld",
-  "type": "Annotation",
-  "target": {
-    "source": "cid:item6",
-    "selector": {
-      "type": "FragmentSelector",
-      "value": "page=10",
-      "refinedBy": {
-        "type": "TextQuoteSelector",
-        "prefix": "preceding text",
-        "suffix": "subsequent text"
-      }
+  "source": "cid:item6",
+  "selector": {
+    "type": "FragmentSelector",
+    "value": "page=10",
+    "refinedBy": {
+      "type": "TextQuoteSelector",
+      "prefix": "preceding text",
+      "suffix": "subsequent text"
     }
   }
 }
