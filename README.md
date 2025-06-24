@@ -4,7 +4,7 @@ This project is an argumentation framework designed for interoperability with a 
 
 This project utilizes [Semantic Kernel](https://github.com/microsoft/semantic-kernel) to enable developers to more readily explore argumentation-related scenarios using their choice of models and services, e.g.: [OpenAI](https://platform.openai.com/docs/introduction), [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service), [HuggingFace](https://huggingface.co/), [NVidia](https://www.nvidia.com/en-us/ai-data-science/products/nim-microservices/), or [Ollama](https://ollama.com/).
 
-## Models and Data Structures
+## Argument Models and Data Structures
 
 ### Abstract Templates
 
