@@ -238,7 +238,7 @@ Content-Type: application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"
     "source": "cid:item6",
     "selector": {
       "type": "FragmentSelector",
-      "value": "page=10"
+      "value": "page=10",
       "refinedBy": {
         "type": "TextQuoteSelector",
         "prefix": "text before it ",
