@@ -133,6 +133,6 @@ Content-Type: application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"
 
 Handlebars templates have a content type of `text/x-handlebars-template` and Jinja templates `text/jinja`.
 
-## Semantic Web
+## Knowledge Graphs
 
-In addition to the markup-based solution shown above for representing arguments and their templates, knowledge graphs could be of use. Knowledge graphs could utilize [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to reference contents in other parts of those MIME messages containing the knowledge graphs.
+In addition to the markup-based solution for representing arguments and their templates, [knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) could be of use. Knowledge graphs could utilize [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to reference other parts of those MIME messages containing them.
