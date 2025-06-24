@@ -127,12 +127,12 @@ Content-Type: application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"
 --boundary-example-1--
 ```
 
-## Templating Systems
+## Templating
 
 [Semantic Kernel](https://github.com/microsoft/semantic-kernel) is interoperable with a number of templating systems and interesting possiblities include exploring these systems, e.g., [Handlebars](https://handlebarsjs.com/) or [Jinja2](https://jinja.palletsprojects.com/en/stable/), instead of, in addition to, or in combination with the templating approaches indicated above. Such templates could also be referenced by URL in, stored in, and transmitted in MIME messages.
 
 Handlebars templates have a content type of `text/x-handlebars-template` and Jinja templates `text/jinja`.
 
-## Semantic Web Technologies
+## Semantic Web
 
 In addition to the markup-based solution shown above for representing arguments and their templates, knowledge graphs could be of use. Knowledge graphs could utilize [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to reference contents in other parts of those MIME messages containing the knowledge graphs.
