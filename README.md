@@ -240,8 +240,8 @@ Content-Type: application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"
       "value": "page=10",
       "refinedBy": {
         "type": "TextQuoteSelector",
-        "prefix": "text before it ",
-        "suffix": " and after it"
+        "prefix": "preceding text",
+        "suffix": "subsequent text"
       }
     }
   }
