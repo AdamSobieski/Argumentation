@@ -236,7 +236,6 @@ Content-Type: application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"
   "type": "Annotation",
   "target": {
     "source": "cid:item6",
-    "purpose": "selecting",
     "selector": {
       "type": "FragmentSelector",
       "value": "page=10"
