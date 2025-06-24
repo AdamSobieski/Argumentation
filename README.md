@@ -129,6 +129,6 @@ Content-Type: application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"
 
 ## Other Templating Systems
 
-[Semantic Kernel](https://github.com/microsoft/semantic-kernel) is interoperable with a number of templating systems and interesting possiblities include exploring these, e.g., [Handlebars](https://handlebarsjs.com/) or [Jinja2](https://jinja.palletsprojects.com/en/stable/), instead of, in addition to, or in combination with the above templating approaches. Such templates could also be referenced by URL in, stored in, and transmitted in MIME messages.
+[Semantic Kernel](https://github.com/microsoft/semantic-kernel) is interoperable with a number of templating systems and interesting possiblities include exploring these systems, e.g., [Handlebars](https://handlebarsjs.com/) or [Jinja2](https://jinja.palletsprojects.com/en/stable/), instead of, in addition to, or in combination with the templating approaches indicated above. Such templates could also be referenced by URL in, stored in, and transmitted in MIME messages.
 
 Handlebars templates have a content type of `text/x-handlebars-template` and Jinja templates `text/jinja`.
