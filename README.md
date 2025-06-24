@@ -8,8 +8,6 @@ This project will utilize [Semantic Kernel](https://github.com/microsoft/semanti
 
 [Multipurpose Internet Mail Extensions (MIME)](https://en.wikipedia.org/wiki/MIME) could be used as a format to serialize arguments to, to deserialize arguments from, to store arguments in filesystems, and to transmit arguments between machines or between artificial-intelligence agents.
 
-In Python, working with MIME messages can be done using the [`Message`](https://docs.python.org/3/library/email.compat32-message.html#email.message.Message) class from the `email.message` namespace.
-
 In addition to the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format), a new markup language could be of use for expressing and representing both arguments and argument templates.
 
 In the example below, one can observe that argument representation formats can use the Content-ID (`cid:`) URL scheme [[RFC 2392](https://datatracker.ietf.org/doc/rfc2392/)] to refer to other serialized objects (e.g., text, JSON, markup, or binary) elsewhere in the multipart message.
