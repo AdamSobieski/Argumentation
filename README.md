@@ -155,7 +155,7 @@ Content-Language: en
       <evidence href="cid:item3">Attached is a copy of the birth certificate.</evidence>
     </argument>
     <argument>
-      <conclusion><cite href="cid:item6">People born in Bermuda are British citizens.</cite></conclusion>
+      <conclusion><cite href="cid:item6" selection="cid:item7">People born in Bermuda are British citizens.</cite></conclusion>
     </argument>
   </premises>
 </argument>
@@ -174,7 +174,7 @@ Content-Language: en
       <evidence-parameter href="cid:item5">Attached is a copy of the birth certificate.</evidence-parameter>
     </argument>
     <argument>
-      <conclusion><cite href="cid:item6">People born in Bermuda are British citizens.</cite></conclusion>
+      <conclusion><cite href="cid:item6" selection="cid:item7">People born in Bermuda are British citizens.</cite></conclusion>
     </argument>
   </premises>
 </argument>
@@ -222,8 +222,31 @@ Content-Type: text/x-bibtex
 author = {Albert Brown},
 title = {An Interesting Article},
 journal = {Journal of Interesting Articles},
-year = {2023},
-pages = "1--2"
+year = {2023}
+}
+
+--boundary-example-1
+
+Content-ID: <item7>
+Content-Type: application/ld+json
+
+{
+  "@context": "http://www.w3.org/ns/anno.jsonld",
+  "id": "http://example.org/anno20",
+  "type": "Annotation",
+  "target": {
+    "source": "cid:item6",
+    "purpose": "selecting",
+    "selector": {
+      "type": "FragmentSelector",
+      "value": "page=10"
+      "refinedBy": {
+        "type": "TextQuoteSelector",
+        "prefix": "text before it ",
+        "suffix": " and after it"
+      }
+    }
+  }
 }
 
 --boundary-example-1--
