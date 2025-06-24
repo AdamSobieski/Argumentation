@@ -219,10 +219,10 @@ Content-ID: <item6>
 Content-Type: text/x-bibtex
 
 @article{Brown2023,
-author = {Albert Brown},
-title = {An Interesting Article},
-journal = {Journal of Interesting Articles},
-year = {2023}
+  author = {Albert Brown},
+  title = {An Interesting Article},
+  journal = {Journal of Interesting Articles},
+  year = {2023}
 }
 
 --boundary-example-1
