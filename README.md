@@ -133,7 +133,7 @@ Traditional approaches to [serialization](https://en.wikipedia.org/wiki/Serializ
 
 Objects could, additionally, serialize to and be deserialized from MIME messages. During serialization, objects could add parts to MIME messages, each part having its own format, and, during deserialization, these message parts could be processed back into objects.
 
-Additional intricacy would arise from supporting `multipart/alternative` within MIME messages. With `multipart/alternative` support, deserialization algorithms would be able to choose from or to select from multiple available alternative parts. Use cases for this would include [internationalization and localization](https://en.wikipedia.org/wiki/Internationalization_and_localization).
+Additional intricacy would arise from supporting `multipart/alternative` within MIME messages. With support for `multipart/alternative` parts, deserialization algorithms would be able to choose from or to select from multiple available alternative parts. Use cases for this would include [internationalization and localization](https://en.wikipedia.org/wiki/Internationalization_and_localization).
 
 ## Templating
 
