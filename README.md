@@ -131,7 +131,7 @@ Content-Type: application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"
 
 Traditional approaches to [serialization](https://en.wikipedia.org/wiki/Serialization) have typically involved transforming object graphs into or from single formats, e.g., binary data, JSON, YAML, XML, or RDF.
 
-Instead, during serialization, objects could add parts to MIME messages, these parts containing object- or class-specific formats, and, during deserialization, message parts could be processed back into object graphs.
+Objects could, additionally, serialize to and be deserialized from MIME messages. During serialization, objects could add parts to MIME messages, each part having a format, and, during deserialization, these message parts could be processed back into objects.
 
 ## Templating
 
