@@ -12,6 +12,8 @@ In addition to existing formats such as the [Argument Interchange Format (AIF)](
 
 In the example below, one can observe that argument representation formats can use the Content-ID (`cid:`) URL scheme [[RFC 2392](https://datatracker.ietf.org/doc/rfc2392/)] to refer to other objects (e.g., text, JSON, markup, or binary) elsewhere in the multipart message.
 
+### Example 1
+
 ```email
 Mime-Version: 1.0
 Content-Type: multipart/related; boundary="boundary-example-1"
