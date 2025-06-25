@@ -143,7 +143,7 @@ Climate change is caused by human activities. Therefore, we should reduce carbon
 
 --boundary-example-2
 
-Content-Type: application/argument+aif+n3
+Content-Type: application/argument+n3
 Content-Language: en
 
 @prefix aif: <http://www.arg.dundee.ac.uk/aif#> .
