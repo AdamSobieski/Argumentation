@@ -133,6 +133,8 @@ Traditional approaches to [serialization](https://en.wikipedia.org/wiki/Serializ
 
 Objects could, additionally, serialize to and be deserialized from MIME messages. During serialization, objects could add parts to MIME messages, each part having its own format, and, during deserialization, these message parts could be processed back into objects.
 
+Additional intricacy might arise from supporting `multipart/alternative` within MIME messages. With `multipart/alternative` support, deserialization algorithms would be able to choose from or to select from multiple available alternative parts. Use cases for this include [internationalization and localization](https://en.wikipedia.org/wiki/Internationalization_and_localization).
+
 ## Templating
 
 [Semantic Kernel](https://github.com/microsoft/semantic-kernel) is interoperable with a number of templating systems and interesting possiblities include exploring these systems, e.g., [Handlebars](https://handlebarsjs.com/) or [Jinja](https://jinja.palletsprojects.com/en/stable/), instead of, in addition to, or in combination with those markup-based templating approaches indicated above. Handlebars templates have a content type of `text/x-handlebars-template` and Jinja templates `text/jinja`.
