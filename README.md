@@ -141,7 +141,7 @@ With support for `multipart/alternative` parts and subparts, serialization algor
 
 ## Markup Components and Extensibility
 
-Inspired by [Web Components](https://en.wikipedia.org/wiki/Web_Components), where new markup elements can be defined and subsequently reused, new argument markup languages could be extensible with respect to higher-level components which would, as envisioned, be defined not in terms of presentation and interactivity, but in terms of semantics. That is, in theory, one could define extensible markup-based components in terms of their serialization to and deserialization from knowledge graphs.
+Inspired by [Web Components](https://en.wikipedia.org/wiki/Web_Components), where new markup elements can be defined and subsequently reused, new argument markup languages could be extensible with respect to higher-level components. These components would, as envisioned, be defined not in terms of presentation and interactivity, but in terms of semantics. That is, in theory, one could define extensible markup-based components in terms of their serialization to and deserialization from knowledge graphs.
 
 ## Knowledge Graphs
 
