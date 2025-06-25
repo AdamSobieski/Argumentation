@@ -129,6 +129,39 @@ Content-Type: application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"
 --boundary-example-1--
 ```
 
+### Example 2
+```email
+Mime-Version: 1.0
+Content-Type: multipart/related; boundary="boundary-example-2"
+
+--boundary-example-2
+
+Content-Type: text/plain
+Content-Language: en
+
+Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
+
+--boundary-example-2
+
+Content-Type: application/argument+n3
+Content-Language: en
+
+@prefix aif: <http://www.arg.dundee.ac.uk/aif#> .
+@prefix ex: <http://example.org/> .
+
+ex:Node1 a aif:I-node ;
+    aif:claimText "Climate change is caused by human activities." .
+
+ex:Node2 a aif:RA-node ;
+    aif:hasPremise ex:Node1 ;
+    aif:hasConclusion ex:Node3 .
+
+ex:Node3 a aif:I-node ;
+    aif:claimText "We should reduce carbon emissions." .
+
+--boundary-example-2--
+```
+
 ## Serialization and Deserialization
 
 Traditional approaches to [serialization](https://en.wikipedia.org/wiki/Serialization) have typically involved transforming object graphs to or from single formats, e.g., binary data, JSON, YAML, XML, or RDF.
