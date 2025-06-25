@@ -137,7 +137,7 @@ With support for `multipart/alternative` parts and subparts, serialization algor
 
 ## Templating
 
-[Semantic Kernel](https://github.com/microsoft/semantic-kernel) is interoperable with a number of templating systems and interesting possiblities include exploring these systems, e.g., [Handlebars](https://handlebarsjs.com/) or [Jinja](https://jinja.palletsprojects.com/en/stable/), instead of, in addition to, or in combination with those markup-based templating approaches indicated above. Handlebars templates have a content type of `text/x-handlebars-template` and Jinja templates `text/jinja`.
+[Semantic Kernel](https://github.com/microsoft/semantic-kernel) is interoperable with a number of templating systems, e.g., [Handlebars](https://handlebarsjs.com/) or [Jinja](https://jinja.palletsprojects.com/en/stable/). These systems could be explored instead of, in addition to, or in combination with those markup-based templating approaches indicated above. Handlebars templates have a content type of `text/x-handlebars-template` and Jinja templates `text/jinja`.
 
 ## Knowledge Graphs
 
