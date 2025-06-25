@@ -127,11 +127,13 @@ Content-Type: application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"
 --boundary-example-1--
 ```
 
+## Serialization and Deserialization
+
+Traditional approaches to [serialization](https://en.wikipedia.org/wiki/Serialization) have typically involved transforming object graphs into or from single formats, e.g., binary data, JSON, YAML, XML, or RDF. Instead, during serialization, objects could add parts to MIME messages, these parts containing object- or class-specific formats, and, during deserialization, message parts could be processed back into object graphs.
+
 ## Templating
 
-[Semantic Kernel](https://github.com/microsoft/semantic-kernel) is interoperable with a number of templating systems and interesting possiblities include exploring these systems, e.g., [Handlebars](https://handlebarsjs.com/) or [Jinja2](https://jinja.palletsprojects.com/en/stable/), instead of, in addition to, or in combination with the templating approaches indicated above. Such templates could also be referenced by URL in, stored in, and transmitted in MIME messages.
-
-Handlebars templates have a content type of `text/x-handlebars-template` and Jinja templates `text/jinja`.
+[Semantic Kernel](https://github.com/microsoft/semantic-kernel) is interoperable with a number of templating systems and interesting possiblities include exploring these systems, e.g., [Handlebars](https://handlebarsjs.com/) or [Jinja2](https://jinja.palletsprojects.com/en/stable/), instead of, in addition to, or in combination with those markup-based templating approaches indicated above. Handlebars templates have a content type of `text/x-handlebars-template` and Jinja templates `text/jinja`.
 
 ## Knowledge Graphs
 
