@@ -180,4 +180,4 @@ Inspired by [Web Components](https://en.wikipedia.org/wiki/Web_Components), wher
 
 ## Knowledge Graphs
 
-[Knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) are also of use for representing argument templates, arguments, and networks of interrelated arguments. Knowledge graphs could similarly utilize [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to reference other parts of those MIME messages containing them.
+[Knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) are also of use for representing argument templates, arguments, and networks of interrelated arguments. Knowledge graphs could similarly be parts of MIME messages and utilize [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to refer to other parts of those MIME messages containing them.
