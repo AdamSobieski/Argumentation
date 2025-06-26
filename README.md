@@ -4,7 +4,9 @@ This project is an argumentation framework designed for interoperability with a 
 
 This project will utilize [Semantic Kernel](https://github.com/microsoft/semantic-kernel) to enable developers to more readily explore argumentation-related scenarios using their choice of models and services, e.g.: [OpenAI](https://platform.openai.com/docs/introduction), [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service), [HuggingFace](https://huggingface.co/), [NVidia](https://www.nvidia.com/en-us/ai-data-science/products/nim-microservices/), or [Ollama](https://ollama.com/).
 
-## Multipurpose Internet Mail Extensions (MIME)
+## The Computational Representation of Argument
+
+### Multipurpose Internet Mail Extensions (MIME)
 
 [Multipurpose Internet Mail Extensions (MIME)](https://en.wikipedia.org/wiki/MIME) can be utilized as a format to serialize arguments to, to deserialize arguments from, to store arguments in filesystems, and to transmit arguments between machines and between artificial-intelligence agents in multi-agent systems.
 
@@ -12,7 +14,7 @@ In addition to existing formats such as the [Argument Interchange Format (AIF)](
 
 In the example below, one can observe that argument representation formats can use the Content-ID (`cid:`) URL scheme [[RFC 2392](https://datatracker.ietf.org/doc/rfc2392/)] to refer to other objects (e.g., text, JSON, markup, or binary) elsewhere in the multipart message.
 
-### Example 1
+#### Example 1
 
 ```email
 Mime-Version: 1.0
@@ -129,7 +131,7 @@ Content-Type: application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"
 --boundary-example-1--
 ```
 
-### Example 2
+#### Example 2
 ```email
 Mime-Version: 1.0
 Content-Type: multipart/related; boundary="boundary-example-2"
