@@ -270,6 +270,10 @@ Inspired by [Web Components](https://en.wikipedia.org/wiki/Web_Components), wher
 
 [Knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) are also of use for representing argument templates, arguments, and networks of interrelated arguments. As shown in example 3, above, knowledge graphs could similarly be parts of MIME messages and utilize [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to refer to other parts of those MIME messages containing them.
 
+## Metadata
+
+Knowledge graphs can also be of use in MIME messages to provide [metadata](https://en.wikipedia.org/wiki/Metadata) about other parts in the messages. While there exists a `Content-Description` header for providing text descriptions for non-text parts, a new header, perhaps named `Content-DescribedBy`, could be used to refer to another part, a knowledge graph part, in the message which serves as metadata for a part. Alternatively, the knowledge-graph part could have a header, perhaps named `Content-About`, which could be used to refer that part which is described by the part serving as metadata.
+
 ## Hypertext
 
 While it may suffice to include text and argument-related data together in MIME messages for artificial-intelligence agents, human end-users might tend to prefer the addition of hypertext, `text/html` or `application/xhtml+xml`.
