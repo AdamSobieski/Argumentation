@@ -248,6 +248,8 @@ Content-Type: text/x-bibtex
 --boundary-example-3--
 ```
 
+With some solutions for knowledge-graph-based templating (see also: [OTTR](https://www.ottr.xyz/)), the expressiveness of knowledge-graph-based approaches to representing argument could equal that expressiveness of the markup-based approach indicated in the first example. That is, knowledge graphs would be able to support argument templates.
+
 ## Serialization and Deserialization
 
 Traditional approaches to [serialization](https://en.wikipedia.org/wiki/Serialization) have typically involved transforming object graphs to or from single formats, e.g., binary data, JSON, YAML, XML, or RDF.
