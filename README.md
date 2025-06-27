@@ -207,15 +207,15 @@ In addition to providing end-users with content in `text/plain` and argument-rel
 
 These formats could provide end-users with enhanced presentation, interaction, and navigation features while providing other features made possible from the availability of argument-related content and data elsewhere in MIME messages.
 
-How would embedded HTML content in MIME messages access argument-related content and data from other parts of the MIME messages? As HTML content can use [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to enable inlined images in email messages, so too could HTML content in other kinds of MIME messages use this URL scheme in [data blocks](https://html.spec.whatwg.org/multipage/scripting.html#data-block). This could resemble:
+Text and hypertext could be automatically processed from and obtained from argument-related formats and data.
+
+In addition to algorithms producing argument-specific HTML content from argument-related data, developers might want to explore general-purpose HTML content which could load argument-related data. How would embedded HTML content in MIME messages access argument-related data from other parts of the MIME messages? As HTML content can use [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to enable inlined images in email messages, so too could HTML content in other kinds of MIME messages use this URL scheme in [data blocks](https://html.spec.whatwg.org/multipage/scripting.html#data-block). This could resemble:
 
 ```html
 <script id="argument1" type="application/argument+xml" src="cid:part1" />
 ```
 
-Text and hypertext could be automatically processed from and obtained from argument-related formats and data.
-
-Algorithms could process and verify that message parts in these formats, text, hypertext, and argument-related data, were variations of the same content.
+Algorithms could process and verify that MIME message parts in these formats (text, hypertext, and argument-related data) were variations of the same content.
 
 ## Security
 
