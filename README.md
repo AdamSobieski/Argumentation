@@ -213,4 +213,6 @@ How would embedded HTML content in MIME messages access argument-related content
 <script id="argument1" type="application/argument+xml" src="cid:part1" />
 ```
 
-Text and hypertext could be automatically processed from and obtained from argument-related formats and data. Algorithms could process and verify that message parts in these formats contained variations of the same content.
+Text and hypertext could be automatically processed from and obtained from argument-related formats and data.
+
+Algorithms could process and verify that message parts in these formats, text, hypertext, and argument-related data, were variations of the same content.
