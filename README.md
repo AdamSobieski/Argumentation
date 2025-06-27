@@ -12,7 +12,7 @@ This project will utilize [Semantic Kernel](https://github.com/microsoft/semanti
 
 #### Example 1
 
-In this example, one can observe that argument representation formats can use the Content-ID (`cid:`) URL scheme [[RFC 2392](https://datatracker.ietf.org/doc/rfc2392/)] to refer to other objects in multipart messages.
+In this example, one can observe that argument representation formats can use the Content-ID (`cid:`) URL scheme [[RFC 2392](https://datatracker.ietf.org/doc/rfc2392/)] to refer to other parts of multipart messages.
 
 ```email
 Mime-Version: 1.0
