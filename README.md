@@ -10,11 +10,9 @@ This project will utilize [Semantic Kernel](https://github.com/microsoft/semanti
 
 [Multipurpose Internet Mail Extensions (MIME)](https://en.wikipedia.org/wiki/MIME) can be utilized as a format to serialize arguments to, to deserialize arguments from, to store arguments in filesystems, and to transmit arguments between machines and between artificial-intelligence agents in multi-agent systems.
 
-In addition to existing formats such as the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format), a new markup language could be of use for expressing and representing both arguments and argument templates.
-
-In the example below, one can observe that argument representation formats can use the Content-ID (`cid:`) URL scheme [[RFC 2392](https://datatracker.ietf.org/doc/rfc2392/)] to refer to other objects (e.g., text, JSON, markup, or binary) elsewhere in the multipart message.
-
 #### Example 1
+
+In this example, one can observe that argument representation formats can use the Content-ID (`cid:`) URL scheme [[RFC 2392](https://datatracker.ietf.org/doc/rfc2392/)] to refer to other objects in multipart messages.
 
 ```email
 Mime-Version: 1.0
@@ -148,6 +146,8 @@ Content-Type: application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"
 ```
 
 #### Example 2
+In addition to a new markup language, existing formats such as the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format) could be of use for expressing and representing both arguments and argument templates.
+
 ```email
 Mime-Version: 1.0
 Content-Type: multipart/related; boundary="boundary-example-2"
