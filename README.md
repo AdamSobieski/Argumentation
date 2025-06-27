@@ -146,6 +146,7 @@ Content-Type: application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"
 ```
 
 #### Example 2
+
 In addition to a new markup language, existing formats such as the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format) could be of use for expressing and representing both arguments and argument templates in MIME messages.
 
 ```email
@@ -199,3 +200,7 @@ Inspired by [Web Components](https://en.wikipedia.org/wiki/Web_Components), wher
 ## Knowledge Graphs
 
 [Knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) are also of use for representing argument templates, arguments, and networks of interrelated arguments. Knowledge graphs could similarly be parts of MIME messages and utilize [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to refer to other parts of those MIME messages containing them.
+
+## Hypertext
+
+In addition to providing end-users with content in `text/plain` and argument-related formats, one could provide them with `text/html` or `application/xhtml+xml` formatted content in MIME messages. These formats could provide enhanced presentation, interactivity, and navigational features alongside other features possible based upon the availability of argument-related content and data in MIME messages. Hypertext could be automatically processed from argument-related formats and data. Algorithms could process and verify that message parts in these formats contained variations of the same content.
