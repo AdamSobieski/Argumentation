@@ -207,7 +207,7 @@ In addition to providing end-users with content in `text/plain` and argument-rel
 
 These formats could provide end-users with enhanced presentation, interaction, and navigation features while providing other features made possible from the availability of argument-related content and data elsewhere in MIME messages.
 
-As HTML content in MIME messages can use RFC 2392, the `cid:` URL scheme, to enable inline images in email messages, in theory HTML content could use this URL scheme in [data blocks](https://html.spec.whatwg.org/multipage/scripting.html#data-block) in a manner resembling:
+As HTML content in MIME messages can use [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to enable inline images in email messages, in theory HTML content could use this URL scheme in [data blocks](https://html.spec.whatwg.org/multipage/scripting.html#data-block) in a manner resembling:
 
 ```html
 <script id="argument1" type="application/argument+xml" src="cid:part1" />
