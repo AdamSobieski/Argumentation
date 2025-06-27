@@ -225,4 +225,4 @@ Algorithms could process and verify that MIME message parts in these formats (te
 
 [Secure Multipurpose Internet Mail Extensions (S/MIME)](https://en.wikipedia.org/wiki/S/MIME) enables security features for MIME messages including [digitally signing](https://en.wikipedia.org/wiki/Digital_signature) messages.
 
-Also, new MIME `Content` headers could be designed for granting permissions and authorizations to and between parts of complex MIME messages. This might resemble [permissions policies](https://w3c.github.io/webappsec-permissions-policy/) for `<iframe>` nested content and involving HTTP headers.
+New MIME `Content` headers could be designed for granting permissions and authorizations to and between parts of complex MIME messages. This might resemble [permissions policies](https://w3c.github.io/webappsec-permissions-policy/) for `<iframe>` nested content and involving HTTP headers.
