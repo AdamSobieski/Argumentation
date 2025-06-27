@@ -193,7 +193,7 @@ With support for `multipart/alternative` parts and subparts, serialization algor
 
 [Semantic Kernel](https://github.com/microsoft/semantic-kernel) is interoperable with a number of templating systems, e.g., [Handlebars](https://handlebarsjs.com/) and [Jinja](https://jinja.palletsprojects.com/en/stable/). These systems could be explored instead of, in addition to, or in combination with those markup-based templating approaches indicated above. Handlebars templates have a content type of `text/x-handlebars-template` and Jinja templates `text/jinja`.
 
-## Markup Components and Extensibility
+## Extensible Markup Components
 
 Inspired by [Web Components](https://en.wikipedia.org/wiki/Web_Components), where custom markup elements can be defined and subsequently reused, new argument markup languages could be extensible with respect to expressiveness for higher-level components. These components would, as envisioned, be defined not in terms of presentation and interactivity, but in terms of semantics. That is, one could define custom components in terms of mappings and transformations between them and knowledge graphs (see also: [R2RML](https://www.w3.org/TR/r2rml/) and [RML](https://kg-construct.github.io/rml-resources/portal/)).
 
