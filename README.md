@@ -272,7 +272,7 @@ Inspired by [Web Components](https://en.wikipedia.org/wiki/Web_Components), wher
 
 ## Metadata
 
-[Knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) can also be of use in MIME messages to provide [metadata](https://en.wikipedia.org/wiki/Metadata) about other parts in messages.
+[Knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) could also be of use in MIME messages to provide [metadata](https://en.wikipedia.org/wiki/Metadata) about other parts in messages.
 
 While there exists a `Content-Description` header for providing text descriptions of parts, a new header, perhaps named `Content-Metadata`, could be used to refer to other parts, knowledge graph parts, in messages which serve as metadata for parts. Additionally or alternatively, those knowledge-graph parts providing metadata could have headers, perhaps named `Content-About`, for referring to the part which is described by it.
 
