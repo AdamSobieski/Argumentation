@@ -183,6 +183,71 @@ ex:Node3 a aif:I-node ;
 --boundary-example-2--
 ```
 
+#### Example 3
+
+The following example shows a simple approach to extend knowledge graphs using AIF to support attaching evidence and citing scholarly and scientific publications.
+
+```email
+Mime-Version: 1.0
+Content-Type: multipart/related; boundary="boundary-example-3"
+
+--boundary-example-3
+
+Content-Type: text/plain
+Content-Language: en
+
+Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
+
+--boundary-example-3
+
+Content-Type: application/argument+n3
+Content-Language: en
+
+@prefix aif: <http://www.arg.dundee.ac.uk/aif#> .
+@prefix ex: <http://example.org/> .
+@prefix ext: <http://extension.org/> .
+
+ex:Node1 a aif:I-node ;
+    aif:claimText "Climate change is caused by human activities." .
+    ext:hasEvidence <cid:item1> .
+    ext:cites <cid:item2> .
+
+ex:Node2 a aif:RA-node ;
+    aif:hasPremise ex:Node1 ;
+    aif:hasConclusion ex:Node3 .
+
+ex:Node3 a aif:I-node ;
+    aif:claimText "We should reduce carbon emissions." .
+
+--boundary-example-3
+
+Content-ID: <item1>
+Content-Type: application/pdf
+Content-Language: en
+Content-Disposition: attachment; filename="evidence.pdf"
+Content-Transfer-Encoding: base64
+
+TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4g
+U2VkIGRvIGVpdXNtb2QgdGVtcG9yIGluY2lkaWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu
+YSBhbGlxdWEuIFV0IGVuaW0gYWQgbWluaW0gdmVuaWFtLCBxdWlzIG5vc3RydWQgZXhlcmNpdGF0
+aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
+YXQuCg==
+
+--boundary-example-3
+
+Content-ID: <item2>
+Content-Type: text/x-bibtex
+
+@article{Brown2023,
+  author = {Charles Brown},
+  title = {An Interesting Article},
+  journal = {Journal of Interesting Articles},
+  year = {2023}
+}
+
+--boundary-example-3--
+```
+
 ## Serialization and Deserialization
 
 Traditional approaches to [serialization](https://en.wikipedia.org/wiki/Serialization) have typically involved transforming object graphs to or from single formats, e.g., binary data, JSON, YAML, XML, or RDF.
