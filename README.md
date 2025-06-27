@@ -205,8 +205,6 @@ Inspired by [Web Components](https://en.wikipedia.org/wiki/Web_Components), wher
 
 In addition to providing end-users with content in `text/plain` and argument-related formats, one could provide them with `text/html` or `application/xhtml+xml` formatted content in MIME messages.
 
-These formats could provide enhanced presentation, interactivity, and navigational features alongside other features possible based upon the availability of argument-related content and data in MIME messages.
+These formats could provide end-users with enhanced presentation, interaction, and navigation features alongside those other features made possible from the availability of argument-related content and data elsewhere in MIME messages.
 
-Hypertext could be automatically processed from argument-related formats and data.
-
-Algorithms could process and verify that message parts in these formats contained variations of the same content.
+Text and hypertext could be automatically processed from and obtained from argument-related formats and data. Algorithms could process and verify that message parts in these formats contained variations of the same content.
