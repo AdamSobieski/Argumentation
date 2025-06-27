@@ -146,7 +146,7 @@ Content-Type: application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"
 ```
 
 #### Example 2
-In addition to a new markup language, existing formats such as the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format) could be of use for expressing and representing both arguments and argument templates.
+In addition to a new markup language, existing formats such as the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format) could be of use for expressing and representing both arguments and argument templates in MIME messages.
 
 ```email
 Mime-Version: 1.0
