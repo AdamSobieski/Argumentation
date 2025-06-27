@@ -205,13 +205,11 @@ Inspired by [Web Components](https://en.wikipedia.org/wiki/Web_Components), wher
 
 ## Hypertext
 
-Beyond providing end-users with content in `text/plain` and argument-related formats in MIME messages, one could provide them with `text/html` or `application/xhtml+xml` formatted content.
+While it may suffice to include text and argument-related data together in MIME messages for artificial-intelligence agents, human end-users might tend to prefer the addition of hypertext, `text/html` or `application/xhtml+xml`.
 
-These formats could provide end-users with enhanced presentational, interactional, and navigational features while providing other features made possible from the availability of argument-related data elsewhere in MIME messages.
+These formats could provide end-users with enhanced presentational, interactional, and navigational features as well as other features made possible from the availability of argument-related data elsewhere in MIME messages.
 
-Text and hypertext could be automatically processed from and obtained from argument-related data.
-
-In addition to algorithms producing argument-specific HTML content from argument-related data, developers might want to explore reusable and general-purpose HTML content which could load argument-related data. How would embedded HTML content in MIME messages access argument-related data from other parts of the MIME messages?
+Hypertext could be automatically generated from argument-related data. In addition to algorithms producing argument-specific hypertext from argument-related data, developers might want to explore providing reusable and general-purpose hypertext which would vary, at runtime, based upon loaded argument-related data. How would embedded HTML content in MIME messages access argument-related data from other parts of MIME messages?
 
 As HTML content can use [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to enable inlined images in email messages, so too could HTML content in other kinds of MIME messages use this URL scheme in [data blocks](https://html.spec.whatwg.org/multipage/scripting.html#data-block). This might resemble:
 
@@ -219,7 +217,7 @@ As HTML content can use [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), t
 <script id="argument1" type="application/argument+xml" src="cid:part1" />
 ```
 
-Algorithms could process and verify that MIME message parts in these formats (text, hypertext, and argument-related data) were variations of the same content.
+Algorithms should be able to process and to verify that MIME messages' parts expressing arguments in a variety of ways, for a variety of purposes, were variations of the same content.
 
 ## Security
 
