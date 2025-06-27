@@ -1,18 +1,18 @@
-# Introduction
+## Introduction
 
 This project is an argumentation framework designed for interoperability with a large number of artificial-intelligence models and services. This project will enable and explore agentic approaches to the creation, analysis, validation, and evaluation of argumentation and debate.
 
 This project will utilize [Semantic Kernel](https://github.com/microsoft/semantic-kernel) to enable developers to more readily explore argumentation-related scenarios using their choice of models and services, e.g.: [OpenAI](https://platform.openai.com/docs/introduction), [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service), [HuggingFace](https://huggingface.co/), [NVidia](https://www.nvidia.com/en-us/ai-data-science/products/nim-microservices/), or [Ollama](https://ollama.com/).
 
-# The Computational Representation of Argument
+## The Computational Representation of Argument
 
-## Multipurpose Internet Mail Extensions (MIME)
+### Multipurpose Internet Mail Extensions (MIME)
 
 [Multipurpose Internet Mail Extensions (MIME)](https://en.wikipedia.org/wiki/MIME) can be utilized as a format to serialize arguments to, to deserialize arguments from, to store arguments in filesystems, and to transmit arguments between machines and between artificial-intelligence agents in multi-agent systems.
 
 See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipedia.org/wiki/Mozilla_Archive_Format), [Web Archive](https://en.wikipedia.org/wiki/Web_Archive_(file_format)), [WARC](https://en.wikipedia.org/wiki/WARC_(file_format)), [HAR](https://en.wikipedia.org/wiki/HAR_(file_format)), [EPUB](https://en.wikipedia.org/wiki/EPUB).
 
-### Example 1
+#### Example 1
 
 In this example, one can observe that argument representation formats can use the Content-ID (`cid:`) URL scheme [[RFC 2392](https://datatracker.ietf.org/doc/rfc2392/)] to refer to other parts of multipart messages.
 
@@ -147,7 +147,7 @@ Content-Type: application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"
 --boundary-example-1--
 ```
 
-### Example 2
+#### Example 2
 
 In addition to a new markup language, existing formats such as the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format) could be of use for expressing and representing both arguments and argument templates in MIME messages.
 
@@ -183,7 +183,7 @@ ex:Node3 a aif:I-node ;
 --boundary-example-2--
 ```
 
-### Example 3
+#### Example 3
 
 The following example shows a simple approach to extend knowledge graphs using AIF to support attaching evidence and citing scholarly and scientific publications.
 
@@ -250,7 +250,7 @@ Content-Type: text/x-bibtex
 
 With solutions for knowledge-graph templating (see also: [OTTR](https://www.ottr.xyz/)), the expressiveness of knowledge-graph approaches to representing argument could equal that expressiveness of the markup approach indicated in the first example. That is, knowledge-graph representations of argument would be able to refer to reusable argument templates.
 
-## Serialization and Deserialization
+### Serialization and Deserialization
 
 Traditional approaches to [serialization](https://en.wikipedia.org/wiki/Serialization) have typically involved transforming object graphs to or from single formats, e.g., binary data, JSON, YAML, XML, or RDF.
 
@@ -258,25 +258,25 @@ Objects could, additionally, serialize to and be deserialized from MIME messages
 
 With support for `multipart/alternative` parts and subparts, serialization algorithms would be able to add multiple alternatives into MIME messages and deserialization algorithms would be able to contextually choose from or select from these. Uses for this include [internationalization and localization](https://en.wikipedia.org/wiki/Internationalization_and_localization) where alternative parts could differ in terms of language.
 
-## Templating Systems
+### Templating Systems
 
-[Semantic Kernel](https://github.com/microsoft/semantic-kernel) is interoperable with a number of templating systems, e.g., [Handlebars](https://handlebarsjs.com/) and [Jinja](https://jinja.palletsprojects.com/en/stable/). These systems could be explored instead of, in addition to, or in combination with those markup-based templating approaches indicated above. Handlebars templates have a content type of `text/x-handlebars-template` and Jinja templates `text/jinja`.
+[Semantic Kernel](https://github.com/microsoft/semantic-kernel) is interoperable with a number of templating systems, e.g., [Handlebars](https://handlebarsjs.com/), [Liquid](https://liquidjs.com/), and [Jinja](https://jinja.palletsprojects.com/en/stable/). These systems could be explored instead of, in addition to, or in combination with those markup-based templating approaches indicated above. Handlebars templates have a content type of `text/x-handlebars-template` and Jinja templates `text/jinja`.
 
-## Extensibility and Components
+### Extensibility and Components
 
 Inspired by [Web Components](https://en.wikipedia.org/wiki/Web_Components), where custom markup elements can be defined and subsequently reused, new argument markup languages could be extensible with respect to expressiveness for higher-level components. These components would, as envisioned, be defined not in terms of presentation and interactivity, but in terms of semantics. That is, one could define custom components in terms of mappings and transformations between them and knowledge graphs (see also: [R2RML](https://www.w3.org/TR/r2rml/) and [RML](https://kg-construct.github.io/rml-resources/portal/)).
 
-## Knowledge Graphs
+### Knowledge Graphs
 
 [Knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) are also of use for representing argument templates, arguments, and networks of interrelated arguments. As shown in example 3, above, knowledge graphs could similarly be parts of MIME messages and utilize [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to refer to other parts of those MIME messages containing them.
 
-## Metadata
+### Metadata
 
 [Knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) could also be of use in MIME messages to provide [metadata](https://en.wikipedia.org/wiki/Metadata) about other parts in messages.
 
 There exists a `Content-Description` header for providing text descriptions of parts. In particular for content of type `multipart/related`, parts could use a new header, perhaps named `Content-Metadata`, to refer to other parts which serve as metadata for them. Additionally or instead, those parts providing metadata could use a new header, perhaps named `Content-About`, to refer to those parts which they describe.
 
-## Hypertext
+### Hypertext
 
 While it may suffice to include text and argument-related data together in MIME messages for artificial-intelligence agents, human end-users might tend to prefer the addition of hypertext, `text/html` or `application/xhtml+xml`.
 
@@ -292,8 +292,16 @@ How would embedded HTML content in MIME messages access argument-related data fr
 
 Algorithms should be able to process and to verify that MIME messages' parts expressing arguments in a variety of ways, for a variety of purposes, were variations of the same content.
 
-## Security
+### Security
 
 [Secure Multipurpose Internet Mail Extensions (S/MIME)](https://en.wikipedia.org/wiki/S/MIME) enables security features for MIME messages including [digitally signing](https://en.wikipedia.org/wiki/Digital_signature) messages.
 
 New MIME `Content` headers could be designed for granting permissions and authorizations to and between parts of complex MIME messages, resembling [permissions policies](https://w3c.github.io/webappsec-permissions-policy/) for `<iframe>` nested content and involving HTTP headers.
+
+## Artificial Intelligence
+
+### Comparative Models of Messages
+
+Contemporary artificial-intelligence APIs and agentic frameworks include models of messages exchanged between end-users and agents. Components of message models include: message identifiers, timestamps, content, roles, attachments, and metadata.
+
+In [Semantic Kernel](https://github.com/microsoft/semantic-kernel), messages are represented using the [`ChatMessageContent`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.semantickernel.chatmessagecontent?view=semantic-kernel-dotnet) class and derived classes. These messages can be organized in [`ChatHistory`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.semantickernel.chatcompletion.chathistory?view=semantic-kernel-dotnet) collections.
