@@ -298,9 +298,7 @@ Algorithms should be able to process and to verify that MIME messages' parts exp
 
 New MIME `Content` headers could be designed for granting permissions and authorizations to and between parts of complex MIME messages, resembling [permissions policies](https://w3c.github.io/webappsec-permissions-policy/) for `<iframe>` nested content and involving HTTP headers.
 
-## Artificial Intelligence
-
-### Comparative Models of Messages
+## Comparative Message Models
 
 Contemporary artificial-intelligence APIs and agentic frameworks include models of messages exchanged between end-users and agents. Components of message models include: message identifiers, timestamps, content, roles, attachments, and metadata.
 
