@@ -1,18 +1,18 @@
-## Introduction
+# Introduction
 
 This project is an argumentation framework designed for interoperability with a large number of artificial-intelligence models and services. This project will enable and explore agentic approaches to the creation, analysis, validation, and evaluation of argumentation and debate.
 
 This project will utilize [Semantic Kernel](https://github.com/microsoft/semantic-kernel) to enable developers to more readily explore argumentation-related scenarios using their choice of models and services, e.g.: [OpenAI](https://platform.openai.com/docs/introduction), [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-services/openai-service), [HuggingFace](https://huggingface.co/), [NVidia](https://www.nvidia.com/en-us/ai-data-science/products/nim-microservices/), or [Ollama](https://ollama.com/).
 
-## The Computational Representation of Argument
+# The Computational Representation of Argument
 
-### Multipurpose Internet Mail Extensions (MIME)
+## Multipurpose Internet Mail Extensions (MIME)
 
 [Multipurpose Internet Mail Extensions (MIME)](https://en.wikipedia.org/wiki/MIME) can be utilized as a format to serialize arguments to, to deserialize arguments from, to store arguments in filesystems, and to transmit arguments between machines and between artificial-intelligence agents in multi-agent systems.
 
 See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipedia.org/wiki/Mozilla_Archive_Format), [Web Archive](https://en.wikipedia.org/wiki/Web_Archive_(file_format)), [WARC](https://en.wikipedia.org/wiki/WARC_(file_format)), [HAR](https://en.wikipedia.org/wiki/HAR_(file_format)), [EPUB](https://en.wikipedia.org/wiki/EPUB).
 
-#### Example 1
+### Example 1
 
 In this example, one can observe that argument representation formats can use the Content-ID (`cid:`) URL scheme [[RFC 2392](https://datatracker.ietf.org/doc/rfc2392/)] to refer to other parts of multipart messages.
 
@@ -147,7 +147,7 @@ Content-Type: application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"
 --boundary-example-1--
 ```
 
-#### Example 2
+### Example 2
 
 In addition to a new markup language, existing formats such as the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format) could be of use for expressing and representing both arguments and argument templates in MIME messages.
 
@@ -183,7 +183,7 @@ ex:Node3 a aif:I-node ;
 --boundary-example-2--
 ```
 
-#### Example 3
+### Example 3
 
 The following example shows a simple approach to extend knowledge graphs using AIF to support attaching evidence and citing scholarly and scientific publications.
 
