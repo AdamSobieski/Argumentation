@@ -216,3 +216,9 @@ How would embedded HTML content in MIME messages access argument-related content
 Text and hypertext could be automatically processed from and obtained from argument-related formats and data.
 
 Algorithms could process and verify that message parts in these formats, text, hypertext, and argument-related data, were variations of the same content.
+
+## Security
+
+[Secure Multipurpose Internet Mail Extensions (S/MIME)](https://en.wikipedia.org/wiki/S/MIME) enables security features for MIME messages including the [digital signing](https://en.wikipedia.org/wiki/Digital_signature) of messages.
+
+Also, in theory, new `Content` headers could be designed for granting permissions and authorizations to and between parts of complex MIME messages. This could resemble [permissions policies](https://w3c.github.io/webappsec-permissions-policy/) for `<iframe>` elements and using HTTP headers.
