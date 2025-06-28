@@ -311,3 +311,7 @@ Will artificial-intelligence APIs and agentic frameworks, one day, support expre
 Today, several artificial-intelligence message models include support for message content to be either a string, an object, or an array of these, to be able to accept one or more content parts, e.g., to contain text accompanied by image data.
 
 Today, in [Semantic Kernel](https://github.com/microsoft/semantic-kernel), messages are represented using the [`ChatMessageContent`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.semantickernel.chatmessagecontent?view=semantic-kernel-dotnet) class and derived classes. The `ChatMessageContent` class has a property, `MimeType`, for the content type of the message. The `ChatMessageContent` class also supports multiple content items using a [`ChatMessageContentItemCollection`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.semantickernel.chatcompletion.chatmessagecontentitemcollection?view=semantic-kernel-dotnet) collection.
+
+## Benefits of Multipart Messages
+
+Coming soon.
