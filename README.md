@@ -317,7 +317,7 @@ So, it's possible.
 Advantages from supporting MIME's multipart semantics would include, but not be limited to:
 
 1. a well-defined hierarchical structure of message parts to enable algorithmic processing,
-2. support for providing one or more message attachments, e.g., documents, images, audio, video, and data,
+2. the capability to provide one or more message attachments, e.g., documents, images, audio, video, and data,
 3. the capability to provide content alternatives, enabling [content negotiation](https://en.wikipedia.org/wiki/Content_negotiation),
 4. interoperability with URL schemes like [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/),
 5. the capability to provide data requiring multiple parts in multiple formats,
