@@ -338,6 +338,6 @@ Making use of software tools, end-users could author arguments comprised of inte
 
 Coming soon.
 
-### Forums
+### Internet Forums
 
-End-users could observe and participate in [forums](https://en.wikipedia.org/wiki/Internet_forum) for man-machine discussion and debate.
+End-users could observe and participate in [Internet forums](https://en.wikipedia.org/wiki/Internet_forum) for man-machine discussion and debate.
