@@ -260,7 +260,7 @@ With support for `multipart/alternative` parts and subparts, serialization algor
 
 [Semantic Kernel](https://github.com/microsoft/semantic-kernel) is interoperable with a number of templating systems, e.g., [Handlebars](https://handlebarsjs.com/), [Liquid](https://liquidjs.com/), and [Jinja](https://jinja.palletsprojects.com/en/stable/). These systems could be explored instead of, in addition to, or in combination with those markup-based templating approaches indicated above. Handlebars templates have a content type of `text/x-handlebars-template`, Liquid templates `application/liquid`, and Jinja templates `text/jinja`.
 
-With solutions for knowledge-graph templating (see also: [Reasonable Ontology Templates (OTTR)](https://www.ottr.xyz/)), the expressiveness of knowledge-graph approaches to representing argument, see examples 2 and 3, could equal that expressiveness of the markup approach indicated in example 1. Knowledge-graph representations of argument would be able to refer to reusable argument templates used to generate them.
+With solutions for knowledge-graph templating, the expressiveness of knowledge-graph approaches to representing argument, examples 2 and 3, could equal the expressiveness of the markup approach indicated, example 1. Knowledge-graph representations of argument would be able to refer to those reusable argument templates used to generate them (see also: [Reasonable Ontology Templates (OTTR)](https://www.ottr.xyz/)).
 
 ### Extensibility and Components
 
