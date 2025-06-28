@@ -316,7 +316,7 @@ Today, in [Semantic Kernel](https://github.com/microsoft/semantic-kernel), messa
 
 Advantages from supporting MIME multipart semantics would include, but not be limited to:
 
-1. a well-defined hierarchical structure of parts to enable algorithmic processing,
+1. a well-defined hierarchical structure of message parts to enable algorithmic processing,
 2. support for providing one or more message attachments, e.g., documents, images, audio, video, and data,
 3. the capability to provide content alternatives, enabling [content negotiation](https://en.wikipedia.org/wiki/Content_negotiation),
 4. interoperability with schemes like [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/),
