@@ -248,7 +248,7 @@ Content-Type: text/x-bibtex
 --boundary-example-3--
 ```
 
-With solutions for knowledge-graph templating (see also: [OTTR](https://www.ottr.xyz/)), the expressiveness of knowledge-graph approaches to representing argument could equal that expressiveness of the markup approach indicated in the first example. That is, knowledge-graph representations of argument would be able to refer to reusable argument templates.
+With solutions for knowledge-graph templating (see also: [Reasonable Ontology Templates (OTTR)](https://www.ottr.xyz/)), the expressiveness of knowledge-graph approaches to representing argument could equal that expressiveness of the markup approach indicated in the first example. That is, knowledge-graph representations of argument would be able to refer to reusable argument templates.
 
 ### Serialization and Deserialization
 
