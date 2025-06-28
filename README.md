@@ -300,7 +300,7 @@ New MIME `Content` headers could be designed for granting permissions and author
 
 ## Comparative Message Models
 
-Contemporary artificial-intelligence APIs and agentic frameworks include models of messages exchanged between end-users and agents. Components of message models include: message identifiers, timestamps, content, roles, attachments, and metadata.
+Contemporary artificial-intelligence APIs and agentic frameworks include models of messages exchanged between end-users and agents. Components of message models include: message identifiers, timestamps, content, roles, annotations, attachments, and metadata.
 
 Artificial-intelligence message models include: [Anthropic](https://docs.anthropic.com/en/api/messages), [Azure AI](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/responses?tabs=python-secure), [Google](https://ai.google.dev/gemini-api/docs/text-generation), [HuggingFace](https://huggingface.co/docs/text-generation-inference/main/en/messages_api), [Ollama](https://ollama.readthedocs.io/en/api/#generate-a-chat-completion), and [OpenAI](https://platform.openai.com/docs/api-reference/messages). Message models in agentic frameworks include: [AutoGen](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/tutorial/messages.html) and [LangChain](https://python.langchain.com/api_reference/core/messages.html).
 
