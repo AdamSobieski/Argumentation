@@ -298,7 +298,7 @@ Objects could, additionally, be serialized into and be deserialized from MIME me
 
 With support for `multipart/alternative` parts and subparts, serialization algorithms would be able to add multiple alternatives into MIME messages and deserialization algorithms would be able to contextually choose from or select from these. Uses for this include [internationalization and localization](https://en.wikipedia.org/wiki/Internationalization_and_localization); alternatives could differ in terms of language.
 
-## Comparing Message Models
+## The Comparison of Message Models
 
 Contemporary artificial-intelligence APIs, frameworks, and protocols include models of messages for exchange between end-users and agents. Components of message models include: message identifiers, timestamps, content parts, roles, annotations, attachments, and metadata.
 
