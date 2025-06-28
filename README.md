@@ -248,8 +248,6 @@ Content-Type: text/x-bibtex
 --boundary-example-3--
 ```
 
-With solutions for knowledge-graph templating (see also: [Reasonable Ontology Templates (OTTR)](https://www.ottr.xyz/)), the expressiveness of knowledge-graph approaches to representing argument could equal that expressiveness of the markup approach indicated in the first example. That is, knowledge-graph representations of argument would be able to refer to reusable argument templates.
-
 ### Serialization and Deserialization
 
 Traditional approaches to [serialization](https://en.wikipedia.org/wiki/Serialization) have typically involved transforming object graphs to or from single formats, e.g., binary data, JSON, YAML, XML, or RDF.
@@ -261,6 +259,8 @@ With support for `multipart/alternative` parts and subparts, serialization algor
 ### Templating Systems
 
 [Semantic Kernel](https://github.com/microsoft/semantic-kernel) is interoperable with a number of templating systems, e.g., [Handlebars](https://handlebarsjs.com/), [Liquid](https://liquidjs.com/), and [Jinja](https://jinja.palletsprojects.com/en/stable/). These systems could be explored instead of, in addition to, or in combination with those markup-based templating approaches indicated above. Handlebars templates have a content type of `text/x-handlebars-template`, Liquid templates `application/liquid`, and Jinja templates `text/jinja`.
+
+With solutions for knowledge-graph templating (see also: [Reasonable Ontology Templates (OTTR)](https://www.ottr.xyz/)), the expressiveness of knowledge-graph approaches to representing argument, see examples 2 and 3, could equal that expressiveness of the markup approach indicated in example 1. Knowledge-graph representations of argument would be able to refer to reusable argument templates used to generate them.
 
 ### Extensibility and Components
 
