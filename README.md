@@ -316,9 +316,10 @@ So, it's possible.
 
 Advantages from supporting MIME's multipart semantics would include, but not be limited to:
 
-1. a well-defined hierarchical structure of message parts to enable algorithmic processing,
+1. a well-defined hierarchical structure for message parts to enable algorithmic processing,
 2. the capability to provide one or more message attachments, e.g., documents, images, audio, video, and data,
 3. the capability to provide content alternatives, enabling [content negotiation](https://en.wikipedia.org/wiki/Content_negotiation),
 4. interoperability with URL schemes like [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/),
 5. the capability to provide data involving multiple parts in multiple formats,
-6. the capability to provide parallel forms of content for simultaneous consumption, e.g., natural-language text and structured-knowledge argumentation allowing for the verification and validation of content and reasoning.
+6. useful formats for communication channels and scenarios beyond agentic chat, e.g., agentic forums,
+7. the capability to provide parallel forms of content for simultaneous consumption, e.g., natural-language text and structured-knowledge argumentation allowing for the verification and validation of content and reasoning.
