@@ -326,7 +326,7 @@ Advantages from supporting MIME's multipart semantics would include, but not be 
 
 ## Use Cases
 
-### Multi-agent Systems
+### Artificial-intelligence and Multi-agent Systems
 
 Coming soon.
 
