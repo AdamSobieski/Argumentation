@@ -330,9 +330,13 @@ Advantages from supporting MIME's multipart semantics would include, but not be 
 
 Coming soon.
 
-### Email Communication
+### Email Messages
 
 Making use of software tools, end-users could author arguments comprised of interrelated natural-language and structured-knowledge parts and send these MIME messages to one another by email. Recipients could make use of software tools to verify and validate the reasoning of the arguments.
+
+### Mailing Lists
+
+Coming soon.
 
 ### Forums
 
