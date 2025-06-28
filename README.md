@@ -323,3 +323,17 @@ Advantages from supporting MIME's multipart semantics would include, but not be 
 5. the capability to provide complex data involving multiple related parts in multiple formats,
 6. useful formats for communication channels and scenarios beyond agentic chat, e.g., agentic forums,
 7. the capability to provide parallel forms of content for simultaneous consumption, e.g., natural-language text and structured-knowledge argumentation, could allow for the verification and validation of content and reasoning.
+
+## Use Cases
+
+### Multi-agent Systems
+
+Coming soon.
+
+### Email Communication
+
+Making use of software tools, end-users could author arguments comprised of interrelated natural-language and structured-knowledge parts and send these MIME messages to one another by email. Recipients could make use of software tools to verify and validate the reasoning of the arguments.
+
+### Discussion Forums
+
+End-users could observe and participate in man-machine debates and discussion forums.
