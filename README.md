@@ -332,7 +332,7 @@ Coming soon.
 
 ### Email Messages
 
-Making use of software tools, end-users could author arguments comprised of interrelated natural-language and structured-knowledge parts and send these MIME messages to one another by email. Recipients could make use of software tools to verify and validate the reasoning of the arguments.
+Making use of software tools, end-users could author arguments comprised of interrelated natural-language and structured-knowledge parts and send these MIME messages to one another by email. Recipients could make use of software tools with features including, but not limited to, verifying and validating the arguments.
 
 ### Mailing Lists
 
