@@ -320,4 +320,5 @@ Advantages from supporting MIME's multipart semantics would include, but not be 
 2. support for providing one or more message attachments, e.g., documents, images, audio, video, and data,
 3. the capability to provide content alternatives, enabling [content negotiation](https://en.wikipedia.org/wiki/Content_negotiation),
 4. interoperability with URL schemes like [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/),
-5. the capability to provide parallel forms of content, e.g., natural-language text and structured-knowledge argumentation allowing for the verification and validation of content and reasoning.
+5. the capability to provide data requiring multiple parts in multiple formats,
+6. the capability to provide parallel forms of content for simultaneous consumption, e.g., natural-language text and structured-knowledge argumentation allowing for the verification and validation of content and reasoning.
