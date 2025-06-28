@@ -306,6 +306,6 @@ Artificial-intelligence message models include: [Anthropic](https://docs.anthrop
 
 As one can observe, [JavaScript Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON) is popular among artificial-intelligence APIs and agentic frameworks. It is also utilized by new [AIF libraries](https://github.com/arg-tech/xaif) and in forthcoming standards for [representing conversation data](https://docs.vcons.org/en/current-draft).
 
-Several artificial-intelligence message models include support for message content to be either a string or an array, to accept one or more content parts, e.g., text accompanied by image data.
-
 In [Semantic Kernel](https://github.com/microsoft/semantic-kernel), messages are represented using the [`ChatMessageContent`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.semantickernel.chatmessagecontent?view=semantic-kernel-dotnet) class and derived classes. These messages can be organized in [`ChatHistory`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.semantickernel.chatcompletion.chathistory?view=semantic-kernel-dotnet) collections. The `ChatMessageContent` class has a property, `MimeType`, for the content type of the message.
+
+Will artificial-intelligence APIs and agentic frameworks, one day, support expressiveness for "multipart" messages involving [`multipart/mixed`](https://en.wikipedia.org/wiki/MIME#mixed), [`multipart/related`](https://en.wikipedia.org/wiki/MIME#related) and [`multipart/alternative`](https://en.wikipedia.org/wiki/MIME#alternative)? Several artificial-intelligence message models, today, include support for message content to be either a string or an array, to accept one or more content parts, e.g., to contain text accompanied by image data.
