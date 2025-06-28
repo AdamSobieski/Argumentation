@@ -290,7 +290,7 @@ Algorithms should be able to process and to verify that MIME messages' parts exp
 
 New MIME `Content` headers could be designed for granting permissions and authorizations to and between parts of complex MIME messages, resembling [permissions policies](https://w3c.github.io/webappsec-permissions-policy/) for `<iframe>` nested content and involving HTTP headers.
 
-## Serialization and Deserialization
+## The Serialization and Deserialization of Objects
 
 Traditional approaches to [serializing](https://en.wikipedia.org/wiki/Serialization) objects have tended to involve transforming object graphs into and from single formats, e.g., binary data, JSON, YAML, XML, or RDF.
 
