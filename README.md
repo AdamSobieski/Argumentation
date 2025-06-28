@@ -334,6 +334,6 @@ Coming soon.
 
 Making use of software tools, end-users could author arguments comprised of interrelated natural-language and structured-knowledge parts and send these MIME messages to one another by email. Recipients could make use of software tools to verify and validate the reasoning of the arguments.
 
-### Discussion Forums
+### Forums
 
-End-users could observe and participate in man-machine debates and discussion forums.
+End-users could observe and participate in [forums](https://en.wikipedia.org/wiki/Internet_forum) for man-machine discussion and debate.
