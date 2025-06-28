@@ -312,9 +312,7 @@ Today, artificial-intelligence message models include support for multiple messa
 
 Today, in [Semantic Kernel](https://github.com/microsoft/semantic-kernel), messages are represented using the [`ChatMessageContent`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.semantickernel.chatmessagecontent?view=semantic-kernel-dotnet) class and derived classes. The `ChatMessageContent` class has a property, `MimeType`, for the content type of the message. The `ChatMessageContent` class also supports multiple content items using a [`ChatMessageContentItemCollection`](https://learn.microsoft.com/en-us/dotnet/api/microsoft.semantickernel.chatcompletion.chatmessagecontentitemcollection?view=semantic-kernel-dotnet) collection.
 
-## Advantages of MIME Multipart Semantics
-
-Advantages from supporting MIME multipart semantics would include, but not be limited to:
+Advantages from supporting MIME's multipart semantics would include, but not be limited to:
 
 1. a well-defined hierarchical structure of message parts to enable algorithmic processing,
 2. support for providing one or more message attachments, e.g., documents, images, audio, video, and data,
