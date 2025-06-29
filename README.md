@@ -511,7 +511,7 @@ Advantages from supporting MIME's multipart semantics would include, but not be 
 
 ## Use Cases
 
-### Email Messages and Mailing Lists
+### Email and Mailing Lists
 
 End-users could, by making use of content-authoring software tools, create arguments comprised of interrelated natural-language and structured-knowledge parts and send these MIME messages to one another by email.
 
