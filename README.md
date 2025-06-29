@@ -515,13 +515,11 @@ Advantages from supporting MIME's multipart semantics would include, but not be 
 
 Coming soon.
 
-### Email Messages
+### Email Messages and Mailing Lists
 
-Making use of software tools, end-users could author arguments comprised of interrelated natural-language and structured-knowledge parts and send these MIME messages to one another by email. Recipients could make use of software tools with features including, but not limited to, verifying and validating the arguments.
+End-users could, by making use of content-authoring software tools, create arguments comprised of interrelated natural-language and structured-knowledge parts and send these MIME messages to one another by email. Recipients could make use of software tools with features including, but not limited to, verifying and validating received arguments.
 
-### Mailing Lists
-
-Coming soon.
+Other scenarios to consider include content-authoring softwaretools which allow responding to argument-enhanced MIME messages, uses of the `mid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), enhancing [mailing lists](https://en.wikipedia.org/wiki/Mailing_list) with features possible from structured knowledge in MIME email messages, and new possibilities with respect to moderating discussions, archiving discussions, aggregating structured knowledge from discussion threads into [knowledgebases](https://en.wikipedia.org/wiki/Knowledge_base), and new tools for searching and navigating through mailing lists' archives and related knowledgebases.
 
 ### Internet Forums
 
