@@ -56,11 +56,11 @@ Content-Type: application/argument+xml
 Content-Language: en
 
 <argument>
-  <conclusion><parameter href="cid:item4">The person</parameter> is a British citizen.</conclusion>
+  <conclusion><parameter kind="object" href="cid:item4">The person</parameter> is a British citizen.</conclusion>
   <premises>
     <argument>
-      <conclusion><parameter href="cid:item4">The person</parameter> was born in Bermuda.</conclusion>
-      <evidence-parameter href="cid:item5">Attached is a copy of the birth certificate.</evidence-parameter>
+      <conclusion><parameter kind="object" href="cid:item4">The person</parameter> was born in Bermuda.</conclusion>
+      <parameter kind="evidence" href="cid:item5">Attached is a copy of the birth certificate.</parameter>
     </argument>
     <argument>
       <conclusion><cite href="cid:item6" selection="cid:item7">People born in Bermuda are British citizens.</cite></conclusion>
