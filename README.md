@@ -457,20 +457,6 @@ Static hypertext could be automatically generated from argument-related data. In
 
 How would embedded HTML content in MIME messages access argument-related data from other parts of MIME messages? As HTML content can use [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to enable inlined images in email messages, so too could HTML content in other kinds of MIME messages use this URL scheme in [data blocks](https://html.spec.whatwg.org/multipage/scripting.html#data-block).
 
-This might resemble:
-
-```html
-<script id="arg1" type="application/argument+xml" src="cid:part1" />
-```
-```html
-<script id="arg2" type="application/argument+n3" src="cid:part2" />
-```
-```html
-<script id="arg3" type="application/argument+json" src="cid:part3" />
-```
-
-Algorithms should be able to process and to verify that MIME messages' parts expressing arguments in a variety of ways, for a variety of purposes, were variations of the same content.
-
 ### Security
 
 [Secure Multipurpose Internet Mail Extensions (S/MIME)](https://en.wikipedia.org/wiki/S/MIME) enables security features for MIME messages including [digitally signing](https://en.wikipedia.org/wiki/Digital_signature) messages.
