@@ -193,7 +193,7 @@ ex:Node3 a aif:I-node ;
 
 #### Example 3
 
-The following example shows a simple approach to extend knowledge graphs using AIF to support attaching evidence and citing scholarly and scientific publications.
+This example shows a simple approach to extend knowledge graphs using AIF to support attaching evidence and citing scholarly and scientific publications.
 
 <details>
   <summary>Click here to toggle the visibility of Example 3.</summary>
@@ -262,7 +262,7 @@ Content-Type: text/x-bibtex
 
 #### Example 4
 
-The following example shows how arguments could be represented using the AIF model expressed using JSON in a MIME message.
+This example shows that arguments could be represented using the AIF model expressed using JSON in a MIME message.
 
 <details>
   <summary>Click here to toggle the visibility of Example 4.</summary>
