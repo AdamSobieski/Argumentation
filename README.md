@@ -471,6 +471,52 @@ Objects could, additionally, be serialized into and be deserialized from MIME me
 
 With support for `multipart/alternative` parts and subparts, serialization algorithms would be able to add multiple alternatives into MIME messages and deserialization algorithms would be able to contextually choose from or select from these.
 
+### Content Negotiation
+
+Using MIME, senders could indicate the availability of content without having to include all of the content in a message. For example, senders might be able to translate content, on-demand, into a very large set of languages and, instead of having to provide content for each language, they could include content for some popular languages and indicate the availability of and locations of content in other languages.
+
+#### Example 5
+
+This example shows how one could include content in both English and French while providing a recipient with a means of obtaining content in other languages.
+
+<details>
+<summary>Click here to toggle the visibility of Example 5.</summary>
+<br>
+
+```email
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="boundary-example-5"
+
+--boundary-example-5
+
+Content-Type: text/plain
+Content-Language: en
+
+Hello.
+
+--boundary-example-5
+
+Content-Type: text/plain
+Content-Language: fr
+
+Bonjour.
+
+--boundary-example-5
+
+Content-Type: text/plain
+Content-Language: other1
+Content-Location: https://service.org/content/index.php?mid=12345678&lang=other1
+
+--boundary-example-5
+
+Content-Type: text/plain
+Content-Language: other2
+Content-Location: https://service.org/content/index.php?mid=12345678&lang=other2
+
+--boundary-example-5--
+```
+</details>
+
 ## The Comparison of Models of Messages
 
 ### Artificial-intelligence APIs, Frameworks, and Protocols
