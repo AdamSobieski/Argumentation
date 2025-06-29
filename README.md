@@ -481,7 +481,7 @@ Traditional approaches to [serializing](https://en.wikipedia.org/wiki/Serializat
 
 Objects could, additionally, be serialized into and be deserialized from MIME messages. During serialization, algorithms could add parts to MIME messages, each part expressed using a format. During deserialization, interrelated message parts would be processed back into objects.
 
-With support for `multipart/alternative` parts and subparts, serialization algorithms would be able to add multiple alternatives into MIME messages and deserialization algorithms would be able to contextually choose from or select from these. Uses for this include [internationalization and localization](https://en.wikipedia.org/wiki/Internationalization_and_localization); alternatives could differ in terms of language.
+With support for `multipart/alternative` parts and subparts, serialization algorithms would be able to add multiple alternatives into MIME messages and deserialization algorithms would be able to contextually choose from or select from these.
 
 ## The Comparison of Models of Messages
 
@@ -511,7 +511,7 @@ Advantages from supporting MIME's multipart semantics would include, but not be 
 
 1. a well-defined hierarchical structure for message parts would simplify algorithmic processing,
 2. the capability to provide one or more message attachments, e.g., documents, images, audio, video, and data,
-3. the capability to provide content alternatives, enabling [content negotiation](https://en.wikipedia.org/wiki/Content_negotiation),
+3. the capability to provide content alternatives, enabling [content negotiation](https://en.wikipedia.org/wiki/Content_negotiation), [internationalization and localization](https://en.wikipedia.org/wiki/Internationalization_and_localization),
 4. interoperability with URL schemes like [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/),
 5. the capability to provide complex data involving multiple related parts in multiple formats,
 6. useful formats for communication channels and scenarios beyond agentic chat, e.g., agentic forums,
