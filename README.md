@@ -503,7 +503,7 @@ Advantages from supporting MIME's multipart semantics would include, but not be 
 
 ## Use Cases
 
-### Artificial-intelligence and Multi-agent Systems
+### Agentic Artificial Intelligence
 
 Coming soon.
 
