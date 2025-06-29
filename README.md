@@ -14,7 +14,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 
 #### Example 1
 
-In this example, one can observe that argument representation formats can use the Content-ID (`cid:`) URL scheme [[RFC 2392](https://datatracker.ietf.org/doc/rfc2392/)] to refer to other parts of multipart messages.
+In this example, one can observe that argument representation formats can use the Content-ID (`cid:`) URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/) to refer to other parts of multipart messages.
 
 <details>
 <summary>Click here to toggle the visibility of Example 1.</summary>
