@@ -260,6 +260,167 @@ Content-Type: text/x-bibtex
 ```
 </details>
 
+#### Example 4
+
+The following example shows how arguments could be represented using the AIF model expressed using JSON in a MIME message.
+
+<details>
+  <summary>Click here to toggle the visibility of Example 4.</summary>
+
+```email
+Mime-Version: 1.0
+Content-Type: multipart/related; boundary="boundary-example-4"
+
+--boundary-example-4
+
+Content-Type: text/plain
+Content-Language: en
+
+Speaker 1: Disagreements between party members are entirely to be expected.
+Speaker 2: The SNP has disagreements.
+Speaker 1: It's not uncommon for there to be disagreements between party members.
+
+--boundary-example-4
+
+Content-Type: application/argument+json
+Content-Language: en
+
+{
+  "AIF": {
+    "descriptorfulfillments": null,
+    "edges": [
+      {
+        "edgeID": 0,
+        "fromID": 0,
+        "toID": 4
+      },
+      {
+        "edgeID": 1,
+        "fromID": 4,
+        "toID": 3
+      },
+      {
+        "edgeID": 2,
+        "fromID": 1,
+        "toID": 6
+      },
+      {
+        "edgeID": 3,
+        "fromID": 6,
+        "toID": 5
+      },
+      {
+        "edgeID": 4,
+        "fromID": 2,
+        "toID": 8
+      },
+      {
+        "edgeID": 5,
+        "fromID": 8,
+        "toID": 7
+      },
+      {
+        "edgeID": 6,
+        "fromID": 3,
+        "toID": 9
+      },
+      {
+        "edgeID": 7,
+        "fromID": 9,
+        "toID": 7
+      }
+    ],
+    "locutions": [
+      {
+        "nodeID": 0,
+        "personID": 0
+      },
+      {
+        "nodeID": 1,
+        "personID": 1
+      },
+      {
+        "nodeID": 2,
+        "personID": 2
+      }
+    ],
+    "nodes": [
+      {
+        "nodeID": 0,
+        "text": "disagreements between party members are entirely to be expected.",
+        "type": "L"
+      },
+      {
+        "nodeID": 1,
+        "text": "the SNP has disagreements.",
+        "type": "L"
+      },
+      {
+        "nodeID": 2,
+        "text": "it's not uncommon for there to be disagreements between party members.",
+        "type": "L"
+      },
+      {
+        "nodeID": 3,
+        "text": "disagreements between party members are entirely to be expected.",
+        "type": "I"
+      },
+      {
+        "nodeID": 4,
+        "text": "Default Illocuting",
+        "type": "YA"
+      },
+      {
+        "nodeID": 5,
+        "text": "the SNP has disagreements.",
+        "type": "I"
+      },
+      {
+        "nodeID": 6,
+        "text": "Default Illocuting",
+        "type": "YA"
+      },
+      {
+        "nodeID": 7,
+        "text": "it's not uncommon for there to be disagreements between party members.",
+        "type": "I"
+      },
+      {
+        "nodeID": 8,
+        "text": "Default Illocuting",
+        "type": "YA"
+      },
+      {
+        "nodeID": 9,
+        "text": "Default Inference",
+        "type": "RA"
+      }
+    ],
+    "participants": [
+      {
+        "firstname": "Speaker",
+        "participantID": 0,
+        "surname": "1"
+      },
+      {
+        "firstname": "Speaker",
+        "participantID": 1,
+        "surname": "2"
+      }
+    ],
+    "schemefulfillments": null
+  },
+  "dialog": true,
+  "ova": [],
+  "text": {
+    "txt": " Speaker 1 <span class=\"highlighted\" id=\"0\">disagreements between party members are entirely to be expected.</span>.<br><br> Speaker 2 <span class=\"highlighted\" id=\"1\">the SNP has disagreements.</span>.<br><br> Speaker 1 <span class=\"highlighted\" id=\"2\">it's not uncommon for there to be disagreements between party members.</span>.<br><br>"
+  }
+}
+
+--boundary-example-4--
+```
+</details>
+
 ### Templating Systems
 
 [Semantic Kernel](https://github.com/microsoft/semantic-kernel) is interoperable with a number of templating systems, e.g., [Handlebars](https://handlebarsjs.com/), [Liquid](https://liquidjs.com/), and [Jinja](https://jinja.palletsprojects.com/en/stable/). These systems could be explored instead of, in addition to, or in combination with those markup-based templating approaches indicated above. Handlebars templates have a content type of `text/x-handlebars-template`, Liquid templates `application/liquid`, and Jinja templates `text/jinja`.
