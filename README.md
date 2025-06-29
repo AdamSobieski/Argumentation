@@ -541,4 +541,4 @@ Internet forums are also capable of federation. Examples of such software includ
 
 ### The Content-ID URL Scheme and Fragment Identifiers
 
-If one could utilize URI fragments with the Content-ID URL scheme, one could express things like `cid:part1#fragment` in MIME messages. Would enabling URI fragments with Content-ID URLs in MIME messages be useful?
+If one could utilize URI fragments with the Content-ID URL scheme, things like `cid:part1#fragment` could be expressed in MIME messages. Would enabling URI fragments with Content-ID URLs in MIME messages be useful?
