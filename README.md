@@ -503,7 +503,7 @@ So, it is possible.
 
 ### Activity Streams and ActivityPub
 
-With respect to [Activity Streams](https://www.w3.org/TR/activitystreams-core/) and [ActivityPub](https://www.w3.org/TR/activitypub/), the [`Object`](https://www.w3.org/TR/activitystreams-core/#object) type supports attachments and allows a MIME content type, [`mediaType`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-mediatype), to be specified. The default value for this `mediaType` property is `text/html` and it is presently unclear whether the `Object` type supports multipart content (e.g., `multipart/mixed`, `multipart/related`, `multipart/alternative`). If not, perhaps [`Collections`](https://www.w3.org/TR/activitystreams-core/#collections) of `Objects` could be of use in these regards.
+With respect to [Activity Streams](https://www.w3.org/TR/activitystreams-core/) and [ActivityPub](https://www.w3.org/TR/activitypub/), the [`Object`](https://www.w3.org/TR/activitystreams-core/#object) type supports attachments and allows a MIME content type, [`mediaType`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-mediatype), to be specified. The default value for this `mediaType` property is `text/html` and it is presently unclear whether the `Object` type supports multipart MIME types. If not, perhaps [`Collections`](https://www.w3.org/TR/activitystreams-core/#collections) of `Objects` could be of use in these regards.
 
 ### Advantages of Multipart Messages
 
