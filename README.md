@@ -453,10 +453,18 @@ These formats could provide end-users with enhanced presentational, interactiona
 
 Static hypertext could be automatically generated from argument-related data. In addition to algorithms producing static argument-specific hypertext from argument-related data, developers might want to explore providing reusable and general-purpose dynamic hypertext which would vary, at runtime, based upon loaded argument-related data.
 
-How would embedded HTML content in MIME messages access argument-related data from other parts of MIME messages? As HTML content can use [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to enable inlined images in email messages, so too could HTML content in other kinds of MIME messages use this URL scheme in [data blocks](https://html.spec.whatwg.org/multipage/scripting.html#data-block). This might resemble:
+How would embedded HTML content in MIME messages access argument-related data from other parts of MIME messages? As HTML content can use [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to enable inlined images in email messages, so too could HTML content in other kinds of MIME messages use this URL scheme in [data blocks](https://html.spec.whatwg.org/multipage/scripting.html#data-block).
+
+This might resemble:
 
 ```html
-<script id="argument1" type="application/argument+xml" src="cid:part1" />
+<script id="arg1" type="application/argument+xml" src="cid:part1" />
+```
+```html
+<script id="arg2" type="application/argument+n3" src="cid:part2" />
+```
+```html
+<script id="arg3" type="application/argument+json" src="cid:part3" />
 ```
 
 Algorithms should be able to process and to verify that MIME messages' parts expressing arguments in a variety of ways, for a variety of purposes, were variations of the same content.
