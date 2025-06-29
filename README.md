@@ -521,7 +521,7 @@ Other scenarios to consider include enhancing [mailing lists](https://en.wikiped
 
 For public groups, mailing-list servers, archives, and related knowledgebases could be [federated](https://en.wikipedia.org/wiki/Federation_(information_technology)), interconnected and synchronized in the sense of the [Fediverse](https://en.wikipedia.org/wiki/Fediverse).
 
-End-users could receive periodic [digests](https://en.wikipedia.org/wiki/Email_digest) summarizing events and developments of interest to them from across public mailing lists.
+End-users would, then, be able to receive periodic [digests](https://en.wikipedia.org/wiki/Email_digest) or [interactive dashboards](https://en.wikipedia.org/wiki/Dashboard_(computing)) summarizing events and developments of interest to them from across public mailing lists.
 
 ### Internet Forums
 
