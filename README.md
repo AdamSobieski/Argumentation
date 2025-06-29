@@ -519,9 +519,7 @@ Content-authoring tools could provide features for responding to emails containi
 
 Other scenarios to consider include enhancing [mailing lists](https://en.wikipedia.org/wiki/Mailing_list) with features made possible from adding structured knowledge to MIME email messages. There would be exciting possibilities with respect to new technologies for moderating discussion threads, for archiving discussion threads, for aggregating structured knowledge from discussion threads into [knowledgebases](https://en.wikipedia.org/wiki/Knowledge_base), and for enabling end-users and artificial-intelligence agents to query, poll, search, navigate, and explore mailing lists' archives and related knowledgebases.
 
-For public groups, mailing-list servers, archives, and related knowledgebases could be [federated](https://en.wikipedia.org/wiki/Federation_(information_technology)), interconnected and synchronized in the sense of the [Fediverse](https://en.wikipedia.org/wiki/Fediverse).
-
-End-users would, then, be able to receive periodic [digests](https://en.wikipedia.org/wiki/Email_digest) or [interactive dashboards](https://en.wikipedia.org/wiki/Dashboard_(computing)) summarizing developments and events of interest to them from across federated public mailing lists.
+For public groups, mailing-list servers, archives, and related knowledgebases could be [federated](https://en.wikipedia.org/wiki/Federation_(information_technology)), interconnected and synchronized in the sense of the [Fediverse](https://en.wikipedia.org/wiki/Fediverse). End-users would, then, be able to receive periodic [digests](https://en.wikipedia.org/wiki/Email_digest) or [interactive dashboards](https://en.wikipedia.org/wiki/Dashboard_(computing)) summarizing developments and events of interest to them from across federated public mailing lists.
 
 ### Internet Forums
 
