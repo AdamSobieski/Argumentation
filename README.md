@@ -519,7 +519,7 @@ Coming soon.
 
 End-users could, by making use of content-authoring software tools, create arguments comprised of interrelated natural-language and structured-knowledge parts and send these MIME messages to one another by email.
 
-Content-authoring tools could provide features for responding to emails containing structured knowledge, e.g., uses of the `mid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/). Recipients could, additionally, utilize software tools to verify and validate received arguments. 
+Content-authoring tools could provide features for responding to emails containing structured knowledge, e.g., uses of the Message-ID (`mid:`) URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/). Recipients could, additionally, utilize software tools to analyze, verify, and validate received arguments.
 
 Other scenarios to consider include enhancing [mailing lists](https://en.wikipedia.org/wiki/Mailing_list) with features made possible from adding structured knowledge to MIME email messages. There would be exciting possibilities with respect to new technologies for moderating discussion threads, for archiving discussion threads, for aggregating structured knowledge from discussion threads into [knowledgebases](https://en.wikipedia.org/wiki/Knowledge_base), and for enabling end-users and artificial-intelligence agents to query, search, and navigate through mailing lists' archives and related knowledgebases.
 
