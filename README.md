@@ -517,9 +517,9 @@ Coming soon.
 
 ### Email Messages and Mailing Lists
 
-End-users could, by making use of content-authoring software tools, create arguments comprised of interrelated natural-language and structured-knowledge parts and send these MIME messages to one another by email. Recipients could make use of software tools with features including, but not limited to, verifying and validating received arguments.
+End-users could, by making use of content-authoring software tools, create arguments comprised of interrelated natural-language and structured-knowledge parts and send these MIME messages to one another by email. Recipients could make use of software tools with features including, but not limited to, verifying and validating received arguments. Content-authoring tools could allow features involving responding to emails containing structured knowledge, e.g., uses of the `mid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/).
 
-Other scenarios to consider include content-authoring software tools which allow responding to argument-enhanced MIME messages, uses of the `mid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), enhancing [mailing lists](https://en.wikipedia.org/wiki/Mailing_list) with features possible from structured knowledge in MIME email messages, and new possibilities with respect to moderating discussions, archiving discussions, aggregating structured knowledge from discussion threads into [knowledgebases](https://en.wikipedia.org/wiki/Knowledge_base), and new tools for searching and navigating through mailing lists' archives and related knowledgebases.
+Other scenarios to consider include enhancing [mailing lists](https://en.wikipedia.org/wiki/Mailing_list) with features made possible from adding structured knowledge to MIME email messages. There would be exciting possibilities with respect to new technologies for moderating discussion threads, for archiving discussion threads, for aggregating structured knowledge from discussion threads into [knowledgebases](https://en.wikipedia.org/wiki/Knowledge_base), and for enabling end-users and artificial-intelligence agents to search and navigate through mailing lists' archives and related knowledgebases.
 
 ### Internet Forums
 
