@@ -17,8 +17,9 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 In this example, one can observe that argument representation formats can use the Content-ID (`cid:`) URL scheme [[RFC 2392](https://datatracker.ietf.org/doc/rfc2392/)] to refer to other parts of multipart messages.
 
 <details>
-  <summary>Click here to toggle the visibility of Example 1.</summary>
-
+<summary>Click here to toggle the visibility of Example 1.</summary>
+<br>
+  
 ```email
 Mime-Version: 1.0
 Content-Type: multipart/related; boundary="boundary-example-1"
@@ -156,7 +157,8 @@ Content-Type: application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"
 In addition to a new markup language, existing formats such as the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format) could be of use for expressing and representing both arguments and argument templates in MIME messages.
 
 <details>
-  <summary>Click here to toggle the visibility of Example 2.</summary>
+<summary>Click here to toggle the visibility of Example 2.</summary>
+<br>
 
 ```email
 Mime-Version: 1.0
@@ -196,7 +198,8 @@ ex:Node3 a aif:I-node ;
 This example shows a simple approach to extend knowledge graphs using AIF to support attaching evidence and citing scholarly and scientific publications.
 
 <details>
-  <summary>Click here to toggle the visibility of Example 3.</summary>
+<summary>Click here to toggle the visibility of Example 3.</summary>
+<br>
 
 ```email
 Mime-Version: 1.0
@@ -265,7 +268,8 @@ Content-Type: text/x-bibtex
 This example shows that arguments could be represented using the AIF model expressed using JSON in a MIME message.
 
 <details>
-  <summary>Click here to toggle the visibility of Example 4.</summary>
+<summary>Click here to toggle the visibility of Example 4.</summary>
+<br>
 
 ```email
 Mime-Version: 1.0
