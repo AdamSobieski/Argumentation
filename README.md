@@ -511,10 +511,6 @@ Advantages from supporting MIME's multipart semantics would include, but not be 
 
 ## Use Cases
 
-### Agentic Artificial Intelligence
-
-Coming soon.
-
 ### Email Messages and Mailing Lists
 
 End-users could, by making use of content-authoring software tools, create arguments comprised of interrelated natural-language and structured-knowledge parts and send these MIME messages to one another by email.
