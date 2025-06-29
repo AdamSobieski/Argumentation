@@ -517,7 +517,11 @@ End-users could, by making use of content-authoring software tools, create argum
 
 Content-authoring tools could provide features for responding to emails containing structured knowledge, e.g., uses of the Message-ID (`mid:`) URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/). Recipients could, additionally, utilize software tools to analyze, verify, and validate received arguments.
 
-Other scenarios to consider include enhancing [mailing lists](https://en.wikipedia.org/wiki/Mailing_list) with features made possible from adding structured knowledge to MIME email messages. There would be exciting possibilities with respect to new technologies for moderating discussion threads, for archiving discussion threads, for aggregating structured knowledge from discussion threads into [knowledgebases](https://en.wikipedia.org/wiki/Knowledge_base), and for enabling end-users and artificial-intelligence agents to query, search, and navigate through mailing lists' archives and related knowledgebases.
+Other scenarios to consider include enhancing [mailing lists](https://en.wikipedia.org/wiki/Mailing_list) with features made possible from adding structured knowledge to MIME email messages. There would be exciting possibilities with respect to new technologies for moderating discussion threads, for archiving discussion threads, for aggregating structured knowledge from discussion threads into [knowledgebases](https://en.wikipedia.org/wiki/Knowledge_base), and for enabling end-users and artificial-intelligence agents to query, poll, search, navigate, and explore mailing lists' archives and related knowledgebases.
+
+For public groups, mailing-list servers, archives, and related knowledgebases could be [federated](https://en.wikipedia.org/wiki/Federation_(information_technology)), interconnected and synchronized in the sense of the [Fediverse](https://en.wikipedia.org/wiki/Fediverse).
+
+Interested end-users could receive periodic [digests](https://en.wikipedia.org/wiki/Email_digest) summarizing events and developments across mailing lists.
 
 ### Internet Forums
 
