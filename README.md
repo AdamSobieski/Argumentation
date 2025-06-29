@@ -527,4 +527,6 @@ End-users could contribute to and participate in [Internet forums](https://en.wi
 
 For public groups, mailing-list servers, archives, and related knowledgebases could be [federated](https://en.wikipedia.org/wiki/Federation_(information_technology)), interconnected and synchronized in the sense of the [Fediverse](https://en.wikipedia.org/wiki/Fediverse). End-users would, then, be able to receive periodic [digests](https://en.wikipedia.org/wiki/Email_digest) or [interactive dashboards](https://en.wikipedia.org/wiki/Dashboard_(computing)) summarizing developments and events of interest to them from across federated public mailing lists.
 
-Internet forums are also capable of federation. Examples of such software systems include [Lemmy](https://join-lemmy.org/) and [NodeBB](https://nodebb.org/).
+Internet forums are also capable of federation. Examples of such software include [Lemmy](https://join-lemmy.org/) and [NodeBB](https://nodebb.org/).
+
+With respect to the comparison of message models pertaining to [ActivityStream](https://www.w3.org/TR/activitystreams-core/) and [ActivityPub](https://www.w3.org/TR/activitypub/), the [`object`](https://www.w3.org/TR/activitystreams-core/#object) type supports attachments and allows a content type, [`mediaType`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-mediatype), to be specified. The default value for the `mediaType` property is `text/html` and it is presently unclear to me whether the `object` type supports multipart content.
