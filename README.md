@@ -507,7 +507,7 @@ Using MIME, senders could indicate the availability of content without having to
 
 #### Example 6
 
-This example shows how one could include content in both English and French while providing a recipient with a means of obtaining content in other languages.
+This example shows how one could include content in both English and French while providing a recipient with a means to obtain content in other languages.
 
 <details>
 <summary>Click here to toggle the visibility of Example 6.</summary>
