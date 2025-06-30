@@ -477,7 +477,7 @@ Content-ID: <part1>
 Content-Type: text/plain
 Content-Language: en
 
-Hello.
+Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
 
 --boundary-example-5--
 ```
@@ -529,14 +529,14 @@ Content-Type: multipart/alternative; boundary="boundary-example-6"
 Content-Type: text/plain
 Content-Language: en
 
-Hello.
+Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
 
 --boundary-example-6
 
 Content-Type: text/plain
 Content-Language: fr
 
-Bonjour.
+Le changement climatique est causé par les activités humaines. Nous devons donc réduire les émissions de carbone.
 
 --boundary-example-6
 
