@@ -536,13 +536,13 @@ Le changement climatique est causé par les activités humaines. Nous devons don
 
 Content-Type: text/plain
 Content-Language: other1
-Content-Location: https://service.org/content/index.php?mid=12345678&lang=other1
+Content-Location: https://service.org/content/translate.php?mid=12345678&lang=other1
 
 --boundary-example-6
 
 Content-Type: text/plain
 Content-Language: other2
-Content-Location: https://service.org/content/index.php?mid=12345678&lang=other2
+Content-Location: https://service.org/content/translate.php?mid=12345678&lang=other2
 
 --boundary-example-6--
 ```
