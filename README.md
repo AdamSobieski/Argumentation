@@ -521,6 +521,7 @@ This example shows how one could include content in both English and French whil
 
 ```email
 Mime-Version: 1.0
+Message-Id: 12345678
 Content-Type: multipart/alternative; boundary="boundary-example-6"
 
 --boundary-example-6
