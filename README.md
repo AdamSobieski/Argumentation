@@ -466,8 +466,8 @@ Content-About: <part1>
 
 @prefix dc: <http://purl.org/dc/terms/> .
 
-<cid:part1> dc:creator "Bob Smith" .
-<cid:part1> dc:created "2025-06-29 20:00:00.000" .
+<cid:part1> dc:creator "Bob Smith" ;
+   dc:created "2025-06-29 20:00:00.000" .
 
 --boundary-example-5
 
