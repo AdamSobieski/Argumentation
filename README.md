@@ -447,6 +447,40 @@ Inspired by [Web Components](https://en.wikipedia.org/wiki/Web_Components), wher
 
 There exists a `Content-Description` header for providing text descriptions of parts. In particular for content of type `multipart/related`, parts could use a new header, perhaps named `Content-Metadata`, to refer to other parts which serve as metadata for them. Additionally or instead, those parts providing metadata could use a new header, perhaps named `Content-About`, to refer to those parts which they describe.
 
+#### Example 5
+
+This example shows how one could include metadata in one MIME message part to describe conent in another part.
+
+<details>
+<summary>Click here to toggle the visibility of Example 5.</summary>
+<br>
+
+```email
+Mime-Version: 1.0
+Content-Type: multipart/related; boundary="boundary-example-5"
+
+--boundary-example-5
+
+Content-Type: text/n3
+Content-About: <part1>
+
+@prefix dc: <http://purl.org/dc/terms/> .
+
+<cid:part1> dc:creator "Bob Smith" .
+<cid:part1> dc:created "2025-06-29 20:00:00.000" .
+
+--boundary-example-5
+
+Content-ID: <part1>
+Content-Type: text/plain
+Content-Language: en
+
+Hello.
+
+--boundary-example-5--
+```
+</details>
+
 ### Hypertext
 
 While it may suffice to include text and argument-related data together in MIME messages for artificial-intelligence agents, human end-users might tend to prefer the addition of hypertext, `text/html` or `application/xhtml+xml`.
@@ -455,7 +489,7 @@ These formats could provide end-users with enhanced presentational, interactiona
 
 Static hypertext could be automatically generated from argument-related data. In addition to algorithms producing static argument-specific hypertext from argument-related data, developers might want to explore providing reusable and general-purpose dynamic hypertext which would vary, at runtime, based upon loaded argument-related data.
 
-How would embedded HTML content in MIME messages access argument-related data from other parts of MIME messages? As HTML content can use [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to enable inlined images in email messages, so too could HTML content in other kinds of MIME messages use this URL scheme in [data blocks](https://html.spec.whatwg.org/multipage/scripting.html#data-block).
+How would embedded HTML content in MIME messages access argument-related data from other parts of MIME messages? HTML content can use [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to enable inlined images in email messages. HTML content in other kinds of MIME messages could use this scheme to enable [data blocks](https://html.spec.whatwg.org/multipage/scripting.html#data-block) to refer to other message parts.
 
 ### Security
 
@@ -475,45 +509,45 @@ With support for `multipart/alternative` parts and subparts, serialization algor
 
 Using MIME, senders could indicate the availability of content without having to include all of the content in a message. For example, senders might be able to translate content, on-demand, into a very large set of languages and, instead of having to provide content for each language, they could include content for some popular languages and indicate the availability of and locations of content in other languages.
 
-#### Example 5
+#### Example 6
 
 This example shows how one could include content in both English and French while providing a recipient with a means of obtaining content in other languages.
 
 <details>
-<summary>Click here to toggle the visibility of Example 5.</summary>
+<summary>Click here to toggle the visibility of Example 6.</summary>
 <br>
 
 ```email
 Mime-Version: 1.0
-Content-Type: multipart/alternative; boundary="boundary-example-5"
+Content-Type: multipart/alternative; boundary="boundary-example-6"
 
---boundary-example-5
+--boundary-example-6
 
 Content-Type: text/plain
 Content-Language: en
 
 Hello.
 
---boundary-example-5
+--boundary-example-6
 
 Content-Type: text/plain
 Content-Language: fr
 
 Bonjour.
 
---boundary-example-5
+--boundary-example-6
 
 Content-Type: text/plain
 Content-Language: other1
 Content-Location: https://service.org/content/index.php?mid=12345678&lang=other1
 
---boundary-example-5
+--boundary-example-6
 
 Content-Type: text/plain
 Content-Language: other2
 Content-Location: https://service.org/content/index.php?mid=12345678&lang=other2
 
---boundary-example-5--
+--boundary-example-6--
 ```
 </details>
 
