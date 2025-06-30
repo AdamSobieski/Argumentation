@@ -604,6 +604,12 @@ For public groups, mailing-list servers, archives, and related knowledgebases co
 
 Internet forums are also capable of federation. Examples of such software include [Lemmy](https://join-lemmy.org/) and [NodeBB](https://nodebb.org/).
 
+### Publish-subscribe Pattern
+
+The [publish-subscribe pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) is a messaging pattern in which message senders, called publishers, categorize messages into classes (or topics), and send them without needing to know which components will receive them.
+
+Artificial-intelligence tools could categorize messages on systems for such purposes. Embedding vectors could be of use for messages' classes, or topics.
+
 ### Agentic Reasoning, Argument, and Debate
 
 Coming soon.
