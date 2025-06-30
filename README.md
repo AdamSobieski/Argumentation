@@ -461,13 +461,15 @@ Content-Type: multipart/related; boundary="boundary-example-5"
 
 --boundary-example-5
 
-Content-Type: text/n3
+Content-Type: text/turtle
 Content-About: <part1>
 
 @prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
-<cid:part1> dc:creator "Bob Smith" ;
-   dc:created "2025-06-29 20:00:00.000" .
+<cid:part1> dc:created "2025-06-29 20:00:00.000" ;
+    dc:creator [ a foaf:Person ;
+            foaf:name "Bob Smith" ] .
 
 --boundary-example-5
 
