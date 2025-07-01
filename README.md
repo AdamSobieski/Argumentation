@@ -594,7 +594,7 @@ See also: [Project Debater](https://research.ibm.com/haifa/dept/vst/debater.shtm
 
 ### Email and Mailing Lists
 
-End-users could, by making use of content-authoring software tools, create arguments comprised of interrelated natural-language and structured-knowledge parts and send these MIME messages to one another by email.
+By making use of content-authoring software tools, end-users could create arguments comprised of interrelated natural-language and structured-knowledge parts and send these MIME messages to one another by email.
 
 Content-authoring tools could provide features for responding to emails containing structured knowledge, e.g., uses of the Message-ID (`mid:`) URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/). Recipients could, additionally, utilize software tools to analyze, verify, and validate received arguments.
 
