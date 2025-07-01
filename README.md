@@ -584,6 +584,10 @@ Advantages from supporting MIME's multipart semantics would include, but not be 
 
 ## Use Cases
 
+### Agentic Reasoning, Argument, and Debate
+
+Coming soon.
+
 ### Email and Mailing Lists
 
 End-users could, by making use of content-authoring software tools, create arguments comprised of interrelated natural-language and structured-knowledge parts and send these MIME messages to one another by email.
@@ -609,7 +613,3 @@ Internet forums are also capable of federation. Examples of such software includ
 The [publish-subscribe pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) is a messaging pattern in which message senders, called publishers, categorize messages into classes, or topics, and send them without needing to know which components will receive them. Examples of such protocols include [WebSub](https://en.wikipedia.org/wiki/WebSub).
 
 Artificial-intelligence tools could categorize messages and discussion threads for purposes of routing them to interested end-users. One or more [embeddings](https://en.wikipedia.org/wiki/Embedding_(machine_learning)) could be of use as classes, or topics.
-
-### Agentic Reasoning, Argument, and Debate
-
-Coming soon.
