@@ -148,7 +148,7 @@ Content-Type: application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"
 
 #### Example 2
 
-In addition to a new markup language, existing formats such as the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format) could be of use for expressing and representing both arguments and argument templates in MIME messages.
+In addition to a new markup language, existing ontologies such as the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format) could be of use for representing arguments in MIME messages.
 
 <details>
 <summary>Click here to toggle the visibility of Example 2.</summary>
@@ -189,7 +189,7 @@ ex:Node3 a aif:I-node ;
 
 #### Example 3
 
-This example shows a simple approach to extend knowledge graphs using AIF to support attaching evidence and citing scholarly and scientific publications.
+This example shows a simple approach to extend knowledge graphs using the AIF ontology to support attaching evidence and citing scholarly and scientific publications.
 
 <details>
 <summary>Click here to toggle the visibility of Example 3.</summary>
