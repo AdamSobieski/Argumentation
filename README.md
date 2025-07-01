@@ -600,7 +600,7 @@ Mime-Version: 1.0
 Message-Id: 12345678
 Content-Type: multipart/alternative; boundary="boundary-example-7"
 
---boundary-example-6
+--boundary-example-7
 
 Content-Type: text/plain
 Content-Language: en
@@ -614,7 +614,7 @@ Content-Language: fr
 
 Le changement climatique est causé par les activités humaines. Nous devons donc réduire les émissions de carbone.
 
---boundary-example-6
+--boundary-example-7
 
 Content-Type: text/plain
 Content-Language: other1
