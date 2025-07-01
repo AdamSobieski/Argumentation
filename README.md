@@ -586,7 +586,7 @@ Advantages from supporting MIME's multipart semantics would include, but not be 
 
 ### Agentic Reasoning, Argument, and Debate
 
-Artificial-intelligence agents can create, send, receive, analyze, evaluate, and response to arguments and, in addition to participating in debates, can judge debates.
+Artificial-intelligence agents can create, send, receive, analyze, evaluate, and respond to arguments and, in addition to participating in debates, can judge debates.
 
 In multi-persona debate architectures, multiple agents, each configured to represent a distinct persona, engage in structured debates.
 
