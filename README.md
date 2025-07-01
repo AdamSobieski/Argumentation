@@ -596,7 +596,7 @@ See also: [Project Debater](https://research.ibm.com/haifa/dept/vst/debater.shtm
 
 By making use of content-authoring software tools, end-users could create arguments comprised of interrelated natural-language and structured-knowledge parts and send these MIME messages to one another by email. Recipients could utilize software tools to analyze, verify, and validate received arguments.
 
-When end-users replied to emails containing structured knowledge, content-authoring tools could provide features for their response content to reference the structured-knowledge arguments being replied to.
+When end-users replied to emails containing structured-knowledge content, content-authoring tools could provide features for their structured knowledge to reference the structured knowledge in those arguments being replied to.
 
 Other scenarios to consider include enhancing [mailing lists](https://en.wikipedia.org/wiki/Mailing_list) with features made possible from adding structured knowledge to MIME email messages. There would be exciting possibilities with respect to new technologies for moderating discussion threads, for archiving discussion threads, for aggregating structured knowledge from discussion threads into [knowledgebases](https://en.wikipedia.org/wiki/Knowledge_base), and for enabling end-users and artificial-intelligence agents to query, poll, search, navigate, and explore mailing lists' archives and related knowledgebases.
 
