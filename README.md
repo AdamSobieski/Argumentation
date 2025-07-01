@@ -189,7 +189,7 @@ ex:Node3 a aif:I-node ;
 
 #### Example 3
 
-This example shows a simple approach to extend knowledge graphs using the AIF ontology to support attaching evidence and citing scholarly and scientific publications.
+This example shows a simple approach to extending knowledge graphs using the AIF ontology to support attaching evidence and citing scholarly and scientific publications.
 
 <details>
 <summary>Click here to toggle the visibility of Example 3.</summary>
@@ -259,7 +259,7 @@ Content-Type: text/x-bibtex
 
 #### Example 4
 
-This example shows that arguments could be represented using the AIF model expressed using JSON in a MIME message.
+This example shows a more intricate approach to extending knowledge graphs using the AIF ontology to support attaching evidence and citing scholarly and scientific publications.
 
 <details>
 <summary>Click here to toggle the visibility of Example 4.</summary>
@@ -274,11 +274,93 @@ Content-Type: multipart/related; boundary="boundary-example-4"
 Content-Type: text/plain
 Content-Language: en
 
+Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
+
+--boundary-example-4
+
+Content-Type: application/argument+turtle
+Content-Language: en
+
+@prefix aif: <http://www.arg.dundee.ac.uk/aif#> .
+@prefix ex: <http://example.org/> .
+@prefix ext: <http://extension.org/> .
+
+ex:Node1 a aif:I-node ;
+    aif:claimText "Climate change is caused by human activities." .
+
+ex:Node2 a aif:RA-node ;
+    aif:hasPremise ex:Node1 ;
+    aif:hasConclusion ex:Node3 .
+
+ex:Node3 a aif:I-node ;
+    aif:claimText "We should reduce carbon emissions." .
+
+ex:Node4 a ext:E-node ;
+    ext:hasEvidence <cid:item1> .
+
+ex:Node5 a ext:EA-node ;
+    ext:supported ex:Node1 ;
+    ext:supportedBy ex:Node4 .
+
+ex:Node6 a ext:C-node ;
+    ext:cites <cid:item2> .
+
+ex:Node7 a ext:CA-node ;
+    ext:supported ex:Node1 ;
+    ext:supportedBy ex:Node6 .
+
+--boundary-example-4
+
+Content-ID: <item1>
+Content-Type: application/pdf
+Content-Language: en
+Content-Disposition: attachment; filename="evidence.pdf"
+Content-Transfer-Encoding: base64
+
+TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4g
+U2VkIGRvIGVpdXNtb2QgdGVtcG9yIGluY2lkaWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu
+YSBhbGlxdWEuIFV0IGVuaW0gYWQgbWluaW0gdmVuaWFtLCBxdWlzIG5vc3RydWQgZXhlcmNpdGF0
+aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
+YXQuCg==
+
+--boundary-example-4
+
+Content-ID: <item2>
+Content-Type: text/x-bibtex
+
+@article{Brown2023,
+  author = {Charles Brown},
+  title = {An Interesting Article},
+  journal = {Journal of Interesting Articles},
+  year = {2023}
+}
+
+--boundary-example-4--
+```
+</details>
+
+#### Example 5
+
+This example shows that arguments could be represented using the AIF model expressed using JSON in a MIME message.
+
+<details>
+<summary>Click here to toggle the visibility of Example 5.</summary>
+<br>
+
+```email
+Mime-Version: 1.0
+Content-Type: multipart/related; boundary="boundary-example-5"
+
+--boundary-example-5
+
+Content-Type: text/plain
+Content-Language: en
+
 Speaker 1: Disagreements between party members are entirely to be expected.
 Speaker 2: The SNP has disagreements.
 Speaker 1: It's not uncommon for there to be disagreements between party members.
 
---boundary-example-4
+--boundary-example-5
 
 Content-Type: application/argument+json
 Content-Language: en
@@ -415,7 +497,7 @@ Content-Language: en
   }
 }
 
---boundary-example-4--
+--boundary-example-5--
 ```
 </details>
 
@@ -441,19 +523,19 @@ Inspired by [Web Components](https://en.wikipedia.org/wiki/Web_Components), wher
 
 There exists a `Content-Description` header for providing text descriptions of parts. There could, in particular for content of type `multipart/related`, be a new MIME header, perhaps named `Content-Metadata`, to refer to other parts which serve as metadata for them. Additionally or instead, those parts providing metadata could use a new header, perhaps named `Content-About`, to refer to those parts which they describe.
 
-#### Example 5
+#### Example 6
 
 This example shows how one could include metadata in one MIME message part to describe conent in another part.
 
 <details>
-<summary>Click here to toggle the visibility of Example 5.</summary>
+<summary>Click here to toggle the visibility of Example 6.</summary>
 <br>
 
 ```email
 Mime-Version: 1.0
-Content-Type: multipart/related; boundary="boundary-example-5"
+Content-Type: multipart/related; boundary="boundary-example-6"
 
---boundary-example-5
+--boundary-example-6
 
 Content-Type: text/turtle
 Content-About: <part1>
@@ -465,7 +547,7 @@ Content-About: <part1>
     dc:creator [ a foaf:Person ;
             foaf:name "Bob Smith" ] .
 
---boundary-example-5
+--boundary-example-6
 
 Content-ID: <part1>
 Content-Type: text/plain
@@ -473,7 +555,7 @@ Content-Language: en
 
 Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
 
---boundary-example-5--
+--boundary-example-6--
 ```
 </details>
 
@@ -505,18 +587,18 @@ With support for `multipart/alternative` parts and subparts, serialization algor
 
 Using MIME, senders could indicate the availability of content without having to include all of the content in a message. For example, senders might be able to translate content, on-demand, into a very large set of languages and, instead of having to provide content for each language, they could include content for some popular languages and indicate the availability of and locations of content in other languages.
 
-#### Example 6
+#### Example 7
 
 This example shows how one could include content in both English and French while providing a recipient with a means to obtain content in other languages.
 
 <details>
-<summary>Click here to toggle the visibility of Example 6.</summary>
+<summary>Click here to toggle the visibility of Example 7.</summary>
 <br>
 
 ```email
 Mime-Version: 1.0
 Message-Id: 12345678
-Content-Type: multipart/alternative; boundary="boundary-example-6"
+Content-Type: multipart/alternative; boundary="boundary-example-7"
 
 --boundary-example-6
 
@@ -525,7 +607,7 @@ Content-Language: en
 
 Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
 
---boundary-example-6
+--boundary-example-7
 
 Content-Type: text/plain
 Content-Language: fr
@@ -538,13 +620,13 @@ Content-Type: text/plain
 Content-Language: other1
 Content-Location: https://service.org/translate.php?mid=12345678&lang=other1
 
---boundary-example-6
+--boundary-example-7
 
 Content-Type: text/plain
 Content-Language: other2
 Content-Location: https://service.org/translate.php?mid=12345678&lang=other2
 
---boundary-example-6--
+--boundary-example-7--
 ```
 </details>
 
