@@ -590,7 +590,7 @@ Artificial-intelligence agents can create, send, receive, analyze, evaluate, and
 
 In multi-persona debate architectures, multiple agents, each configured to represent a distinct persona, engage in structured debates.
 
-Example systems include [Argum.AI](https://argum.ai), [Project Debater](https://research.ibm.com/haifa/dept/vst/debater.shtml).
+See also: [Argum.AI](https://argum.ai), [Project Debater](https://research.ibm.com/haifa/dept/vst/debater.shtml).
 
 ### Email and Mailing Lists
 
