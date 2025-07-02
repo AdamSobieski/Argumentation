@@ -585,11 +585,11 @@ With support for `multipart/alternative` parts and subparts, serialization algor
 
 ### Content Negotiation
 
-Using MIME, senders could indicate the availability of content without having to include all of the content in a message. For example, senders might be able to translate content, on-demand, into a very large set of languages and, instead of having to provide content for each language, they could include content for some popular languages and indicate the availability of and locations of content in other languages.
+Using MIME headers, senders could indicate the availability of content without having to include it in a message. For example, senders might be able to translate content, on-demand, into a very large set of languages and, instead of having to provide content for each language, they could include content for some popular languages and indicate the availability of and locations of content in other languages.
 
 #### Example 7
 
-This example shows how one could include content in both English and French while providing a recipient with a means to obtain content in other languages.
+This example shows a theoretical approach to include content in both English and French while providing recipients with means to obtain the content in other formats or languages.
 
 <details>
 <summary>Click here to toggle the visibility of Example 7.</summary>
@@ -618,13 +618,15 @@ Le changement climatique est causé par les activités humaines. Nous devons don
 
 Content-Type: text/plain
 Content-Language: other1
-Content-Location: https://service.org/translate.php?mid=12345678&lang=other1
+Content-Disposition: omitted
+Content-Alias: https://service.org/translate.php?mid=12345678&lang=other1
 
 --boundary-example-7
 
 Content-Type: text/plain
 Content-Language: other2
-Content-Location: https://service.org/translate.php?mid=12345678&lang=other2
+Content-Disposition: omitted
+Content-Alias: https://service.org/translate.php?mid=12345678&lang=other2
 
 --boundary-example-7--
 ```
