@@ -295,17 +295,17 @@ ex:Node2 a aif:RA-node ;
 ex:Node3 a aif:I-node ;
     aif:claimText "We should reduce carbon emissions." .
 
-ex:Node4 a ext:XE-node ;
+ex:Node4 a ext:E-node ;
     ext:hasEvidence <cid:item1> .
 
-ex:Node5 a ext:XEA-node ;
+ex:Node5 a ext:ES-node ;
     ext:supported ex:Node1 ;
     ext:supportedBy ex:Node4 .
 
-ex:Node6 a ext:XC-node ;
+ex:Node6 a ext:C-node ;
     ext:cites <cid:item2> .
 
-ex:Node7 a ext:XCA-node ;
+ex:Node7 a ext:CS-node ;
     ext:supported ex:Node1 ;
     ext:supportedBy ex:Node6 .
 
