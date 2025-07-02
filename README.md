@@ -698,4 +698,4 @@ Internet forums are also capable of federation. Examples of such software includ
 
 The [publish-subscribe pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) is a messaging pattern in which message senders, called publishers, categorize messages into classes, or topics, and send them without needing to know which components will receive them. Examples of such protocols include [WebSub](https://en.wikipedia.org/wiki/WebSub).
 
-Artificial-intelligence tools could categorize messages and discussion threads for purposes of routing them to interested end-users. One or more [embeddings](https://en.wikipedia.org/wiki/Embedding_(machine_learning)) could be of use as classes, or topics.
+Artificial-intelligence tools could categorize messages and discussion threads for purposes of routing them or digests summarizing them to interested end-users. [Embeddings](https://en.wikipedia.org/wiki/Embedding_(machine_learning)) could be of use for representing messages' and threads' classes, or topics.
