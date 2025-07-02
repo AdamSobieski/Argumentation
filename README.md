@@ -525,7 +525,7 @@ There exists a `Content-Description` header for providing text descriptions of p
 
 #### Example 6
 
-This example shows how one could include metadata in one MIME message part to describe conent in another part.
+This example shows how one could include metadata in one MIME message part to describe content in another part.
 
 <details>
 <summary>Click here to toggle the visibility of Example 6.</summary>
