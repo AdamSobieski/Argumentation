@@ -585,7 +585,9 @@ With support for `multipart/alternative` parts and subparts, serialization algor
 
 ### Content Negotiation
 
-One could provide [content negotiation](https://en.wikipedia.org/wiki/Content_negotiation) functionalities with MIME messages. Senders could indicate the availability of contents in various formats and languages and their locations online without having to include them in MIME messages.
+Agent-driven or reactive [content negotiation](https://en.wikipedia.org/wiki/Content_negotiation) is performed by algorithms in user-agents which choose among the possible variant representations. This is commonly performed based using a server-provided list of representations and metadata about them.
+
+One could provide these functionalities using MIME messages. Senders could indicate the availability of content in various formats and languages and online locations without having to include the content in MIME messages.
 
 For example, senders might be able to translate content, on-demand, into a very large set of languages and, instead of having to provide content for each language in a MIME message, they could include content for some popular languages and indicate the availability of and locations of content in other languages.
 
