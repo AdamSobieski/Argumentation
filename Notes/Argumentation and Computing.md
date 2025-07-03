@@ -58,7 +58,7 @@ public interface IExecutable : IGenerated<IFunction>
 
 public interface IJustifiableExecutable : IJustifiableGenerated<IJustifiableFunction>
 {
-    public Task<object> Execute();
+    public Task<(object Value, IArgument Justification)> Execute();
 }
 
 public interface IFunction : IGenerator<IExecutable>
@@ -95,8 +95,7 @@ public static class Extensions
 
         return await function.Apply(bindings).Execute();
     }
-
-    public static async Task<object> Invoke(this IJustifiableFunction function, object[] args, bool auto = true)
+    public static async Task<(object Value, IArgument Justification)> Invoke(this IJustifiableFunction function, object[] args, bool auto = true)
     {
         int n = args.Length;
 
@@ -131,8 +130,7 @@ public static class Extensions
             return await function.Apply(bindings).Execute();
         }
     }
-
-    public static async Task<object> Invoke(this IJustifiableFunction function, object[] args, IArgument[] justifications)
+    public static async Task<(object Value, IArgument Justification)> Invoke(this IJustifiableFunction function, object[] args, IArgument[] justifications)
     {
         int n = args.Length;
 
