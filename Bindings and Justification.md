@@ -32,6 +32,13 @@ public interface IGenerated<out TGenerator>
     IReadOnlyList<IBinding> Bindings { get; }
 }
 
+public interface IArgument : IJustifiableGenerated<IArgumentGenerator>
+{
+    object Claim { get; }
+}
+
+public interface IArgumentGenerator : IJustifiableGenerator<IArgument> { }
+
 public interface IJustifiableGenerator<out TGenerated> : IGenerator<TGenerated>
 {
     IReadOnlyList<IArgumentGenerator> Preconditions { get; }
@@ -44,14 +51,12 @@ public interface IJustifiableGenerated<out TGenerator> : IGenerated<TGenerator>
     IReadOnlyList<IArgument> Arguments { get; }
 }
 
-public interface IArgument : IJustifiableGenerated<IArgumentGenerator>
+public interface IExecutable : IGenerated<IFunction>
 {
-    object Claim { get; }
+    public Task<object> Execute();
 }
 
-public interface IArgumentGenerator : IJustifiableGenerator<IArgument> { }
-
-public interface IExecutable : IJustifiableGenerated<IJustifiableFunction>
+public interface IJustifiableExecutable : IJustifiableGenerated<IJustifiableFunction>
 {
     public Task<object> Execute();
 }
@@ -61,7 +66,7 @@ public interface IFunction : IGenerator<IExecutable>
     public string Name { get; }
 }
 
-public interface IJustifiableFunction : IJustifiableGenerator<IExecutable>
+public interface IJustifiableFunction : IJustifiableGenerator<IJustifiableExecutable>
 {
     public string Name { get; }
 }
