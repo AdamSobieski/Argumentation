@@ -90,6 +90,7 @@ public static class Extensions
 
         return await function.Apply(bindings).Execute();
     }
+
     public static async Task<object> Invoke(this IJustifiableFunction function, object[] args, bool auto = true)
     {
         int n = args.Length;
@@ -109,13 +110,13 @@ public static class Extensions
 
         if (auto)
         {
-            foreach (var requirement in function.Preconditions)
+            foreach (var precondition in function.Preconditions)
             {
-                if (!requirement.Parameters.All(x => function.Parameters.Contains(x)))
+                if (!precondition.Parameters.All(x => function.Parameters.Contains(x)))
                 {
                     throw new Exception("Could not auto-create justifications for parameter value bindings, at least of of the function's requirements involves a parameter not in the function signature.");
                 }
-                arguments.Add(requirement.Apply(bindings));
+                arguments.Add(precondition.Apply(bindings));
             }
 
             return await function.Apply(bindings, arguments).Execute();
@@ -125,6 +126,7 @@ public static class Extensions
             return await function.Apply(bindings).Execute();
         }
     }
+
     public static async Task<object> Invoke(this IJustifiableFunction function, object[] args, IArgument[] justifications)
     {
         int n = args.Length;
