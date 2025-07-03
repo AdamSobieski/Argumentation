@@ -106,7 +106,7 @@ public static class Extensions
         }
 
         List<IBinding> bindings = new List<IBinding>();
-        List<IArgument> arguments = new List<IArgument>();
+        List<IArgument> justifications = new List<IArgument>();
 
         for (int index = 0; index < n; ++index)
         {
@@ -121,10 +121,10 @@ public static class Extensions
                 {
                     throw new Exception("Could not auto-create justifications for parameter value bindings, at least of of the function's preconditions involves a parameter not in the function's signature.");
                 }
-                arguments.Add(precondition.Apply(bindings));
+                justifications.Add(precondition.Apply(bindings));
             }
 
-            return await function.Apply(bindings, arguments).Execute();
+            return await function.Apply(bindings, justifications).Execute();
         }
         else
         {
