@@ -41,7 +41,7 @@ public interface IJustifiableGenerator<out TGENERATED> : IGenerator<TGENERATED>
 
 public interface IJustifiableGenerated<out TGENERATOR> : IGenerated<TGENERATOR>
 {
-    IReadOnlyList<IArgument> Arguments { get; }
+    IReadOnlyList<IArgument> Justifications { get; }
 }
 
 public interface IArgument : IJustifiableGenerated<IArgumentGenerator>
