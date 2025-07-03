@@ -22,7 +22,7 @@ public interface IArgumentGenerator : IJustifiableGenerator<IArgument> { }
 
 ## A Supporting Model
 
-Here is a supporting model which will work with many argument models.
+Here is a supporting model that could work with many argument models.
 
 ```cs
 public interface IBinding
