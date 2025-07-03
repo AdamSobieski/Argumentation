@@ -107,7 +107,7 @@ public interface IJustifiableExecutable : IJustifiableGenerated<IJustifiableFunc
 
 ## Extension Methods Utilizing The Function Model
 
-Here are some extension methods utilizing the supporting model. An `Invoke()` extension method is provided for `IFunction` and `IJustifiableFunction`.
+Here are some extension methods utilizing the function model. An `Invoke()` extension method is provided for `IFunction` and `IJustifiableFunction`.
 
 ```cs
 public static class Extensions
