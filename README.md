@@ -511,9 +511,9 @@ Advanced topics in argument templating include interactive templates and agentic
 
 ### Hypertext
 
-While it may suffice to include text and argument-related data together in MIME messages for artificial-intelligence agents, human end-users might tend to prefer the addition of hypertext, `text/html` or `application/xhtml+xml`.
+While it may suffice to include text and argument-related data together in MIME messages for artificial-intelligence agents, human end-users might tend to prefer the addition of hypertext.
 
-These formats could provide end-users with enhanced presentational, interactional, and navigational features as well as other features made possible from the availability of argument-related data elsewhere in MIME messages.
+This format could provide end-users with enhanced presentational, interactional, and navigational features. This format could provide end-users with other features from accessing argument-related data available elsewhere in MIME messages.
 
 Static hypertext could be automatically generated from argument-related data. In addition to algorithms producing static argument-specific hypertext from argument-related data, developers might want to explore providing reusable and general-purpose dynamic hypertext which would vary, at runtime, based upon loaded argument-related data.
 
