@@ -636,7 +636,7 @@ Objects could, additionally, be serialized into and be deserialized from MIME me
 
 With support for `multipart/alternative` parts and subparts, serialization algorithms would be able to add multiple alternatives into MIME messages and deserialization algorithms would be able to contextually choose from or select from these.
 
-## The Comparison of Models of Messages
+## A Comparison of Message Models
 
 ### Artificial-intelligence APIs, Frameworks, and Protocols
 
