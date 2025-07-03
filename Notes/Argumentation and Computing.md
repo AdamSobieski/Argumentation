@@ -32,13 +32,6 @@ public interface IGenerated<out TGENERATOR>
     IReadOnlyList<IBinding> Bindings { get; }
 }
 
-public interface IArgument : IJustifiableGenerated<IArgumentGenerator>
-{
-    object Claim { get; }
-}
-
-public interface IArgumentGenerator : IJustifiableGenerator<IArgument> { }
-
 public interface IJustifiableGenerator<out TGENERATED> : IGenerator<TGENERATED>
 {
     IReadOnlyList<IArgumentGenerator> Preconditions { get; }
@@ -50,6 +43,13 @@ public interface IJustifiableGenerated<out TGENERATOR> : IGenerated<TGENERATOR>
 {
     IReadOnlyList<IArgument> Arguments { get; }
 }
+
+public interface IArgument : IJustifiableGenerated<IArgumentGenerator>
+{
+    object Claim { get; }
+}
+
+public interface IArgumentGenerator : IJustifiableGenerator<IArgument> { }
 
 public interface IExecutable : IGenerated<IFunction>
 {
