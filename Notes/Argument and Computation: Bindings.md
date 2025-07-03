@@ -2,9 +2,9 @@
 
 Bindings are utilized throughout computing. They are utilized for [function invocations](https://en.wikipedia.org/wiki/Function_(computer_programming)), [remote procedure calls](https://en.wikipedia.org/wiki/Remote_procedure_call), [input forms](https://en.wikipedia.org/wiki/HTML_form), [templates](https://en.wikipedia.org/wiki/Template_processor), and [inference rules](https://en.wikipedia.org/wiki/Rule_of_inference).
 
-Beyond [type systems](https://en.wikipedia.org/wiki/Type_system), [guard clauses](https://en.wikipedia.org/wiki/Guard_(computer_science)), and [design by contract](https://en.wikipedia.org/wiki/Design_by_contract) approaches, these assuring that provided values meet certain constraints and criteria, what if the binding of values to parameters could be justified, could be argued, to convince one or more artificial-intelligence agents that the values were valid?
+Beyond [type systems](https://en.wikipedia.org/wiki/Type_system), [guard clauses](https://en.wikipedia.org/wiki/Guard_(computer_science)), and related [design by contract](https://en.wikipedia.org/wiki/Design_by_contract) approaches, these assuring that provided values meet certain constraints and criteria, what if the binding of values to parameters could be justified, could be argued, to convince one or more artificial-intelligence agents that the values were valid?
 
-This would enable a new level of expressiveness when declaring functions and their parameters, remote procedures and their parameters, input forms and their fields, templates and their parameters, and inference rules. Software developers and artificial-intelligence agents would be able to justify, or to argue, that values were valid and other artificial-intelligence agents would be able to evaluate these arguments.
+This would enable a new level of expressiveness for declaring functions and their parameters, remote procedures and their parameters, input forms and their fields, templates and their parameters, and inference rules. Software developers and artificial-intelligence agents would be able to justify, or to argue, that values were valid and other artificial-intelligence agents would be able to evaluate these arguments.
 
 ## A Simple Argument Model
 
