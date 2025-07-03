@@ -11,18 +11,18 @@ This would enable a new level of expressiveness when declaring functions and the
 For illustration purposes, here is a simple argument model.
 
 ```cs
+public interface IArgumentGenerator : IJustifiableGenerator<IArgument> { }
+
 public interface IArgument : IJustifiableGenerated<IArgumentGenerator>
 {
     IFormattable Conclusion { get; }
     IEnumerable<IArgument> Premises { get; }
 }
-
-public interface IArgumentGenerator : IJustifiableGenerator<IArgument> { }
 ```
 
 ## A Supporting Model
 
-Here is a supporting model that could work with many argument models.
+Here is a supporting model that would work with many argument models.
 
 ```cs
 public interface IBinding
@@ -63,7 +63,7 @@ public interface IJustifiableGenerated<out TGENERATOR> : IGenerated<TGENERATOR>
 
 ## A Function Model
 
-Here is a function model utilizing that supporting model.
+Here is a function model utilizing the supporting model indicated above.
 
 ```cs
 public interface IExecutable : IGenerated<IFunction>
@@ -83,6 +83,10 @@ public interface IFunction : IGenerator<IExecutable>
     public string Name { get; }
 
     public string Description { get; }
+
+    public IEnumerable<string> Tags { get; }
+
+    public IEnumerable<string> Examples { get; }
 }
 
 public interface IJustifiableFunction : IJustifiableGenerator<IJustifiableExecutable>
@@ -94,6 +98,10 @@ public interface IJustifiableFunction : IJustifiableGenerator<IJustifiableExecut
     public string Name { get; }
 
     public string Description { get; }
+
+    public IEnumerable<string> Tags { get; }
+
+    public IEnumerable<string> Examples { get; }
 }
 ```
 
@@ -180,4 +188,4 @@ public static class Extensions
 
 ## Conclusion
 
-Bindings are utilized throughout computing. They are utilized for function invocations, remote procedure calls, input forms, templates, and inference rules. As was shown above, the validity of values can be argued by software developers and artificial-intelligence agents, these arguments evaluated by artificial-intelligence agents.
+Bindings are utilized throughout computing. They are utilized for function invocations, remote procedure calls, input forms, templates, and inference rules. As was shown above, the validity of values can be argued by software developers and artificial-intelligence agents and these arguments could be evaluated by artificial-intelligence agents.
