@@ -6,7 +6,23 @@ Beyond [type systems](https://en.wikipedia.org/wiki/Type_system), [guard clauses
 
 This would enable a new level of expressiveness when declaring functions and their parameters, remote procedures and their parameters, input forms and their fields, templates and their parameters, and inference rules. Software developers and artificial-intelligence agents would be able to justify, or to argue, that values were valid and other artificial-intelligence agents would be able to evaluate these arguments.
 
-## A Model
+## A Simple Argument Model
+
+For illustration purposes, here is a simple argument model.
+
+```cs
+public interface IArgument : IJustifiableGenerated<IArgumentGenerator>
+{
+    IFormattable Conclusion { get; }
+    IEnumerable<IArgument> Premises { get; }
+}
+
+public interface IArgumentGenerator : IJustifiableGenerator<IArgument> { }
+```
+
+## A Supporting Model
+
+Here is a supporting model which will work with many argument models.
 
 ```cs
 public interface IBinding
@@ -43,14 +59,13 @@ public interface IJustifiableGenerated<out TGENERATOR> : IGenerated<TGENERATOR>
 {
     IReadOnlyList<IArgument> Justifications { get; }
 }
+```
 
-public interface IArgument : IJustifiableGenerated<IArgumentGenerator>
-{
-    object Claim { get; }
-}
+## A Function Model
 
-public interface IArgumentGenerator : IJustifiableGenerator<IArgument> { }
+Here is a function model utilizing that supporting model.
 
+```cs
 public interface IExecutable : IGenerated<IFunction>
 {
     public Task<IEnumerable<IBinding>> Execute();
@@ -82,7 +97,9 @@ public interface IJustifiableFunction : IJustifiableGenerator<IJustifiableExecut
 }
 ```
 
-## Extension Methods Utilizing the Model
+## Extension Methods Utilizing The Function Model
+
+Here are some extension methods utilizing the supporting model. An `Invoke()` extension method is provided for `IFunction` and `IJustifiableFunction`.
 
 ```cs
 public static class Extensions
