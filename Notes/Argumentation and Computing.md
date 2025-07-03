@@ -66,13 +66,19 @@ public interface IFunction : IGenerator<IExecutable>
     IReadOnlyList<Parameter> OutputParameters { get; }
 
     public string Name { get; }
+
+    public string Description { get; }
 }
 
 public interface IJustifiableFunction : IJustifiableGenerator<IJustifiableExecutable>
 {
     IReadOnlyList<Parameter> OutputParameters { get; }
 
+    IReadOnlyList<IArgumentGenerator> Postconditions { get; }
+
     public string Name { get; }
+
+    public string Description { get; }
 }
 ```
 
