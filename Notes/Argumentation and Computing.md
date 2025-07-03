@@ -36,7 +36,7 @@ public interface IJustifiableGenerator<out TGENERATED> : IGenerator<TGENERATED>
 {
     IReadOnlyList<IArgumentGenerator> Preconditions { get; }
 
-    TGENERATED Apply(IEnumerable<IBinding> bindings, IEnumerable<IArgument> arguments);
+    TGENERATED Apply(IEnumerable<IBinding> bindings, IEnumerable<IArgument> justifications);
 }
 
 public interface IJustifiableGenerated<out TGENERATOR> : IGenerated<TGENERATOR>
