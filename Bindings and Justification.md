@@ -119,7 +119,7 @@ public static class Extensions
             {
                 if (!precondition.Parameters.All(x => function.Parameters.Contains(x)))
                 {
-                    throw new Exception("Could not auto-create justifications for parameter value bindings, at least of of the function's requirements involves a parameter not in the function signature.");
+                    throw new Exception("Could not auto-create justifications for parameter value bindings, at least of of the function's preconditions involves a parameter not in the function's signature.");
                 }
                 arguments.Add(precondition.Apply(bindings));
             }
