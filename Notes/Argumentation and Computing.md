@@ -53,21 +53,25 @@ public interface IArgumentGenerator : IJustifiableGenerator<IArgument> { }
 
 public interface IExecutable : IGenerated<IFunction>
 {
-    public Task<object> Execute();
+    public Task<IEnumerable<IBinding>> Execute();
 }
 
 public interface IJustifiableExecutable : IJustifiableGenerated<IJustifiableFunction>
 {
-    public Task<(object Value, IArgument Justification)> Execute();
+    public Task<(IEnumerable<IBinding> Bindings, IEnumerable<IArgument> Justifications)> Execute();
 }
 
 public interface IFunction : IGenerator<IExecutable>
 {
+    IReadOnlyList<Parameter> OutputParameters { get; }
+
     public string Name { get; }
 }
 
 public interface IJustifiableFunction : IJustifiableGenerator<IJustifiableExecutable>
 {
+    IReadOnlyList<Parameter> OutputParameters { get; }
+
     public string Name { get; }
 }
 ```
@@ -77,7 +81,7 @@ public interface IJustifiableFunction : IJustifiableGenerator<IJustifiableExecut
 ```cs
 public static class Extensions
 {
-    public static async Task<object> Invoke(this IFunction function, object[] args)
+    public static async Task<IEnumerable<IBinding>> Invoke(this IFunction function, object[] args)
     {
         int n = args.Length;
 
@@ -95,7 +99,7 @@ public static class Extensions
 
         return await function.Apply(bindings).Execute();
     }
-    public static async Task<(object Value, IArgument Justification)> Invoke(this IJustifiableFunction function, object[] args, bool auto = true)
+    public static async Task<(IEnumerable<IBinding> Bindings, IEnumerable<IArgument> Justifications)> Invoke(this IJustifiableFunction function, object[] args, bool auto = true)
     {
         int n = args.Length;
 
@@ -130,7 +134,7 @@ public static class Extensions
             return await function.Apply(bindings).Execute();
         }
     }
-    public static async Task<(object Value, IArgument Justification)> Invoke(this IJustifiableFunction function, object[] args, IArgument[] justifications)
+    public static async Task<(IEnumerable<IBinding> Bindings, IEnumerable<IArgument> Justifications)> Invoke(this IJustifiableFunction function, object[] args, IArgument[] justifications)
     {
         int n = args.Length;
 
