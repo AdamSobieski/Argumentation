@@ -66,16 +66,6 @@ public interface IJustifiableGenerated<out TGENERATOR> : IGenerated<TGENERATOR>
 Here is a function model utilizing the supporting model indicated above.
 
 ```cs
-public interface IExecutable : IGenerated<IFunction>
-{
-    public Task<IEnumerable<IBinding>> Execute();
-}
-
-public interface IJustifiableExecutable : IJustifiableGenerated<IJustifiableFunction>
-{
-    public Task<(IEnumerable<IBinding> Bindings, IEnumerable<IArgument> Justifications)> Execute();
-}
-
 public interface IFunction : IGenerator<IExecutable>
 {
     IReadOnlyList<Parameter> OutputParameters { get; }
@@ -87,6 +77,11 @@ public interface IFunction : IGenerator<IExecutable>
     public IEnumerable<string> Tags { get; }
 
     public IEnumerable<string> Examples { get; }
+}
+
+public interface IExecutable : IGenerated<IFunction>
+{
+    public Task<IEnumerable<IBinding>> Execute();
 }
 
 public interface IJustifiableFunction : IJustifiableGenerator<IJustifiableExecutable>
@@ -102,6 +97,11 @@ public interface IJustifiableFunction : IJustifiableGenerator<IJustifiableExecut
     public IEnumerable<string> Tags { get; }
 
     public IEnumerable<string> Examples { get; }
+}
+
+public interface IJustifiableExecutable : IJustifiableGenerated<IJustifiableFunction>
+{
+    public Task<(IEnumerable<IBinding> Bindings, IEnumerable<IArgument> Justifications)> Execute();
 }
 ```
 
