@@ -16,18 +16,18 @@ public interface IBinding
     object Value { get; }
 }
 
-public interface IGenerator<out TGenerated>
+public interface IGenerator<out TGENERATED>
 {
     IReadOnlyList<Parameter> Parameters { get; }
 
     IBinding Bind(Parameter parameter, object value);
 
-    TGenerated Apply(IEnumerable<IBinding> bindings);
+    TGENERATED Apply(IEnumerable<IBinding> bindings);
 }
 
-public interface IGenerated<out TGenerator>
+public interface IGenerated<out TGENERATOR>
 {
-    TGenerator Generator { get; }
+    TGENERATOR Generator { get; }
 
     IReadOnlyList<IBinding> Bindings { get; }
 }
@@ -39,14 +39,14 @@ public interface IArgument : IJustifiableGenerated<IArgumentGenerator>
 
 public interface IArgumentGenerator : IJustifiableGenerator<IArgument> { }
 
-public interface IJustifiableGenerator<out TGenerated> : IGenerator<TGenerated>
+public interface IJustifiableGenerator<out TGENERATED> : IGenerator<TGENERATED>
 {
     IReadOnlyList<IArgumentGenerator> Preconditions { get; }
 
-    TGenerated Apply(IEnumerable<IBinding> bindings, IEnumerable<IArgument> arguments);
+    TGENERATED Apply(IEnumerable<IBinding> bindings, IEnumerable<IArgument> arguments);
 }
 
-public interface IJustifiableGenerated<out TGenerator> : IGenerated<TGenerator>
+public interface IJustifiableGenerated<out TGENERATOR> : IGenerated<TGENERATOR>
 {
     IReadOnlyList<IArgument> Arguments { get; }
 }
