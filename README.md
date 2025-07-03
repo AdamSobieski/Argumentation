@@ -571,7 +571,7 @@ Climate change is caused by human activities. Therefore, we should reduce carbon
 
 ### Content Negotiation
 
-Agent-driven or reactive [content negotiation](https://en.wikipedia.org/wiki/Content_negotiation) is performed by algorithms in user-agents which choose among the possible variant representations. This is commonly performed based using a server-provided list of representations and metadata about them.
+Agent-driven or reactive [content negotiation](https://en.wikipedia.org/wiki/Content_negotiation) is performed by algorithms in user-agents which choose among the possible variant representations. This is commonly performed using a server-provided list of representations and metadata about them.
 
 One could provide these functionalities using MIME messages. Senders could indicate the availability of content in various formats and languages and online locations without having to include the content in MIME messages.
 
