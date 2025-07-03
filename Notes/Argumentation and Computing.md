@@ -8,7 +8,7 @@ This would enable a new level of expressiveness when declaring functions and the
 
 ## A Model
 
-```csharp
+```cs
 public interface IBinding
 {
     Parameter Parameter { get; }
@@ -74,7 +74,7 @@ public interface IJustifiableFunction : IJustifiableGenerator<IJustifiableExecut
 
 ## Extension Methods Utilizing the Model
 
-```csharp
+```cs
 public static class Extensions
 {
     public static async Task<object> Invoke(this IFunction function, object[] args)
