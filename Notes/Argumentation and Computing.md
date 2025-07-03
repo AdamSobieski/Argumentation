@@ -155,4 +155,4 @@ public static class Extensions
 
 ## Conclusion
 
-Bindings are utilized throughout computing. They are utilized for function invocations, remote procedure calls, input forms, templates, and inference rules. As was shown above, values to be bound to parameters can be justified and argued to be valid by software developers and artificial-intelligence, these arguments evaluated by artificial-intelligence agents.
+Bindings are utilized throughout computing. They are utilized for function invocations, remote procedure calls, input forms, templates, and inference rules. As was shown above, the validity of values can be argued by software developers and artificial-intelligence agents, these arguments evaluated by artificial-intelligence agents.
