@@ -2,27 +2,63 @@
 
 Given a formalized argument markup language which can be transformed via [RDF Mapping Language (RML)](https://rml.io/specs/rml/) into knowledge graphs using the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format) model, the idea, here, is to allow software developers and artificial-intelligence agents to be able to create, define, and reuse markup components such that resultant content could also be transformed into such knowledge graphs.
 
-Components' definitions (these envisioned as involving XML, XML schema, and RML) and their parts could reference resources on the Web or as MIME message parts at the determination of serialization algorithms. For clarity, as possible, MIME messages will be shown here so that the various interrelated parts can be observed simultaneously.
-
-## A Comparison of Component Models
+## Component Models
 
 Extensible markup-based components occur across user-interface design technologies. Using markup and programming languages, developers can define and subsequently reuse interactive user-interface components. Examples of [user-interface markup languages](https://en.wikipedia.org/wiki/Comparison_of_user_interface_markup_languages) include: [XAML](https://en.wikipedia.org/wiki/Extensible_Application_Markup_Language), [EMML](https://en.wikipedia.org/wiki/Enterprise_Mashup_Markup_Language), [FXML](https://en.wikipedia.org/wiki/FXML), [MXML](https://en.wikipedia.org/wiki/MXML), [XUL](https://en.wikipedia.org/wiki/XUL), and [ZUML](https://en.wikipedia.org/wiki/ZUML). With [Web Components](https://en.wikipedia.org/wiki/Web_Components), [HTML5](https://en.wikipedia.org/wiki/HTML5) documents can utilize extensible markup components.
 
-## Including Component Definitions
+## XML Schema Languages
 
-What would it look like for an argument markup language resource to reference an extension component's definition? Perhaps using an `<include>` element, the markup-based resource could refer to a component definition.
+Examples of [XML schema languages](https://en.wikipedia.org/wiki/XML_schema#Languages) include: [CLiX](https://en.wikipedia.org/wiki/CLiX_(markup)), [RelaxNG](https://en.wikipedia.org/wiki/RELAX_NG), [Schematron](https://en.wikipedia.org/wiki/Schematron), [SOX](https://www.w3.org/TR/NOTE-SOX/), and [XSD](https://en.wikipedia.org/wiki/XML_Schema_(W3C)). Useful features for defining components in schema will include type derivation and substitution groups.
+
+## Component Definitions
+
+### Including Component Definitions
+
+As envisioned, components' definitions include XML schema and RML. Components' definitions and their parts could reference resources on the Web or as MIME message parts at the determination of serialization algorithms. For clarity, as possible, MIME messages will be shown here so that the various interrelated parts can be observed simultaneously.
+
+What would it look like for an argument markup language resource to reference an extension component's definition?
+
+Perhaps using an `<include>` element, the markup-based resource could refer to a component definition?
 
 ```xml
-<argument xmlns:ext="http://otherxmlns.org/extension1/#">
+<argument xmlns="..."
+          xmlns:ext="http://otherxmlns.org/extension1/#"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="...">
   <head>
     <include src="cid:part1" />
   </head>
   <body>
-    <conclusion>This is an example showing how markup-based extensions could be used.</conclusion>
-    <rule href="cid:part2" />
+    <conclusions>
+      <conclusion>This is an example showing how markup-based extensions could be used.</conclusion>
+    </conclusions>
+    <rules>
+      <rule href="cid:part2" />
+    </rules>
     <premises>
       <ext:assertion ext:agent="cid:part3#agent">This is an assertion.</ext:assertion>
     </premises>
   </body>
+</argument>
+```
+
+Perhaps the approach could be based on XML Schema's uses of attributes?
+
+```xml
+<argument xmlns="..."
+          xmlns:ext="http://otherxmlns.org/extension1/#"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="..."
+          xmlns:rmli="..."
+          rmli:mappingLocation="...">
+  <conclusions>
+    <conclusion>This is an example showing how markup-based extensions could be used.</conclusion>
+  </conclusions>
+  <rules>
+    <rule href="cid:part2" />
+  </rules>
+  <premises>
+    <ext:assertion ext:agent="cid:part3#agent">This is an assertion.</ext:assertion>
+  </premises>
 </argument>
 ```
