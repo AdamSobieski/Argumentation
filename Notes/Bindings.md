@@ -130,6 +130,7 @@ public static class Extensions
 
         return await function.Apply(bindings).Execute();
     }
+
     public static async Task<(IEnumerable<IBinding> Bindings, IEnumerable<IArgument> Justifications)> Invoke(this IJustifiableFunction function, object[] args, bool auto = true)
     {
         int n = args.Length;
@@ -165,6 +166,7 @@ public static class Extensions
             return await function.Apply(bindings).Execute();
         }
     }
+
     public static async Task<(IEnumerable<IBinding> Bindings, IEnumerable<IArgument> Justifications)> Invoke(this IJustifiableFunction function, object[] args, IArgument[] justifications)
     {
         int n = args.Length;
