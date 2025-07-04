@@ -10,7 +10,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > In this example, one can observe that argument representation formats can use the Content-ID (`cid:`) URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/) to refer to other parts of multipart messages.
 > 
 > <details>
-> <summary>Click here to toggle the visibility.</summary>
+> <summary>Click here to toggle the display of this example.</summary>
 > <br>
 >   
 > ```email
@@ -149,7 +149,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > In addition to a new markup language, existing models such as the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format) could be of use for representing arguments in MIME messages.
 > 
 > <details>
-> <summary>Click here to toggle the visibility.</summary>
+> <summary>Click here to toggle the display of this example.</summary>
 > <br>
 > 
 > ```email
@@ -189,7 +189,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > This example shows a simple approach to extending knowledge graphs using the AIF model to support attaching evidence and citing scholarly and scientific publications.
 > 
 > <details>
-> <summary>Click here to toggle the visibility.</summary>
+> <summary>Click here to toggle the display of this example.</summary>
 > <br>
 > 
 > ```email
@@ -258,7 +258,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > This example shows a more intricate approach to extending knowledge graphs using the AIF model to support attaching evidence and citing scholarly and scientific publications.
 > 
 > <details>
-> <summary>Click here to toggle the visibility.</summary>
+> <summary>Click here to toggle the display of this example.</summary>
 > <br>
 > 
 > ```email
@@ -339,7 +339,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > This example shows that arguments could be represented using the AIF model expressed using JSON in a MIME message.
 > 
 > <details>
-> <summary>Click here to toggle the visibility.</summary>
+> <summary>Click here to toggle the display of this example.</summary>
 > <br>
 > 
 > ```email
@@ -534,7 +534,7 @@ There exists a `Content-Description` header for providing text descriptions of p
 > This example shows how one could include metadata in one MIME message part to describe content in another part.
 > 
 > <details>
-> <summary>Click here to toggle the visibility.</summary>
+> <summary>Click here to toggle the display of this example.</summary>
 > <br>
 > 
 > ```email
@@ -577,7 +577,7 @@ For example, senders might be able to translate content, on-demand, into a very 
 > This example shows a theoretical approach to include content in both English and French while providing recipients with means to obtain remote content in other formats or languages.
 > 
 > <details>
-> <summary>Click here to toggle the visibility.</summary>
+> <summary>Click here to toggle the display of this example.</summary>
 > <br>
 > 
 > ```email
