@@ -603,14 +603,14 @@ For example, senders might be able to translate content, on-demand, into a very 
 > 
 > Content-Type: text/plain
 > Content-Language: other1
-> Content-Disposition: retrieve
+> Content-Disposition: available
 > Content-Alias: https://service.org/translate.php?mid=12345678&lang=other1
 > 
 > --boundary-example-7
 > 
 > Content-Type: text/plain
 > Content-Language: other2
-> Content-Disposition: retrieve
+> Content-Disposition: available
 > Content-Alias: https://service.org/translate.php?mid=12345678&lang=other2
 > 
 > --boundary-example-7--
