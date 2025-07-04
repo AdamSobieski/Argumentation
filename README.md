@@ -520,7 +520,8 @@ Static hypertext could be automatically generated from argument-related data. In
 How would embedded HTML content in MIME messages access argument-related data from other parts of MIME messages? HTML content can use [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to enable inlined images in email messages. HTML content in other kinds of MIME messages could use this scheme to enable [data blocks](https://html.spec.whatwg.org/multipage/scripting.html#data-block) to refer to other message parts.
 
 ### Extensible Markup and Components
-Main Article: [Components](Notes/Components.md)
+> [!NOTE]
+> Main Article: [Components](Notes/Components.md)
 
 Inspired by [Web Components](https://en.wikipedia.org/wiki/Web_Components), where custom markup elements can be defined and subsequently reused, new argument markup languages could be extensible with respect to an expressiveness for higher-level components. These markup components would be defined not in terms of their presentation and interaction, but in terms of their semantics. That is, one could define custom markup components in terms of mappings and transformations between them and knowledge graphs (see also: [R2RML](https://www.w3.org/TR/r2rml/) and [RML](https://kg-construct.github.io/rml-resources/portal/)).
 
