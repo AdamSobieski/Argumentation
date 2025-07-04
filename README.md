@@ -514,7 +514,7 @@ Static hypertext could be automatically generated from argument-related data. In
 
 How would embedded HTML content in MIME messages access argument-related data from other parts of MIME messages? HTML content can use [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to enable inlined images in email messages. HTML content in other kinds of MIME messages could use this scheme to enable [data blocks](https://html.spec.whatwg.org/multipage/scripting.html#data-block) to refer to other message parts.
 
-### Extensible Markup and Components
+### Components
 > [!NOTE]
 > Main Article: [Components](Notes/Components.md)
 
