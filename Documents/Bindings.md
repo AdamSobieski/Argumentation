@@ -22,7 +22,7 @@ public interface IArgument : IJustifiableGenerated<IArgumentGenerator>
 
 ## A Supporting Model
 
-Here is a supporting model that would work with many argument models.
+Here is a supporting model that can work with many argument models.
 
 ```cs
 public interface IBinding
@@ -63,7 +63,7 @@ public interface IJustifiableGenerated<out TGENERATOR> : IGenerated<TGENERATOR>
 
 ## A Function Model
 
-Here is a function model utilizing the supporting model indicated above.
+Here is a function model utilizing that supporting model indicated above.
 
 ```cs
 public interface IFunction : IGenerator<IExecutable>
