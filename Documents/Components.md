@@ -19,6 +19,7 @@ What would it look like for an argument markup language resource to reference an
   </head>
   <body>
     <conclusion>This is an example showing how markup-based extensions could be used.</conclusion>
+    <rule href="cid:part2" />
     <premises>
       <ext:assertion ext:agent="cid:part3#agent">This is an assertion.</ext:assertion>
     </premises>
