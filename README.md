@@ -1,6 +1,6 @@
 ## The Computational Representation of Argument
 
-### Multipurpose Internet Mail Extensions (MIME)
+### Multipurpose Internet Mail Extensions
 
 [Multipurpose Internet Mail Extensions (MIME)](https://en.wikipedia.org/wiki/MIME) can be utilized as a format to serialize arguments to, to deserialize arguments from, to store arguments in filesystems, and to transmit arguments between machines and between artificial-intelligence agents in multi-agent systems.
 
@@ -343,7 +343,7 @@ With solutions for knowledge-graph templating, the expressiveness of knowledge-g
 
 Advanced topics in argument templating include interactive templates and agentic templates. Interactive templates are templates with accompanying forms or questionnaires which end-users or artificial-intelligence agents would complete to produce output, in this case arguments. Agentic templates would resemble scripts, including [prompts](https://en.wikipedia.org/wiki/Prompt_engineering), for artificial-intelligence systems to contextually produce natural-language arguments with accompanying structured knowledge.
 
-### JavaScript Object Notation (JSON)
+### JavaScript Object Notation
 
 [JSON](https://en.wikipedia.org/wiki/JSON) data can be included in MIME messages. Wherever a URL could refer to a resource, a `cid:` URL could be used to refer to a message part elsewhere in a MIME message.
 
@@ -508,7 +508,7 @@ Advanced topics in argument templating include interactive templates and agentic
 > ```
 > </details>
 
-### Hypertext Markup Language (HTML)
+### Hypertext Markup Language
 
 While it may suffice to include text and argument-related data together in MIME messages for artificial-intelligence agents, human end-users might tend to prefer the addition of hypertext.
 
