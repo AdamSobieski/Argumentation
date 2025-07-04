@@ -146,7 +146,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > </details>
 
 > [!TIP]
-> In addition to a new markup language, existing models such as the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format) could be of use for representing arguments in MIME messages.
+> Other models of argument, such as the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format), can be of use for representing arguments in MIME messages.
 > 
 > <details>
 > <summary>Click here to toggle the display of this example.</summary>
