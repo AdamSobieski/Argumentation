@@ -4,9 +4,9 @@ Given a formalized argument markup language which can be transformed via RML int
 
 Components' definitions (these envisioned as involving XML, XML schemas, and RML) and their parts could reference their parts as Web resources or as parts included in MIME messages at the determination of serialization algorithms. For clarity, as possible, MIME messages will be shown here so that the various interrelated parts can be observed simultaneously.
 
-## A Comparison of Frameworks
+## A Comparison of Component Models
 
-Coming soon.
+Extensible markup-based components occur across user-interface design technologies. Using markup and programming languages, developers can define and subsequently reuse interactive user-interface components. Examples of [user-interface markup languages](https://en.wikipedia.org/wiki/Comparison_of_user_interface_markup_languages) include: [XAML](https://en.wikipedia.org/wiki/Extensible_Application_Markup_Language), [EMML](https://en.wikipedia.org/wiki/Enterprise_Mashup_Markup_Language), [FXML](https://en.wikipedia.org/wiki/FXML), [MXML](https://en.wikipedia.org/wiki/MXML), [XUL](https://en.wikipedia.org/wiki/XUL), and [ZUML](https://en.wikipedia.org/wiki/ZUML). With [Web Components](https://en.wikipedia.org/wiki/Web_Components), [HTML5](https://en.wikipedia.org/wiki/HTML5) documents can utilize extensible markup components.
 
 ## Including Components
 
