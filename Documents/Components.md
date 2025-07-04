@@ -42,7 +42,7 @@ Perhaps using an `<include>` element, the markup-based resource could refer to a
 </argument>
 ```
 
-Perhaps the approach could be based on XML Schema's uses of attributes?
+Perhaps the approach would, instead, utilize attributes?
 
 ```xml
 <argument xmlns="..."
