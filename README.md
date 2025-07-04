@@ -15,16 +15,16 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 >   
 > ```email
 > Mime-Version: 1.0
-> Content-Type: multipart/related; boundary="boundary-example-1"
+> Content-Type: multipart/related; boundary="boundary-example"
 > 
-> --boundary-example-1
+> --boundary-example
 > 
 > Content-Type: text/plain
 > Content-Language: en
 > 
 > Bob Smith is a British citizen. Bob Smith was born in Bermuda. Attached is a copy of the birth certificate. People born in Bermuda are British citizens.
 > 
-> --boundary-example-1
+> --boundary-example
 > 
 > Content-Type: application/argument+xml
 > Content-Language: en
@@ -42,7 +42,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 >   </premises>
 > </argument>
 > 
-> --boundary-example-1
+> --boundary-example
 > 
 > Content-ID: <item1>
 > Content-Type: application/argument+xml
@@ -61,7 +61,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 >   </premises>
 > </argument>
 > 
-> --boundary-example-1
+> --boundary-example
 > 
 > Content-ID: <item2>
 > Content-Type: application/octet-stream
@@ -73,7 +73,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
 > YXQuCg==
 > 
-> --boundary-example-1
+> --boundary-example
 > 
 > Content-ID: <item3>
 > Content-Type: application/pdf
@@ -87,7 +87,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
 > YXQuCg==
 > 
-> --boundary-example-1
+> --boundary-example
 > 
 > Content-ID: <item4>
 > Content-Type: application/octet-stream
@@ -99,7 +99,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
 > YXQuCg==
 > 
-> --boundary-example-1
+> --boundary-example
 > 
 > Content-ID: <item5>
 > Content-Type: application/octet-stream
@@ -111,7 +111,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
 > YXQuCg==
 > 
-> --boundary-example-1
+> --boundary-example
 > 
 > Content-ID: <item6>
 > Content-Type: text/x-bibtex
@@ -123,7 +123,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 >   year = {2023}
 > }
 > 
-> --boundary-example-1
+> --boundary-example
 > 
 > Content-ID: <item7>
 > Content-Type: application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"
@@ -141,7 +141,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 >   }
 > }
 > 
-> --boundary-example-1--
+> --boundary-example--
 > ```
 > </details>
 
@@ -154,16 +154,16 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > 
 > ```email
 > Mime-Version: 1.0
-> Content-Type: multipart/related; boundary="boundary-example-2"
+> Content-Type: multipart/related; boundary="boundary-example"
 > 
-> --boundary-example-2
+> --boundary-example
 > 
 > Content-Type: text/plain
 > Content-Language: en
 > 
 > Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
 > 
-> --boundary-example-2
+> --boundary-example
 > 
 > Content-Type: application/argument+turtle
 > Content-Language: en
@@ -181,7 +181,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > ex:Node3 a aif:I-node ;
 >     aif:claimText "We should reduce carbon emissions." .
 > 
-> --boundary-example-2--
+> --boundary-example--
 > ```
 > </details>
 
@@ -194,16 +194,16 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > 
 > ```email
 > Mime-Version: 1.0
-> Content-Type: multipart/related; boundary="boundary-example-3"
+> Content-Type: multipart/related; boundary="boundary-example"
 > 
-> --boundary-example-3
+> --boundary-example
 > 
 > Content-Type: text/plain
 > Content-Language: en
 > 
 > Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
 > 
-> --boundary-example-3
+> --boundary-example
 > 
 > Content-Type: application/argument+turtle
 > Content-Language: en
@@ -224,7 +224,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > ex:Node3 a aif:I-node ;
 >     aif:claimText "We should reduce carbon emissions." .
 > 
-> --boundary-example-3
+> --boundary-example
 > 
 > Content-ID: <item1>
 > Content-Type: application/pdf
@@ -238,7 +238,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
 > YXQuCg==
 > 
-> --boundary-example-3
+> --boundary-example
 > 
 > Content-ID: <item2>
 > Content-Type: text/x-bibtex
@@ -250,7 +250,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 >   year = {2023}
 > }
 > 
-> --boundary-example-3--
+> --boundary-example--
 > ```
 > </details>
 
@@ -263,16 +263,16 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > 
 > ```email
 > Mime-Version: 1.0
-> Content-Type: multipart/related; boundary="boundary-example-4"
+> Content-Type: multipart/related; boundary="boundary-example"
 > 
-> --boundary-example-4
+> --boundary-example
 > 
 > Content-Type: text/plain
 > Content-Language: en
 > 
 > Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
 > 
-> --boundary-example-4
+> --boundary-example
 > 
 > Content-Type: application/argument+turtle
 > Content-Language: en
@@ -305,7 +305,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 >     ext:supported ex:Node1 ;
 >     ext:supportedBy ex:Node6 .
 > 
-> --boundary-example-4
+> --boundary-example
 > 
 > Content-ID: <item1>
 > Content-Type: application/pdf
@@ -319,7 +319,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
 > YXQuCg==
 > 
-> --boundary-example-4
+> --boundary-example
 > 
 > Content-ID: <item2>
 > Content-Type: text/x-bibtex
@@ -331,7 +331,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 >   year = {2023}
 > }
 > 
-> --boundary-example-4--
+> --boundary-example--
 > ```
 > </details>
 
@@ -344,9 +344,9 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > 
 > ```email
 > Mime-Version: 1.0
-> Content-Type: multipart/related; boundary="boundary-example-5"
+> Content-Type: multipart/related; boundary="boundary-example"
 > 
-> --boundary-example-5
+> --boundary-example
 > 
 > Content-Type: text/plain
 > Content-Language: en
@@ -355,7 +355,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > Speaker 2: The SNP has disagreements.
 > Speaker 1: It's not uncommon for there to be disagreements between party members.
 > 
-> --boundary-example-5
+> --boundary-example
 > 
 > Content-Type: application/argument+json
 > Content-Language: en
@@ -492,7 +492,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 >   }
 > }
 > 
-> --boundary-example-5--
+> --boundary-example--
 > ```
 > </details>
 
@@ -539,9 +539,9 @@ There exists a `Content-Description` header for providing text descriptions of p
 > 
 > ```email
 > Mime-Version: 1.0
-> Content-Type: multipart/related; boundary="boundary-example-6"
+> Content-Type: multipart/related; boundary="boundary-example"
 > 
-> --boundary-example-6
+> --boundary-example
 > 
 > Content-Type: text/turtle
 > Content-About: <part1>
@@ -553,7 +553,7 @@ There exists a `Content-Description` header for providing text descriptions of p
 >     dc:creator [ a foaf:Person ;
 >             foaf:name "Bob Smith" ] .
 > 
-> --boundary-example-6
+> --boundary-example
 > 
 > Content-ID: <part1>
 > Content-Type: text/plain
@@ -561,7 +561,7 @@ There exists a `Content-Description` header for providing text descriptions of p
 > 
 > Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
 > 
-> --boundary-example-6--
+> --boundary-example--
 > ```
 > </details>
 
@@ -583,37 +583,37 @@ For example, senders might be able to translate content, on-demand, into a very 
 > ```email
 > Mime-Version: 1.0
 > Message-Id: 12345678
-> Content-Type: multipart/alternative; boundary="boundary-example-7"
+> Content-Type: multipart/alternative; boundary="boundary-example"
 > 
-> --boundary-example-7
+> --boundary-example
 > 
 > Content-Type: text/plain
 > Content-Language: en
 > 
 > Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
 > 
-> --boundary-example-7
+> --boundary-example
 > 
 > Content-Type: text/plain
 > Content-Language: fr
 > 
 > Le changement climatique est causé par les activités humaines. Nous devons donc réduire les émissions de carbone.
 > 
-> --boundary-example-7
+> --boundary-example
 > 
 > Content-Type: text/plain
 > Content-Language: other1
 > Content-Disposition: remote
 > Content-Alias: https://service.org/translate.php?mid=12345678&lang=other1
 > 
-> --boundary-example-7
+> --boundary-example
 > 
 > Content-Type: text/plain
 > Content-Language: other2
 > Content-Disposition: remote
 > Content-Alias: https://service.org/translate.php?mid=12345678&lang=other2
 > 
-> --boundary-example-7--
+> --boundary-example--
 > ```
 > </details>
 
