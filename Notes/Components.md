@@ -1,8 +1,8 @@
 ## Introduction
 
-Given a formalized argument markup language which can be transformed via RML into knowledge graphs using the AIF model, the idea here is to allow developers and artificial-intelligence agents to be able to create and utilize extension components to allow markup including the extension components to similarly be transformed into knowledge graphs based on AIF.
+Given a formalized argument markup language which can be transformed via [RDF Mapping Language (RML)](https://rml.io/specs/rml/) into knowledge graphs using the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format) model, the idea here is to allow software developers and artificial-intelligence agents to be able to create, define and reutilize components such that resultant markup could similarly be transformed into such knowledge graphs.
 
-Components' definitions (these envisioned as involving XML, XML schemas, and RML) and their parts could reference their parts as Web resources or as parts included in MIME messages at the determination of serialization algorithms. For clarity, as possible, MIME messages will be shown here so that the various interrelated parts can be observed simultaneously.
+Components' definitions (these envisioned as involving XML, XML schema, and RML) and their parts could reference resources on the Web or as MIME message parts at the determination of serialization algorithms. For clarity, as possible, MIME messages will be shown here so that the various interrelated parts can be observed simultaneously.
 
 ## A Comparison of Component Models
 
