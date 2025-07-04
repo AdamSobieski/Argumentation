@@ -574,7 +574,7 @@ One could provide these functionalities using MIME messages. Senders could indic
 For example, senders might be able to translate content, on-demand, into a very large set of languages and, instead of having to provide content for each language in a MIME message, they could include content for some popular languages and indicate the availability of and locations of content in other languages.
 
 > [!TIP]
-> This example shows a theoretical approach to include content in both English and French while providing recipients with means to obtain the content in other formats or languages.
+> This example shows a theoretical approach to include content in both English and French while providing recipients with means to obtain remote content in other formats or languages.
 > 
 > <details>
 > <summary>Click here to toggle the visibility.</summary>
