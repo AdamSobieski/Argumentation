@@ -6,500 +6,495 @@
 
 See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipedia.org/wiki/Mozilla_Archive_Format), [Web Archive](https://en.wikipedia.org/wiki/Web_Archive_(file_format)), [WARC](https://en.wikipedia.org/wiki/WARC_(file_format)), [HAR](https://en.wikipedia.org/wiki/HAR_(file_format)), [EPUB](https://en.wikipedia.org/wiki/EPUB).
 
-#### Example 1
-
-In this example, one can observe that argument representation formats can use the Content-ID (`cid:`) URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/) to refer to other parts of multipart messages.
-
-<details>
-<summary>Click here to toggle the visibility of Example 1.</summary>
-<br>
-  
-```email
-Mime-Version: 1.0
-Content-Type: multipart/related; boundary="boundary-example-1"
-
---boundary-example-1
-
-Content-Type: text/plain
-Content-Language: en
-
-Bob Smith is a British citizen. Bob Smith was born in Bermuda. Attached is a copy of the birth certificate. People born in Bermuda are British citizens.
-
---boundary-example-1
-
-Content-Type: application/argument+xml
-Content-Language: en
-
-<argument template="cid:item1">
-  <conclusion><object href="cid:item2">Bob Smith</object> is a British citizen.</conclusion>
-  <premises>
-    <argument>
-      <conclusion><object href="cid:item2">Bob Smith</object> was born in Bermuda.</conclusion>
-      <evidence href="cid:item3">Attached is a copy of the birth certificate.</evidence>
-    </argument>
-    <argument>
-      <conclusion><cite href="cid:item6" selection="cid:item7">People born in Bermuda are British citizens.</cite></conclusion>
-    </argument>
-  </premises>
-</argument>
-
---boundary-example-1
-
-Content-ID: <item1>
-Content-Type: application/argument+xml
-Content-Language: en
-
-<argument>
-  <conclusion><parameter kind="object" href="cid:item4">The person</parameter> is a British citizen.</conclusion>
-  <premises>
-    <argument>
-      <conclusion><parameter kind="object" href="cid:item4">The person</parameter> was born in Bermuda.</conclusion>
-      <parameter kind="evidence" href="cid:item5">Attached is a copy of the birth certificate.</parameter>
-    </argument>
-    <argument>
-      <conclusion><cite href="cid:item6" selection="cid:item7">People born in Bermuda are British citizens.</cite></conclusion>
-    </argument>
-  </premises>
-</argument>
-
---boundary-example-1
-
-Content-ID: <item2>
-Content-Type: application/octet-stream
-Content-Transfer-Encoding: base64
-
-TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4g
-U2VkIGRvIGVpdXNtb2QgdGVtcG9yIGluY2lkaWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu
-YSBhbGlxdWEuIFV0IGVuaW0gYWQgbWluaW0gdmVuaWFtLCBxdWlzIG5vc3RydWQgZXhlcmNpdGF0
-aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
-YXQuCg==
-
---boundary-example-1
-
-Content-ID: <item3>
-Content-Type: application/pdf
-Content-Language: en
-Content-Disposition: attachment; filename="birth_certificate.pdf"
-Content-Transfer-Encoding: base64
-
-TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4g
-U2VkIGRvIGVpdXNtb2QgdGVtcG9yIGluY2lkaWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu
-YSBhbGlxdWEuIFV0IGVuaW0gYWQgbWluaW0gdmVuaWFtLCBxdWlzIG5vc3RydWQgZXhlcmNpdGF0
-aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
-YXQuCg==
-
---boundary-example-1
-
-Content-ID: <item4>
-Content-Type: application/octet-stream
-Content-Transfer-Encoding: base64
-
-TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4g
-U2VkIGRvIGVpdXNtb2QgdGVtcG9yIGluY2lkaWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu
-YSBhbGlxdWEuIFV0IGVuaW0gYWQgbWluaW0gdmVuaWFtLCBxdWlzIG5vc3RydWQgZXhlcmNpdGF0
-aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
-YXQuCg==
-
---boundary-example-1
-
-Content-ID: <item5>
-Content-Type: application/octet-stream
-Content-Transfer-Encoding: base64
-
-TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4g
-U2VkIGRvIGVpdXNtb2QgdGVtcG9yIGluY2lkaWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu
-YSBhbGlxdWEuIFV0IGVuaW0gYWQgbWluaW0gdmVuaWFtLCBxdWlzIG5vc3RydWQgZXhlcmNpdGF0
-aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
-YXQuCg==
-
---boundary-example-1
-
-Content-ID: <item6>
-Content-Type: text/x-bibtex
-
-@article{Brown2023,
-  author = {Charles Brown},
-  title = {An Interesting Article},
-  journal = {Journal of Interesting Articles},
-  year = {2023}
-}
-
---boundary-example-1
-
-Content-ID: <item7>
-Content-Type: application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"
-
-{
-  "source": "cid:item6",
-  "selector": {
-    "type": "FragmentSelector",
-    "value": "page=10",
-    "refinedBy": {
-      "type": "TextQuoteSelector",
-      "prefix": "preceding text",
-      "suffix": "subsequent text"
-    }
-  }
-}
-
---boundary-example-1--
-```
-</details>
-
-#### Example 2
-
-In addition to a new markup language, existing models such as the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format) could be of use for representing arguments in MIME messages.
-
-<details>
-<summary>Click here to toggle the visibility of Example 2.</summary>
-<br>
-
-```email
-Mime-Version: 1.0
-Content-Type: multipart/related; boundary="boundary-example-2"
-
---boundary-example-2
-
-Content-Type: text/plain
-Content-Language: en
-
-Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
-
---boundary-example-2
-
-Content-Type: application/argument+turtle
-Content-Language: en
-
-@prefix aif: <http://www.arg.dundee.ac.uk/aif#> .
-@prefix ex: <http://example.org/> .
-
-ex:Node1 a aif:I-node ;
-    aif:claimText "Climate change is caused by human activities." .
-
-ex:Node2 a aif:RA-node ;
-    aif:hasPremise ex:Node1 ;
-    aif:hasConclusion ex:Node3 .
-
-ex:Node3 a aif:I-node ;
-    aif:claimText "We should reduce carbon emissions." .
-
---boundary-example-2--
-```
-</details>
-
-#### Example 3
-
-This example shows a simple approach to extending knowledge graphs using the AIF model to support attaching evidence and citing scholarly and scientific publications.
-
-<details>
-<summary>Click here to toggle the visibility of Example 3.</summary>
-<br>
-
-```email
-Mime-Version: 1.0
-Content-Type: multipart/related; boundary="boundary-example-3"
-
---boundary-example-3
-
-Content-Type: text/plain
-Content-Language: en
-
-Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
-
---boundary-example-3
-
-Content-Type: application/argument+turtle
-Content-Language: en
-
-@prefix aif: <http://www.arg.dundee.ac.uk/aif#> .
-@prefix ex: <http://example.org/> .
-@prefix ext: <http://extension.org/> .
-
-ex:Node1 a aif:I-node ;
-    aif:claimText "Climate change is caused by human activities." .
-    ext:hasEvidence <cid:item1> .
-    ext:cites <cid:item2> .
-
-ex:Node2 a aif:RA-node ;
-    aif:hasPremise ex:Node1 ;
-    aif:hasConclusion ex:Node3 .
-
-ex:Node3 a aif:I-node ;
-    aif:claimText "We should reduce carbon emissions." .
-
---boundary-example-3
-
-Content-ID: <item1>
-Content-Type: application/pdf
-Content-Language: en
-Content-Disposition: attachment; filename="evidence.pdf"
-Content-Transfer-Encoding: base64
-
-TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4g
-U2VkIGRvIGVpdXNtb2QgdGVtcG9yIGluY2lkaWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu
-YSBhbGlxdWEuIFV0IGVuaW0gYWQgbWluaW0gdmVuaWFtLCBxdWlzIG5vc3RydWQgZXhlcmNpdGF0
-aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
-YXQuCg==
-
---boundary-example-3
-
-Content-ID: <item2>
-Content-Type: text/x-bibtex
-
-@article{Brown2023,
-  author = {Charles Brown},
-  title = {An Interesting Article},
-  journal = {Journal of Interesting Articles},
-  year = {2023}
-}
-
---boundary-example-3--
-```
-</details>
-
-#### Example 4
-
-This example shows a more intricate approach to extending knowledge graphs using the AIF model to support attaching evidence and citing scholarly and scientific publications.
-
-<details>
-<summary>Click here to toggle the visibility of Example 4.</summary>
-<br>
-
-```email
-Mime-Version: 1.0
-Content-Type: multipart/related; boundary="boundary-example-4"
-
---boundary-example-4
-
-Content-Type: text/plain
-Content-Language: en
-
-Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
-
---boundary-example-4
-
-Content-Type: application/argument+turtle
-Content-Language: en
-
-@prefix aif: <http://www.arg.dundee.ac.uk/aif#> .
-@prefix ex: <http://example.org/> .
-@prefix ext: <http://extension.org/> .
-
-ex:Node1 a aif:I-node ;
-    aif:claimText "Climate change is caused by human activities." .
-
-ex:Node2 a aif:RA-node ;
-    aif:hasPremise ex:Node1 ;
-    aif:hasConclusion ex:Node3 .
-
-ex:Node3 a aif:I-node ;
-    aif:claimText "We should reduce carbon emissions." .
-
-ex:Node4 a ext:E-node ;
-    ext:hasEvidence <cid:item1> .
-
-ex:Node5 a ext:ES-node ;
-    ext:supported ex:Node1 ;
-    ext:supportedBy ex:Node4 .
-
-ex:Node6 a ext:C-node ;
-    ext:cites <cid:item2> .
-
-ex:Node7 a ext:CS-node ;
-    ext:supported ex:Node1 ;
-    ext:supportedBy ex:Node6 .
-
---boundary-example-4
-
-Content-ID: <item1>
-Content-Type: application/pdf
-Content-Language: en
-Content-Disposition: attachment; filename="evidence.pdf"
-Content-Transfer-Encoding: base64
-
-TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4g
-U2VkIGRvIGVpdXNtb2QgdGVtcG9yIGluY2lkaWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu
-YSBhbGlxdWEuIFV0IGVuaW0gYWQgbWluaW0gdmVuaWFtLCBxdWlzIG5vc3RydWQgZXhlcmNpdGF0
-aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
-YXQuCg==
-
---boundary-example-4
-
-Content-ID: <item2>
-Content-Type: text/x-bibtex
-
-@article{Brown2023,
-  author = {Charles Brown},
-  title = {An Interesting Article},
-  journal = {Journal of Interesting Articles},
-  year = {2023}
-}
-
---boundary-example-4--
-```
-</details>
-
-#### Example 5
-
-This example shows that arguments could be represented using the AIF model expressed using JSON in a MIME message.
-
-<details>
-<summary>Click here to toggle the visibility of Example 5.</summary>
-<br>
-
-```email
-Mime-Version: 1.0
-Content-Type: multipart/related; boundary="boundary-example-5"
-
---boundary-example-5
-
-Content-Type: text/plain
-Content-Language: en
-
-Speaker 1: Disagreements between party members are entirely to be expected.
-Speaker 2: The SNP has disagreements.
-Speaker 1: It's not uncommon for there to be disagreements between party members.
-
---boundary-example-5
-
-Content-Type: application/argument+json
-Content-Language: en
-
-{
-  "AIF": {
-    "descriptorfulfillments": null,
-    "edges": [
-      {
-        "edgeID": 0,
-        "fromID": 0,
-        "toID": 4
-      },
-      {
-        "edgeID": 1,
-        "fromID": 4,
-        "toID": 3
-      },
-      {
-        "edgeID": 2,
-        "fromID": 1,
-        "toID": 6
-      },
-      {
-        "edgeID": 3,
-        "fromID": 6,
-        "toID": 5
-      },
-      {
-        "edgeID": 4,
-        "fromID": 2,
-        "toID": 8
-      },
-      {
-        "edgeID": 5,
-        "fromID": 8,
-        "toID": 7
-      },
-      {
-        "edgeID": 6,
-        "fromID": 3,
-        "toID": 9
-      },
-      {
-        "edgeID": 7,
-        "fromID": 9,
-        "toID": 7
-      }
-    ],
-    "locutions": [
-      {
-        "nodeID": 0,
-        "personID": 0
-      },
-      {
-        "nodeID": 1,
-        "personID": 1
-      },
-      {
-        "nodeID": 2,
-        "personID": 2
-      }
-    ],
-    "nodes": [
-      {
-        "nodeID": 0,
-        "text": "disagreements between party members are entirely to be expected.",
-        "type": "L"
-      },
-      {
-        "nodeID": 1,
-        "text": "the SNP has disagreements.",
-        "type": "L"
-      },
-      {
-        "nodeID": 2,
-        "text": "it's not uncommon for there to be disagreements between party members.",
-        "type": "L"
-      },
-      {
-        "nodeID": 3,
-        "text": "disagreements between party members are entirely to be expected.",
-        "type": "I"
-      },
-      {
-        "nodeID": 4,
-        "text": "Default Illocuting",
-        "type": "YA"
-      },
-      {
-        "nodeID": 5,
-        "text": "the SNP has disagreements.",
-        "type": "I"
-      },
-      {
-        "nodeID": 6,
-        "text": "Default Illocuting",
-        "type": "YA"
-      },
-      {
-        "nodeID": 7,
-        "text": "it's not uncommon for there to be disagreements between party members.",
-        "type": "I"
-      },
-      {
-        "nodeID": 8,
-        "text": "Default Illocuting",
-        "type": "YA"
-      },
-      {
-        "nodeID": 9,
-        "text": "Default Inference",
-        "type": "RA"
-      }
-    ],
-    "participants": [
-      {
-        "firstname": "Speaker",
-        "participantID": 0,
-        "surname": "1"
-      },
-      {
-        "firstname": "Speaker",
-        "participantID": 1,
-        "surname": "2"
-      }
-    ],
-    "schemefulfillments": null
-  },
-  "dialog": true,
-  "ova": [],
-  "text": {
-    "txt": " Speaker 1 <span class=\"highlighted\" id=\"0\">disagreements between party members are entirely to be expected.</span>.<br><br> Speaker 2 <span class=\"highlighted\" id=\"1\">the SNP has disagreements.</span>.<br><br> Speaker 1 <span class=\"highlighted\" id=\"2\">it's not uncommon for there to be disagreements between party members.</span>.<br><br>"
-  }
-}
-
---boundary-example-5--
-```
-</details>
+> [!TIP]
+> In this example, one can observe that argument representation formats can use the Content-ID (`cid:`) URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/) to refer to other parts of multipart messages.
+> 
+> <details>
+> <summary>Click here to toggle the visibility of Example 1.</summary>
+> <br>
+>   
+> ```email
+> Mime-Version: 1.0
+> Content-Type: multipart/related; boundary="boundary-example-1"
+> 
+> --boundary-example-1
+> 
+> Content-Type: text/plain
+> Content-Language: en
+> 
+> Bob Smith is a British citizen. Bob Smith was born in Bermuda. Attached is a copy of the birth certificate. People born in Bermuda are British citizens.
+> 
+> --boundary-example-1
+> 
+> Content-Type: application/argument+xml
+> Content-Language: en
+> 
+> <argument template="cid:item1">
+>   <conclusion><object href="cid:item2">Bob Smith</object> is a British citizen.</conclusion>
+>   <premises>
+>     <argument>
+>       <conclusion><object href="cid:item2">Bob Smith</object> was born in Bermuda.</conclusion>
+>       <evidence href="cid:item3">Attached is a copy of the birth certificate.</evidence>
+>     </argument>
+>     <argument>
+>       <conclusion><cite href="cid:item6" selection="cid:item7">People born in Bermuda are British citizens.</cite></conclusion>
+>     </argument>
+>   </premises>
+> </argument>
+> 
+> --boundary-example-1
+> 
+> Content-ID: <item1>
+> Content-Type: application/argument+xml
+> Content-Language: en
+> 
+> <argument>
+>   <conclusion><parameter kind="object" href="cid:item4">The person</parameter> is a British citizen.</conclusion>
+>   <premises>
+>     <argument>
+>       <conclusion><parameter kind="object" href="cid:item4">The person</parameter> was born in Bermuda.</conclusion>
+>       <parameter kind="evidence" href="cid:item5">Attached is a copy of the birth certificate.</parameter>
+>     </argument>
+>     <argument>
+>       <conclusion><cite href="cid:item6" selection="cid:item7">People born in Bermuda are British citizens.</cite></conclusion>
+>     </argument>
+>   </premises>
+> </argument>
+> 
+> --boundary-example-1
+> 
+> Content-ID: <item2>
+> Content-Type: application/octet-stream
+> Content-Transfer-Encoding: base64
+> 
+> TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4g
+> U2VkIGRvIGVpdXNtb2QgdGVtcG9yIGluY2lkaWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu
+> YSBhbGlxdWEuIFV0IGVuaW0gYWQgbWluaW0gdmVuaWFtLCBxdWlzIG5vc3RydWQgZXhlcmNpdGF0
+> aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
+> YXQuCg==
+> 
+> --boundary-example-1
+> 
+> Content-ID: <item3>
+> Content-Type: application/pdf
+> Content-Language: en
+> Content-Disposition: attachment; filename="birth_certificate.pdf"
+> Content-Transfer-Encoding: base64
+> 
+> TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4g
+> U2VkIGRvIGVpdXNtb2QgdGVtcG9yIGluY2lkaWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu
+> YSBhbGlxdWEuIFV0IGVuaW0gYWQgbWluaW0gdmVuaWFtLCBxdWlzIG5vc3RydWQgZXhlcmNpdGF0
+> aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
+> YXQuCg==
+> 
+> --boundary-example-1
+> 
+> Content-ID: <item4>
+> Content-Type: application/octet-stream
+> Content-Transfer-Encoding: base64
+> 
+> TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4g
+> U2VkIGRvIGVpdXNtb2QgdGVtcG9yIGluY2lkaWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu
+> YSBhbGlxdWEuIFV0IGVuaW0gYWQgbWluaW0gdmVuaWFtLCBxdWlzIG5vc3RydWQgZXhlcmNpdGF0
+> aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
+> YXQuCg==
+> 
+> --boundary-example-1
+> 
+> Content-ID: <item5>
+> Content-Type: application/octet-stream
+> Content-Transfer-Encoding: base64
+> 
+> TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4g
+> U2VkIGRvIGVpdXNtb2QgdGVtcG9yIGluY2lkaWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu
+> YSBhbGlxdWEuIFV0IGVuaW0gYWQgbWluaW0gdmVuaWFtLCBxdWlzIG5vc3RydWQgZXhlcmNpdGF0
+> aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
+> YXQuCg==
+> 
+> --boundary-example-1
+> 
+> Content-ID: <item6>
+> Content-Type: text/x-bibtex
+> 
+> @article{Brown2023,
+>   author = {Charles Brown},
+>   title = {An Interesting Article},
+>   journal = {Journal of Interesting Articles},
+>   year = {2023}
+> }
+> 
+> --boundary-example-1
+> 
+> Content-ID: <item7>
+> Content-Type: application/ld+json; profile="http://www.w3.org/ns/anno.jsonld"
+> 
+> {
+>   "source": "cid:item6",
+>   "selector": {
+>     "type": "FragmentSelector",
+>     "value": "page=10",
+>     "refinedBy": {
+>       "type": "TextQuoteSelector",
+>       "prefix": "preceding text",
+>       "suffix": "subsequent text"
+>     }
+>   }
+> }
+> 
+> --boundary-example-1--
+> ```
+> </details>
+
+> [!TIP]
+> In addition to a new markup language, existing models such as the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format) could be of use for representing arguments in MIME messages.
+> 
+> <details>
+> <summary>Click here to toggle the visibility of Example 2.</summary>
+> <br>
+> 
+> ```email
+> Mime-Version: 1.0
+> Content-Type: multipart/related; boundary="boundary-example-2"
+> 
+> --boundary-example-2
+> 
+> Content-Type: text/plain
+> Content-Language: en
+> 
+> Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
+> 
+> --boundary-example-2
+> 
+> Content-Type: application/argument+turtle
+> Content-Language: en
+> 
+> @prefix aif: <http://www.arg.dundee.ac.uk/aif#> .
+> @prefix ex: <http://example.org/> .
+> 
+> ex:Node1 a aif:I-node ;
+>     aif:claimText "Climate change is caused by human activities." .
+> 
+> ex:Node2 a aif:RA-node ;
+>     aif:hasPremise ex:Node1 ;
+>     aif:hasConclusion ex:Node3 .
+> 
+> ex:Node3 a aif:I-node ;
+>     aif:claimText "We should reduce carbon emissions." .
+> 
+> --boundary-example-2--
+> ```
+> </details>
+
+> [!TIP]
+> This example shows a simple approach to extending knowledge graphs using the AIF model to support attaching evidence and citing scholarly and scientific publications.
+> 
+> <details>
+> <summary>Click here to toggle the visibility of Example 3.</summary>
+> <br>
+> 
+> ```email
+> Mime-Version: 1.0
+> Content-Type: multipart/related; boundary="boundary-example-3"
+> 
+> --boundary-example-3
+> 
+> Content-Type: text/plain
+> Content-Language: en
+> 
+> Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
+> 
+> --boundary-example-3
+> 
+> Content-Type: application/argument+turtle
+> Content-Language: en
+> 
+> @prefix aif: <http://www.arg.dundee.ac.uk/aif#> .
+> @prefix ex: <http://example.org/> .
+> @prefix ext: <http://extension.org/> .
+> 
+> ex:Node1 a aif:I-node ;
+>     aif:claimText "Climate change is caused by human activities." .
+>     ext:hasEvidence <cid:item1> .
+>     ext:cites <cid:item2> .
+> 
+> ex:Node2 a aif:RA-node ;
+>     aif:hasPremise ex:Node1 ;
+>     aif:hasConclusion ex:Node3 .
+> 
+> ex:Node3 a aif:I-node ;
+>     aif:claimText "We should reduce carbon emissions." .
+> 
+> --boundary-example-3
+> 
+> Content-ID: <item1>
+> Content-Type: application/pdf
+> Content-Language: en
+> Content-Disposition: attachment; filename="evidence.pdf"
+> Content-Transfer-Encoding: base64
+> 
+> TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4g
+> U2VkIGRvIGVpdXNtb2QgdGVtcG9yIGluY2lkaWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu
+> YSBhbGlxdWEuIFV0IGVuaW0gYWQgbWluaW0gdmVuaWFtLCBxdWlzIG5vc3RydWQgZXhlcmNpdGF0
+> aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
+> YXQuCg==
+> 
+> --boundary-example-3
+> 
+> Content-ID: <item2>
+> Content-Type: text/x-bibtex
+> 
+> @article{Brown2023,
+>   author = {Charles Brown},
+>   title = {An Interesting Article},
+>   journal = {Journal of Interesting Articles},
+>   year = {2023}
+> }
+> 
+> --boundary-example-3--
+> ```
+> </details>
+
+> [!TIP]
+> This example shows a more intricate approach to extending knowledge graphs using the AIF model to support attaching evidence and citing scholarly and scientific publications.
+> 
+> <details>
+> <summary>Click here to toggle the visibility of Example 4.</summary>
+> <br>
+> 
+> ```email
+> Mime-Version: 1.0
+> Content-Type: multipart/related; boundary="boundary-example-4"
+> 
+> --boundary-example-4
+> 
+> Content-Type: text/plain
+> Content-Language: en
+> 
+> Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
+> 
+> --boundary-example-4
+> 
+> Content-Type: application/argument+turtle
+> Content-Language: en
+> 
+> @prefix aif: <http://www.arg.dundee.ac.uk/aif#> .
+> @prefix ex: <http://example.org/> .
+> @prefix ext: <http://extension.org/> .
+> 
+> ex:Node1 a aif:I-node ;
+>     aif:claimText "Climate change is caused by human activities." .
+> 
+> ex:Node2 a aif:RA-node ;
+>     aif:hasPremise ex:Node1 ;
+>     aif:hasConclusion ex:Node3 .
+> 
+> ex:Node3 a aif:I-node ;
+>     aif:claimText "We should reduce carbon emissions." .
+> 
+> ex:Node4 a ext:E-node ;
+>     ext:hasEvidence <cid:item1> .
+> 
+> ex:Node5 a ext:ES-node ;
+>     ext:supported ex:Node1 ;
+>     ext:supportedBy ex:Node4 .
+> 
+> ex:Node6 a ext:C-node ;
+>     ext:cites <cid:item2> .
+> 
+> ex:Node7 a ext:CS-node ;
+>     ext:supported ex:Node1 ;
+>     ext:supportedBy ex:Node6 .
+> 
+> --boundary-example-4
+> 
+> Content-ID: <item1>
+> Content-Type: application/pdf
+> Content-Language: en
+> Content-Disposition: attachment; filename="evidence.pdf"
+> Content-Transfer-Encoding: base64
+> 
+> TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4g
+> U2VkIGRvIGVpdXNtb2QgdGVtcG9yIGluY2lkaWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu
+> YSBhbGlxdWEuIFV0IGVuaW0gYWQgbWluaW0gdmVuaWFtLCBxdWlzIG5vc3RydWQgZXhlcmNpdGF0
+> aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
+> YXQuCg==
+> 
+> --boundary-example-4
+> 
+> Content-ID: <item2>
+> Content-Type: text/x-bibtex
+> 
+> @article{Brown2023,
+>   author = {Charles Brown},
+>   title = {An Interesting Article},
+>   journal = {Journal of Interesting Articles},
+>   year = {2023}
+> }
+> 
+> --boundary-example-4--
+> ```
+> </details>
+
+> [!TIP]
+> This example shows that arguments could be represented using the AIF model expressed using JSON in a MIME message.
+> 
+> <details>
+> <summary>Click here to toggle the visibility of Example 5.</summary>
+> <br>
+> 
+> ```email
+> Mime-Version: 1.0
+> Content-Type: multipart/related; boundary="boundary-example-5"
+> 
+> --boundary-example-5
+> 
+> Content-Type: text/plain
+> Content-Language: en
+> 
+> Speaker 1: Disagreements between party members are entirely to be expected.
+> Speaker 2: The SNP has disagreements.
+> Speaker 1: It's not uncommon for there to be disagreements between party members.
+> 
+> --boundary-example-5
+> 
+> Content-Type: application/argument+json
+> Content-Language: en
+> 
+> {
+>   "AIF": {
+>     "descriptorfulfillments": null,
+>     "edges": [
+>       {
+>         "edgeID": 0,
+>         "fromID": 0,
+>         "toID": 4
+>       },
+>       {
+>         "edgeID": 1,
+>         "fromID": 4,
+>         "toID": 3
+>       },
+>       {
+>         "edgeID": 2,
+>         "fromID": 1,
+>         "toID": 6
+>       },
+>       {
+>         "edgeID": 3,
+>         "fromID": 6,
+>         "toID": 5
+>       },
+>       {
+>         "edgeID": 4,
+>         "fromID": 2,
+>         "toID": 8
+>       },
+>       {
+>         "edgeID": 5,
+>         "fromID": 8,
+>         "toID": 7
+>       },
+>       {
+>         "edgeID": 6,
+>         "fromID": 3,
+>         "toID": 9
+>       },
+>       {
+>         "edgeID": 7,
+>         "fromID": 9,
+>         "toID": 7
+>       }
+>     ],
+>     "locutions": [
+>       {
+>         "nodeID": 0,
+>         "personID": 0
+>       },
+>       {
+>         "nodeID": 1,
+>         "personID": 1
+>       },
+>       {
+>         "nodeID": 2,
+>         "personID": 2
+>       }
+>     ],
+>     "nodes": [
+>       {
+>         "nodeID": 0,
+>         "text": "disagreements between party members are entirely to be expected.",
+>         "type": "L"
+>       },
+>       {
+>         "nodeID": 1,
+>         "text": "the SNP has disagreements.",
+>         "type": "L"
+>       },
+>       {
+>         "nodeID": 2,
+>         "text": "it's not uncommon for there to be disagreements between party members.",
+>         "type": "L"
+>       },
+>       {
+>         "nodeID": 3,
+>         "text": "disagreements between party members are entirely to be expected.",
+>         "type": "I"
+>       },
+>       {
+>         "nodeID": 4,
+>         "text": "Default Illocuting",
+>         "type": "YA"
+>       },
+>       {
+>         "nodeID": 5,
+>         "text": "the SNP has disagreements.",
+>         "type": "I"
+>       },
+>       {
+>         "nodeID": 6,
+>         "text": "Default Illocuting",
+>         "type": "YA"
+>       },
+>       {
+>         "nodeID": 7,
+>         "text": "it's not uncommon for there to be disagreements between party members.",
+>         "type": "I"
+>       },
+>       {
+>         "nodeID": 8,
+>         "text": "Default Illocuting",
+>         "type": "YA"
+>       },
+>       {
+>         "nodeID": 9,
+>         "text": "Default Inference",
+>         "type": "RA"
+>       }
+>     ],
+>     "participants": [
+>       {
+>         "firstname": "Speaker",
+>         "participantID": 0,
+>         "surname": "1"
+>       },
+>       {
+>         "firstname": "Speaker",
+>         "participantID": 1,
+>         "surname": "2"
+>       }
+>     ],
+>     "schemefulfillments": null
+>   },
+>   "dialog": true,
+>   "ova": [],
+>   "text": {
+>     "txt": " Speaker 1 <span class=\"highlighted\" id=\"0\">disagreements between party members are entirely to be expected.</span>.<br><br> Speaker 2 <span class=\"highlighted\" id=\"1\">the SNP has disagreements.</span>.<br><br> Speaker 1 <span class=\"highlighted\" id=\"2\">it's not uncommon for there to be disagreements between party members.</span>.<br><br>"
+>   }
+> }
+> 
+> --boundary-example-5--
+> ```
+> </details>
 
 ### Argument Templating
 
@@ -535,41 +530,40 @@ Inspired by [Web Components](https://en.wikipedia.org/wiki/Web_Components), wher
 
 There exists a `Content-Description` header for providing text descriptions of parts. There could, in particular for content of type `multipart/related`, be a new MIME header, perhaps named `Content-Metadata`, to refer to other parts which serve as metadata for them. Additionally or instead, those parts providing metadata could use a new header, perhaps named `Content-About`, to refer to those parts which they describe.
 
-#### Example 6
-
-This example shows how one could include metadata in one MIME message part to describe content in another part.
-
-<details>
-<summary>Click here to toggle the visibility of Example 6.</summary>
-<br>
-
-```email
-Mime-Version: 1.0
-Content-Type: multipart/related; boundary="boundary-example-6"
-
---boundary-example-6
-
-Content-Type: text/turtle
-Content-About: <part1>
-
-@prefix dc: <http://purl.org/dc/terms/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-
-<cid:part1> dc:created "2025-06-29 20:00:00.000" ;
-    dc:creator [ a foaf:Person ;
-            foaf:name "Bob Smith" ] .
-
---boundary-example-6
-
-Content-ID: <part1>
-Content-Type: text/plain
-Content-Language: en
-
-Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
-
---boundary-example-6--
-```
-</details>
+> [!TIP]
+> This example shows how one could include metadata in one MIME message part to describe content in another part.
+> 
+> <details>
+> <summary>Click here to toggle the visibility of Example 6.</summary>
+> <br>
+> 
+> ```email
+> Mime-Version: 1.0
+> Content-Type: multipart/related; boundary="boundary-example-6"
+> 
+> --boundary-example-6
+> 
+> Content-Type: text/turtle
+> Content-About: <part1>
+> 
+> @prefix dc: <http://purl.org/dc/terms/> .
+> @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+> 
+> <cid:part1> dc:created "2025-06-29 20:00:00.000" ;
+>     dc:creator [ a foaf:Person ;
+>             foaf:name "Bob Smith" ] .
+> 
+> --boundary-example-6
+> 
+> Content-ID: <part1>
+> Content-Type: text/plain
+> Content-Language: en
+> 
+> Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
+> 
+> --boundary-example-6--
+> ```
+> </details>
 
 ### Content Negotiation
 
@@ -579,50 +573,49 @@ One could provide these functionalities using MIME messages. Senders could indic
 
 For example, senders might be able to translate content, on-demand, into a very large set of languages and, instead of having to provide content for each language in a MIME message, they could include content for some popular languages and indicate the availability of and locations of content in other languages.
 
-#### Example 7
-
-This example shows a theoretical approach to include content in both English and French while providing recipients with means to obtain the content in other formats or languages.
-
-<details>
-<summary>Click here to toggle the visibility of Example 7.</summary>
-<br>
-
-```email
-Mime-Version: 1.0
-Message-Id: 12345678
-Content-Type: multipart/alternative; boundary="boundary-example-7"
-
---boundary-example-7
-
-Content-Type: text/plain
-Content-Language: en
-
-Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
-
---boundary-example-7
-
-Content-Type: text/plain
-Content-Language: fr
-
-Le changement climatique est causé par les activités humaines. Nous devons donc réduire les émissions de carbone.
-
---boundary-example-7
-
-Content-Type: text/plain
-Content-Language: other1
-Content-Disposition: retrieve
-Content-Alias: https://service.org/translate.php?mid=12345678&lang=other1
-
---boundary-example-7
-
-Content-Type: text/plain
-Content-Language: other2
-Content-Disposition: retrieve
-Content-Alias: https://service.org/translate.php?mid=12345678&lang=other2
-
---boundary-example-7--
-```
-</details>
+> [!TIP]
+> This example shows a theoretical approach to include content in both English and French while providing recipients with means to obtain the content in other formats or languages.
+> 
+> <details>
+> <summary>Click here to toggle the visibility of Example 7.</summary>
+> <br>
+> 
+> ```email
+> Mime-Version: 1.0
+> Message-Id: 12345678
+> Content-Type: multipart/alternative; boundary="boundary-example-7"
+> 
+> --boundary-example-7
+> 
+> Content-Type: text/plain
+> Content-Language: en
+> 
+> Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
+> 
+> --boundary-example-7
+> 
+> Content-Type: text/plain
+> Content-Language: fr
+> 
+> Le changement climatique est causé par les activités humaines. Nous devons donc réduire les émissions de carbone.
+> 
+> --boundary-example-7
+> 
+> Content-Type: text/plain
+> Content-Language: other1
+> Content-Disposition: retrieve
+> Content-Alias: https://service.org/translate.php?mid=12345678&lang=other1
+> 
+> --boundary-example-7
+> 
+> Content-Type: text/plain
+> Content-Language: other2
+> Content-Disposition: retrieve
+> Content-Alias: https://service.org/translate.php?mid=12345678&lang=other2
+> 
+> --boundary-example-7--
+> ```
+> </details>
 
 ### Security
 
