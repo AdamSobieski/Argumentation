@@ -7,7 +7,7 @@
 See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipedia.org/wiki/Mozilla_Archive_Format), [Web Archive](https://en.wikipedia.org/wiki/Web_Archive_(file_format)), [WARC](https://en.wikipedia.org/wiki/WARC_(file_format)), [HAR](https://en.wikipedia.org/wiki/HAR_(file_format)), [EPUB](https://en.wikipedia.org/wiki/EPUB).
 
 > [!TIP]
-> In this example, one can observe that argument representation formats can use the Content-ID (`cid:`) URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/) to refer to other parts of multipart messages.
+> In this example, one can observe that markup-based argument representation formats can use the Content-ID (`cid:`) URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/) to refer to other parts of multipart messages.
 > 
 > <details>
 > <summary>Click here to toggle the display of this example.</summary>
