@@ -1,6 +1,6 @@
 ## Introduction
 
-Given a formalized argument markup language which can be transformed via [RDF Mapping Language (RML)](https://rml.io/specs/rml/) into knowledge graphs using the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format) model, the idea, here, is to allow software developers and artificial-intelligence agents to be able to create, define, and reuse markup components such that resultant content could also be transformed into such knowledge graphs.
+Given a formalized argument markup language which can be transformed via [RDF Mapping Language (RML)]([https://rml.io/specs/rml/](https://kg-construct.github.io/rml-resources/portal/)) into knowledge graphs using the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format) model, the idea, here, is to allow software developers and artificial-intelligence agents to be able to create, define, and reuse markup components such that resultant content could also be transformed into such knowledge graphs.
 
 ## Component Models
 
@@ -23,9 +23,9 @@ As envisioned, components' definitions include XML schema and RML. Components' d
 > <argument xmlns="..."
 >           xmlns:ext="http://www.extension.org/#"
 >           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
->           xsi:schemaLocation="cid:part1 cid:part2"
+>           xsi:schemaLocation="https://www.example.org/argument.xsd https://www.extension.org/assertion.xsd"
 >           xmlns:rmi="http://www.example.org/2025/RML-instance"
->           rmi:mappingLocation="cid:part3 cid:part4">
+>           rmi:mappingLocation="https://www.example.org/argument.rml https://www.extension.org/assertion.rml">
 >   <conclusions>
 >     <conclusion>This is an example showing how extensible markup-based components could be used.</conclusion>
 >   </conclusions>
