@@ -423,10 +423,6 @@ New MIME `Content` headers could be designed for granting permissions and author
 
 Argument templates are reusable [templates](https://en.wikipedia.org/wiki/Template_processor) from which varied arguments can be produced.
 
-A number of templating systems, e.g., [Handlebars](https://handlebarsjs.com/), [Liquid](https://liquidjs.com/), and [Jinja](https://jinja.palletsprojects.com/en/stable/), could be explored in these regards. Handlebars templates have a content type of `text/x-handlebars-template`, Liquid templates `application/liquid`, and Jinja templates `text/jinja`.
-
-There are also knowledge-graph templates to consider. For instance: [Reasonable Ontology Templates (OTTR)](https://www.ottr.xyz/).
-
 ## A Comparison of Message Models
 
 ### Artificial-intelligence APIs, Frameworks, and Protocols
