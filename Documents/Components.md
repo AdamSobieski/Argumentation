@@ -21,13 +21,13 @@ What might it resemble for an argument markup language resource to reference ext
 >           xmlns:rmi="http://www.example.org/2025/RML-instance"
 >           rmi:mappingLocation="https://www.example.org/argument.rml https://www.extension.org/assertion.rml">
 >   <conclusions>
->     <conclusion>This is an example showing how extensible markup-based components could be used.</conclusion>
+>     <conclusion id="c1">This is an example showing how extensible markup-based components could be used.</conclusion>
 >   </conclusions>
 >   <rules>
 >     <rule href="cid:part1" />
 >   </rules>
 >   <premises>
->     <ext:assertion ext:agent="cid:part2#agent">This is an extensible markup-based component.</ext:assertion>
+>     <ext:assertion id="p1" ext:agent="cid:part2#agent">This is an extensible markup-based component.</ext:assertion>
 >   </premises>
 > </argument>
 > ```
