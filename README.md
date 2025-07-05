@@ -310,13 +310,9 @@ Inspired by [Web Components](https://en.wikipedia.org/wiki/Web_Components), wher
 > ```
 > </details>
 
-### Knowledge Graphs
-
-[Knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) can also be of use for representing arguments, argument templates, and networks of interrelated arguments.
-
 ### Metadata
 
-[Knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) could be used in MIME messages to provide [metadata](https://en.wikipedia.org/wiki/Metadata) about other parts in multipart messages.
+In addition to their uses for representing arguments, argument templates, and networks of interrelated arguments, [knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) could be used in MIME messages to provide [metadata](https://en.wikipedia.org/wiki/Metadata) about other parts in multipart messages.
 
 There exists a `Content-Description` header for providing text descriptions of parts. There could, in particular for content of type `multipart/related`, be a new MIME header, perhaps named `Content-Metadata`, to refer to other parts which serve as metadata for them. Additionally or instead, those parts providing metadata could use a new header, perhaps named `Content-About`, to refer to those parts which they describe.
 
