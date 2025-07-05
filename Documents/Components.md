@@ -16,7 +16,7 @@ What would it resemble for an argument markup language resource to reference ext
 
 > [!TIP]
 >
-> Perhaps, resembling XML schemas, one could utilize attributes to indicate the locations of RML mappings.
+> Resembling XML schemas, one could utilize attributes to indicate the locations of RML mappings.
 > 
 > ```xml
 > <argument xmlns="..."
