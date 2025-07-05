@@ -21,7 +21,7 @@ As envisioned, components' definitions include XML schema and RML. Components' d
 > 
 > ```xml
 > <argument xmlns="..."
->           xmlns:ext="http://otherxmlns.org/extension1/#"
+>           xmlns:ext="http://www.extension.org/#"
 >           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 >           xsi:schemaLocation="cid:part1 cid:part2"
 >           xmlns:rmi="http://www.example.org/2025/RML-instance"
