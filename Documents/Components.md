@@ -30,10 +30,10 @@ As envisioned, components' definitions include XML schema and RML. Components' d
 >     <conclusion>This is an example showing how extensible markup-based components could be used.</conclusion>
 >   </conclusions>
 >   <rules>
->     <rule href="cid:part5" />
+>     <rule href="cid:part1" />
 >   </rules>
 >   <premises>
->     <ext:assertion ext:agent="cid:part6#agent">This is an extensible markup-based component.</ext:assertion>
+>     <ext:assertion ext:agent="cid:part2#agent">This is an extensible markup-based component.</ext:assertion>
 >   </premises>
 > </argument>
 > ```
