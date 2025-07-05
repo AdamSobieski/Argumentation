@@ -135,9 +135,9 @@ While it may suffice to include text and argument-related data together in MIME 
 
 This format could provide end-users with enhanced presentational, interactional, and navigational features. This format could provide end-users with other features from accessing argument-related data available elsewhere in MIME messages.
 
-Static hypertext could be automatically generated from argument-related data. In addition to algorithms producing static argument-specific hypertext from argument-related data, developers might want to explore providing reusable and general-purpose dynamic hypertext which would vary, at runtime, based upon loaded argument-related data.
+Static hypertext could be automatically generated from argument-related data. Dynamic hypertext could use scripting logic to vary, at runtime, based upon loaded argument-related data.
 
-How would embedded HTML content in MIME messages access argument-related data from other parts of MIME messages? HTML content can use [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to enable inlined images in email messages. HTML content in other kinds of MIME messages could use this scheme to enable [data blocks](https://html.spec.whatwg.org/multipage/scripting.html#data-block) to refer to other message parts.
+How would embedded HTML content in MIME messages access argument-related data from other parts of MIME messages? Perhaps HTML parts could use the `cid:` scheme in [data blocks](https://html.spec.whatwg.org/multipage/scripting.html#data-block) to refer to and load content from other message parts.
 
 ### Components
 > [!NOTE]
