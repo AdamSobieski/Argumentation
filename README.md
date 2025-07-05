@@ -129,18 +129,6 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > ```
 > </details>
 
-### Argument Templates
-> [!NOTE]
-> Main Document: [Templates](Documents/Templates.md)
-
-An argument template is a reusable [template](https://en.wikipedia.org/wiki/Template_processor) from which computational representations of argument can be produced.
-
-A number of templating systems, e.g., [Handlebars](https://handlebarsjs.com/), [Liquid](https://liquidjs.com/), and [Jinja](https://jinja.palletsprojects.com/en/stable/), could be explored in these regards. Handlebars templates have a content type of `text/x-handlebars-template`, Liquid templates `application/liquid`, and Jinja templates `text/jinja`.
-
-There are also knowledge-graph templates to consider. For instance: [Reasonable Ontology Templates (OTTR)](https://www.ottr.xyz/).
-
-Advanced topics in templating include interactive templates and agentic templates. Interactive templates are templates with accompanying forms or questionnaires which end-users or agents could complete to produce outputs, e.g., computational representations of arguments. Agentic templates resemble scripts, including [prompts](https://en.wikipedia.org/wiki/Prompt_engineering), for artificial-intelligence systems to contextually produce natural-language arguments with accompanying structured knowledge.
-
 ### JavaScript Object Notation
 
 [JSON](https://en.wikipedia.org/wiki/JSON) data can be included in MIME messages. Using [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), wherever a URL can refer to a resource, a `cid:` URL could be used to refer to a message part in a multipart MIME message.
@@ -432,6 +420,18 @@ For example, senders might be able to translate content, on-demand, into a very 
 [Secure Multipurpose Internet Mail Extensions (S/MIME)](https://en.wikipedia.org/wiki/S/MIME) enables security features for MIME messages including [digitally signing](https://en.wikipedia.org/wiki/Digital_signature) messages.
 
 New MIME `Content` headers could be designed for granting permissions and authorizations to and between parts of complex MIME messages, resembling [permissions policies](https://w3c.github.io/webappsec-permissions-policy/) for `<iframe>` nested content and involving HTTP headers.
+
+## Argument Templates
+> [!NOTE]
+> Main Document: [Templates](Documents/Templates.md)
+
+An argument template is a reusable [template](https://en.wikipedia.org/wiki/Template_processor) from which computational representations of argument can be produced.
+
+A number of templating systems, e.g., [Handlebars](https://handlebarsjs.com/), [Liquid](https://liquidjs.com/), and [Jinja](https://jinja.palletsprojects.com/en/stable/), could be explored in these regards. Handlebars templates have a content type of `text/x-handlebars-template`, Liquid templates `application/liquid`, and Jinja templates `text/jinja`.
+
+There are also knowledge-graph templates to consider. For instance: [Reasonable Ontology Templates (OTTR)](https://www.ottr.xyz/).
+
+Advanced topics in templating include interactive templates and agentic templates. Interactive templates are templates with accompanying forms or questionnaires which end-users or agents could complete to produce outputs, e.g., computational representations of arguments. Agentic templates resemble scripts, including [prompts](https://en.wikipedia.org/wiki/Prompt_engineering), for artificial-intelligence systems to contextually produce natural-language arguments with accompanying structured knowledge.
 
 ## A Comparison of Message Models
 
