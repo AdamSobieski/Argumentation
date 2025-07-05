@@ -135,9 +135,9 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
  
 A number of templating systems, e.g., [Handlebars](https://handlebarsjs.com/), [Liquid](https://liquidjs.com/), and [Jinja](https://jinja.palletsprojects.com/en/stable/), could be explored with respect to the computational representation of argument. Handlebars templates have a content type of `text/x-handlebars-template`, Liquid templates `application/liquid`, and Jinja templates `text/jinja`.
 
-With solutions for knowledge-graph templating, the expressiveness of knowledge-graph-based approaches to representing argument could equal the expressiveness of the markup-based approach indicated in example 1. Knowledge-graph-based representations of argument would be able to refer to those reusable argument templates used to generate them (see also: [Reasonable Ontology Templates (OTTR)](https://www.ottr.xyz/)).
+There are also knowledge-graph templates to consider. For instance: [Reasonable Ontology Templates (OTTR)](https://www.ottr.xyz/).
 
-Advanced topics in argument templating include interactive templates and agentic templates. Interactive templates are templates with accompanying forms or questionnaires which end-users or artificial-intelligence agents would complete to produce output, in this case arguments. Agentic templates would resemble scripts, including [prompts](https://en.wikipedia.org/wiki/Prompt_engineering), for artificial-intelligence systems to contextually produce natural-language arguments with accompanying structured knowledge.
+Advanced topics in templating include interactive templates and agentic templates. Interactive templates are templates with accompanying forms or questionnaires which end-users or artificial-intelligence agents would complete to produce outputs, e.g., arguments. Agentic templates would resemble scripts, including [prompts](https://en.wikipedia.org/wiki/Prompt_engineering), for artificial-intelligence systems to contextually produce natural-language arguments with accompanying structured knowledge.
 
 ### JavaScript Object Notation
 
