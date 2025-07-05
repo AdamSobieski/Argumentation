@@ -129,9 +129,25 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > ```
 > </details>
 
-### JavaScript Object Notation
+### Hypertext Markup Language
 
-[JSON](https://en.wikipedia.org/wiki/JSON) data can be included in MIME messages.
+While it may suffice to include text and argument-related data together in MIME messages for artificial-intelligence agents, human end-users might tend to prefer the addition of [hypertext](https://en.wikipedia.org/wiki/HTML5).
+
+This format could provide end-users with enhanced presentational, interactional, and navigational features. This format could provide end-users with other features from accessing argument-related data available elsewhere in MIME messages.
+
+Static hypertext could be automatically generated from argument-related data. In addition to algorithms producing static argument-specific hypertext from argument-related data, developers might want to explore providing reusable and general-purpose dynamic hypertext which would vary, at runtime, based upon loaded argument-related data.
+
+How would embedded HTML content in MIME messages access argument-related data from other parts of MIME messages? HTML content can use [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to enable inlined images in email messages. HTML content in other kinds of MIME messages could use this scheme to enable [data blocks](https://html.spec.whatwg.org/multipage/scripting.html#data-block) to refer to other message parts.
+
+### Components
+> [!NOTE]
+> Main Document: [Components](Documents/Components.md)
+
+Inspired by [Web Components](https://en.wikipedia.org/wiki/Web_Components), where custom markup elements can be defined and subsequently reused, new argument markup languages could be extensible with respect to an expressiveness for higher-level components. These markup components would be defined not in terms of their presentation and interaction, but in terms of their semantics. That is, one could define custom markup components in terms of mappings and transformations between them and knowledge graphs (see also: [R2RML](https://www.w3.org/TR/r2rml/) and [RML](https://kg-construct.github.io/rml-resources/portal/)).
+
+### JavaScript Object Notation and Linked Data
+
+[JSON](https://en.wikipedia.org/wiki/JSON) and [JSON-LD](https://en.wikipedia.org/wiki/JSON-LD) data can be included in MIME messages.
 
 > [!TIP]
 > This example shows that arguments could be represented using the AIF model expressed using JSON in a MIME message.
@@ -293,22 +309,6 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > --boundary-example--
 > ```
 > </details>
-
-### Hypertext Markup Language
-
-While it may suffice to include text and argument-related data together in MIME messages for artificial-intelligence agents, human end-users might tend to prefer the addition of [hypertext](https://en.wikipedia.org/wiki/HTML5).
-
-This format could provide end-users with enhanced presentational, interactional, and navigational features. This format could provide end-users with other features from accessing argument-related data available elsewhere in MIME messages.
-
-Static hypertext could be automatically generated from argument-related data. In addition to algorithms producing static argument-specific hypertext from argument-related data, developers might want to explore providing reusable and general-purpose dynamic hypertext which would vary, at runtime, based upon loaded argument-related data.
-
-How would embedded HTML content in MIME messages access argument-related data from other parts of MIME messages? HTML content can use [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), the `cid:` URL scheme, to enable inlined images in email messages. HTML content in other kinds of MIME messages could use this scheme to enable [data blocks](https://html.spec.whatwg.org/multipage/scripting.html#data-block) to refer to other message parts.
-
-### Components
-> [!NOTE]
-> Main Document: [Components](Documents/Components.md)
-
-Inspired by [Web Components](https://en.wikipedia.org/wiki/Web_Components), where custom markup elements can be defined and subsequently reused, new argument markup languages could be extensible with respect to an expressiveness for higher-level components. These markup components would be defined not in terms of their presentation and interaction, but in terms of their semantics. That is, one could define custom markup components in terms of mappings and transformations between them and knowledge graphs (see also: [R2RML](https://www.w3.org/TR/r2rml/) and [RML](https://kg-construct.github.io/rml-resources/portal/)).
 
 ### Knowledge Graphs
 
