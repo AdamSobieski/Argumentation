@@ -133,13 +133,13 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > [!NOTE]
 > Main Document: [Templates](Documents/Templates.md)
 
-An argument template is a template from which computational representations of argument can be produced.
+An argument template is a reusable [template](https://en.wikipedia.org/wiki/Template_processor) from which computational representations of argument can be produced.
 
 A number of templating systems, e.g., [Handlebars](https://handlebarsjs.com/), [Liquid](https://liquidjs.com/), and [Jinja](https://jinja.palletsprojects.com/en/stable/), could be explored in these regards. Handlebars templates have a content type of `text/x-handlebars-template`, Liquid templates `application/liquid`, and Jinja templates `text/jinja`.
 
 There are also knowledge-graph templates to consider. For instance: [Reasonable Ontology Templates (OTTR)](https://www.ottr.xyz/).
 
-Advanced topics in templating include interactive templates and agentic templates. Interactive templates are templates with accompanying forms or questionnaires which end-users or artificial-intelligence agents would complete to produce outputs, e.g., arguments. Agentic templates would resemble scripts, including [prompts](https://en.wikipedia.org/wiki/Prompt_engineering), for artificial-intelligence systems to contextually produce natural-language arguments with accompanying structured knowledge.
+Advanced topics in templating include interactive templates and agentic templates. Interactive templates are templates with accompanying forms or questionnaires which end-users or agents could complete to produce outputs, e.g., computational representations of arguments. Agentic templates resemble scripts, including [prompts](https://en.wikipedia.org/wiki/Prompt_engineering), for artificial-intelligence systems to contextually produce natural-language arguments with accompanying structured knowledge.
 
 ### JavaScript Object Notation
 
