@@ -1,10 +1,6 @@
-## Introduction
-
-Coming soon.
-
 ## Text
 
-A number of templating systems, e.g., [Handlebars](https://handlebarsjs.com/), [Liquid](https://liquidjs.com/), and [Jinja](https://jinja.palletsprojects.com/en/stable/), can be explored.
+There are a number of templating systems, e.g., [Handlebars](https://handlebarsjs.com/), [Liquid](https://liquidjs.com/), and [Jinja](https://jinja.palletsprojects.com/en/stable/).
 
 Handlebars templates have a content type of `text/x-handlebars-template`, Liquid templates `application/liquid`, and Jinja templates `text/jinja`.
 
@@ -53,7 +49,3 @@ With respect to knowledge-graph templates, there exists [Reasonable Ontology Tem
 ## Advanced
 
 Advanced topics in templating include interactive templates and agentic templates. Interactive templates are templates with accompanying forms or questionnaires which end-users or agents could complete to produce outputs, e.g., computational representations of arguments. Agentic templates resemble scripts, including [prompts](https://en.wikipedia.org/wiki/Prompt_engineering), for artificial-intelligence systems to contextually produce natural-language arguments with accompanying structured knowledge.
-
-## Conclusion
-
-Coming soon.
