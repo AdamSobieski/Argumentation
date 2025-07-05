@@ -139,7 +139,7 @@ Advanced topics in argument templating include interactive templates and agentic
 
 ### JavaScript Object Notation
 
-[JSON](https://en.wikipedia.org/wiki/JSON) data can be included in MIME messages. Wherever a URL can refer to a resource, a `cid:` URL could be used to refer to a message part elsewhere in a MIME message.
+[JSON](https://en.wikipedia.org/wiki/JSON) data can be included in MIME messages. Using [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), wherever a URL can refer to a resource, a `cid:` URL could be used to refer to a message part in a multipart MIME message.
 
 > [!TIP]
 > This example shows that arguments could be represented using the AIF model expressed using JSON in a MIME message.
