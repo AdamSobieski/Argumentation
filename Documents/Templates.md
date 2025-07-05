@@ -26,11 +26,11 @@ Handlebars templates have a content type of `text/x-handlebars-template`, Liquid
 >       <parameter bind="evidence" />
 >     </argument>
 >     <argument>
->       <conclusion><cite href="cid:item6">People born in Bermuda are British citizens.</cite></conclusion>
+>       <conclusion><cite href="cid:item3">People born in Bermuda are British citizens.</cite></conclusion>
 >     </argument>
 >   </premises>
 > </argument>
-> ``` 
+> ```
 > ```xml
 > <argument template="cid:item1">
 >   <conclusion><object>Bob Smith</object> is a British citizen.</conclusion>
