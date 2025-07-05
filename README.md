@@ -129,11 +129,13 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > ```
 > </details>
 
-### Argument Templating
+### Argument Templates
 > [!NOTE]
-> Main Document: [Templating](Documents/Templating.md)
- 
-A number of templating systems, e.g., [Handlebars](https://handlebarsjs.com/), [Liquid](https://liquidjs.com/), and [Jinja](https://jinja.palletsprojects.com/en/stable/), could be explored with respect to the computational representation of argument. Handlebars templates have a content type of `text/x-handlebars-template`, Liquid templates `application/liquid`, and Jinja templates `text/jinja`.
+> Main Document: [Templates](Documents/Templates.md)
+
+An argument template is a template from which computational representations of argument can be produced.
+
+A number of templating systems, e.g., [Handlebars](https://handlebarsjs.com/), [Liquid](https://liquidjs.com/), and [Jinja](https://jinja.palletsprojects.com/en/stable/), could be explored in these regards. Handlebars templates have a content type of `text/x-handlebars-template`, Liquid templates `application/liquid`, and Jinja templates `text/jinja`.
 
 There are also knowledge-graph templates to consider. For instance: [Reasonable Ontology Templates (OTTR)](https://www.ottr.xyz/).
 
