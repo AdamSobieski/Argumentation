@@ -28,7 +28,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > 
 > --boundary-example
 > 
-> Content-Type: application/argument+turtle
+> Content-Type: text/turtle
 > Content-Language: en
 > 
 > @prefix aif: <http://www.arg.dundee.ac.uk/aif#> .
@@ -68,7 +68,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > 
 > --boundary-example
 > 
-> Content-Type: application/argument+turtle
+> Content-Type: text/turtle
 > Content-Language: en
 > 
 > @prefix aif: <http://www.arg.dundee.ac.uk/aif#> .
@@ -171,7 +171,7 @@ Markup languages for representing argument could be designed to be extensible wi
 > 
 > --boundary-example
 > 
-> Content-Type: application/argument+json
+> Content-Type: application/json
 > Content-Language: en
 > 
 > {
