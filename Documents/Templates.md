@@ -1,3 +1,57 @@
 ## Introduction
 
 Coming soon.
+
+## Text
+
+Coming soon.
+
+## Markup
+
+> [!TIP]
+> In this example, one can observe one approach to implementing markup-based templates.
+> 
+> <details>
+> <summary>Click here to toggle the display of this example.</summary>
+> <br>
+>
+> ```xml
+> <argument>
+>   <conclusion><parameter kind="object" /> is a British citizen.</conclusion>
+>   <premises>
+>     <argument>
+>       <conclusion><parameter kind="object" /> was born in Bermuda.</conclusion>
+>       <parameter kind="evidence" />
+>     </argument>
+>     <argument>
+>       <conclusion><cite href="cid:item6">People born in Bermuda are British citizens.</cite></conclusion>
+>     </argument>
+>   </premises>
+> </argument>
+> ``` 
+> ```xml
+> <argument template="cid:item1">
+>   <conclusion><object>Bob Smith</object> is a British citizen.</conclusion>
+>   <premises>
+>     <argument>
+>       <conclusion><object>Bob Smith</object> was born in Bermuda.</conclusion>
+>       <evidence href="cid:item2">Attached is a copy of the birth certificate.</evidence>
+>     </argument>
+>     <argument>
+>       <conclusion><cite href="cid:item3">People born in Bermuda are British citizens.</cite></conclusion>
+>     </argument>
+>   </premises>
+> </argument>
+> ```
+
+## Knowledge Graphs
+
+Coming soon.
+
+## Advanced
+
+Advanced topics in templating include interactive templates and agentic templates. Interactive templates are templates with accompanying forms or questionnaires which end-users or agents could complete to produce outputs, e.g., computational representations of arguments. Agentic templates resemble scripts, including [prompts](https://en.wikipedia.org/wiki/Prompt_engineering), for artificial-intelligence systems to contextually produce natural-language arguments with accompanying structured knowledge.
+
+## Conclusion
+
+Coming soon.
