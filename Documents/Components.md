@@ -23,17 +23,17 @@ As envisioned, components' definitions include XML schema and RML. Components' d
 > <argument xmlns="..."
 >           xmlns:ext="http://otherxmlns.org/extension1/#"
 >           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
->           xsi:schemaLocation="..."
->           xmlns:rmli="..."
->           rmli:mappingLocation="...">
+>           xsi:schemaLocation="cid:part1 cid:part2"
+>           xmlns:rmi="http://www.example.org/2025/RML-instance"
+>           rmi:mappingLocation="cid:part3 cid:part4">
 >   <conclusions>
 >     <conclusion>This is an example showing how markup-based extensions could be used.</conclusion>
 >   </conclusions>
 >   <rules>
->     <rule href="cid:part2" />
+>     <rule href="cid:part5" />
 >   </rules>
 >   <premises>
->     <ext:assertion ext:agent="cid:part3#agent">This is an assertion.</ext:assertion>
+>     <ext:assertion ext:agent="cid:part6#agent">This is an assertion.</ext:assertion>
 >   </premises>
 > </argument>
 > ```
