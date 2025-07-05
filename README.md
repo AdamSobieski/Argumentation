@@ -143,7 +143,7 @@ How would embedded HTML content in MIME messages access argument-related data fr
 > [!NOTE]
 > Main Document: [Components](Documents/Components.md)
 
-Inspired by [Web Components](https://en.wikipedia.org/wiki/Web_Components), where custom markup elements can be defined and subsequently reused, new argument markup languages could be extensible with respect to an expressiveness for higher-level components. These markup components would be defined not in terms of their presentation and interaction, but in terms of their semantics. That is, one could define custom markup components in terms of mappings and transformations between them and knowledge graphs (see also: [R2RML](https://www.w3.org/TR/r2rml/) and [RML](https://kg-construct.github.io/rml-resources/portal/)).
+Inspired by [Web Components](https://en.wikipedia.org/wiki/Web_Components), where custom markup elements can be defined and subsequently reused, argument markup languages could be designed to be extensible with respect to expressiveness for higher-level components. These components would be defined not in terms of their presentation and interaction, but in terms of their semantics. That is, one could define reusable elements in terms of mappings and transformations between them and knowledge graphs (see also: [R2RML](https://www.w3.org/TR/r2rml/) and [RML](https://kg-construct.github.io/rml-resources/portal/)).
 
 ### JavaScript Object Notation and Linked Data
 
