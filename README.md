@@ -49,76 +49,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > </details>
 
 > [!TIP]
-> This example shows a simple approach to extending knowledge graphs using the AIF model to support attaching evidence and citing scholarly and scientific publications.
-> 
-> <details>
-> <summary>Click here to toggle the display of this example.</summary>
-> <br>
-> 
-> ```email
-> Mime-Version: 1.0
-> Content-Type: multipart/related; boundary="boundary-example"
-> 
-> --boundary-example
-> 
-> Content-Type: text/plain
-> Content-Language: en
-> 
-> Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
-> 
-> --boundary-example
-> 
-> Content-Type: application/argument+turtle
-> Content-Language: en
-> 
-> @prefix aif: <http://www.arg.dundee.ac.uk/aif#> .
-> @prefix ex: <http://example.org/> .
-> @prefix ext: <http://extension.org/> .
-> 
-> ex:Node1 a aif:I-node ;
->     aif:claimText "Climate change is caused by human activities." .
->     ext:hasEvidence <cid:item1> .
->     ext:cites <cid:item2> .
-> 
-> ex:Node2 a aif:RA-node ;
->     aif:hasPremise ex:Node1 ;
->     aif:hasConclusion ex:Node3 .
-> 
-> ex:Node3 a aif:I-node ;
->     aif:claimText "We should reduce carbon emissions." .
-> 
-> --boundary-example
-> 
-> Content-ID: <item1>
-> Content-Type: application/pdf
-> Content-Language: en
-> Content-Disposition: attachment; filename="evidence.pdf"
-> Content-Transfer-Encoding: base64
-> 
-> TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4g
-> U2VkIGRvIGVpdXNtb2QgdGVtcG9yIGluY2lkaWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu
-> YSBhbGlxdWEuIFV0IGVuaW0gYWQgbWluaW0gdmVuaWFtLCBxdWlzIG5vc3RydWQgZXhlcmNpdGF0
-> aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
-> YXQuCg==
-> 
-> --boundary-example
-> 
-> Content-ID: <item2>
-> Content-Type: text/x-bibtex
-> 
-> @article{Brown2023,
->   author = {Charles Brown},
->   title = {An Interesting Article},
->   journal = {Journal of Interesting Articles},
->   year = {2023}
-> }
-> 
-> --boundary-example--
-> ```
-> </details>
-
-> [!TIP]
-> This example shows a more intricate approach to extending knowledge graphs using the AIF model to support attaching evidence and citing scholarly and scientific publications.
+> This example shows an approach to extending knowledge graphs using the AIF model to also support attaching evidence and citing scholarly and scientific publications.
 > 
 > <details>
 > <summary>Click here to toggle the display of this example.</summary>
