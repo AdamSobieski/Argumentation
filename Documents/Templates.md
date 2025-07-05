@@ -19,11 +19,11 @@ Handlebars templates have a content type of `text/x-handlebars-template`, Liquid
 >
 > ```xml
 > <argument>
->   <conclusion><parameter kind="object" /> is a British citizen.</conclusion>
+>   <conclusion><parameter bind="object" /> is a British citizen.</conclusion>
 >   <premises>
 >     <argument>
->       <conclusion><parameter kind="object" /> was born in Bermuda.</conclusion>
->       <parameter kind="evidence" />
+>       <conclusion><parameter bind="object" /> was born in Bermuda.</conclusion>
+>       <parameter bind="evidence" />
 >     </argument>
 >     <argument>
 >       <conclusion><cite href="cid:item6">People born in Bermuda are British citizens.</cite></conclusion>
