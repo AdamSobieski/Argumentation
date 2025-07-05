@@ -130,8 +130,10 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > </details>
 
 ### Argument Templating
-
-[Semantic Kernel](https://github.com/microsoft/semantic-kernel) is interoperable with a number of templating systems, e.g., [Handlebars](https://handlebarsjs.com/), [Liquid](https://liquidjs.com/), and [Jinja](https://jinja.palletsprojects.com/en/stable/). These systems could be explored instead of, in addition to, or in combination with those markup-based templating approaches indicated above. Handlebars templates have a content type of `text/x-handlebars-template`, Liquid templates `application/liquid`, and Jinja templates `text/jinja`.
+> [!NOTE]
+> Main Document: [Templating](Documents/Templating.md)
+ 
+A number of templating systems, e.g., [Handlebars](https://handlebarsjs.com/), [Liquid](https://liquidjs.com/), and [Jinja](https://jinja.palletsprojects.com/en/stable/), could be explored with respect to the computational representation of argument. Handlebars templates have a content type of `text/x-handlebars-template`, Liquid templates `application/liquid`, and Jinja templates `text/jinja`.
 
 With solutions for knowledge-graph templating, the expressiveness of knowledge-graph-based approaches to representing argument could equal the expressiveness of the markup-based approach indicated in example 1. Knowledge-graph-based representations of argument would be able to refer to those reusable argument templates used to generate them (see also: [Reasonable Ontology Templates (OTTR)](https://www.ottr.xyz/)).
 
