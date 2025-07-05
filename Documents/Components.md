@@ -1,6 +1,6 @@
 ## Introduction
 
-Given a formalized argument markup language which can be transformed via [RDF Mapping Language (RML)](https://kg-construct.github.io/rml-resources/portal/) into knowledge graphs using the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format) model, the idea, here, is to allow software developers and artificial-intelligence agents to be able to create, define, and reuse markup components such that resultant content could also be transformed into such knowledge graphs.
+Given a formalized argument markup language which can be transformed via [RDF Mapping Language (RML)](https://kg-construct.github.io/rml-resources/portal/) into knowledge graphs using the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format) model, the idea, here, is to allow software developers and artificial-intelligence agents to be able to create, define, and reuse markup elements such that resultant content could also be transformed into knowledge graphs.
 
 ## Component Models
 
