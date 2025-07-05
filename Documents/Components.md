@@ -8,7 +8,7 @@ Extensible markup-based components occur across user-interface design technologi
 
 ## XML Schema Languages
 
-Examples of [XML schema languages](https://en.wikipedia.org/wiki/XML_schema#Languages) include: [CLiX](https://en.wikipedia.org/wiki/CLiX_(markup)), [RelaxNG](https://en.wikipedia.org/wiki/RELAX_NG), [Schematron](https://en.wikipedia.org/wiki/Schematron), [SOX](https://www.w3.org/TR/NOTE-SOX/), and [XSD](https://en.wikipedia.org/wiki/XML_Schema_(W3C)). Useful features for defining components in schema will include type derivation and substitution groups.
+Examples of [XML schema languages](https://en.wikipedia.org/wiki/XML_schema#Languages) include: [CLiX](https://en.wikipedia.org/wiki/CLiX_(markup)), [RelaxNG](https://en.wikipedia.org/wiki/RELAX_NG), [Schematron](https://en.wikipedia.org/wiki/Schematron), [SOX](https://www.w3.org/TR/NOTE-SOX/), and [XSD](https://en.wikipedia.org/wiki/XML_Schema_(W3C)).
 
 ## Component Definitions
 
