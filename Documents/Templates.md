@@ -4,7 +4,9 @@ Coming soon.
 
 ## Text
 
-Coming soon.
+A number of templating systems, e.g., [Handlebars](https://handlebarsjs.com/), [Liquid](https://liquidjs.com/), and [Jinja](https://jinja.palletsprojects.com/en/stable/), can be explored.
+
+Handlebars templates have a content type of `text/x-handlebars-template`, Liquid templates `application/liquid`, and Jinja templates `text/jinja`.
 
 ## Markup
 
@@ -46,7 +48,7 @@ Coming soon.
 
 ## Knowledge Graphs
 
-Coming soon.
+With respect to knowledge-graph templates, there exists [Reasonable Ontology Templates (OTTR)](https://www.ottr.xyz/).
 
 ## Advanced
 
