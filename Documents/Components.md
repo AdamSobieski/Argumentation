@@ -1,14 +1,10 @@
 ## Introduction
 
-Given a formalized argument markup language which can be transformed via [RDF Mapping Language (RML)](https://kg-construct.github.io/rml-resources/portal/) into knowledge graphs, e.g., using the [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format) model, the idea, here, is to allow software developers and artificial-intelligence agents to be able to create, define, and then reuse markup elements such that resultant content could also be transformed into knowledge graphs.
-
-## XML Schema Languages
-
-[XML schema languages](https://en.wikipedia.org/wiki/XML_schema#Languages) include: [CLiX](https://en.wikipedia.org/wiki/CLiX_(markup)), [RelaxNG](https://en.wikipedia.org/wiki/RELAX_NG), [Schematron](https://en.wikipedia.org/wiki/Schematron), [SOX](https://en.wikipedia.org/wiki/Schema_for_Object-Oriented_XML), and [XSD](https://en.wikipedia.org/wiki/XML_Schema_(W3C)).
+Given a formalized argument markup language which can be transformed via [RDF Mapping Language (RML)](https://kg-construct.github.io/rml-resources/portal/) into knowledge graphs, the idea, here, is to allow software developers and artificial-intelligence agents to be able to create, define, and subsequently reuse markup elements such that resultant content could also be transformed into knowledge graphs.
 
 ## Component Models
 
-Extensible markup-based components occur across user-interface design technologies. Using markup and programming languages, developers can define and subsequently reuse interactive user-interface components. Examples of [user-interface markup languages](https://en.wikipedia.org/wiki/Comparison_of_user_interface_markup_languages) include: [XAML](https://en.wikipedia.org/wiki/Extensible_Application_Markup_Language), [EMML](https://en.wikipedia.org/wiki/Enterprise_Mashup_Markup_Language), [FXML](https://en.wikipedia.org/wiki/FXML), [MXML](https://en.wikipedia.org/wiki/MXML), [XUL](https://en.wikipedia.org/wiki/XUL), and [ZUML](https://en.wikipedia.org/wiki/ZUML). With [Web Components](https://en.wikipedia.org/wiki/Web_Components), [HTML5](https://en.wikipedia.org/wiki/HTML5) documents can utilize extensible markup components.
+Extensible markup-based component models occur across user-interface design technologies. Using combinations of markup and programming languages, developers can define and subsequently reuse interactive user-interface components. Examples of [user-interface markup languages](https://en.wikipedia.org/wiki/Comparison_of_user_interface_markup_languages) include: [XAML](https://en.wikipedia.org/wiki/Extensible_Application_Markup_Language), [EMML](https://en.wikipedia.org/wiki/Enterprise_Mashup_Markup_Language), [FXML](https://en.wikipedia.org/wiki/FXML), [MXML](https://en.wikipedia.org/wiki/MXML), [XUL](https://en.wikipedia.org/wiki/XUL), and [ZUML](https://en.wikipedia.org/wiki/ZUML). With [Web Components](https://en.wikipedia.org/wiki/Web_Components), [HTML5](https://en.wikipedia.org/wiki/HTML5) documents can utilize extensible markup components.
 
 ## Referencing Component Definitions
 
