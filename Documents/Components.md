@@ -12,12 +12,11 @@ Examples of [XML schema languages](https://en.wikipedia.org/wiki/XML_schema#Lang
 
 ## Component Definitions
 
-As envisioned, components' definitions include XML schema and RML. Components' definitions and their parts could reference resources on the Web or as MIME message parts at the determination of serialization algorithms. For clarity, as possible, MIME messages will be shown here so that the various interrelated parts can be observed simultaneously.
+What would it resemble for an argument markup language resource to reference extension components' definitions?
 
 > [!TIP]
-> What would it look like for an argument markup language resource to reference an extension component's definition?
 >
-> Perhaps, resembling XML schemas, one could utilize attributes to indicate the locations of RML mappings?
+> Perhaps, resembling XML schemas, one could utilize attributes to indicate the locations of RML mappings.
 > 
 > ```xml
 > <argument xmlns="..."
