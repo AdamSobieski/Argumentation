@@ -27,13 +27,13 @@ As envisioned, components' definitions include XML schema and RML. Components' d
 >           xmlns:rmi="http://www.example.org/2025/RML-instance"
 >           rmi:mappingLocation="cid:part3 cid:part4">
 >   <conclusions>
->     <conclusion>This is an example showing how markup-based extensions could be used.</conclusion>
+>     <conclusion>This is an example showing how extensible markup-based components could be used.</conclusion>
 >   </conclusions>
 >   <rules>
 >     <rule href="cid:part5" />
 >   </rules>
 >   <premises>
->     <ext:assertion ext:agent="cid:part6#agent">This is an assertion.</ext:assertion>
+>     <ext:assertion ext:agent="cid:part6#agent">This is an extensible markup-based component.</ext:assertion>
 >   </premises>
 > </argument>
 > ```
