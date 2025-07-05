@@ -15,7 +15,6 @@ Extensible markup-based components occur across user-interface design technologi
 What would it resemble for an argument markup language resource to reference extension components' definitions?
 
 > [!TIP]
->
 > Resembling XML schemas, one could utilize attributes to indicate the locations of RML mappings.
 > 
 > ```xml
