@@ -425,7 +425,7 @@ New MIME `Content` headers could be designed for granting permissions and author
 > [!NOTE]
 > Main Document: [Templates](Documents/Templates.md)
 
-An argument template is a reusable [template](https://en.wikipedia.org/wiki/Template_processor) from which computational representations of argument can be produced.
+Argument templates are reusable [templates](https://en.wikipedia.org/wiki/Template_processor) from which computational representations of argument can be produced.
 
 A number of templating systems, e.g., [Handlebars](https://handlebarsjs.com/), [Liquid](https://liquidjs.com/), and [Jinja](https://jinja.palletsprojects.com/en/stable/), could be explored in these regards. Handlebars templates have a content type of `text/x-handlebars-template`, Liquid templates `application/liquid`, and Jinja templates `text/jinja`.
 
