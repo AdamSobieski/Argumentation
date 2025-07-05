@@ -15,7 +15,8 @@ public interface IArgumentGenerator : IJustifiableGenerator<IArgument> { }
 
 public interface IArgument : IJustifiableGenerated<IArgumentGenerator>
 {
-    IFormattable Conclusion { get; }
+    IEnumerable<object> Conclusions { get; }
+    IEnumerable<object> Rules { get; }
     IEnumerable<IArgument> Premises { get; }
 }
 ```
