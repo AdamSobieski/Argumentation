@@ -1,6 +1,6 @@
 ## Introduction
 
-[Argument maps](https://en.wikipedia.org/wiki/Argument_map) are diagrammatic representations of the structures of one or more arguments.
+[Argument maps](https://en.wikipedia.org/wiki/Argument_map) are diagrammatic representations of the structures of one or more arguments. Argument maps are useful for representing and analyzing existing writings and for helping end-users to think through issues as parts of problem-structuring and writing processes.
 
 ## Discussion
 
