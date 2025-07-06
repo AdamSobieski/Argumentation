@@ -191,7 +191,7 @@ HTML content in MIME messages could access argument-related data from other part
 
 ### Scalable Vector Graphics
 
-[Scalable Vector Graphics (SVG)](https://en.wikipedia.org/wiki/SVG) could be used in MIME messages to provide graphical representations of argument diagrams. As a markup language, markup-based templating solutions could be used to produce these images. Hypertext documents could use the `cid:` URL scheme to refer to SVG images in multipart MIME message parts.
+[Scalable Vector Graphics (SVG)](https://en.wikipedia.org/wiki/SVG) could be used in MIME messages to provide graphical representations of argument diagrams. As a markup language, markup-based templating solutions could be used to produce these images. Hypertext documents could use the `cid:` URL scheme to refer to SVG images in multipart MIME messages.
 
 ### JavaScript Object Notation and Linked Data
 
