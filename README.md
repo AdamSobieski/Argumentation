@@ -421,7 +421,7 @@ New MIME `Content` headers could be designed for granting permissions and author
 > [!NOTE]
 > Main Document: [Templates](Documents/Templates.md)
 
-Argument templates are reusable [templates](https://en.wikipedia.org/wiki/Template_processor) from which varied arguments can be produced.
+Argument templates are reusable templates from which varied arguments can be produced.
 
 ## A Comparison of Message Models
 
