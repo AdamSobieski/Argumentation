@@ -10,7 +10,7 @@ Markup-based template technologies include [Extensible Stylesheet Language Trans
 
 With respect to knowledge-graph templates, there exists [Reasonable Ontology Templates (OTTR)](https://www.ottr.xyz/).
 
-## MIME
+## Multipart MIME Messages
 
 Coming soon.
 
