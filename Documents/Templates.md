@@ -12,7 +12,7 @@ With respect to knowledge-graph templates, there exists [Reasonable Ontology Tem
 
 ## Multipart MIME Messages
 
-Coming soon.
+Templates could be created with which to produce multipart MIME messages from data sources. Useful features would include being able to dynamically create and ammend content into new parts of multipart messages while being able to refer to these ammended parts using the `cid:` URL scheme.
 
 ## Advanced
 
