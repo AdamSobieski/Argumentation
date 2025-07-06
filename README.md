@@ -246,12 +246,6 @@ Static hypertext could be automatically generated from argument-related data. Dy
 
 How would embedded HTML content in MIME messages access argument-related data from other parts of MIME messages? Perhaps HTML parts could use the `cid:` scheme in [data blocks](https://html.spec.whatwg.org/multipage/scripting.html#data-block) to refer to and load content from other message parts.
 
-### Components
-> [!NOTE]
-> Main Document: [Components](Documents/Components.md)
-
-Markup languages for representing argument could be designed to be extensible with respect to defining and reusing components. Such components could be defined, not in terms of their presentation and interaction, but in terms of their semantics. One could define reusable elements in terms of mappings and transformations between them and knowledge graphs (see also: [R2RML](https://www.w3.org/TR/r2rml/) and [RML](https://kg-construct.github.io/rml-resources/portal/)).
-
 ### JavaScript Object Notation and Linked Data
 
 [JSON](https://en.wikipedia.org/wiki/JSON) and [JSON-LD](https://en.wikipedia.org/wiki/JSON-LD) data can be included in MIME messages.
@@ -416,6 +410,12 @@ Markup languages for representing argument could be designed to be extensible wi
 > --boundary-example--
 > ```
 > </details>
+
+### Components
+> [!NOTE]
+> Main Document: [Components](Documents/Components.md)
+
+Markup languages for representing argument could be designed to be extensible with respect to defining and reusing components. Such components could be defined, not in terms of their presentation and interaction, but in terms of their semantics. One could define reusable elements in terms of mappings and transformations between them and knowledge graphs (see also: [R2RML](https://www.w3.org/TR/r2rml/) and [RML](https://kg-construct.github.io/rml-resources/portal/)).
 
 ### Argument Diagrams
 > [!NOTE]
