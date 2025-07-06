@@ -1,4 +1,4 @@
-## The Computational Representation of Argument
+## The Computational Representation of Arguments
 
 ### Multipurpose Internet Mail Extensions
 
