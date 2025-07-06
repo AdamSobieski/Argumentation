@@ -230,7 +230,7 @@ Objects could, additionally, be serialized into and be deserialized from MIME me
 
 With support for `multipart/alternative` parts and subparts, serialization algorithms would be able to add multiple alternatives into MIME messages and deserialization algorithms would be able to contextually choose from or select from these.
 
-#### Security
+### Security
 
 [Secure Multipurpose Internet Mail Extensions (S/MIME)](https://en.wikipedia.org/wiki/S/MIME) enables security features for MIME messages including [digitally signing](https://en.wikipedia.org/wiki/Digital_signature) messages.
 
