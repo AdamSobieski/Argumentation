@@ -25,4 +25,4 @@
 
 ### Argdown
 
-[Argdown](https://argdown.org/) is a markdown-inspired lightweight markup language for complex argumentation. It is intended for exchanging arguments and argument reconstructions in a universally accessible and highly human-readable way. The Argdown syntax is accompanied by tools which facilitate coding and transform documents into argument maps.
+[Argdown](https://argdown.org/) is a markdown-inspired lightweight markup language for complex argumentation. It is intended for exchanging arguments and argument reconstructions in a universally accessible and highly human-readable way. Argdown provides tools which transform documents into argument maps.
