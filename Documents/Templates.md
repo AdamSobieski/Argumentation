@@ -10,6 +10,14 @@ Markup-based template technologies include [Extensible Stylesheet Language Trans
 
 With respect to knowledge-graph templates, there exists [Reasonable Ontology Templates (OTTR)](https://www.ottr.xyz/).
 
+## MIME
+
+Coming soon.
+
 ## Advanced
 
-Advanced topics in templating include interactive templates and agentic templates. Interactive templates are templates with accompanying forms or questionnaires which end-users or agents could complete to produce outputs, e.g., computational representations of arguments. Agentic templates resemble scripts, including [prompts](https://en.wikipedia.org/wiki/Prompt_engineering), for artificial-intelligence systems to contextually produce natural-language arguments with accompanying structured knowledge.
+Advanced topics in templating include interactive templates and agentic templates.
+
+Interactive templates are templates with accompanying forms or questionnaires which end-users or agents could complete to produce outputs, e.g., computational representations of arguments.
+
+Agentic templates resemble scripts, including [prompts](https://en.wikipedia.org/wiki/Prompt_engineering), for artificial-intelligence systems to contextually produce natural-language arguments with accompanying structured knowledge.
