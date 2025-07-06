@@ -417,17 +417,17 @@ With support for `multipart/alternative` parts and subparts, serialization algor
 
 New MIME `Content` headers could be designed for granting permissions and authorizations to and between parts of complex MIME messages, resembling [permissions policies](https://w3c.github.io/webappsec-permissions-policy/) for `<iframe>` nested content and involving HTTP headers.
 
-## Argument Templates
-> [!NOTE]
-> Main Document: [Templates](Documents/Templates.md)
-
-Argument templates are reusable templates from which varied arguments can be produced.
-
 ## Argument Diagrams
 > [!NOTE]
 > Main Document: [Diagrams](Documents/Diagrams.md)
 
 Argument diagrams are visual representations of one or more arguments.
+
+## Argument Templates
+> [!NOTE]
+> Main Document: [Templates](Documents/Templates.md)
+
+Argument templates are used to produce arguments.
 
 ## A Comparison of Message Models
 
