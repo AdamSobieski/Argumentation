@@ -18,7 +18,7 @@ Perhaps multipart MIME messages and their parts could be represented using knowl
 
 ## Discussion
 
-Advanced argument templating topics include _interactive argument templates_ and _agentic argument templates_. Interactive argument templates are templates with accompanying forms or questionnaires which end-users or agents would complete to produce arguments. Agentic argument templates would utilize [prompts](https://en.wikipedia.org/wiki/Prompt_engineering) for artificial-intelligence systems to produce arguments.
+Advanced argument templating topics include _interactive argument templates_ and _agentic argument templates_. Interactive argument templates are templates with accompanying input forms or questionnaires which end-users or agents would complete to produce arguments. Agentic argument templates are templates which utilize [prompts](https://en.wikipedia.org/wiki/Prompt_engineering) for artificial-intelligence systems to produce arguments.
 
 Blending these ideas together, one user-experience concept involves end-users being able to choose when to make use of one of many special interactive [boilerplate documents](https://en.wikipedia.org/wiki/Boilerplate_text) to create and edit arguments.
 
