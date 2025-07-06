@@ -423,6 +423,12 @@ New MIME `Content` headers could be designed for granting permissions and author
 
 Argument templates are reusable templates from which varied arguments can be produced.
 
+## Argument Diagrams
+> [!NOTE]
+> Main Document: [Diagrams](Documents/Diagrams.md)
+
+Argument diagrams are visual representations of one or more arguments.
+
 ## A Comparison of Message Models
 
 ### Artificial-intelligence APIs, Frameworks, and Protocols
