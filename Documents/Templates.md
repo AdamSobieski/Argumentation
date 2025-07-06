@@ -14,11 +14,9 @@ With respect to knowledge-graph templates, there exists [Reasonable Ontology Tem
 > [!NOTE]
 > Main Document: [Diagrams](Diagrams.md)
 
-Templates could also be of use for producing diagrammatic representations of arguments.
+Templates could be of use for producing diagrams, visual representations of arguments.
 
-There exist text-based formats, e.g., Mermaid and Argdown, from which diagrams can be produced.
-
-Markup languages and knowledge graphs could also be transformed into argument diagrams.
+Text, markup, and knowledge graphs can all be transformed into argument diagrams. Templates for text, markup, and knowledge graphs could be of use for producing content which could be transformed into argument diagrams.
 
 ## Multipart MIME
 
