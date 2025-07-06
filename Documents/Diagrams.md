@@ -4,6 +4,8 @@
 
 ## Diagram Formats
 
+### Mermaid
+
 [Mermaid](https://en.wikipedia.org/wiki/Mermaid_(software)) is a popular technology for generating diagrams from text descriptions. Its MIME type is `text/vnd.mermaid`.
 
 > [!TIP]
@@ -20,6 +22,10 @@
 >   H[Counter-argument: Natural cycles] --> A
 > ```
 > </details>
+
+### Argdown
+
+[Argdown](https://argdown.org/) is a markdown-inspired lightweight markup language for complex argumentation. It is intended for exchanging arguments and argument reconstructions in a universally accessible and highly human-readable way. The Argdown syntax is accompanied by tools which facilitate coding and transform documents into argument maps.
 
 ## Discussion
 
