@@ -49,7 +49,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > </details>
 
 > [!TIP]
-> This example shows one approach to extending or building upon the AIF model to support attaching evidence and citing scholarly and scientific publications.
+> The AIF model could be extended to support attaching evidence and citing scholarly and scientific publications.
 > 
 > <details>
 > <summary>Click here to toggle the display of this example.</summary>
@@ -150,7 +150,7 @@ Markup languages for representing argument could be designed to be extensible wi
 [JSON](https://en.wikipedia.org/wiki/JSON) and [JSON-LD](https://en.wikipedia.org/wiki/JSON-LD) data can be included in MIME messages.
 
 > [!TIP]
-> This example shows that arguments could be represented using the AIF model expressed using JSON in MIME messages.
+> Arguments could be represented using the AIF model expressed using JSON in MIME messages.
 > 
 > <details>
 > <summary>Click here to toggle the display of this example.</summary>
@@ -317,7 +317,7 @@ In addition to their uses for representing arguments, argument templates, and ne
 There exists a `Content-Description` header for providing text descriptions of parts. There could, in particular for content of type `multipart/related`, be a new MIME header, perhaps named `Content-Metadata`, to refer to other parts which serve as metadata for them. Additionally or instead, those parts providing metadata could use a new header, perhaps named `Content-About`, to refer to those parts which they describe.
 
 > [!TIP]
-> This example shows how one could include metadata in one MIME message part to describe content in another part.
+> One could include metadata in one MIME message part to describe content in another part.
 > 
 > <details>
 > <summary>Click here to toggle the display of this example.</summary>
@@ -360,7 +360,7 @@ One could provide these functionalities using MIME messages. Senders could indic
 For example, senders might be able to translate content, on-demand, into a very large set of languages and, instead of having to provide content for every language in a MIME message, they could include content for some languages and indicate the availability of and locations of remote content in other languages.
 
 > [!TIP]
-> This example shows a theoretical approach to include content in some formats and languages while providing recipients with means to obtain remote content in other formats or languages.
+> One could include content in some formats and languages while providing recipients with means to obtain remote content in other formats or languages.
 > 
 > <details>
 > <summary>Click here to toggle the display of this example.</summary>
@@ -424,7 +424,7 @@ New MIME `Content` headers could be designed for granting permissions and author
 Argument diagrams are visual representations of one or more arguments.
 
 > [!TIP]
-> This example shows that argument diagrams could accompany other formats of arguments in MIME messages.
+> Argument diagrams could accompany other formats of arguments in MIME messages.
 > 
 > <details>
 > <summary>Click here to toggle the display of this example.</summary>
