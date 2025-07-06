@@ -150,7 +150,7 @@ Markup languages for representing argument could be designed to be extensible wi
 [JSON](https://en.wikipedia.org/wiki/JSON) and [JSON-LD](https://en.wikipedia.org/wiki/JSON-LD) data can be included in MIME messages.
 
 > [!TIP]
-> This example shows that arguments could be represented using the AIF model expressed using JSON in a MIME message.
+> This example shows that arguments could be represented using the AIF model expressed using JSON in MIME messages.
 > 
 > <details>
 > <summary>Click here to toggle the display of this example.</summary>
@@ -422,6 +422,40 @@ New MIME `Content` headers could be designed for granting permissions and author
 > Main Document: [Diagrams](Documents/Diagrams.md)
 
 Argument diagrams are visual representations of one or more arguments.
+
+> [!TIP]
+> This example shows that argument diagrams could accompany other formats of arguments in MIME messages.
+> 
+> <details>
+> <summary>Click here to toggle the display of this example.</summary>
+> <br>
+> 
+> ```email
+> Mime-Version: 1.0
+> Content-Type: multipart/related; boundary="boundary-example"
+> 
+> --boundary-example
+> 
+> Content-Type: text/plain
+> Content-Language: en
+> 
+> Climate change is happening and causing rising global temperatures.
+> Climate change is primarily caused by human activities or it is primarily a result of natural cycles.
+> Greenhouse gas emissions contribute to anthropogenic factors causing climate change.
+>
+> --boundary-example
+>
+> Content-Type: text/vnd.mermaid
+> Content-Language: en
+>
+> graph LR
+>  A[Climate change is happening] --> B[Rising global temperatures]
+>  F[Human activities are the primary cause] --> A
+>  G[Greenhouse gas emissions] --> F
+>  H[Counter-argument: Natural cycles] --> A
+>
+> --boundary-example---
+> ```
 
 ### Argument Templates
 > [!NOTE]
