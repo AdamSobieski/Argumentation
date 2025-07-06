@@ -31,3 +31,5 @@ Blending these ideas together, end-users could search for, receive recommendatio
 As envisioned, the interactive documents displayed to end-users would change — their text contents would update — as end-users filled-in any blank spaces in them. End-users would also be able to make use of settings panels or context menus to configure and describe their overall arguments, their sections, paragraphs, and so forth.
 
 Some blank spaces in these interactive boilerplate documents could be automatically filled-in, contextually, based on the contents of those arguments being responded to.
+
+Brainstorming, assuming that one could (e.g., using large language models) generate natural-language arguments from argument diagrams and argument diagrams from natural-language arguments, end-users would also be able to use content-authoring tools to view both of these representations simultaneously and to modify either to observe artificial-intelligence systems modifying and updating the other accordingly.
