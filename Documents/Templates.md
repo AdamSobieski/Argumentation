@@ -4,7 +4,7 @@ There are a number of text templating systems, e.g., [Handlebars](https://handle
 
 ## Markup
 
-Markup-based template technologies include [Extensible Stylesheet Language Transformations (XSLT)](https://en.wikipedia.org/wiki/XSLT).
+Markup-based template technologies include [Extensible Stylesheet Language Transformations (XSLT)](https://en.wikipedia.org/wiki/XSLT). For including these templates in multipart MIME messages, XSLT has a content type of `application/xslt+xml`.
 
 ## Knowledge Graphs
 
