@@ -135,7 +135,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > [!NOTE]
 > Main Document: [Diagrams](Documents/Diagrams.md)
 
-Argument diagrams are visual representations of one or more arguments.
+[Argument diagrams](https://en.wikipedia.org/wiki/Argument_map) are visual representations of one or more arguments. These diagrams are useful for representing and analyzing existing writings and for helping end-users to think through issues as parts of problem-structuring and argumentative writing processes.
 
 > [!TIP]
 > Argument diagrams could accompany other formats of arguments in MIME messages.
