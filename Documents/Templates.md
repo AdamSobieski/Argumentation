@@ -20,4 +20,4 @@ Advanced topics in templating include interactive templates and agentic template
 
 Interactive templates are templates with accompanying forms or questionnaires which end-users or agents could complete to produce outputs, e.g., computational representations of arguments.
 
-Agentic templates resemble scripts, including [prompts](https://en.wikipedia.org/wiki/Prompt_engineering), for artificial-intelligence systems to contextually produce natural-language arguments with accompanying structured knowledge.
+Agentic templates include [prompts](https://en.wikipedia.org/wiki/Prompt_engineering) for artificial-intelligence systems to produce outputs, e.g., computational representations of arguments.
