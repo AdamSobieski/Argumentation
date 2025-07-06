@@ -129,6 +129,113 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > ```
 > </details>
 
+#### Metadata
+
+In addition to their uses for representing arguments, argument templates, and networks of interrelated arguments, [knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) could be used in MIME messages to provide [metadata](https://en.wikipedia.org/wiki/Metadata) about other parts in multipart messages.
+
+There exists a `Content-Description` header for providing text descriptions of parts. There could, in particular for content of type `multipart/related`, be a new MIME header, perhaps named `Content-Metadata`, to refer to other parts which serve as metadata for them. Additionally or instead, those parts providing metadata could use a new header, perhaps named `Content-About`, to refer to those parts which they describe.
+
+> [!TIP]
+> One could include metadata in one MIME message part to describe content in another part.
+> 
+> <details>
+> <summary>Click here to toggle the display of this example.</summary>
+> <br>
+> 
+> ```email
+> Mime-Version: 1.0
+> Content-Type: multipart/related; boundary="boundary-example"
+> 
+> --boundary-example
+> 
+> Content-Type: text/turtle
+> Content-About: <part1>
+> 
+> @prefix dc: <http://purl.org/dc/terms/> .
+> @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+> 
+> <cid:part1> dc:created "2025-06-29 20:00:00.000" ;
+>     dc:creator [ a foaf:Person ;
+>             foaf:name "Bob Smith" ] .
+> 
+> --boundary-example
+> 
+> Content-ID: <part1>
+> Content-Type: text/plain
+> Content-Language: en
+> 
+> Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
+> 
+> --boundary-example--
+> ```
+> </details>
+
+#### Content Negotiation
+
+Agent-driven or reactive [content negotiation](https://en.wikipedia.org/wiki/Content_negotiation) is performed by algorithms in user-agents which choose among the possible variant representations. This is commonly performed using a server-provided list of representations and metadata about them.
+
+One could provide these functionalities using MIME messages. Senders could indicate the availability of content in various formats and languages and online locations without having to include the content in MIME messages.
+
+For example, senders might be able to translate content, on-demand, into a very large set of languages and, instead of having to provide content for every language in a MIME message, they could include content for some languages and indicate the availability of and locations of remote content in other languages.
+
+> [!TIP]
+> One could include content in some formats and languages while providing recipients with means to obtain remote content in other formats or languages.
+> 
+> <details>
+> <summary>Click here to toggle the display of this example.</summary>
+> <br>
+> 
+> ```email
+> Mime-Version: 1.0
+> Message-Id: 12345678
+> Content-Type: multipart/alternative; boundary="boundary-example"
+> 
+> --boundary-example
+> 
+> Content-Type: text/plain
+> Content-Language: en
+> 
+> Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
+> 
+> --boundary-example
+> 
+> Content-Type: text/plain
+> Content-Language: fr
+> 
+> Le changement climatique est causé par les activités humaines. Nous devons donc réduire les émissions de carbone.
+> 
+> --boundary-example
+> 
+> Content-Type: text/plain
+> Content-Language: de
+> Content-Disposition: remote
+> Content-Alias: https://service.org/translate.php?mid=12345678&lang=de
+> 
+> --boundary-example
+> 
+> Content-Type: text/plain
+> Content-Language: es
+> Content-Disposition: remote
+> Content-Alias: https://service.org/translate.php?mid=12345678&lang=es
+> 
+> --boundary-example--
+> ```
+> </details>
+
+#### Serialization
+
+Traditional approaches to [serializing](https://en.wikipedia.org/wiki/Serialization) objects have tended to involve transforming object graphs into and from single formats, e.g., binary data, JSON, YAML, XML, or RDF.
+
+Objects could, additionally, be serialized into and be deserialized from MIME messages. During serialization, algorithms could add parts to MIME messages, each part expressed using a format. During deserialization, interrelated message parts would be processed back into objects.
+
+With support for `multipart/alternative` parts and subparts, serialization algorithms would be able to add multiple alternatives into MIME messages and deserialization algorithms would be able to contextually choose from or select from these.
+
+#### Security
+
+[Secure Multipurpose Internet Mail Extensions (S/MIME)](https://en.wikipedia.org/wiki/S/MIME) enables security features for MIME messages including [digitally signing](https://en.wikipedia.org/wiki/Digital_signature) messages.
+
+New MIME `Content` headers could be designed for granting permissions and authorizations to and between parts of complex MIME messages, resembling [permissions policies](https://w3c.github.io/webappsec-permissions-policy/) for `<iframe>` nested content and involving HTTP headers.
+
 ### Hypertext Markup Language
 
 While it may suffice to include text and argument-related data together in MIME messages for artificial-intelligence agents, human end-users might tend to prefer the addition of [hypertext](https://en.wikipedia.org/wiki/HTML5).
@@ -309,113 +416,6 @@ Markup languages for representing argument could be designed to be extensible wi
 > --boundary-example--
 > ```
 > </details>
-
-### Metadata
-
-In addition to their uses for representing arguments, argument templates, and networks of interrelated arguments, [knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) could be used in MIME messages to provide [metadata](https://en.wikipedia.org/wiki/Metadata) about other parts in multipart messages.
-
-There exists a `Content-Description` header for providing text descriptions of parts. There could, in particular for content of type `multipart/related`, be a new MIME header, perhaps named `Content-Metadata`, to refer to other parts which serve as metadata for them. Additionally or instead, those parts providing metadata could use a new header, perhaps named `Content-About`, to refer to those parts which they describe.
-
-> [!TIP]
-> One could include metadata in one MIME message part to describe content in another part.
-> 
-> <details>
-> <summary>Click here to toggle the display of this example.</summary>
-> <br>
-> 
-> ```email
-> Mime-Version: 1.0
-> Content-Type: multipart/related; boundary="boundary-example"
-> 
-> --boundary-example
-> 
-> Content-Type: text/turtle
-> Content-About: <part1>
-> 
-> @prefix dc: <http://purl.org/dc/terms/> .
-> @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-> 
-> <cid:part1> dc:created "2025-06-29 20:00:00.000" ;
->     dc:creator [ a foaf:Person ;
->             foaf:name "Bob Smith" ] .
-> 
-> --boundary-example
-> 
-> Content-ID: <part1>
-> Content-Type: text/plain
-> Content-Language: en
-> 
-> Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
-> 
-> --boundary-example--
-> ```
-> </details>
-
-### Content Negotiation
-
-Agent-driven or reactive [content negotiation](https://en.wikipedia.org/wiki/Content_negotiation) is performed by algorithms in user-agents which choose among the possible variant representations. This is commonly performed using a server-provided list of representations and metadata about them.
-
-One could provide these functionalities using MIME messages. Senders could indicate the availability of content in various formats and languages and online locations without having to include the content in MIME messages.
-
-For example, senders might be able to translate content, on-demand, into a very large set of languages and, instead of having to provide content for every language in a MIME message, they could include content for some languages and indicate the availability of and locations of remote content in other languages.
-
-> [!TIP]
-> One could include content in some formats and languages while providing recipients with means to obtain remote content in other formats or languages.
-> 
-> <details>
-> <summary>Click here to toggle the display of this example.</summary>
-> <br>
-> 
-> ```email
-> Mime-Version: 1.0
-> Message-Id: 12345678
-> Content-Type: multipart/alternative; boundary="boundary-example"
-> 
-> --boundary-example
-> 
-> Content-Type: text/plain
-> Content-Language: en
-> 
-> Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
-> 
-> --boundary-example
-> 
-> Content-Type: text/plain
-> Content-Language: fr
-> 
-> Le changement climatique est causé par les activités humaines. Nous devons donc réduire les émissions de carbone.
-> 
-> --boundary-example
-> 
-> Content-Type: text/plain
-> Content-Language: de
-> Content-Disposition: remote
-> Content-Alias: https://service.org/translate.php?mid=12345678&lang=de
-> 
-> --boundary-example
-> 
-> Content-Type: text/plain
-> Content-Language: es
-> Content-Disposition: remote
-> Content-Alias: https://service.org/translate.php?mid=12345678&lang=es
-> 
-> --boundary-example--
-> ```
-> </details>
-
-### Serialization
-
-Traditional approaches to [serializing](https://en.wikipedia.org/wiki/Serialization) objects have tended to involve transforming object graphs into and from single formats, e.g., binary data, JSON, YAML, XML, or RDF.
-
-Objects could, additionally, be serialized into and be deserialized from MIME messages. During serialization, algorithms could add parts to MIME messages, each part expressed using a format. During deserialization, interrelated message parts would be processed back into objects.
-
-With support for `multipart/alternative` parts and subparts, serialization algorithms would be able to add multiple alternatives into MIME messages and deserialization algorithms would be able to contextually choose from or select from these.
-
-### Security
-
-[Secure Multipurpose Internet Mail Extensions (S/MIME)](https://en.wikipedia.org/wiki/S/MIME) enables security features for MIME messages including [digitally signing](https://en.wikipedia.org/wiki/Digital_signature) messages.
-
-New MIME `Content` headers could be designed for granting permissions and authorizations to and between parts of complex MIME messages, resembling [permissions policies](https://w3c.github.io/webappsec-permissions-policy/) for `<iframe>` nested content and involving HTTP headers.
 
 ### Argument Diagrams
 > [!NOTE]
