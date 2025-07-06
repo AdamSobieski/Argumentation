@@ -1,6 +1,6 @@
-## The Computational Representation of Arguments
+# The Computational Representation of Arguments
 
-### Multipurpose Internet Mail Extensions
+## Multipurpose Internet Mail Extensions
 
 [Multipurpose Internet Mail Extensions (MIME)](https://en.wikipedia.org/wiki/MIME) can be utilized as a format to serialize arguments to, to deserialize arguments from, to store arguments in filesystems, and to transmit arguments between end-users and agents.
 
@@ -129,7 +129,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > ```
 > </details>
 
-#### Metadata
+### Metadata
 
 In addition to their uses for representing arguments, argument templates, and networks of interrelated arguments, [knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) could be used in MIME messages to provide [metadata](https://en.wikipedia.org/wiki/Metadata) about other parts in multipart messages.
 
@@ -170,7 +170,7 @@ There exists a `Content-Description` header for providing text descriptions of p
 > ```
 > </details>
 
-#### Content Negotiation
+### Content Negotiation
 
 Agent-driven or reactive [content negotiation](https://en.wikipedia.org/wiki/Content_negotiation) is performed by algorithms in user-agents which choose among the possible variant representations. This is commonly performed using a server-provided list of representations and metadata about them.
 
@@ -222,7 +222,7 @@ For example, senders might be able to translate content, on-demand, into a very 
 > ```
 > </details>
 
-#### Serialization and Deserialization
+### Serialization and Deserialization
 
 Traditional approaches to [serializing](https://en.wikipedia.org/wiki/Serialization) objects have tended to involve transforming object graphs into and from single formats, e.g., binary data, JSON, YAML, XML, or RDF.
 
@@ -236,7 +236,7 @@ With support for `multipart/alternative` parts and subparts, serialization algor
 
 New MIME `Content` headers could be designed for granting permissions and authorizations to and between parts of complex MIME messages, resembling [permissions policies](https://w3c.github.io/webappsec-permissions-policy/) for `<iframe>` nested content and involving HTTP headers.
 
-### Hypertext Markup Language
+## Hypertext Markup Language
 
 While it may suffice to include text and argument-related data together in MIME messages for artificial-intelligence agents, human end-users might tend to prefer the addition of [hypertext](https://en.wikipedia.org/wiki/HTML5).
 
@@ -246,7 +246,7 @@ Static hypertext could be automatically generated from argument-related data. Dy
 
 How would embedded HTML content in MIME messages access argument-related data from other parts of MIME messages? Perhaps HTML parts could use the `cid:` scheme in [data blocks](https://html.spec.whatwg.org/multipage/scripting.html#data-block) to refer to and load content from other message parts.
 
-### JavaScript Object Notation and Linked Data
+## JavaScript Object Notation and Linked Data
 
 [JSON](https://en.wikipedia.org/wiki/JSON) and [JSON-LD](https://en.wikipedia.org/wiki/JSON-LD) data can be included in MIME messages.
 
@@ -411,13 +411,13 @@ How would embedded HTML content in MIME messages access argument-related data fr
 > ```
 > </details>
 
-### Components
+## Components
 > [!NOTE]
 > Main Document: [Components](Documents/Components.md)
 
 Markup languages for representing argument could be designed to be extensible with respect to defining and reusing components. Such components could be defined, not in terms of their presentation and interaction, but in terms of their semantics. One could define reusable elements in terms of mappings and transformations between them and knowledge graphs (see also: [R2RML](https://www.w3.org/TR/r2rml/) and [RML](https://kg-construct.github.io/rml-resources/portal/)).
 
-### Argument Diagrams
+## Argument Diagrams
 > [!NOTE]
 > Main Document: [Diagrams](Documents/Diagrams.md)
 
@@ -457,15 +457,15 @@ Argument diagrams are visual representations of one or more arguments.
 > --boundary-example---
 > ```
 
-### Argument Templates
+## Argument Templates
 > [!NOTE]
 > Main Document: [Templates](Documents/Templates.md)
 
 Argument templates are used to produce arguments.
 
-## A Comparison of Message Models
+# A Comparison of Message Models
 
-### Artificial-intelligence APIs, Frameworks, and Protocols
+## Artificial-intelligence APIs, Frameworks, and Protocols
 
 Contemporary artificial-intelligence APIs, frameworks, and protocols include models of messages for exchange between end-users and agents. Components of message models include: message identifiers, timestamps, content parts, roles, annotations, attachments, and metadata.
 
@@ -481,11 +481,11 @@ Today, in [Semantic Kernel](https://github.com/microsoft/semantic-kernel), messa
 
 So, it is possible.
 
-### Activity Streams and ActivityPub
+## Activity Streams and ActivityPub
 
 With respect to [Activity Streams](https://www.w3.org/TR/activitystreams-core/) and [ActivityPub](https://www.w3.org/TR/activitypub/), the [`Object`](https://www.w3.org/TR/activitystreams-core/#object) type supports attachments and allows a MIME content type, [`mediaType`](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-mediatype), to be specified. The default value for this `mediaType` property is `text/html` and it is presently unclear whether the `Object` type supports multipart MIME types. If not, perhaps [`Collections`](https://www.w3.org/TR/activitystreams-core/#collections) of `Objects` could be of use in these regards.
 
-### Advantages of Multipart Messages
+## Advantages of Multipart Messages
 
 Advantages from supporting MIME's multipart semantics would include, but not be limited to:
 
@@ -497,9 +497,9 @@ Advantages from supporting MIME's multipart semantics would include, but not be 
 6. enabling scenarios beyond agentic instant-messaging and chat, e.g., agentic Internet forums,
 7. the capability to provide parallel forms of content for simultaneous consumption, e.g., natural-language text and structured-knowledge argumentation.
 
-## Use Cases
+# Use Cases
 
-### Agentic Reasoning, Argument, and Debate
+## Agentic Reasoning, Argument, and Debate
 
 Artificial-intelligence agents can create, send, receive, analyze, evaluate, and respond to arguments and, in addition to participating in debates, can judge debates.
 
@@ -507,7 +507,7 @@ In multi-persona debate architectures, multiple agents, each configured to repre
 
 See also: [Project Debater](https://research.ibm.com/haifa/dept/vst/debater.shtml), [Argum.AI](https://argum.ai).
 
-### Email and Mailing Lists
+## Email and Mailing Lists
 
 By making use of content-authoring software tools, end-users could create arguments comprised of interrelated natural-language and structured-knowledge parts and send these MIME messages to one another by email. Recipients could utilize software tools to analyze, verify, and validate received arguments.
 
@@ -515,19 +515,19 @@ When end-users replied to emails containing structured-knowledge content, conten
 
 Other scenarios to consider include enhancing [mailing lists](https://en.wikipedia.org/wiki/Mailing_list) with features made possible from adding structured knowledge to MIME email messages. There would be exciting possibilities with respect to new technologies for moderating discussion threads, for archiving discussion threads, for aggregating structured knowledge from discussion threads into [knowledgebases](https://en.wikipedia.org/wiki/Knowledge_base), and for enabling end-users and artificial-intelligence agents to query, poll, search, navigate, and explore mailing lists' archives and related knowledgebases.
 
-### Internet Forums
+## Internet Forums
 
 End-users could contribute to and participate in [Internet forums](https://en.wikipedia.org/wiki/Internet_forum) for man-machine discussion and debate.
 
-## Discussion
+# Discussion
 
-### Federation
+## Federation
 
 For public groups, mailing-list servers, archives, and related knowledgebases could be [federated](https://en.wikipedia.org/wiki/Federation_(information_technology)), interconnected and synchronized in the sense of the [Fediverse](https://en.wikipedia.org/wiki/Fediverse). End-users would, then, be able to receive periodic [digests](https://en.wikipedia.org/wiki/Email_digest) or [interactive dashboards](https://en.wikipedia.org/wiki/Dashboard_(computing)) summarizing developments and events of interest to them from across federated public mailing lists.
 
 Internet forums are also capable of federation. Examples of such software include [Lemmy](https://join-lemmy.org/) and [NodeBB](https://nodebb.org/).
 
-### Publish-subscribe Pattern
+## Publish-subscribe Pattern
 
 The [publish-subscribe pattern](https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern) is a messaging pattern in which message senders, called publishers, categorize messages into classes, or topics, and send them without needing to know which components will receive them. Examples of such protocols include [WebSub](https://en.wikipedia.org/wiki/WebSub).
 
