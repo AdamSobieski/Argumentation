@@ -14,7 +14,7 @@ With respect to knowledge-graph templates, there exists [Reasonable Ontology Tem
 
 Templates could be created with which to produce multipart MIME messages from data sources. Useful features would include being able to dynamically create and ammend content into new parts of multipart messages while being able to refer to these ammended parts using the `cid:` URL scheme.
 
-Perhaps multipart MIME messages and their parts could be represented using knowledge graphs. In such approaches, OTTR could be useful for producing multipart MIME messages from templates and input data.
+Perhaps multipart MIME messages and their parts could be represented using knowledge graphs. These knowledge graphs could be transformed into multipart MIME messages. In such approaches, OTTR would be useful for producing multipart MIME messages from templates and input data.
 
 ## Discussion
 
