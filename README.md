@@ -49,7 +49,7 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > </details>
 
 > [!TIP]
-> This example shows an approach to extending or building upon the AIF model to support attaching evidence and citing scholarly and scientific publications.
+> This example shows one approach to extending or building upon the AIF model to support attaching evidence and citing scholarly and scientific publications.
 > 
 > <details>
 > <summary>Click here to toggle the display of this example.</summary>
