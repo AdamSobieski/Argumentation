@@ -10,6 +10,12 @@ Markup-based template technologies include [Extensible Stylesheet Language Trans
 
 With respect to knowledge-graph templates, there exists [Reasonable Ontology Templates (OTTR)](https://www.ottr.xyz/).
 
+## Diagrams
+> [!NOTE]
+> Main Document: [Diagrams](Diagrams.md)
+
+Templates could also be of use for producing diagrammatic representations of arguments.
+
 ## Multipart MIME
 
 Templates could be created with which to produce multipart MIME messages from data sources. Useful features would include being able to dynamically create and ammend content into new parts of multipart messages while being able to refer to these ammended parts using the `cid:` URL scheme.
