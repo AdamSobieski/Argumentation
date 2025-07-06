@@ -14,10 +14,12 @@ With respect to knowledge-graph templates, there exists [Reasonable Ontology Tem
 
 Templates could be created with which to produce multipart MIME messages from data sources. Useful features would include being able to dynamically create and ammend content into new parts of multipart messages while being able to refer to these ammended parts using the `cid:` URL scheme.
 
-## Advanced
+Perhaps multipart MIME messages and their parts could be represented using knowledge graphs. In such approaches, OTTR could be useful for producing multipart MIME messages from templates and input data.
 
-Advanced topics in templating include interactive templates and agentic templates.
+## Discussion
 
-Interactive templates are templates with accompanying forms or questionnaires which end-users or agents could complete to produce outputs, e.g., computational representations of arguments.
+Advanced argument templating topics include _interactive argument templates_ and _agentic argument templates_. Interactive argument templates are templates with accompanying forms or questionnaires which end-users or agents would complete to produce arguments. Agentic argument templates would utilize [prompts](https://en.wikipedia.org/wiki/Prompt_engineering) for artificial-intelligence systems to produce arguments.
 
-Agentic templates include [prompts](https://en.wikipedia.org/wiki/Prompt_engineering) for artificial-intelligence systems to produce outputs, e.g., computational representations of arguments.
+Blending these ideas together, one user-experience concept would involve end-users being able to make use of special interactive [boilerplate documents](https://en.wikipedia.org/wiki/Boilerplate_text) to create and edit arguments.
+
+As envisioned, the interactive boilerplate documents displayed to end-users would change — their text contents would update — as end-users filled-in blank spaces in them while making use of settings panels or context menus to configure and describe the arguments, their sections, paragraphs, and so forth. Some blank spaces in these special interactive boilerplate documents could be auto-completed, filled-in contextually, based on the contents of those arguments being responded to.
