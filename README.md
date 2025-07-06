@@ -222,7 +222,7 @@ For example, senders might be able to translate content, on-demand, into a very 
 > ```
 > </details>
 
-#### Serialization
+#### Serialization and Deserialization
 
 Traditional approaches to [serializing](https://en.wikipedia.org/wiki/Serialization) objects have tended to involve transforming object graphs into and from single formats, e.g., binary data, JSON, YAML, XML, or RDF.
 
