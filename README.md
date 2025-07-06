@@ -357,7 +357,7 @@ Agent-driven or reactive [content negotiation](https://en.wikipedia.org/wiki/Con
 
 One could provide these functionalities using MIME messages. Senders could indicate the availability of content in various formats and languages and online locations without having to include the content in MIME messages.
 
-For example, senders might be able to translate content, on-demand, into a very large set of languages and, instead of having to provide content for each language in a MIME message, they could include content for some popular languages and indicate the availability of and locations of content in other languages.
+For example, senders might be able to translate content, on-demand, into a very large set of languages and, instead of having to provide content for every language in a MIME message, they could include content for some languages and indicate the availability of and locations of remote content in other languages.
 
 > [!TIP]
 > This example shows a theoretical approach to include content in both English and French while providing recipients with means to obtain remote content in other formats or languages.
@@ -388,16 +388,16 @@ For example, senders might be able to translate content, on-demand, into a very 
 > --boundary-example
 > 
 > Content-Type: text/plain
-> Content-Language: other1
+> Content-Language: de
 > Content-Disposition: remote
-> Content-Alias: https://service.org/translate.php?mid=12345678&lang=other1
+> Content-Alias: https://service.org/translate.php?mid=12345678&lang=de
 > 
 > --boundary-example
 > 
 > Content-Type: text/plain
-> Content-Language: other2
+> Content-Language: es
 > Content-Disposition: remote
-> Content-Alias: https://service.org/translate.php?mid=12345678&lang=other2
+> Content-Alias: https://service.org/translate.php?mid=12345678&lang=es
 > 
 > --boundary-example--
 > ```
