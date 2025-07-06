@@ -10,11 +10,11 @@ Markup-based template technologies include [Extensible Stylesheet Language Trans
 
 With respect to knowledge-graph templates, there exists [Reasonable Ontology Templates (OTTR)](https://www.ottr.xyz/).
 
-## Multipart MIME Messages
+## Multipart MIME
 
 Templates could be created with which to produce multipart MIME messages from data sources. Useful features would include being able to dynamically create and ammend content into new parts of multipart messages while being able to refer to these ammended parts using the `cid:` URL scheme.
 
-Perhaps multipart MIME messages and their parts could be represented using knowledge graphs. These knowledge graphs could be transformed into multipart MIME messages. In such approaches, OTTR would be useful for producing multipart MIME messages from templates and input data.
+Perhaps multipart MIME messages and their parts could be represented using knowledge graphs. These knowledge graphs would be capable of being transformed into multipart MIME messages. OTTR would be useful in these approaches.
 
 ## Discussion
 
@@ -22,4 +22,4 @@ Advanced argument templating topics include _interactive argument templates_ and
 
 Blending these ideas together, one user-experience concept for [document assembly](https://en.wikipedia.org/wiki/Document_automation) involves end-users being able to search for, select from, and utilize interactive [boilerplate](https://en.wikipedia.org/wiki/Boilerplate_text) argument templates to create and edit arguments.
 
-As envisioned, the interactive boilerplate documents displayed to end-users would change — their text contents would update — as end-users filled-in blank spaces in them while also making use of settings panels or context menus to configure and describe their arguments, their sections, paragraphs, and so forth. Some blank spaces in these special interactive boilerplate documents could be automatically filled-in, contextually, based on the contents of those arguments being responded to.
+The interactive boilerplate documents displayed to end-users would change — their text contents would update — as end-users filled-in blank spaces in them. End-users would also be able to make use of settings panels or context menus to configure and describe their arguments, their sections, paragraphs, and so forth. Some blank spaces in these interactive boilerplate documents could be automatically filled-in, contextually, based on the contents of those arguments being responded to.
