@@ -20,6 +20,8 @@ Perhaps multipart MIME messages and their parts could be represented using knowl
 
 Advanced argument templating topics include _interactive argument templates_ and _agentic argument templates_. Interactive argument templates are templates with accompanying input forms or questionnaires which end-users or agents would complete to produce arguments. Agentic argument templates are templates which utilize [prompts](https://en.wikipedia.org/wiki/Prompt_engineering) for artificial-intelligence systems to produce arguments.
 
-Blending these ideas together, one user-experience concept for [document assembly](https://en.wikipedia.org/wiki/Document_automation) involves end-users being able to search for, select from, and utilize interactive [boilerplate](https://en.wikipedia.org/wiki/Boilerplate_text) argument templates to create and edit arguments.
+Blending these ideas together, one user-experience concept for [document assembly](https://en.wikipedia.org/wiki/Document_automation) involves end-users being able to search for, select from, and utilize interactive [boilerplate](https://en.wikipedia.org/wiki/Boilerplate_text) documents to create and edit arguments.
 
-The interactive boilerplate documents displayed to end-users would change — their text contents would update — as end-users filled-in blank spaces in them. End-users would also be able to make use of settings panels or context menus to configure and describe their arguments, their sections, paragraphs, and so forth. Some blank spaces in these interactive boilerplate documents could be automatically filled-in, contextually, based on the contents of those arguments being responded to.
+The interactive boilerplate documents displayed to end-users would change — their text contents would update — as end-users filled-in any blank spaces in them. End-users would also be able to make use of settings panels or context menus to configure and describe their arguments, their sections, paragraphs, and so forth.
+
+Some blank spaces in these interactive boilerplate documents could be automatically filled-in, contextually, based on the contents of those arguments being responded to.
