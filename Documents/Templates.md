@@ -20,7 +20,7 @@ Text, markup, and knowledge graphs can all be transformed into argument diagrams
 
 ## Multipart MIME
 > [!NOTE]
-> Main Document: [MIMR](MIME.md)
+> Main Document: [MIME](MIME.md)
 
 Templates could be created with which to produce multipart MIME messages from data sources. Useful features would include being able to dynamically create and ammend content into new parts of multipart messages while being able to refer to these ammended parts using the `cid:` URL scheme.
 
