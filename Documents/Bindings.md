@@ -1,4 +1,4 @@
-# Introduction
+## Introduction
 
 Bindings are utilized throughout computing. They are utilized for [function invocations](https://en.wikipedia.org/wiki/Function_(computer_programming)), [remote procedure calls](https://en.wikipedia.org/wiki/Remote_procedure_call), [input forms](https://en.wikipedia.org/wiki/HTML_form), [templates](https://en.wikipedia.org/wiki/Template_processor), and [inference rules](https://en.wikipedia.org/wiki/Rule_of_inference).
 
@@ -6,7 +6,7 @@ Beyond [type systems](https://en.wikipedia.org/wiki/Type_system), [guard clauses
 
 This would enable new levels of expressiveness for declaring functions and their parameters, remote procedures and their parameters, input forms and their fields, templates and their parameters, and inference rules. Software developers and artificial-intelligence agents would be able to justify, to argue, that values were valid and other artificial-intelligence agents would be able to evaluate these arguments.
 
-# A Simple Argument Model
+## A Simple Argument Model
 
 For illustration purposes, here is a simple argument model.
 
@@ -21,7 +21,7 @@ public interface IArgument : IJustifiableGenerated<IArgumentGenerator>
 }
 ```
 
-# A Supporting Model
+## A Supporting Model
 
 Here is a supporting model that can work with many argument models.
 
@@ -62,7 +62,7 @@ public interface IJustifiableGenerated<out TGENERATOR> : IGenerated<TGENERATOR>
 }
 ```
 
-# A Function Model
+## A Function Model
 
 Here is a function model utilizing that supporting model indicated above.
 
@@ -106,7 +106,7 @@ public interface IJustifiableExecutable : IJustifiableGenerated<IJustifiableFunc
 }
 ```
 
-# Extension Methods Utilizing The Function Model
+## Extension Methods Utilizing The Function Model
 
 Here are some extension methods utilizing the function model. An `Invoke()` extension method is provided for `IFunction` and `IJustifiableFunction`.
 
@@ -189,6 +189,6 @@ public static class Extensions
 }
 ```
 
-# Conclusion
+## Conclusion
 
 Bindings are utilized throughout computing. They are utilized for function invocations, remote procedure calls, input forms, templates, and inference rules. As was shown above, the validity of values can be argued by software developers and artificial-intelligence agents and these arguments could be evaluated by artificial-intelligence agents.
