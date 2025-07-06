@@ -1,4 +1,4 @@
-# Metadata
+## Metadata
 
 In addition to their uses for representing arguments, argument templates, and networks of interrelated arguments, [knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) could be used in MIME messages to provide [metadata](https://en.wikipedia.org/wiki/Metadata) about other parts in multipart messages.
 
@@ -39,7 +39,7 @@ There exists a `Content-Description` header for providing text descriptions of p
 > ```
 > </details>
 
-# Content Negotiation
+## Content Negotiation
 
 Agent-driven or reactive [content negotiation](https://en.wikipedia.org/wiki/Content_negotiation) is performed by algorithms in user-agents which choose among the possible variant representations. This is commonly performed using a server-provided list of representations and metadata about them.
 
@@ -89,12 +89,12 @@ One could provide these functionalities using MIME messages. Senders could indic
 > ```
 > </details>
 
-# Serialization and Deserialization
+## Serialization and Deserialization
 
 Traditional approaches to [serializing](https://en.wikipedia.org/wiki/Serialization) objects have tended to involve transforming object graphs into and from single formats, e.g., binary data, JSON, YAML, XML, or RDF.
 
 Objects could, additionally, be serialized into and be deserialized from MIME messages. During serialization, algorithms could add parts to MIME messages, each part expressed using a format. During deserialization, interrelated message parts would be processed back into objects.
 
-# Security
+## Security
 
 [Secure Multipurpose Internet Mail Extensions (S/MIME)](https://en.wikipedia.org/wiki/S/MIME) enables security features for MIME messages such as [digitally signing](https://en.wikipedia.org/wiki/Digital_signature) messages.
