@@ -19,6 +19,8 @@ Templates could be of use for producing diagrams, visual representations of argu
 Text, markup, and knowledge graphs can all be transformed into argument diagrams. Templates for text, markup, and knowledge graphs, then, could be of use for producing content which can be transformed into argument diagrams.
 
 ## Multipart MIME
+> [!NOTE]
+> Main Document: [MIMR](MIME.md)
 
 Templates could be created with which to produce multipart MIME messages from data sources. Useful features would include being able to dynamically create and ammend content into new parts of multipart messages while being able to refer to these ammended parts using the `cid:` URL scheme.
 
