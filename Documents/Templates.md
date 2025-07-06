@@ -4,41 +4,7 @@ There are a number of text templating systems, e.g., [Handlebars](https://handle
 
 ## Markup
 
-> [!TIP]
-> In this example, one can observe one approach to implementing markup-based templates.
-> 
-> <details>
-> <summary>Click here to toggle the display of this example.</summary>
-> <br>
->
-> ```xml
-> <argument>
->   <conclusion><parameter bind="object" /> is a British citizen.</conclusion>
->   <premises>
->     <argument>
->       <conclusion><parameter bind="object" /> was born in Bermuda.</conclusion>
->       <parameter bind="evidence" />
->     </argument>
->     <argument>
->       <conclusion><cite href="cid:item3">People born in Bermuda are British citizens.</cite></conclusion>
->     </argument>
->   </premises>
-> </argument>
-> ```
-> ```xml
-> <argument template="cid:item1">
->   <conclusion><object>Bob Smith</object> is a British citizen.</conclusion>
->   <premises>
->     <argument>
->       <conclusion><object>Bob Smith</object> was born in Bermuda.</conclusion>
->       <evidence href="cid:item2">Attached is a copy of the birth certificate.</evidence>
->     </argument>
->     <argument>
->       <conclusion><cite href="cid:item3">People born in Bermuda are British citizens.</cite></conclusion>
->     </argument>
->   </premises>
-> </argument>
-> ```
+Markup-based template technologies include [Extensible Stylesheet Language Transformations (XSLT)](https://en.wikipedia.org/wiki/XSLT).
 
 ## Knowledge Graphs
 
