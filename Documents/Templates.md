@@ -8,7 +8,7 @@ Markup-based template technologies include [Extensible Stylesheet Language Trans
 
 ## Knowledge Graphs
 
-With respect to knowledge-graph templates, there exists [Reasonable Ontology Templates (OTTR)](https://www.ottr.xyz/).
+Knowledge-graph-based template technologies include [Reasonable Ontology Templates (OTTR)](https://www.ottr.xyz/).
 
 ## Diagrams
 > [!NOTE]
