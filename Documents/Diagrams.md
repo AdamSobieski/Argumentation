@@ -1,6 +1,6 @@
 ## Introduction
 
-[Argument maps](https://en.wikipedia.org/wiki/Argument_map) are visual diagrammatic representations of the structures of one or more arguments.
+[Argument maps](https://en.wikipedia.org/wiki/Argument_map) are diagrammatic representations of the structures of one or more arguments.
 
 ## Discussion
 
