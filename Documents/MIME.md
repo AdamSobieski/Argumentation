@@ -97,4 +97,4 @@ Objects could, additionally, be serialized into and be deserialized from MIME me
 
 # Security
 
-[Secure Multipurpose Internet Mail Extensions (S/MIME)](https://en.wikipedia.org/wiki/S/MIME) enables security features for MIME messages including [digitally signing](https://en.wikipedia.org/wiki/Digital_signature) messages.
+[Secure Multipurpose Internet Mail Extensions (S/MIME)](https://en.wikipedia.org/wiki/S/MIME) enables security features for MIME messages such as [digitally signing](https://en.wikipedia.org/wiki/Digital_signature) messages.
