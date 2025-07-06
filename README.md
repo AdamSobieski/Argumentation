@@ -131,15 +131,67 @@ See also: [MHTML](https://en.wikipedia.org/wiki/MHTML), [MAFF](https://en.wikipe
 > ```
 > </details>
 
+### Argument Diagrams
+> [!NOTE]
+> Main Document: [Diagrams](Documents/Diagrams.md)
+
+Argument diagrams are visual representations of one or more arguments.
+
+> [!TIP]
+> Argument diagrams could accompany other formats of arguments in MIME messages.
+> 
+> <details>
+> <summary>Click here to toggle the display of this example.</summary>
+> <br>
+> 
+> ```email
+> Mime-Version: 1.0
+> Content-Type: multipart/related; boundary="boundary-example"
+> 
+> --boundary-example
+> 
+> Content-Type: text/plain
+> Content-Language: en
+> 
+> Climate change is happening and causing rising global temperatures.
+> Climate change is primarily caused by human activities or it is primarily a result of natural cycles.
+> Greenhouse gas emissions contribute to anthropogenic factors causing climate change.
+>
+> --boundary-example
+>
+> Content-Type: text/vnd.mermaid
+> Content-Language: en
+>
+> graph LR
+>  A[Climate change is happening] --> B[Rising global temperatures]
+>  F[Human activities are the primary cause] --> A
+>  G[Greenhouse gas emissions] --> F
+>  H[Counter-argument: Natural cycles] --> A
+>
+> --boundary-example---
+> ```
+
+### Argument Templates
+> [!NOTE]
+> Main Document: [Templates](Documents/Templates.md)
+
+Argument templates are used to produce arguments.
+
+### Components
+> [!NOTE]
+> Main Document: [Components](Documents/Components.md)
+
+Markup languages for representing argument could be designed to be extensible with respect to defining and reusing components. Such components could be defined, not in terms of their presentation and interaction, but in terms of their semantics. One could define reusable elements in terms of mappings and transformations between them and knowledge graphs (see also: [R2RML](https://www.w3.org/TR/r2rml/) and [RML](https://kg-construct.github.io/rml-resources/portal/)).
+
 ### Hypertext Markup Language
 
 While it may suffice to include text and argument-related data together in MIME messages for artificial-intelligence agents, human end-users might tend to prefer the addition of [hypertext](https://en.wikipedia.org/wiki/HTML5).
 
-This format could provide end-users with enhanced presentational, interactional, and navigational features. This format could provide end-users with other features from accessing argument-related data available elsewhere in MIME messages.
+HTML content in MIME messages could access argument-related data from other parts of MIME messages by means of using the `cid:` scheme in [data blocks](https://html.spec.whatwg.org/multipage/scripting.html#data-block) to refer to and load content from other message parts.
 
-Static hypertext could be automatically generated from argument-related data. Dynamic hypertext could use scripting logic to vary, at runtime, based upon loaded argument-related data.
+### Scalable Vector Graphics
 
-How would embedded HTML content in MIME messages access argument-related data from other parts of MIME messages? Perhaps HTML parts could use the `cid:` scheme in [data blocks](https://html.spec.whatwg.org/multipage/scripting.html#data-block) to refer to and load content from other message parts.
+[Scalable Vector Graphics (SVG)](https://en.wikipedia.org/wiki/SVG) could be used in MIME messages to provide graphical representations of argument diagrams.
 
 ### JavaScript Object Notation and Linked Data
 
@@ -305,58 +357,6 @@ How would embedded HTML content in MIME messages access argument-related data fr
 > --boundary-example--
 > ```
 > </details>
-
-### Components
-> [!NOTE]
-> Main Document: [Components](Documents/Components.md)
-
-Markup languages for representing argument could be designed to be extensible with respect to defining and reusing components. Such components could be defined, not in terms of their presentation and interaction, but in terms of their semantics. One could define reusable elements in terms of mappings and transformations between them and knowledge graphs (see also: [R2RML](https://www.w3.org/TR/r2rml/) and [RML](https://kg-construct.github.io/rml-resources/portal/)).
-
-### Argument Diagrams
-> [!NOTE]
-> Main Document: [Diagrams](Documents/Diagrams.md)
-
-Argument diagrams are visual representations of one or more arguments.
-
-> [!TIP]
-> Argument diagrams could accompany other formats of arguments in MIME messages.
-> 
-> <details>
-> <summary>Click here to toggle the display of this example.</summary>
-> <br>
-> 
-> ```email
-> Mime-Version: 1.0
-> Content-Type: multipart/related; boundary="boundary-example"
-> 
-> --boundary-example
-> 
-> Content-Type: text/plain
-> Content-Language: en
-> 
-> Climate change is happening and causing rising global temperatures.
-> Climate change is primarily caused by human activities or it is primarily a result of natural cycles.
-> Greenhouse gas emissions contribute to anthropogenic factors causing climate change.
->
-> --boundary-example
->
-> Content-Type: text/vnd.mermaid
-> Content-Language: en
->
-> graph LR
->  A[Climate change is happening] --> B[Rising global temperatures]
->  F[Human activities are the primary cause] --> A
->  G[Greenhouse gas emissions] --> F
->  H[Counter-argument: Natural cycles] --> A
->
-> --boundary-example---
-> ```
-
-### Argument Templates
-> [!NOTE]
-> Main Document: [Templates](Documents/Templates.md)
-
-Argument templates are used to produce arguments.
 
 ## A Comparison of Message Models
 
