@@ -5,7 +5,7 @@
 > [!TIP]
 > Here is an example Mermaid diagram.
 >
-> <details>
+> <details open>
 > <summary>Click here to toggle the display of this example.</summary>
 > 
 > ```mermaid
