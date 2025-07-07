@@ -152,7 +152,7 @@ Using the `cid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc
 > Content-Language: en
 > 
 > Climate change is happening and causing rising global temperatures.
-> Climate change is primarily caused by human activities or it is primarily a result of natural cycles.
+> Climate change is primarily caused by human activities or is a result of natural cycles.
 > Greenhouse gas emissions contribute to anthropogenic factors causing climate change.
 >
 > --boundary-example
