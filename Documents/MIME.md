@@ -46,7 +46,7 @@ There exists a `Content-Description` header for providing text descriptions of p
 [Knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) could be of use in multipart MIME messages to describe them, their parts, and any relationships between their parts.
 
 > [!TIP]
-> One could include metadata in a MIME message part to describe the containing message using the `mid:` URL scheme and message parts utilizing the `cid:` URL scheme.
+> One could include metadata in a MIME message part to describe the containing message using the `mid:` URL scheme and its message parts using the `cid:` URL scheme.
 > 
 > <details open>
 > <summary>Click here to toggle the display of this example.</summary>
