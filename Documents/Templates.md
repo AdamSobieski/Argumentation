@@ -41,3 +41,4 @@ Brainstorming, assuming that one could (e.g., using large language models) gener
 ## See Also
 
 * [Argumentation Scheme](https://en.wikipedia.org/wiki/Argumentation_scheme)
+* [Template Processor](https://en.wikipedia.org/wiki/Template_processor)
