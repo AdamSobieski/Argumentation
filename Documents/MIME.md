@@ -1,6 +1,6 @@
-## Metadata
+## Message Part Metadata
 
-In addition to their uses for representing arguments, argument templates, and networks of interrelated arguments, [knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) could be used in MIME messages to provide [metadata](https://en.wikipedia.org/wiki/Metadata) about other parts in multipart messages.
+[Knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) could be of use in multipart MIME messages for providing [metadata](https://en.wikipedia.org/wiki/Metadata) about other parts in multipart messages.
 
 There exists a `Content-Description` header for providing text descriptions of parts. There could, in particular for content of type `multipart/related`, be a new MIME header, perhaps named `Content-Metadata`, to refer to other parts which serve as metadata for them. Additionally or instead, those parts providing metadata could use a new header, perhaps named `Content-About`, to refer to those parts which they describe.
 
@@ -38,6 +38,12 @@ There exists a `Content-Description` header for providing text descriptions of p
 > --boundary-example--
 > ```
 > </details>
+
+## Message Metadata
+
+[Knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) could be of use in multipart MIME messages to describe the messages, their parts, and any relationships between the parts.
+
+Beyond providing a knowledge graph to describe one message part using the `cid:` URL scheme, one could refer to the containing message using the `mid:` URL scheme and/or to more than one message part simultaneously utilizing the `cid:` URL scheme.
 
 ## Content Negotiation
 
