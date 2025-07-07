@@ -5,7 +5,7 @@
 There exists a `Content-Description` header for providing text descriptions of parts. There could, in particular for content of type `multipart/related`, be a new MIME header, perhaps named `Content-Metadata`, to refer to other parts which serve as metadata for them. Additionally or instead, those parts providing metadata could use a new header, perhaps named `Content-About`, to refer to those parts which they describe.
 
 > [!TIP]
-> One could include metadata in one MIME message part to describe content in another part.
+> One could include metadata in one MIME message part to describe another message part.
 > 
 > <details open>
 > <summary>Click here to toggle the display of this example.</summary>
@@ -43,7 +43,59 @@ There exists a `Content-Description` header for providing text descriptions of p
 
 [Knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) could be of use in multipart MIME messages to describe the messages, their parts, and any relationships between the parts.
 
-Beyond providing a knowledge graph to describe one message part using the `cid:` URL scheme, one could refer to the containing message using the `mid:` URL scheme and/or to more than one message part simultaneously utilizing the `cid:` URL scheme.
+> [!TIP]
+> One could include metadata in a MIME message part to describe the containing message using the `mid:` URL scheme and multiple message parts utilizing the `cid:` URL scheme.
+> 
+> <details open>
+> <summary>Click here to toggle the display of this example.</summary>
+> <br>
+> 
+> ```email
+> Mime-Version: 1.0
+> Message-ID: 12345678
+> Content-Type: multipart/related; boundary="boundary-example"
+> 
+> --boundary-example
+> 
+> Content-Type: text/turtle
+> 
+> @prefix dc: <http://purl.org/dc/terms/> .
+> @prefix ex: <http://www.example.org#> .
+> @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+> 
+> <mid:12345678> dc:created "2025-06-29 20:00:00.000" ;
+>     dc:creator [ a foaf:Person ;
+>             foaf:name "Bob Smith" ] ;
+>     dc:hasPart <cid:part1>,
+>         <cid:part2> .
+> 
+> <cid:part1> ex:hasDiagram <cid:part2> .
+> 
+> --boundary-example
+> 
+> Content-ID: <part1>
+> Content-Type: text/plain
+> Content-Language: en
+> 
+> Climate change is happening and causing rising global temperatures.
+> Climate change is primarily caused by human activities or is a result of natural cycles.
+> Greenhouse gas emissions contribute to anthropogenic factors causing climate change.
+> 
+> --boundary-example
+> 
+> Content-ID: <part2>
+> Content-Type: text/vnd.mermaid
+> Content-Language: en
+> 
+> graph LR
+>  A[Climate change is happening] --> B[Rising global temperatures]
+>  F[Human activities are the primary cause] --> A
+>  G[Greenhouse gas emissions] --> F
+>  H[Counter-argument: Natural cycles] --> A
+> 
+> --boundary-example---
+> ```
+> </details>
 
 ## Content Negotiation
 
