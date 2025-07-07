@@ -7,7 +7,7 @@ There exists a `Content-Description` header for providing text descriptions of p
 > [!TIP]
 > One could include metadata in one MIME message part to describe content in another part.
 > 
-> <details>
+> <details open>
 > <summary>Click here to toggle the display of this example.</summary>
 > <br>
 > 
@@ -48,7 +48,7 @@ One could provide these functionalities using MIME messages. Senders could indic
 > [!TIP]
 > One could include content in some formats and languages while providing recipients with means to obtain remote content in other formats or languages.
 > 
-> <details>
+> <details open>
 > <summary>Click here to toggle the display of this example.</summary>
 > <br>
 > 
