@@ -11,7 +11,7 @@ Using the `cid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc
 > [!TIP]
 > The [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format) can be used in MIME messages.
 > 
-> <details>
+> <details open>
 > <summary>Click here to toggle the display of this example.</summary>
 > <br>
 > 
@@ -51,7 +51,7 @@ Using the `cid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc
 > [!TIP]
 > The AIF model could be extended to support attaching evidence and citing scholarly and scientific publications.
 > 
-> <details>
+> <details open>
 > <summary>Click here to toggle the display of this example.</summary>
 > <br>
 > 
@@ -138,7 +138,7 @@ Using the `cid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc
 > [!TIP]
 > Argument diagrams could accompany other formats of arguments in MIME messages.
 > 
-> <details>
+> <details open>
 > <summary>Click here to toggle the display of this example.</summary>
 > <br>
 > 
