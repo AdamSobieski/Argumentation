@@ -39,7 +39,7 @@ There exists a `Content-Description` header for providing text descriptions of p
 > ```
 > </details>
 
-## Message Metadata
+## Whole Message Metadata
 
 [Knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) could be of use in multipart MIME messages to describe the messages, their parts, and any relationships between the parts.
 
