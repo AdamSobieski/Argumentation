@@ -366,7 +366,7 @@ Artificial-intelligence message models include: [Anthropic](https://docs.anthrop
 
 As one can observe, [JavaScript Object Notation (JSON)](https://en.wikipedia.org/wiki/JSON) and related [Remote Procedure Calls (JSON-RPC)](https://en.wikipedia.org/wiki/JSON-RPC) are very popular among artificial-intelligence APIs, frameworks, and protocols. JSON is also utilized by new [AIF libraries](https://github.com/arg-tech/xaif) and forthcoming standards for [representing conversation data](https://docs.vcons.org/en/current-draft).
 
-Will artificial-intelligence APIs, frameworks, and protocols one day support the expressiveness for multipart messages having [`multipart/mixed`](https://en.wikipedia.org/wiki/MIME#mixed), [`multipart/related`](https://en.wikipedia.org/wiki/MIME#related), or [`multipart/alternative`](https://en.wikipedia.org/wiki/MIME#alternative) semantics? Will this expressiveness one day come to include that of the full hierarchical nature of MIME messages, where messages' parts could each be comprised of multiple parts?
+Will artificial-intelligence APIs, frameworks, and protocols one day support the expressiveness for multipart messages having [`multipart/mixed`](https://en.wikipedia.org/wiki/MIME#mixed), [`multipart/related`](https://en.wikipedia.org/wiki/MIME#related), or [`multipart/alternative`](https://en.wikipedia.org/wiki/MIME#alternative) semantics? Will this expressiveness one day come to include that of the full hierarchical and recursive nature of MIME messages, where messages' parts can each be comprised of multiple parts?
 
 Today, artificial-intelligence message models include support for multiple message content parts.
 
@@ -382,10 +382,10 @@ With respect to [Activity Streams](https://www.w3.org/TR/activitystreams-core/) 
 
 Advantages from supporting MIME's multipart semantics would include, but not be limited to:
 
-1. a well-defined hierarchical structure for message parts to simplify processing,
+1. a well-defined hierarchical and recursive structure for messages' parts to simplify processing,
 2. the capability to provide one or more message attachments, e.g., documents, images, audio, video, and data,
 3. the capability to provide content alternatives, enabling [content negotiation](https://en.wikipedia.org/wiki/Content_negotiation), [internationalization and localization](https://en.wikipedia.org/wiki/Internationalization_and_localization),
-4. interoperability with [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/) URL schemes,
+4. interoperability with [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/) URL schemes (`cid:` and `mid:`),
 5. the capability to express and include complex data involving multiple interrelated parts in multiple formats,
 6. enabling scenarios beyond agentic instant-messaging and chat, e.g., agentic Internet forums,
 7. the capability to provide parallel forms of content for simultaneous consumption, e.g., natural-language text and structured-knowledge argumentation.
