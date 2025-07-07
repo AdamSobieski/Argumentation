@@ -187,10 +187,6 @@ While it may suffice to include text and argument-related data together in MIME 
 
 HTML content in MIME messages could access argument-related data from other parts of MIME messages by means of using the `cid:` scheme in [data blocks](https://html.spec.whatwg.org/multipage/scripting.html#data-block) to refer to and load content from other message parts.
 
-### Scalable Vector Graphics
-
-[Scalable Vector Graphics (SVG)](https://en.wikipedia.org/wiki/SVG) could be used in MIME messages to provide graphical representations of argument diagrams. As SVG is a markup language, markup-based templating solutions could be used to produce content. Hypertext documents could use the `cid:` URL scheme to refer to SVG images in multipart MIME messages.
-
 ### JavaScript Object Notation and Linked Data
 
 [JSON](https://en.wikipedia.org/wiki/JSON) and [JSON-LD](https://en.wikipedia.org/wiki/JSON-LD) data can be included in MIME messages.
