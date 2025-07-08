@@ -106,6 +106,12 @@ The MIME type for [linked-data patches](https://www.w3.org/TR/ldpatch/) is `text
 >   ] .
 > ```
 
+## Events and Causality
+
+Some knowledge-graph patches can be described as being or representing [events](https://plato.stanford.edu/entries/events/) which changed, modified, or updated a model of the world.
+
+[Reified](https://en.wikipedia.org/wiki/Reification_(knowledge_representation)) events can be elements of [causal](https://en.wikipedia.org/wiki/Causality) discussions. Here, causality refers to the influence by which one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect).
+
 ## Multipart MIME Examples
 
 Coming soon.
