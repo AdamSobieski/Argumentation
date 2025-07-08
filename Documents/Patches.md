@@ -121,7 +121,7 @@ Some computational models of narrative, for instance, include, but are not limit
 > More: [MIME.md](MIME.md)
 
 > [!TIP]
-> One could comment on a text-based diff using multipart MIME.
+> One could comment on a text-based difference using multipart MIME.
 > 
 > <details open>
 > <summary>Click here to toggle the display of this example.</summary>
