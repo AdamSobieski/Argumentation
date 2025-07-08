@@ -164,4 +164,5 @@ More examples coming soon.
 
 ## See Also
 
+* [Diff](https://en.wikipedia.org/wiki/Diff)
 * [Patch](https://en.wikipedia.org/wiki/Patch_(computing))
