@@ -28,7 +28,12 @@ A MIME type for text-based differences is `text/x-diff`.
 The MIME type for [linked-data patches](https://www.w3.org/TR/ldpatch/) is `text/ldpatch`.
 
 > [!TIP]
-> Here is an example initial knowledge graph:
+> Here is an example initial knowledge graph, a linked-data patch, and a resultant knowledge graph.
+>
+> <details open>
+> <summary>Click here to toggle the display of this example.</summary>
+> <br>
+> 
 > ```turtle
 > @prefix schema: <http://schema.org/> .
 > @prefix profile: <http://ogp.me/ns/profile#> .
@@ -51,9 +56,6 @@ The MIME type for [linked-data patches](https://www.w3.org/TR/ldpatch/) is `text
 >   schema:startDate "2009-02-04" ;
 >   schema:url <http://conferences.ted.com/TED2009/> .
 > ```
-
-> [!TIP]
-> Here is an example linked-data patch.
 > ```turtle
 > @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 > @prefix schema: <http://schema.org/> .
@@ -86,9 +88,6 @@ The MIME type for [linked-data patches](https://www.w3.org/TR/ldpatch/) is `text
 >   ]
 > } .
 > ```
-
-> [!TIP]
-> Here is an example resultant knowledge graph.
 > ```turtle
 > @prefix schema: <http://schema.org/> .
 > @prefix profile: <http://ogp.me/ns/profile#> .
