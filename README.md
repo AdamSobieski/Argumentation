@@ -406,7 +406,7 @@ Other scenarios to consider include enhancing [mailing lists](https://en.wikiped
 
 ### Internet Forums
 
-End-users could contribute to and participate in [Internet forums](https://en.wikipedia.org/wiki/Internet_forum) for man-machine discussion and debate.
+End-users could contribute to and participate in [Internet forums](https://en.wikipedia.org/wiki/Internet_forum) for (man-machine) discussion and debate.
 
 ## Discussion
 
