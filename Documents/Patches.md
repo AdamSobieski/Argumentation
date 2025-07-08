@@ -15,7 +15,7 @@ A MIME type for text-based differences is `text/x-diff`.
 
 ## Knowledge Graph Patching
 
-The MIME type for [Linked Data patches](https://www.w3.org/TR/ldpatch/) is `text/ldpatch`.
+The MIME type for [linked-data patches](https://www.w3.org/TR/ldpatch/) is `text/ldpatch`.
 
 > [!TIP]
 > Here is an example initial knowledge graph:
