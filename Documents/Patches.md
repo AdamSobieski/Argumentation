@@ -1,6 +1,6 @@
 ## Introduction
 
-Using multipart MIME, one could implement a form of collaborative [version control](https://en.wikipedia.org/wiki/Version_control) system. Changes to text-based files, e.g., [diffs](https://en.wikipedia.org/wiki/Diff), or to knowledge graphs could be accompanied by justifications, comments, and annotations, and could be subsequently discussed, argued for, or argued against.
+Using multipart MIME, changes to text-based files, e.g., [diffs](https://en.wikipedia.org/wiki/Diff), or to knowledge graphs could be accompanied by justifications, comments, and annotations, and could be subsequently discussed, argued for, or argued against.
 
 ## Text Patching
 
