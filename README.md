@@ -2,7 +2,7 @@
 
 ### Multipurpose Internet Mail Extensions
 > [!NOTE]
-> Main Document: [MIME](Documents/MIME.md)
+> More: [Documents/MIME.md](Documents/MIME.md)
 
 [Multipurpose Internet Mail Extensions (MIME)](https://en.wikipedia.org/wiki/MIME) can be utilized as a format to serialize arguments to, to deserialize arguments from, to store arguments as files, and to transmit arguments between end-users and agents.
 
@@ -131,7 +131,7 @@ Using the `cid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc
 
 ### Argument Diagrams
 > [!NOTE]
-> Main Document: [Diagrams](Documents/Diagrams.md)
+> More: [Documents/Diagrams.md](Documents/Diagrams.md)
 
 [Argument diagrams](https://en.wikipedia.org/wiki/Argument_map) are visual representations of one or more arguments. These diagrams are useful for representing and analyzing existing argumentative writings and for helping end-users to think through issues during problem-structuring and argumentative writing processes.
 
@@ -171,13 +171,13 @@ Using the `cid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc
 
 ### Argument Templates
 > [!NOTE]
-> Main Document: [Templates](Documents/Templates.md)
+> More: [Documents/Templates.md](Documents/Templates.md)
 
 Argument templates are used to produce arguments.
 
 ### Components
 > [!NOTE]
-> Main Document: [Components](Documents/Components.md)
+> More: [Documents/Components.md](Documents/Components.md)
 
 Markup languages for representing argument could be designed to be extensible with respect to defining and reusing components. Such components could be defined, not in terms of their presentation and interaction, but in terms of their semantics. One could define reusable elements in terms of mappings and transformations between them and knowledge graphs (see also: [R2RML](https://www.w3.org/TR/r2rml/) and [RML](https://kg-construct.github.io/rml-resources/portal/)).
 
