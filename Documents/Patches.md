@@ -120,7 +120,57 @@ Some computational models of narrative, for instance, include, but are not limit
 > [!NOTE]
 > More: [MIME.md](MIME.md)
 
-Coming soon.
+> [!TIP]
+> One could comment on a text-based diff using multipart MIME.
+> 
+> <details open>
+> <summary>Click here to toggle the display of this example.</summary>
+> <br>
+> 
+> ```email
+> Mime-Version: 1.0
+> Message-ID: 12345678
+> Content-Type: multipart/related; boundary="boundary-example"
+> 
+> --boundary-example
+> 
+> Content-Type: text/turtle
+> Content-About: mid:12345678
+> 
+> @prefix dc: <http://purl.org/dc/terms/> .
+> @prefix ex: <http://www.example.org#> .
+> @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+> 
+> <mid:12345678> dc:created "2025-06-29 20:00:00.000" ;
+>     dc:creator [ a foaf:Person ;
+>             foaf:name "Bob Smith" ] ;
+>     dc:hasPart <cid:part1>,
+>         <cid:part2> .
+> 
+> <cid:part1> ex:commentsOn <cid:part2> .
+>
+> <cid:part2> ex:patches <https://www.storage.org/file123.cpp>
+> 
+> --boundary-example
+> 
+> Content-ID: <part1>
+> Content-Type: text/plain
+> Content-Language: en
+> 
+> I think that this is a good idea.
+> 
+> --boundary-example
+> 
+> Content-ID: <part2>
+> Content-Type: text/x-diff
+> Content-Language: en
+> 
+> - foo(buf, size);
+> + foo(obj->buf, obj->size);
+> 
+> --boundary-example---
+> ```
+> </details>
 
 ## See Also
 
