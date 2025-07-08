@@ -108,13 +108,13 @@ The MIME type for [linked-data patches](https://www.w3.org/TR/ldpatch/) is `text
 
 ## Events, Actions, Causality, and Narrative
 
-Some knowledge-graph patches can be described as being or representing [events](https://plato.stanford.edu/entries/events/) which changed, modified, or updated a model of a world.
+It is generally useful to be able to represent reified changes or differences between models or representations of a world, e.g., knowledge graphs.
 
-Some computational models of narrative, for instance, include, but are not limited to, dynamic character networks. Some plot events of stories, in these approaches, can be described as causing changes to graph-based representations of the properties of or relationships between stories' characters.
+Some knowledge-graph patches can be described as being or representing [events](https://plato.stanford.edu/entries/events/) or actions which changed, modified, or updated a model or representation of a world. Actions are things that agents do in particular situations; actions can be contrasted with events which merely happen; actions are typically performed for purposes and guided by intentions.
 
-[Reified](https://en.wikipedia.org/wiki/Reification_(knowledge_representation)) events can be elements of discussions, including [causal](https://en.wikipedia.org/wiki/Causality) discussions. Here, causality refers to the influence by which one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect).
+[Reified](https://en.wikipedia.org/wiki/Reification_(knowledge_representation)) events or actions can be elements of discussions, including [causal](https://en.wikipedia.org/wiki/Causality) discussions. Here, causality refers to the influence by which one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect).
 
-Meanwhile, in philosophy, actions are things that agents do in particular situations. Actions can be contrasted with events which merely happen; actions are typically performed for purposes and guided by intentions.
+Some computational models of narrative, for instance, include, but are not limited to, dynamic character networks. Some plot events or actions in stories, in these approaches, can be described as causing changes to graph-based representations of the properties of or relationships between these stories' characters.
 
 ## Multipart MIME Examples
 
