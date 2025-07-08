@@ -125,3 +125,4 @@ Coming soon.
 * [Event](https://plato.stanford.edu/entries/events/)
 * [File Comparison](https://en.wikipedia.org/wiki/File_comparison)
 * [Patch](https://en.wikipedia.org/wiki/Patch_(computing))
+* [Process Philosophy](https://en.wikipedia.org/wiki/Process_philosophy)
