@@ -163,7 +163,6 @@ Some computational models of narrative, for instance, include, but are not limit
 > 
 > Content-ID: <part2>
 > Content-Type: text/x-diff
-> Content-Language: en
 > 
 > - foo(buf, size);
 > + foo(obj->buf, obj->size);
