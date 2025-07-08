@@ -23,4 +23,4 @@
 
 ## Scalable Vector Graphics
 
-[Scalable Vector Graphics (SVG)](https://en.wikipedia.org/wiki/SVG) could be of use for representing argument diagrams in multipart MIME messages.
+[Scalable Vector Graphics (SVG)](https://en.wikipedia.org/wiki/SVG) can be of use for representing argument diagrams in multipart MIME messages. Its MIME type is `image/svg+xml`.
