@@ -150,6 +150,12 @@ One could provide these functionalities using MIME messages. Senders could indic
 > ```
 > </details>
 
+## Diffs, Deltas, and Patches
+> [!NOTE]
+> More: [Patches.md](Patches.md)
+
+Using multipart MIME, changes to text-based files, e.g., diffs, or to knowledge graphs could be accompanied by justifications, comments, and annotations, and could be subsequently discussed, argued for, or argued against.
+
 ## Serialization and Deserialization
 
 Traditional approaches to [serializing](https://en.wikipedia.org/wiki/Serialization) objects have tended to involve transforming object graphs into and from single formats, e.g., binary data, JSON, YAML, XML, or RDF.
