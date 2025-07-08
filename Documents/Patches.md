@@ -118,5 +118,8 @@ Coming soon.
 
 ## See Also
 
+* [Causality](https://en.wikipedia.org/wiki/Causality)
+* [Change](https://en.wikipedia.org/wiki/Impermanence)
+* [Event](https://plato.stanford.edu/entries/events/)
 * [File Comparison](https://en.wikipedia.org/wiki/File_comparison)
 * [Patch](https://en.wikipedia.org/wiki/Patch_(computing))
