@@ -116,7 +116,9 @@ Some knowledge-graph patches can be described as being or representing [events](
 
 Some computational models of narrative, for instance, include, but are not limited to, dynamic character networks. Some plot events or actions in stories, in these approaches, can be described as causing changes to graph-based representations of the properties of or relationships between these stories' characters.
 
-## Multipart MIME Examples
+## Multipart MIME
+> [!NOTE]
+> More: [MIME.md](MIME.md)
 
 Coming soon.
 
