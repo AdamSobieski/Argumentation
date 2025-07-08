@@ -106,7 +106,7 @@ The MIME type for [Linked Data patches](https://www.w3.org/TR/ldpatch/) is `text
 >   ] .
 > ```
 
-## Multipart MIME Example
+## Multipart MIME Examples
 
 Coming soon.
 
