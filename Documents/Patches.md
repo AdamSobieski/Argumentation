@@ -106,7 +106,7 @@ The MIME type for [linked-data patches](https://www.w3.org/TR/ldpatch/) is `text
 >   ] .
 > ```
 
-## Events, Causality, and Narrative
+## Events, Actions, Causality, and Narrative
 
 Some knowledge-graph patches can be described as being or representing [events](https://plato.stanford.edu/entries/events/) which changed, modified, or updated a model of a world.
 
@@ -114,12 +114,15 @@ Some computational models of narrative, for instance, include, but are not limit
 
 [Reified](https://en.wikipedia.org/wiki/Reification_(knowledge_representation)) events can be elements of discussions, including [causal](https://en.wikipedia.org/wiki/Causality) discussions. Here, causality refers to the influence by which one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect).
 
+Meanwhile, in philosophy, actions are things that agents do in particular situations. Actions can be contrasted with events which merely happen; actions are typically performed for purposes and guided by intentions.
+
 ## Multipart MIME Examples
 
 Coming soon.
 
 ## See Also
 
+* [Action](https://en.wikipedia.org/wiki/Action_(philosophy))
 * [Causality](https://en.wikipedia.org/wiki/Causality)
 * [Change](https://en.wikipedia.org/wiki/Impermanence)
 * [Event](https://plato.stanford.edu/entries/events/)
