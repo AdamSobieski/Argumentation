@@ -12,7 +12,7 @@ Knowledge-graph-based template technologies include [Reasonable Ontology Templat
 
 ## Diagrams
 > [!NOTE]
-> Main Document: [Diagrams](Diagrams.md)
+> More: [Diagrams.md](Diagrams.md)
 
 Templates could be of use for producing diagrams, visual representations of arguments.
 
@@ -20,7 +20,7 @@ Text, markup, and knowledge graphs can all be transformed into argument diagrams
 
 ## Multipart MIME
 > [!NOTE]
-> Main Document: [MIME](MIME.md)
+> More: [MIME.md](MIME.md)
 
 Templates could be created with which to produce multipart MIME messages from data sources. Useful features would include being able to dynamically create and ammend content into new parts of multipart messages while being able to refer to these ammended parts using the `cid:` URL scheme.
 
