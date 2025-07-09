@@ -101,7 +101,7 @@ Additionally or instead, those parts providing metadata could make use of a new 
 >  G[Greenhouse gas emissions] --> F
 >  H[Counter-argument: Natural cycles] --> A
 > 
-> --boundary-example---
+> --boundary-example--
 > ```
 > </details>
 
