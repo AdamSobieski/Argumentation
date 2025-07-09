@@ -158,7 +158,7 @@ The MIME type for [linked-data patches](https://www.w3.org/TR/ldpatch/) is `text
 > - foo(buf, size);
 > + foo(obj->buf, obj->size);
 > 
-> --boundary-example---
+> --boundary-example--
 > ```
 > </details>
 
