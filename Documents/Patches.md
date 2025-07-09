@@ -120,11 +120,12 @@ The MIME type for [linked-data patches](https://www.w3.org/TR/ldpatch/) is `text
 > Mime-Version: 1.0
 > Message-ID: 12345678
 > Content-Type: multipart/related; boundary="boundary-example"
+> Content-Metadata: <part1>
 > 
 > --boundary-example
 > 
+> Content-ID: <part1>
 > Content-Type: text/turtle
-> Content-About: mid:12345678
 > 
 > @prefix dc: <http://purl.org/dc/terms/> .
 > @prefix ex: <http://www.example.org#> .
@@ -134,15 +135,16 @@ The MIME type for [linked-data patches](https://www.w3.org/TR/ldpatch/) is `text
 >     dc:creator [ a foaf:Person ;
 >             foaf:name "Bob Smith" ] ;
 >     dc:hasPart <cid:part1>,
->         <cid:part2> .
+>         <cid:part2>,
+>         <cid:part3> .
 > 
-> <cid:part1> ex:commentsOn <cid:part2> .
+> <cid:part2> ex:commentsOn <cid:part3> .
 >
-> <cid:part2> ex:patches <https://www.storage.org/file123.cpp>
+> <cid:part3> ex:patches <https://www.storage.org/file123.cpp>
 > 
 > --boundary-example
 > 
-> Content-ID: <part1>
+> Content-ID: <part2>
 > Content-Type: text/plain
 > Content-Language: en
 > 
@@ -150,7 +152,7 @@ The MIME type for [linked-data patches](https://www.w3.org/TR/ldpatch/) is `text
 > 
 > --boundary-example
 > 
-> Content-ID: <part2>
+> Content-ID: <part3>
 > Content-Type: text/x-diff
 > 
 > - foo(buf, size);
