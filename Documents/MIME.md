@@ -155,7 +155,7 @@ One could provide these functionalities using MIME messages. Senders could indic
 > ```
 > </details>
 
-## Diffs, Deltas, and Patches
+## Diffs and Patches
 > [!NOTE]
 > More: [Patches.md](Patches.md)
 
