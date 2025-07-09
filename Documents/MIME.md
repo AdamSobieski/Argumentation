@@ -157,7 +157,7 @@ One could provide these functionalities using MIME messages. Senders could indic
 > [!NOTE]
 > More: [Patches.md](Patches.md)
 
-Using multipart MIME, changes to text-based files, e.g., diffs, or to knowledge graphs could be accompanied by justifications, comments, annotations, and/or provenance data, and could be subsequently discussed, argued for, or argued against.
+Using multipart MIME, changes to text-based files, e.g., diffs, or to knowledge graphs could be accompanied by annotations, comments, justifications, and/or provenance data, and could be subsequently discussed, argued, and debated.
 
 ## Serialization and Deserialization
 
