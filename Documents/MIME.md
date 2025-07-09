@@ -57,7 +57,7 @@ Additionally or instead, those parts providing metadata could make use of a new 
 > 
 > ```email
 > Mime-Version: 1.0
-> Message-ID: 12345678
+> Message-ID: <12345678>
 > Content-Type: multipart/related; boundary="boundary-example"
 > Content-Metadata: <part1>
 > 
@@ -120,7 +120,7 @@ One could provide these functionalities using MIME messages. Senders could indic
 > 
 > ```email
 > Mime-Version: 1.0
-> Message-Id: 12345678
+> Message-Id: <12345678>
 > Content-Type: multipart/alternative; boundary="boundary-example"
 > 
 > --boundary-example
