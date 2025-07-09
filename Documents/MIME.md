@@ -2,8 +2,6 @@
 
 There exists a `Content-Description` header for providing text descriptions of parts. There could be created a new MIME header, perhaps named `Content-Metadata`, to refer to those parts which serve as metadata for a message or message part.
 
-Additionally or instead, those parts providing metadata could make use of a new header, perhaps named `Content-About`, to refer to the messages or message parts that they describe.
-
 ### Message Parts
 
 [Knowledge graphs](https://en.wikipedia.org/wiki/Knowledge_graph) could be of use in multipart MIME messages for providing [metadata](https://en.wikipedia.org/wiki/Metadata) about other parts in multipart messages.
