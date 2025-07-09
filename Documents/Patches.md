@@ -118,7 +118,7 @@ The MIME type for [linked-data patches](https://www.w3.org/TR/ldpatch/) is `text
 > 
 > ```email
 > Mime-Version: 1.0
-> Message-ID: 12345678
+> Message-ID: <12345678>
 > Content-Type: multipart/related; boundary="boundary-example"
 > Content-Metadata: <part1>
 > 
