@@ -204,7 +204,7 @@ The MIME type for [linked-data patches](https://www.w3.org/TR/ldpatch/) is `text
 > @prefix ex: <http://example.org/#> .
 > 
 > ex:Node1 a aif:I-node ;
->     aif:claimText "This action should be performed on the knowledgebase." .
+>     aif:claimText "A triple should be added to the knowledgebase." .
 > 
 > ex:Node2 a aif:RA-node ;
 >     aif:hasPremise ex:Node1 ;
