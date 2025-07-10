@@ -1,6 +1,6 @@
 ## Introduction
 
-Using multipart MIME, changes to text-based files, e.g., [diffs](https://en.wikipedia.org/wiki/Diff), or to knowledge graphs could be accompanied by annotations, comments, justifications, and/or provenance data, and could be subsequently discussed, argued, and debated.
+Using multipart MIME, changes to text-based files, e.g., [diffs](https://en.wikipedia.org/wiki/Diff), and to knowledge graphs could be accompanied by annotations, comments, justifications, and/or provenance data, and could be subsequently discussed, argued, and debated.
 
 ## Text Patching
 
