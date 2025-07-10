@@ -191,7 +191,7 @@ The MIME type for [linked-data patches](https://www.w3.org/TR/ldpatch/) is `text
 >         <cid:part2>,
 >         <cid:part3> .
 > 
-> <cid:part2> ex:arguesFor <cid:part3> .
+> <cid:part2> ex:arguesForPerforming <cid:part3> .
 > 
 > <cid:part3> ex:patches <https://www.storage.org/kb-endpoint#>
 >
