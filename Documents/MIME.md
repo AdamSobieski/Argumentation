@@ -161,9 +161,9 @@ Using multipart MIME, changes to text-based files, e.g., diffs, and to knowledge
 
 ## Serialization and Deserialization
 
-Traditional approaches to [serializing](https://en.wikipedia.org/wiki/Serialization) objects have tended to involve transforming object graphs into and from single formats, e.g., binary data, JSON, YAML, XML, or RDF.
+Traditional approaches to [serialization](https://en.wikipedia.org/wiki/Serialization) have tended to involve transforming object graphs into single formats, e.g., binary data, JSON, YAML, XML, or RDF.
 
-Objects could, additionally, be serialized into and be deserialized from MIME messages. During serialization, algorithms could add parts to MIME messages, each part expressed using a format. During deserialization, interrelated message parts would be processed back into objects.
+Object graphs could, additionally, be serialized into and deserialized from MIME messages. During serialization, algorithms could add message parts to MIME messages. During deserialization, interrelated message parts, perhaps utilizing multiple formats, would be processed back into objects.
 
 ## Security
 
