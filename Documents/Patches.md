@@ -110,7 +110,7 @@ The MIME type for [linked-data patches](https://www.w3.org/TR/ldpatch/) is `text
 > More: [MIME.md](MIME.md)
 
 > [!TIP]
-> One could comment on a text-based difference using multipart MIME.
+> One could comment on text-based differences or patches using multipart MIME.
 > 
 > <details open>
 > <summary>Click here to toggle the display of this example.</summary>
