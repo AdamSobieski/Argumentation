@@ -204,14 +204,14 @@ The MIME type for [linked-data patches](https://www.w3.org/TR/ldpatch/) is `text
 > @prefix ex: <http://example.org/#> .
 > 
 > ex:Node1 a aif:I-node ;
->     aif:claimText "This triple should be added to the knowledgebase." .
+>     aif:claimText "This triple was missing from the knowledgebase." .
 > 
 > ex:Node2 a aif:RA-node ;
 >     aif:hasPremise ex:Node1 ;
 >     aif:hasConclusion ex:Node3 .
 > 
 > ex:Node3 a aif:I-node ;
->     aif:claimText "This triple was missing from the knowledgebase." .
+>     aif:claimText "This triple should be added to the knowledgebase." .
 > 
 > --boundary-example
 > 
