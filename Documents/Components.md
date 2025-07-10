@@ -8,7 +8,7 @@ Extensible markup-based component models occur across user-interface design tech
 
 ## Referencing Component Definitions
 
-What might it resemble for an argument markup language resource to reference extension components' definitions?
+What could it resemble for an argument markup language resource to reference extension components' definitions?
 
 > [!TIP]
 > Resembling XML schemas, one could utilize attributes to indicate the locations of RML mappings.
