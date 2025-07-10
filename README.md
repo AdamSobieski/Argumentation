@@ -6,8 +6,6 @@
 
 [Multipurpose Internet Mail Extensions (MIME)](https://en.wikipedia.org/wiki/MIME) can be utilized as a format to serialize arguments to, to deserialize arguments from, to store arguments as files, and to transmit arguments between end-users and agents.
 
-Using the `cid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), contents within parts of multipart MIME messages can, wherever a URL can be used, refer to other parts in multipart MIME messages.
-
 > [!TIP]
 > The [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format) can be used in MIME messages.
 > 
@@ -47,6 +45,8 @@ Using the `cid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc
 > --boundary-example--
 > ```
 > </details>
+
+Using the `cid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), contents within parts of multipart MIME messages can, wherever a URL can be used, refer to other parts in multipart MIME messages.
 
 > [!TIP]
 > The AIF model could be extended to support attaching evidence and citing scholarly and scientific publications.
