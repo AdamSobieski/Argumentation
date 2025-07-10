@@ -128,7 +128,7 @@ The MIME type for [linked-data patches](https://www.w3.org/TR/ldpatch/) is `text
 > Content-Type: text/turtle
 > 
 > @prefix dc: <http://purl.org/dc/terms/> .
-> @prefix ex: <http://www.example.org#> .
+> @prefix ex: <http://www.example.org/#> .
 > @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 > 
 > <mid:12345678> dc:created "2025-06-29 20:00:00.000" ;
@@ -162,7 +162,67 @@ The MIME type for [linked-data patches](https://www.w3.org/TR/ldpatch/) is `text
 > ```
 > </details>
 
-More examples coming soon.
+> [!TIP]
+> One could argue for revisions to knowledgebases using multipart MIME.
+> 
+> <details open>
+> <summary>Click here to toggle the display of this example.</summary>
+> <br>
+>
+> ```email
+> Mime-Version: 1.0
+> Message-ID: <12345678>
+> Content-Type: multipart/related; boundary="boundary-example"
+> Content-Metadata: <part1>
+> 
+> --boundary-example
+> 
+> Content-ID: <part1>
+> Content-Type: text/turtle
+> 
+> @prefix dc: <http://purl.org/dc/terms/> .
+> @prefix ex: <http://example.org/#> .
+> @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+> 
+> <mid:12345678> dc:created "2025-06-29 20:00:00.000" ;
+>     dc:creator [ a foaf:Person ;
+>             foaf:name "Bob Smith" ] ;
+>     dc:hasPart <cid:part1>,
+>         <cid:part2>,
+>         <cid:part3> .
+> 
+> <cid:part2> ex:arguesFor <cid:part3> .
+> 
+> <cid:part3> ex:patches <https://www.storage.org/kb-endpoint#>
+>
+> --boundary-example
+>
+> Content-ID: <part2>
+> Content-Type: text/turtle
+> 
+> @prefix aif: <http://www.arg.dundee.ac.uk/aif#> .
+> @prefix ex: <http://example.org/#> .
+> 
+> ex:Node1 a aif:I-node ;
+>     aif:claimText "This action should be performed on the knowledgebase." .
+> 
+> ex:Node2 a aif:RA-node ;
+>     aif:hasPremise ex:Node1 ;
+>     aif:hasConclusion ex:Node3 .
+> 
+> ex:Node3 a aif:I-node ;
+>     aif:claimText "A triple was missing from the knowledgebase." .
+> 
+> --boundary-example
+> 
+> Content-ID: <part3>
+> Content-Type: text/ldpatch
+> 
+> Add { <http://example.org/#s1> <http://example.org/#p1> <http://example.org/#o1> } .
+> 
+> --boundary-example--
+> ```
+> </details>
 
 ## See Also
 
