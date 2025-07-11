@@ -129,7 +129,7 @@ Using the `cid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc
 > ```
 > </details>
 
-The following example illustrates that one could use multipart MIME to simplify arguing for or against making revisions to text-based resources (e.g., a source-code file), knowledge-graph resources (e.g., a knowledgebase), or diagrammatic resources (e.g., a concept map).
+The following example illustrates that, using multipart MIME with a new `Content-Metadata` header, one could simplify arguing for and against proposed revisions to text-based resources (e.g., a source-code file), knowledge-graph resources (e.g., a knowledgebase), or diagrammatic resources (e.g., a concept map).
 
 > [!TIP]
 > One could argue for or against a proposed revision to a knowledgebase using multipart MIME.
@@ -168,6 +168,7 @@ The following example illustrates that one could use multipart MIME to simplify 
 >
 > Content-ID: <part2>
 > Content-Type: text/turtle
+> Content-Language: en
 > 
 > @prefix aif: <http://www.arg.dundee.ac.uk/aif#> .
 > @prefix ex: <http://example.org/#> .
