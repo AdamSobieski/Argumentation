@@ -7,6 +7,7 @@
 >
 > <details open>
 > <summary>Click here to toggle the display of this example.</summary>
+> <br>
 > 
 > ```mermaid
 > graph LR
@@ -14,6 +15,33 @@
 >   F[Human activities are the primary cause] --> A
 >   G[Greenhouse gas emissions] --> F
 >   H[Counter-argument: Natural cycles] --> A
+> ```
+> </details>
+
+> [!TIP]
+> Here is another example Mermaid diagram.
+> 
+> <details open>
+> <summary>Click here to toggle the display of this example.</summary>
+> <br>
+> 
+> ```mermaid
+> mindmap
+>   root((mindmap))
+>     Origins
+>       Long history
+>       Popularization
+>         British popular psychology author Tony Buzan
+>     Research
+>       On effectiveness<br/>and features
+>       On Automatic creation
+>         Uses
+>             Creative techniques
+>             Strategic planning
+>             Argument mapping
+>     Tools
+>       Pen and paper
+>       Mermaid
 > ```
 > </details>
 
