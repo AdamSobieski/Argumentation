@@ -212,7 +212,7 @@ Advantages from supporting MIME's multipart semantics would include, but not be 
 3. the capability to provide content alternatives, enabling [content negotiation](https://en.wikipedia.org/wiki/Content_negotiation), [internationalization and localization](https://en.wikipedia.org/wiki/Internationalization_and_localization),
 4. interoperability with [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/) URL schemes (`cid:` and `mid:`),
 5. the capability to express and include complex data involving multiple interrelated parts in multiple formats,
-6. the capability to provide parallel forms of content for simultaneous consumption, e.g., natural-language text and structured-knowledge argumentation.
+6. the capability to provide parallel forms of content for simultaneous consumption, e.g., text, hypertext, and structured-knowledge argumentation.
 7. enabling scenarios beyond agentic instant-messaging and chat, e.g., agentic Internet forums,
 
 ## Use Cases
