@@ -8,10 +8,16 @@ A MIME type for text-based differences is `text/x-diff`.
 
 > [!TIP]
 > Here is an example of a text-based difference.
+>
+> <details open>
+> <summary>Click here to toggle the display of this example.</summary>
+> <br>
+>
 > ```diff
 > - foo(buf, size);
 > + foo(obj->buf, obj->size);
 > ```
+> </details>
 
 ## Knowledge Graph Patching
 
