@@ -57,4 +57,4 @@
 > [!NOTE]
 > More: [Patches.md](Patches.md)
 
-Patching diagrams can be performed by patching their text-, markup-, or graph-based representations.
+Making revisions to diagrams can be performed by patching their text-, markup-, or graph-based representations.
