@@ -163,7 +163,7 @@ The MIME type for [linked-data patches](https://www.w3.org/TR/ldpatch/) is `text
 > </details>
 
 > [!TIP]
-> One could argue for or against revisions to knowledgebases using multipart MIME.
+> One could argue for or against a proposed revision to a knowledgebase using multipart MIME.
 > 
 > <details open>
 > <summary>Click here to toggle the display of this example.</summary>
