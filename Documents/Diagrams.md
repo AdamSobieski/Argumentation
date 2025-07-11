@@ -57,4 +57,4 @@
 > [!NOTE]
 > More: [Patches.md](Patches.md)
 
-Making revisions to diagrams can be performed by patching their text-, markup-, or graph-based representations.
+Using multipart MIME, revisions to diagrams could be accompanied by annotations, comments, justifications, and/or provenance data, and could be subsequently discussed, argued, and debated. Revisions to diagrams can be represented using patches to their text-, markup-, or graph-based representations.
