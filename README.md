@@ -129,7 +129,7 @@ Using the `cid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc
 > ```
 > </details>
 
-The following example illustrates that, using multipart MIME with a potential `Content-Metadata` header, one could simplify arguing for and against proposed revisions to text-based resources (e.g., source-code files), knowledge-graph resources (e.g., knowledgebases), or diagrammatic resources (e.g., concept maps).
+The following example illustrates that, using multipart MIME with a potential `Content-Metadata` header, one could simplify arguing for and against proposed revisions to text-based resources (e.g., source-code files), knowledge-graph resources (e.g., knowledgebases), and diagrammatic resources (e.g., concept maps).
 
 > [!TIP]
 > One could argue for or against a proposed revision to a knowledgebase using multipart MIME.
