@@ -129,6 +129,70 @@ Using the `cid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc
 > ```
 > </details>
 
+This more advanced example illustrates how one could argue for or against making a revision to a text-based resource (e.g., source-code file), a knowledge-graph resource (e.g., a knowledgebases), or a diagrammatic resource (e.g., a concept maps).
+
+> [!TIP]
+> One could argue for or against revisions to knowledgebases using multipart MIME.
+> 
+> <details open>
+> <summary>Click here to toggle the display of this example.</summary>
+> <br>
+>
+> ```email
+> Mime-Version: 1.0
+> Message-ID: <12345678>
+> Content-Type: multipart/related; boundary="boundary-example"
+> Content-Metadata: <part1>
+> 
+> --boundary-example
+> 
+> Content-ID: <part1>
+> Content-Type: text/turtle
+> 
+> @prefix dc: <http://purl.org/dc/terms/> .
+> @prefix ex: <http://example.org/#> .
+> @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+> 
+> <mid:12345678> dc:created "2025-06-29 20:00:00.000" ;
+>     dc:creator [ a foaf:Person ;
+>             foaf:name "Bob Smith" ] ;
+>     dc:hasPart <cid:part1>,
+>         <cid:part2>,
+>         <cid:part3> .
+> 
+> <cid:part2> ex:arguesForPerforming <cid:part3> .
+> 
+> <cid:part3> ex:patches <https://www.storage.org/kb-endpoint#>
+>
+> --boundary-example
+>
+> Content-ID: <part2>
+> Content-Type: text/turtle
+> 
+> @prefix aif: <http://www.arg.dundee.ac.uk/aif#> .
+> @prefix ex: <http://example.org/#> .
+> 
+> ex:Node1 a aif:I-node ;
+>     aif:claimText "This triple was missing from the knowledgebase." .
+> 
+> ex:Node2 a aif:RA-node ;
+>     aif:hasPremise ex:Node1 ;
+>     aif:hasConclusion ex:Node3 .
+> 
+> ex:Node3 a aif:I-node ;
+>     aif:claimText "This triple should be added to the knowledgebase." .
+> 
+> --boundary-example
+> 
+> Content-ID: <part3>
+> Content-Type: text/ldpatch
+> 
+> Add { <http://example.org/#s1> <http://example.org/#p1> <http://example.org/#o1> } .
+> 
+> --boundary-example--
+> ```
+> </details>
+
 ### Argument Diagrams
 > [!NOTE]
 > More: [Documents/Diagrams.md](Documents/Diagrams.md)
