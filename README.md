@@ -129,7 +129,7 @@ Using the `cid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc
 > ```
 > </details>
 
-This more advanced example illustrates that one could use multipart MIME to enable arguing for or against making a revision to a text-based resource (e.g., a source-code file), a knowledge-graph resource (e.g., a knowledgebases), or a diagrammatic resource (e.g., a concept maps).
+The following example illustrates that one could use multipart MIME to simplify arguing for or against making revisions to text-based resources (e.g., a source-code file), knowledge-graph resources (e.g., a knowledgebase), or diagrammatic resources (e.g., a concept maps).
 
 > [!TIP]
 > One could argue for or against revisions to knowledgebases using multipart MIME.
