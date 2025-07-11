@@ -292,10 +292,6 @@ Patching diagrams can be performed by patching their text-, markup-, or graph-ba
 > Content-ID: <part3>
 > Content-Type: text/x-diff
 > 
-> Index: mindmap.mmd
-> ===================================================================
-> --- mindmap.mmd
-> +++ mindmap.mmd
 > @@ -10,7 +10,8 @@
 >          Uses
 >              Creative techniques
