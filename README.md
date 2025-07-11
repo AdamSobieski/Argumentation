@@ -30,7 +30,7 @@
 > Content-Language: en
 > 
 > @prefix aif: <http://www.arg.dundee.ac.uk/aif#> .
-> @prefix ex: <http://example.org/> .
+> @prefix ex: <http://example.org/#> .
 > 
 > ex:Node1 a aif:I-node ;
 >     aif:claimText "Climate change is caused by human activities." .
@@ -72,8 +72,8 @@ Using the `cid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc
 > Content-Language: en
 > 
 > @prefix aif: <http://www.arg.dundee.ac.uk/aif#> .
-> @prefix ex: <http://example.org/> .
-> @prefix ext: <http://extension.org/> .
+> @prefix ex: <http://example.org/#> .
+> @prefix ext: <http://extension.org/#> .
 > 
 > ex:Node1 a aif:I-node ;
 >     aif:claimText "Climate change is caused by human activities." .
