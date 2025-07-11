@@ -2,7 +2,7 @@
 
 Using multipart MIME, changes to text-based files, e.g., [diffs](https://en.wikipedia.org/wiki/Diff), and to knowledge graphs could be accompanied by annotations, comments, justifications, and/or provenance data, and could be subsequently discussed, argued, and debated.
 
-## Text Patching
+## Patching Text
 
 A MIME type for text-based differences is `text/x-diff`.
 
@@ -19,7 +19,7 @@ A MIME type for text-based differences is `text/x-diff`.
 > ```
 > </details>
 
-## Knowledge Graph Patching
+## Patching Knowledge Graphs
 
 The MIME type for [linked-data patches](https://www.w3.org/TR/ldpatch/) is `text/ldpatch`.
 
@@ -111,12 +111,18 @@ The MIME type for [linked-data patches](https://www.w3.org/TR/ldpatch/) is `text
 >   ] .
 > ```
 
+## Patching Diagrams
+> [!NOTE]
+> More: [Diagrams.md](Diagrams.md)
+
+Patching diagrams can be performed by patching their text-, markup-, or graph-based representations.
+
 ## Multipart MIME
 > [!NOTE]
 > More: [MIME.md](MIME.md)
 
 > [!TIP]
-> One could comment on text-based differences or patches using multipart MIME.
+> One could comment on text-based differences or patches.
 > 
 > <details open>
 > <summary>Click here to toggle the display of this example.</summary>
@@ -169,7 +175,7 @@ The MIME type for [linked-data patches](https://www.w3.org/TR/ldpatch/) is `text
 > </details>
 
 > [!TIP]
-> One could argue for or against a proposed revision to a knowledgebase using multipart MIME.
+> One could argue for or against a proposed revision to a knowledgebase.
 > 
 > <details open>
 > <summary>Click here to toggle the display of this example.</summary>
@@ -225,6 +231,80 @@ The MIME type for [linked-data patches](https://www.w3.org/TR/ldpatch/) is `text
 > Content-Type: text/ldpatch
 > 
 > Add { <http://example.org/#s1> <http://example.org/#p1> <http://example.org/#o1> } .
+> 
+> --boundary-example--
+> ```
+> </details>
+
+> [!TIP]
+> One could argue for or against a proposed revision to a diagram.
+>  
+> <details open>
+> <summary>Click here to toggle the display of this example.</summary>
+> <br>
+> 
+> ```email
+> Mime-Version: 1.0
+> Message-ID: <12345678>
+> Content-Type: multipart/related; boundary="boundary-example"
+> Content-Metadata: <part1>
+> 
+> --boundary-example
+> 
+> Content-ID: <part1>
+> Content-Type: text/turtle
+> 
+> @prefix dc: <http://purl.org/dc/terms/> .
+> @prefix ex: <http://example.org/#> .
+> @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+> 
+> <mid:12345678> dc:created "2025-06-29 20:00:00.000" ;
+>     dc:creator [ a foaf:Person ;
+>             foaf:name "Bob Smith" ] ;
+>     dc:hasPart <cid:part1>,
+>         <cid:part2>,
+>         <cid:part3> .
+> 
+> <cid:part2> ex:arguesForPerforming <cid:part3> .
+> 
+> <cid:part3> ex:patches <https://www.storage.org/mindmap.mmd>
+> 
+> --boundary-example
+> 
+> Content-ID: <part2>
+> Content-Type: text/turtle
+> 
+> @prefix aif: <http://www.arg.dundee.ac.uk/aif#> .
+> @prefix ex: <http://example.org/#> .
+> 
+> ex:Node1 a aif:I-node ;
+>     aif:claimText "This content was missing from the diagram." .
+> 
+> ex:Node2 a aif:RA-node ;
+>     aif:hasPremise ex:Node1 ;
+>     aif:hasConclusion ex:Node3 .
+> 
+> ex:Node3 a aif:I-node ;
+>     aif:claimText "This content should be added to the diagram." .
+> 
+> --boundary-example
+> 
+> Content-ID: <part3>
+> Content-Type: text/x-diff
+> 
+> Index: mindmap.mmd
+> ===================================================================
+> --- mindmap.mmd
+> +++ mindmap.mmd
+> @@ -10,7 +10,8 @@
+>          Uses
+>              Creative techniques
+>              Strategic planning
+>              Argument mapping
+> +      On revision processes
+>      Tools
+>        Pen and paper
+>        Mermaid
 > 
 > --boundary-example--
 > ```
