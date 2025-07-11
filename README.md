@@ -244,7 +244,7 @@ Argument templates are used to produce arguments.
 > [!NOTE]
 > More: [Documents/Components.md](Documents/Components.md)
 
-Markup languages for representing argument could be designed to be extensible with respect to defining and reusing defined components. Such components could be defined, not in terms of their presentation and interaction, but in terms of their semantics. One could define reusable elements in terms of mappings and transformations between them and knowledge graphs (see also: [R2RML](https://www.w3.org/TR/r2rml/) and [RML](https://kg-construct.github.io/rml-resources/portal/)).
+Markup languages for representing arguments could be designed to be extensible with respect to defining and reusing defined components. Such components could be defined, not in terms of their presentation and interaction, but in terms of their semantics. One could define reusable elements in terms of mappings and transformations between them and knowledge graphs (see also: [R2RML](https://www.w3.org/TR/r2rml/) and [RML](https://kg-construct.github.io/rml-resources/portal/)).
 
 ## A Comparison of Message Models
 
@@ -270,7 +270,7 @@ With respect to [Activity Streams](https://www.w3.org/TR/activitystreams-core/) 
 
 ### Advantages of Multipart Messages
 
-Advantages from supporting MIME's multipart semantics would include, but not be limited to:
+Benefits and advantages from supporting MIME's multipart semantics include:
 
 1. a well-defined hierarchical and recursive structure for messages' parts to simplify processing,
 2. the capability to provide one or more message attachments, e.g., documents, images, audio, video, and data,
