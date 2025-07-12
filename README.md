@@ -244,12 +244,12 @@ Using a potential `Content-Metadata` header, one could include, as a message par
 > ```
 > </details>
 
-### Extensible Markup Language Literals
+### Extensible Markup Language
 
-The AIF's `claimText` property could be provided with, beyond simple text-string literals, XML content.
+The AIF's `claimText` property could be used with, beyond simple text-string literals, XML content.
 
 > [!TIP]
-> XML can enable referring to multimedia resources, evidence, cited resources, and other content &ndash; other parts of a multipart MIME message &ndash; in an inline manner within literals.
+> XML can enable kinds of typed hyperlinks for referring to multimedia, evidence, cited resources, and other content &ndash; other parts of a multipart MIME message.
 > <details open>
 > <summary>Click here to toggle the display of this example.</summary>
 > <br>
@@ -275,6 +275,8 @@ The AIF's `claimText` property could be provided with, beyond simple text-string
 >     "<ref href='cid:part5#triple'>This triple</ref> should be added..."^^rdf:XMLLiteral .
 > ```
 > </details>
+
+XML versions or summaries of arguments could be placed within multipart MIME messages alongside or instead of text versions. These XML versions could make use of markup, as indicated above, to refer to multimedia, evidence, cited resources, and other content.
 
 ### Argument Diagrams
 > [!NOTE]
