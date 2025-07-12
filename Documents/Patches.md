@@ -306,6 +306,34 @@ Patching diagrams can be performed by patching their text-, markup-, or graph-ba
 > ```
 > </details>
 
+## Discussion
+
+People and artificial-intelligence agents, during a process of deliberating about a proposed revision to a resource, can each observe, consider, and discuss: (1) the initial resource, (2) the proposed patch or revision process, (3) the proposed resource which results from the application of the proposed patch or revision process to the initial resource, and (4) any differences between the initial and resultant resources.
+
+> [!TIP]
+> <details open>
+> <summary>Click here to toggle the display of this diagram.</summary>
+> <br>
+>
+> ```mermaid
+> flowchart LR
+>  agent1(Agent 1)
+>  agent2(Agent 2)
+>  before(Initial Resource)
+>  revision(Proposed Patch<br/>or Revision Process)
+>  after(Proposed Resource)
+>  difference(Differences<br/>Between Resources)  
+>  agent1 --- before
+>  agent1 --- revision
+>  agent1 --- after
+>  agent1 --- difference  
+>  before --- agent2
+>  revision --- agent2
+>  after --- agent2
+>  difference --- agent2  
+> ```
+> </details>
+
 ## See Also
 
 * [Diff](https://en.wikipedia.org/wiki/Diff)
