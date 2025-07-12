@@ -179,7 +179,7 @@ Using the `cid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc
 > ```
 > </details>
 
-Using a potential `Content-Metadata` header, one could include, as a message part, metadata describing the multipart message and its parts.
+Using a potential `Content-Metadata` header, one could include, as a message part, metadata describing a multipart message and its parts.
 
 > [!TIP]
 > One could argue about proposed revisions to text-based resources (e.g., a source-code file), knowledge-graph resources (e.g., a knowledgebase), and diagrammatic resources (e.g., a concept map).
