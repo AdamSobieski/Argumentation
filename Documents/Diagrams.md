@@ -6,7 +6,7 @@
 > Here is an example Mermaid diagram.
 >
 > <details open>
-> <summary>Click here to toggle the display of this example.</summary>
+> <summary>Click here to toggle the display of this diagram.</summary>
 > <br>
 > 
 > ```mermaid
@@ -22,7 +22,7 @@
 > Here is another example Mermaid diagram.
 > 
 > <details open>
-> <summary>Click here to toggle the display of this example.</summary>
+> <summary>Click here to toggle the display of this diagram.</summary>
 > <br>
 > 
 > ```mermaid
