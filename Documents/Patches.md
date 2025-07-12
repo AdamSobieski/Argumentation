@@ -311,6 +311,7 @@ Patching diagrams can be performed by patching their text-, markup-, or graph-ba
 People and artificial-intelligence agents, during a process of deliberating about a proposed revision to a resource, can each observe, consider, and discuss: (1) the initial resource, (2) the proposed patch or revision process, (3) the proposed resource which results from the application of the proposed patch or revision process to the initial resource, and (4) any differences between the initial and resultant resources.
 
 > [!TIP]
+> This diagram shows an abstract model of the topics of discussion when deliberating making a revision to a resource.
 > <details open>
 > <summary>Click here to toggle the display of this diagram.</summary>
 > <br>
