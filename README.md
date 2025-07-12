@@ -46,7 +46,7 @@
 > ```
 > </details>
 
-Using the `cid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), contents within parts of multipart MIME messages can, wherever a URL can be used, refer to other parts in multipart MIME messages.
+Wherever a URL can be used, contents within parts of multipart MIME messages can use the `cid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/) to refer to other parts of multipart MIME messages.
 
 > [!TIP]
 > One could reference a picture or image in a multimodal argument.
