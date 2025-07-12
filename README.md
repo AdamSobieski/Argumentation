@@ -257,7 +257,7 @@ The AIF's `claimText` property could be provided with, beyond simple text-string
 > ```turtle
 > ex:Node1
 > aif:claimText
-> "As one can see in <picture src='cid:part2'>this picture</picture>..."^^rdf:XMLLiteral .
+> "As one can see in <picture href='cid:part2'>this picture</picture>..."^^rdf:XMLLiteral .
 > ```
 > ```turtle
 > ex:Node1
