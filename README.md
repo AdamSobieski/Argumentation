@@ -284,17 +284,37 @@ Using a potential `Content-Metadata` header, one could include, as a message par
 > --boundary-example---
 > ```
 
-### Argument Templates
-> [!NOTE]
-> More: [Documents/Templates.md](Documents/Templates.md)
+### Extensible Markup Language Literals
 
-Argument templates are used to produce arguments.
+The AIF's `claimText` property could be provided with, beyond simple text-string literals, XML content.
 
-### Markup Components
-> [!NOTE]
-> More: [Documents/Components.md](Documents/Components.md)
-
-Markup languages for representing arguments could be designed to be extensible with respect to defining and reusing defined components. Such components could be defined, not in terms of their presentation and interaction, but in terms of their semantics. One could define reusable elements in terms of mappings and transformations between them and knowledge graphs (see also: [R2RML](https://www.w3.org/TR/r2rml/) and [RML](https://kg-construct.github.io/rml-resources/portal/)).
+> [!TIP]
+> XML literals can enable referring to multimedia resources, evidence, cited resources, and other content (e.g., other parts of a multipart MIME message) in an inline manner within natural-language content.
+> <details open>
+> <summary>Click here to toggle the display of this example.</summary>
+> <br>
+>   
+> ```turtle
+> ex:Node1
+> aif:claimText
+> "As one can see in <picture xmlns='...' src='cid:part2'>this picture</picture>..."^^rdf:XMLLiteral .
+> ```
+> ```turtle
+> ex:Node1
+> aif:claimText
+> "<evidence xmlns='...' href='cid:part3'>This data</evidence> indicates..."^^rdf:XMLLiteral .
+> ```
+> ```turtle
+> ex:Node1
+> aif:claimText
+> "<cite xmlns='...' href='cid:part4'>This paper</cite> suggests..."^^rdf:XMLLiteral .
+> ```
+> ```turtle
+> ex:Node1
+> aif:claimText
+> "<ref xmlns='...' href='cid:part5#triple'>This triple</ref> should be added..."^^rdf:XMLLiteral .
+> ```
+> </details>
 
 ## A Comparison of Message Models
 
