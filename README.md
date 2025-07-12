@@ -289,7 +289,7 @@ Using a potential `Content-Metadata` header, one could include, as a message par
 The AIF's `claimText` property could be provided with, beyond simple text-string literals, XML content.
 
 > [!TIP]
-> XML literals can enable referring to multimedia resources, evidence, cited resources, and other content (e.g., other parts of a multipart MIME message) in an inline manner within natural-language content.
+> XML can enable referring to multimedia resources, evidence, cited resources, and other content &ndash; other parts of a multipart MIME message &ndash; in an inline manner within literals.
 > <details open>
 > <summary>Click here to toggle the display of this example.</summary>
 > <br>
