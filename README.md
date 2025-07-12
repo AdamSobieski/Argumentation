@@ -278,6 +278,79 @@ The AIF's `claimText` property could be used with, beyond simple text-string lit
 
 XML versions or summaries of arguments could be placed within multipart MIME messages alongside or instead of text versions. These XML versions could make use of markup, as indicated above, to refer to multimedia, evidence, cited resources, and other content.
 
+> [!TIP]
+> One could attach other resources as evidence and otherwise cite scholarly and scientific publications.
+> 
+> <details open>
+> <summary>Click here to toggle the display of this example.</summary>
+> <br>
+> 
+> ```email
+> Mime-Version: 1.0
+> Content-Type: multipart/related; boundary="boundary-example"
+> 
+> --boundary-example
+> 
+> Content-ID: <part1>
+> Content-Type: text/plain
+> Content-Language: en
+> 
+> Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
+> 
+> --boundary-example
+> 
+> Content-ID: <part2>
+> Content-Type: application/xml
+> Content-Language: en
+> 
+> <p><evidence href='cid:part4'>Climate change is caused by human activities.</evidence>
+> Therefore, we should reduce carbon emissions.</p>
+> 
+> --boundary-example
+> 
+> Content-ID: <part3>
+> Content-Type: text/turtle
+> Content-Language: en
+> 
+> @prefix aif: <http://www.arg.dundee.ac.uk/aif#> .
+> @prefix ex: <http://example.org/#> .
+> @prefix ext: <http://extension.org/#> .
+> 
+> ex:Node1 a aif:I-node ;
+>     aif:claimText "Climate change is caused by human activities." .
+> 
+> ex:Node2 a aif:RA-node ;
+>     aif:hasPremise ex:Node1 ;
+>     aif:hasConclusion ex:Node3 .
+> 
+> ex:Node3 a aif:I-node ;
+>     aif:claimText "We should reduce carbon emissions." .
+> 
+> ex:Node4 a ext:E-node ;
+>     ext:hasEvidence <cid:part4> .
+> 
+> ex:Node5 a ext:ES-node ;
+>     ext:supported ex:Node1 ;
+>     ext:supportedBy ex:Node4 .
+> 
+> --boundary-example
+> 
+> Content-ID: <part4>
+> Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+> Content-Language: en
+> Content-Disposition: attachment; filename="evidence.xslx"
+> Content-Transfer-Encoding: base64
+> 
+> TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4g
+> U2VkIGRvIGVpdXNtb2QgdGVtcG9yIGluY2lkaWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu
+> YSBhbGlxdWEuIFV0IGVuaW0gYWQgbWluaW0gdmVuaWFtLCBxdWlzIG5vc3RydWQgZXhlcmNpdGF0
+> aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
+> YXQuCg==
+> 
+> --boundary-example--
+> ```
+> </details>
+
 ### Argument Diagrams
 > [!NOTE]
 > More: [Documents/Diagrams.md](Documents/Diagrams.md)
