@@ -49,87 +49,6 @@
 Using the `cid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc2392/), contents within parts of multipart MIME messages can, wherever a URL can be used, refer to other parts in multipart MIME messages.
 
 > [!TIP]
-> The AIF model could be extended to support attaching evidence and citing scholarly and scientific publications.
-> 
-> <details open>
-> <summary>Click here to toggle the display of this example.</summary>
-> <br>
-> 
-> ```email
-> Mime-Version: 1.0
-> Content-Type: multipart/related; boundary="boundary-example"
-> 
-> --boundary-example
-> 
-> Content-Type: text/plain
-> Content-Language: en
-> 
-> Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
-> 
-> --boundary-example
-> 
-> Content-Type: text/turtle
-> Content-Language: en
-> 
-> @prefix aif: <http://www.arg.dundee.ac.uk/aif#> .
-> @prefix ex: <http://example.org/#> .
-> @prefix ext: <http://extension.org/#> .
-> 
-> ex:Node1 a aif:I-node ;
->     aif:claimText "Climate change is caused by human activities." .
-> 
-> ex:Node2 a aif:RA-node ;
->     aif:hasPremise ex:Node1 ;
->     aif:hasConclusion ex:Node3 .
-> 
-> ex:Node3 a aif:I-node ;
->     aif:claimText "We should reduce carbon emissions." .
-> 
-> ex:Node4 a ext:E-node ;
->     ext:hasEvidence <cid:item1> .
-> 
-> ex:Node5 a ext:ES-node ;
->     ext:supported ex:Node1 ;
->     ext:supportedBy ex:Node4 .
-> 
-> ex:Node6 a ext:C-node ;
->     ext:cites <cid:item2> .
-> 
-> ex:Node7 a ext:CS-node ;
->     ext:supported ex:Node1 ;
->     ext:supportedBy ex:Node6 .
-> 
-> --boundary-example
-> 
-> Content-ID: <item1>
-> Content-Type: application/pdf
-> Content-Language: en
-> Content-Disposition: attachment; filename="evidence.pdf"
-> Content-Transfer-Encoding: base64
-> 
-> TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4g
-> U2VkIGRvIGVpdXNtb2QgdGVtcG9yIGluY2lkaWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu
-> YSBhbGlxdWEuIFV0IGVuaW0gYWQgbWluaW0gdmVuaWFtLCBxdWlzIG5vc3RydWQgZXhlcmNpdGF0
-> aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
-> YXQuCg==
-> 
-> --boundary-example
-> 
-> Content-ID: <item2>
-> Content-Type: text/x-bibtex
-> 
-> @article{Brown2023,
->   author = {Charles Brown},
->   title = {An Interesting Article},
->   journal = {Journal of Interesting Articles},
->   year = {2023}
-> }
-> 
-> --boundary-example--
-> ```
-> </details>
-
-> [!TIP]
 > One could reference a picture or image in a multimodal argument.
 > 
 > <details open>
@@ -177,7 +96,90 @@ Using the `cid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc
 > ```
 > </details>
 
-Using multipart MIME with a potential `Content-Metadata` header, one could simplify arguing for and against proposed revisions to text-based resources (e.g., source-code files), knowledge-graph resources (e.g., knowledgebases), and diagrammatic resources (e.g., concept maps).
+> [!TIP]
+> One could attach other resources as evidence and otherwise cite scholarly and scientific publications.
+> 
+> <details open>
+> <summary>Click here to toggle the display of this example.</summary>
+> <br>
+> 
+> ```email
+> Mime-Version: 1.0
+> Content-Type: multipart/related; boundary="boundary-example"
+> 
+> --boundary-example
+> 
+> Content-ID: <part1>
+> Content-Type: text/plain
+> Content-Language: en
+> 
+> Climate change is caused by human activities. Therefore, we should reduce carbon emissions.
+> 
+> --boundary-example
+> 
+> Content-ID: <part2>
+> Content-Type: text/turtle
+> Content-Language: en
+> 
+> @prefix aif: <http://www.arg.dundee.ac.uk/aif#> .
+> @prefix ex: <http://example.org/#> .
+> @prefix ext: <http://extension.org/#> .
+> 
+> ex:Node1 a aif:I-node ;
+>     aif:claimText "Climate change is caused by human activities." .
+> 
+> ex:Node2 a aif:RA-node ;
+>     aif:hasPremise ex:Node1 ;
+>     aif:hasConclusion ex:Node3 .
+> 
+> ex:Node3 a aif:I-node ;
+>     aif:claimText "We should reduce carbon emissions." .
+> 
+> ex:Node4 a ext:E-node ;
+>     ext:hasEvidence <cid:part3> .
+> 
+> ex:Node5 a ext:ES-node ;
+>     ext:supported ex:Node1 ;
+>     ext:supportedBy ex:Node4 .
+> 
+> ex:Node6 a ext:C-node ;
+>     ext:cites <cid:part4> .
+> 
+> ex:Node7 a ext:CS-node ;
+>     ext:supported ex:Node1 ;
+>     ext:supportedBy ex:Node6 .
+> 
+> --boundary-example
+> 
+> Content-ID: <part3>
+> Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+> Content-Language: en
+> Content-Disposition: attachment; filename="evidence.xslx"
+> Content-Transfer-Encoding: base64
+> 
+> TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4g
+> U2VkIGRvIGVpdXNtb2QgdGVtcG9yIGluY2lkaWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu
+> YSBhbGlxdWEuIFV0IGVuaW0gYWQgbWluaW0gdmVuaWFtLCBxdWlzIG5vc3RydWQgZXhlcmNpdGF0
+> aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
+> YXQuCg==
+> 
+> --boundary-example
+> 
+> Content-ID: <part4>
+> Content-Type: text/x-bibtex
+> 
+> @article{Brown2023,
+>   author = {Charles Brown},
+>   title = {An Interesting Article},
+>   journal = {Journal of Interesting Articles},
+>   year = {2023}
+> }
+> 
+> --boundary-example--
+> ```
+> </details>
+
+Using a potential `Content-Metadata` header, one could simplify arguing for and against proposed revisions to text-based resources (e.g., source-code files), knowledge-graph resources (e.g., knowledgebases), and diagrammatic resources (e.g., concept maps).
 
 > [!TIP]
 > One could argue for or against a proposed revision to a knowledgebase.
