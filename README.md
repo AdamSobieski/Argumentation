@@ -244,6 +244,38 @@ Using a potential `Content-Metadata` header, one could include, as a message par
 > ```
 > </details>
 
+### Extensible Markup Language Literals
+
+The AIF's `claimText` property could be provided with, beyond simple text-string literals, XML content.
+
+> [!TIP]
+> XML can enable referring to multimedia resources, evidence, cited resources, and other content &ndash; other parts of a multipart MIME message &ndash; in an inline manner within literals.
+> <details open>
+> <summary>Click here to toggle the display of this example.</summary>
+> <br>
+>   
+> ```turtle
+> ex:Node1
+> aif:claimText
+> "As one can see in <picture src='cid:part2'>this picture</picture>..."^^rdf:XMLLiteral .
+> ```
+> ```turtle
+> ex:Node1
+> aif:claimText
+> "<evidence href='cid:part3'>This data</evidence> indicates..."^^rdf:XMLLiteral .
+> ```
+> ```turtle
+> ex:Node1
+> aif:claimText
+> "<cite href='cid:part4'>This paper</cite> suggests..."^^rdf:XMLLiteral .
+> ```
+> ```turtle
+> ex:Node1
+> aif:claimText
+> "<ref href='cid:part5#triple'>This triple</ref> should be added..."^^rdf:XMLLiteral .
+> ```
+> </details>
+
 ### Argument Diagrams
 > [!NOTE]
 > More: [Documents/Diagrams.md](Documents/Diagrams.md)
@@ -283,38 +315,6 @@ Using a potential `Content-Metadata` header, one could include, as a message par
 >
 > --boundary-example---
 > ```
-
-### Extensible Markup Language Literals
-
-The AIF's `claimText` property could be provided with, beyond simple text-string literals, XML content.
-
-> [!TIP]
-> XML can enable referring to multimedia resources, evidence, cited resources, and other content &ndash; other parts of a multipart MIME message &ndash; in an inline manner within literals.
-> <details open>
-> <summary>Click here to toggle the display of this example.</summary>
-> <br>
->   
-> ```turtle
-> ex:Node1
-> aif:claimText
-> "As one can see in <picture src='cid:part2'>this picture</picture>..."^^rdf:XMLLiteral .
-> ```
-> ```turtle
-> ex:Node1
-> aif:claimText
-> "<evidence href='cid:part3'>This data</evidence> indicates..."^^rdf:XMLLiteral .
-> ```
-> ```turtle
-> ex:Node1
-> aif:claimText
-> "<cite href='cid:part4'>This paper</cite> suggests..."^^rdf:XMLLiteral .
-> ```
-> ```turtle
-> ex:Node1
-> aif:claimText
-> "<ref href='cid:part5#triple'>This triple</ref> should be added..."^^rdf:XMLLiteral .
-> ```
-> </details>
 
 ## A Comparison of Message Models
 
