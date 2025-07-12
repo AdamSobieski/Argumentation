@@ -255,24 +255,24 @@ The AIF's `claimText` property could be provided with, beyond simple text-string
 > <br>
 >   
 > ```turtle
-> ex:Node1
-> aif:claimText
-> "As one can see in <picture href='cid:part2'>this picture</picture>..."^^rdf:XMLLiteral .
+> ex:Node1 a aif:I-node ;
+>     aif:claimText
+>     "As one can see in <picture href='cid:part2'>this picture</picture>..."^^rdf:XMLLiteral .
 > ```
 > ```turtle
-> ex:Node1
-> aif:claimText
-> "<evidence href='cid:part3'>This data</evidence> indicates..."^^rdf:XMLLiteral .
+> ex:Node1 a aif:I-node ;
+>     aif:claimText
+>     "<evidence href='cid:part3'>This data</evidence> indicates..."^^rdf:XMLLiteral .
 > ```
 > ```turtle
-> ex:Node1
-> aif:claimText
-> "<cite href='cid:part4'>This paper</cite> suggests..."^^rdf:XMLLiteral .
+> ex:Node1 a aif:I-node ;
+>     aif:claimText
+>     "<cite href='cid:part4'>This paper</cite> suggests..."^^rdf:XMLLiteral .
 > ```
 > ```turtle
-> ex:Node1
-> aif:claimText
-> "<ref href='cid:part5#triple'>This triple</ref> should be added..."^^rdf:XMLLiteral .
+> ex:Node1 a aif:I-node ;
+>     aif:claimText
+>     "<ref href='cid:part5#triple'>This triple</ref> should be added..."^^rdf:XMLLiteral .
 > ```
 > </details>
 
