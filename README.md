@@ -291,10 +291,37 @@ XML versions or summaries of arguments could be placed within multipart MIME mes
 > Mime-Version: 1.0
 > Message-ID: <12345678>
 > Content-Type: multipart/related; boundary="boundary-example"
+> Content-Metadata: <part1>
 > 
 > --boundary-example
-> 
+>
 > Content-ID: <part1>
+> Content-Type: text/turtle
+>
+> @prefix dc: <http://purl.org/dc/terms/> .
+> @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+> 
+> <mid:12345678> dc:created "2025-06-29 20:00:00.000" ;
+>     dc:creator [ a foaf:Person ;
+>             foaf:name "Bob Smith" ] ;
+>     dc:hasPart <cid:part1>,
+>         <cid:part2>,
+>         <cid:part3>,
+>         <cid:part4>,
+>         <cid:part5> .
+>
+> <cid:part2> dc:isFormatOf <cid:part3> ;
+>     dc:isFormatOf <cid:part4> .
+>
+> <cid:part3> dc:isFormatOf <cid:part2> ;
+>     dc:isFormatOf <cid:part4> .
+>
+> <cid:part4> dc:isFormatOf <cid:part2> ;
+>     dc:isFormatOf <cid:part3> .
+>
+> --boundary-example
+>
+> Content-ID: <part2>
 > Content-Type: text/plain
 > Content-Language: en
 > 
@@ -302,16 +329,16 @@ XML versions or summaries of arguments could be placed within multipart MIME mes
 > 
 > --boundary-example
 > 
-> Content-ID: <part2>
+> Content-ID: <part3>
 > Content-Type: application/xml
 > Content-Language: en
 > 
-> <p><evidence href='cid:part4'>Climate change is caused by human activities.</evidence>
+> <p><evidence href='cid:part5'>Climate change is caused by human activities.</evidence>
 > Therefore, we should reduce carbon emissions.</p>
 > 
 > --boundary-example
 > 
-> Content-ID: <part3>
+> Content-ID: <part4>
 > Content-Type: text/turtle
 > Content-Language: en
 > 
@@ -330,7 +357,7 @@ XML versions or summaries of arguments could be placed within multipart MIME mes
 >     aif:claimText "We should reduce carbon emissions." .
 > 
 > ex:Node4 a ext:E-node ;
->     ext:hasEvidence <cid:part4> .
+>     ext:hasEvidence <cid:part5> .
 > 
 > ex:Node5 a ext:ES-node ;
 >     ext:supported ex:Node1 ;
@@ -338,7 +365,7 @@ XML versions or summaries of arguments could be placed within multipart MIME mes
 > 
 > --boundary-example
 > 
-> Content-ID: <part4>
+> Content-ID: <part5>
 > Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
 > Content-Language: en
 > Content-Disposition: attachment; filename="evidence.xslx"
