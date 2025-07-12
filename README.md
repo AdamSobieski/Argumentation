@@ -129,7 +129,55 @@ Using the `cid:` URL scheme from [RFC 2392](https://datatracker.ietf.org/doc/rfc
 > ```
 > </details>
 
-The following example illustrates that, using multipart MIME with a potential `Content-Metadata` header, one could simplify arguing for and against proposed revisions to text-based resources (e.g., source-code files), knowledge-graph resources (e.g., knowledgebases), and diagrammatic resources (e.g., concept maps).
+> [!TIP]
+> One could reference a picture or image in a multimodal argument.
+> 
+> <details open>
+> <summary>Click here to toggle the display of this example.</summary>
+> <br>
+> 
+> ```email
+> Mime-Version: 1.0
+> Message-ID: <12345678>
+> Content-Type: multipart/related; boundary="boundary-example"
+> 
+> --boundary-example
+> 
+> Content-ID: <part1>
+> Content-Type: text/turtle
+> Content-Language: en
+> 
+> @prefix aif: <http://www.arg.dundee.ac.uk/aif#> .
+> @prefix ex: <http://example.org/#> .
+> @prefix ext: <http://extension.org/#> .  
+> 
+> ex:Node1 a ext:E-node ;
+>     ext:hasEvidence <cid:part2> .
+> 
+> ex:Node2 a ext:ES-node ;
+>     ext:supported ex:Node3 ;
+>     ext:supportedBy ex:Node1 .
+> 
+> ex:Node3 a aif:I-node ;
+>     aif:claimText "We should reduce carbon emissions." .
+> 
+> --boundary-example
+> 
+> Content-ID: <part2>
+> Content-Type: image/png
+> Content-Transfer-Encoding: base64
+> 
+> TG9yZW0gaXBzdW0gZG9sb3Igc2l0IGFtZXQsIGNvbnNlY3RldHVyIGFkaXBpc2NpbmcgZWxpdC4g
+> U2VkIGRvIGVpdXNtb2QgdGVtcG9yIGluY2lkaWR1bnQgdXQgbGFib3JlIGV0IGRvbG9yZSBtYWdu
+> YSBhbGlxdWEuIFV0IGVuaW0gYWQgbWluaW0gdmVuaWFtLCBxdWlzIG5vc3RydWQgZXhlcmNpdGF0
+> aW9uIHVsbGFtY28gbGFib3JpcyBuaXNpIHV0IGFsaXF1aXAgZXggZWEgY29tbW9kbyBjb25zZXF1
+> YXQuCg==
+> 
+> --boundary-example--
+> ```
+> </details>
+
+Using multipart MIME with a potential `Content-Metadata` header, one could simplify arguing for and against proposed revisions to text-based resources (e.g., source-code files), knowledge-graph resources (e.g., knowledgebases), and diagrammatic resources (e.g., concept maps).
 
 > [!TIP]
 > One could argue for or against a proposed revision to a knowledgebase using multipart MIME.
