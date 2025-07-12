@@ -15,6 +15,7 @@
 > 
 > ```email
 > Mime-Version: 1.0
+> Message-ID: <12345678>
 > Content-Type: multipart/related; boundary="boundary-example"
 > 
 > --boundary-example
@@ -105,6 +106,7 @@ Wherever a URL can be used, contents within parts of multipart MIME messages can
 > 
 > ```email
 > Mime-Version: 1.0
+> Message-ID: <12345678>
 > Content-Type: multipart/related; boundary="boundary-example"
 > 
 > --boundary-example
@@ -287,6 +289,7 @@ XML versions or summaries of arguments could be placed within multipart MIME mes
 > 
 > ```email
 > Mime-Version: 1.0
+> Message-ID: <12345678>
 > Content-Type: multipart/related; boundary="boundary-example"
 > 
 > --boundary-example
@@ -366,6 +369,7 @@ XML versions or summaries of arguments could be placed within multipart MIME mes
 > 
 > ```email
 > Mime-Version: 1.0
+> Message-ID: <12345678>
 > Content-Type: multipart/related; boundary="boundary-example"
 > 
 > --boundary-example
