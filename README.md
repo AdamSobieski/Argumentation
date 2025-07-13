@@ -314,10 +314,12 @@ XML versions or summaries of arguments could be placed within multipart MIME mes
 >     dc:isFormatOf <cid:part4> .
 >
 > <cid:part3> dc:isFormatOf <cid:part2> ;
->     dc:isFormatOf <cid:part4> .
+>     dc:isFormatOf <cid:part4> ;
+>     dc:references <cid:part5> .
 >
 > <cid:part4> dc:isFormatOf <cid:part2> ;
->     dc:isFormatOf <cid:part3> .
+>     dc:isFormatOf <cid:part3> ;
+>     dc:references <cid:part5> .
 >
 > --boundary-example
 >
