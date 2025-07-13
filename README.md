@@ -4,7 +4,7 @@
 > [!NOTE]
 > More: [Documents/MIME.md](Documents/MIME.md)
 
-[Multipurpose Internet Mail Extensions (MIME)](https://en.wikipedia.org/wiki/MIME) can be utilized as a format to serialize arguments to, to deserialize arguments from, to store arguments as files, and to transmit arguments between end-users and agents.
+The [Multipurpose Internet Mail Extensions (MIME)](https://en.wikipedia.org/wiki/MIME) format can be used to serialize arguments to, deserialize arguments from, store arguments as files, and transmit arguments between end-users and artificial-intelligence agents.
 
 > [!TIP]
 > The [Argument Interchange Format (AIF)](https://en.wikipedia.org/wiki/Argument_Interchange_Format) can be used in MIME messages.
