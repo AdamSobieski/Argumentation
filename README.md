@@ -281,7 +281,7 @@ The AIF's `claimText` property could be used with, beyond simple text-string lit
 XML versions or summaries of arguments could be placed within multipart MIME messages alongside or instead of text versions. These XML versions could make use of markup, as indicated above, to refer to multimedia, evidence, cited resources, and other content.
 
 > [!TIP]
-> One could include featureful XML representations of arguments within multipart MIME messages.
+> One could include XML variants of arguments within multipart MIME messages.
 > 
 > <details open>
 > <summary>Click here to toggle the display of this example.</summary>
