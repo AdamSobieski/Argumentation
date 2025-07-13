@@ -98,7 +98,7 @@ Wherever a URL can be used, contents within parts of multipart MIME messages can
 > </details>
 
 > [!TIP]
-> One could attach other resources as evidence and otherwise cite scholarly and scientific publications.
+> One could attach other resources as evidence and cite scholarly and scientific publications.
 > 
 > <details open>
 > <summary>Click here to toggle the display of this example.</summary>
