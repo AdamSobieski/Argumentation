@@ -264,12 +264,12 @@ The AIF's `claimText` property could be used with, beyond simple text-string lit
 > ```turtle
 > ex:Node1 a aif:I-node ;
 >     aif:claimText
->     "<evidence href='cid:part3'>This data</evidence> indicates..."^^rdf:XMLLiteral .
+>     "<evidence href='cid:part3'>The data indicates...</evidence>"^^rdf:XMLLiteral .
 > ```
 > ```turtle
 > ex:Node1 a aif:I-node ;
 >     aif:claimText
->     "<cite href='cid:part4'>This paper</cite> suggests..."^^rdf:XMLLiteral .
+>     "<cite href='cid:part4'>The paper suggests...</cite>"^^rdf:XMLLiteral .
 > ```
 > ```turtle
 > ex:Node1 a aif:I-node ;
