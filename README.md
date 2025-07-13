@@ -403,6 +403,7 @@ XML versions or summaries of arguments could be placed within multipart MIME mes
 > 
 > --boundary-example
 > 
+> Content-ID: <part1>
 > Content-Type: text/plain
 > Content-Language: en
 > 
@@ -412,6 +413,7 @@ XML versions or summaries of arguments could be placed within multipart MIME mes
 >
 > --boundary-example
 >
+> Content-ID: <part2>
 > Content-Type: text/vnd.mermaid
 > Content-Language: en
 >
